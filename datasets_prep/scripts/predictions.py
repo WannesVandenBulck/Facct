@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import pickle
 import os
 
@@ -16,7 +17,9 @@ datasets = {
         'path': r'datasets_prep/data/law_dataset',
         'target_col': 'target_law',                  
         'output_file': 'law_adverse',
-        'threshold': 0.5
+        'threshold': 0.5,
+        # Keep the 0.5 threshold and draw a race x gender stratified subsample of the adverse set instead
+        'adverse_sample': {'n': 100, 'strata': ['race', 'gender'], 'seed': 1234}
     },
     'saudi': {
         'path': r'datasets_prep/data/saudi_dataset',
@@ -31,6 +34,16 @@ datasets = {
         'threshold': 0.1  # Modify this to get more/fewer adverse instances
     }
 }
+
+def stratified_sample(df, n, strata, seed):
+    """Proportional stratified sample of n rows; largest-remainder allocation so the total is exactly n."""
+    sizes = df.groupby(strata).size()
+    exact = sizes * n / len(df)
+    alloc = np.floor(exact).astype(int)
+    leftover = n - alloc.sum()
+    alloc[(exact - alloc).sort_values(ascending=False, kind='stable').index[:leftover]] += 1
+    parts = [group.sample(alloc.loc[key], random_state=seed) for key, group in df.groupby(strata)]
+    return pd.concat(parts).sort_values('instance_index')
 
 def make_predictions(dataset_name, config):
     """Load model and make predictions for the test set.
@@ -107,7 +120,15 @@ def make_predictions(dataset_name, config):
     test_adverse.reset_index(drop=True, inplace=True)
     test_adverse.insert(0, 'instance_index', range(len(test_adverse)))
     test_adverse.insert(1, 'original_test_index', original_indices_adverse)
-    
+
+    # instance_index keeps its full-adverse-set value so IDs stay stable across subsampling
+    sample = config.get('adverse_sample')
+    if sample:
+        n_before = len(test_adverse)
+        test_adverse = stratified_sample(test_adverse, sample['n'], sample['strata'], sample['seed'])
+        print(f"  Stratified subsample by {sample['strata']}: {len(test_adverse)} of {n_before} adverse instances")
+        print(pd.crosstab(test_adverse[sample['strata'][0]], test_adverse[sample['strata'][1]], margins=True).to_string())
+
     # Save adverse to CSV without index (instance_index is now an explicit column)
     output_path_adverse = os.path.join(dataset_path, f'{output_file}.csv')
     test_adverse.to_csv(output_path_adverse, index=False)

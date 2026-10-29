@@ -11,7 +11,7 @@ MAX_SHAP_FEATURES = 3  # None = include all features; integer = limit to top N f
 # Protected attribute mappings for readable display in prompts
 ATTRIBUTE_VALUE_MAPPINGS = {
     "gender": {0: "female", 1: "male"},
-    "race": {0: "white", 1: "black", 2: "hispanic", 3: "asian", 4: "native american"},
+    "race": {0: "white", 1: "hispanic", 2: "asian", 3: "black", 4: "other"},
     "fulltime": {1: "Full-time", 1.0: "Full-time", 2: "Part-time", 2.0: "Part-time"},
     "fam_inc": {1.0: "Low", 2.0: "Lower-middle", 3.0: "Middle", 4.0: "Upper-middle", 5.0: "High", 
                 1: "Low", 2: "Lower-middle", 3: "Middle", 4: "Upper-middle", 5: "High"},
