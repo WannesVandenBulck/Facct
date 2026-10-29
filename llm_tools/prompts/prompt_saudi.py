@@ -8,9 +8,19 @@ from pathlib import Path
 # Maximum number of most important SHAP features to include in narrative
 MAX_SHAP_FEATURES = 3  # None = include all features; integer = limit to top N features
 
+# Decision threshold used in datasets_prep/scripts/predictions.py (probability >= threshold -> adverse decision)
+DECISION_THRESHOLD = 0.4
+
+# Numeric values are shown as whole numbers, except these features which are shown with one decimal
+DECIMAL_FEATURES = []
+
+def format_number(feature_name, value):
+    """Format a numeric feature value for the prompt."""
+    return f"{float(value):.1f}" if feature_name in DECIMAL_FEATURES else f"{float(value):.0f}"
+
 # Protected attribute mappings for readable display in prompts
 ATTRIBUTE_VALUE_MAPPINGS = {
-    'Gender': {0: 'Female', 1: 'Male'},
+    'Gender': {0: 'female', 1: 'male'},
     'Age': {0: '21-30', 1: '31-40', 2: '41+'},
     'Health_Issues': {0: 'no', 1: 'yes'},
     'Academic_degree': {0: 'secondary school', 1: 'bachelor', 2: 'master', 3: 'PhD'},
@@ -179,6 +189,7 @@ def create_instance_description_from_row(row):
             
         value = row[col]
         mapped_value = map_attribute_value(col, value)
+        display_value = format_number(col, mapped_value) if isinstance(mapped_value, (int, float, np.number)) else mapped_value
         feature_info = feature_df[feature_df['feature_name'] == col]
         
         if not feature_info.empty:
@@ -186,20 +197,20 @@ def create_instance_description_from_row(row):
             
             # Protected attributes: show without comparisons
             if col in ['Gender', 'Age', 'Health_Issues']:
-                feature_lines.append(f"- {col} = {mapped_value} ({desc})")
+                feature_lines.append(f"- {col} = {display_value} ({desc})")
             # All other features: show distribution for employees who stayed
             else:
                 distribution_positive = feature_info.iloc[0].get('feature_distribution_positive')
                 if pd.isna(distribution_positive) or distribution_positive is None:
                     distribution_positive = fallback_stats.get(col, {}).get('distribution_positive')
                 if pd.notna(distribution_positive) and distribution_positive is not None:
-                    feature_lines.append(f"- {col} = {mapped_value} ({desc}) - distribution: {distribution_positive}")
+                    feature_lines.append(f"- {col} = {display_value} ({desc}) - distribution: {distribution_positive}")
                 else:
-                    feature_lines.append(f"- {col} = {mapped_value} ({desc})")
+                    feature_lines.append(f"- {col} = {display_value} ({desc})")
         else:
-            feature_lines.append(f"- {col} = {mapped_value}")
+            feature_lines.append(f"- {col} = {display_value}")
     
-    instance_desc = f"""Feature values (with comparisons to employees who were predicted to stay - showing distribution among employees who were predicted to stay):
+    instance_desc = f"""Feature values (with comparisons to employees who were granted a promotion where available, showing the distribution or average among employees who were granted a promotion):
 {chr(10).join(feature_lines)}
 
 """
@@ -245,29 +256,29 @@ PROMPT_PREAMBLE_SHAP = """A machine learning model predicted that an employee wi
 
 DATASET_EXPLANATION = """1. DATASET INFORMATION"""
 
-APPLICANT_INFORMATION = """3. EMPLOYEE PROFILE 
-You are writing a narrative tailored to this specific person who is denied a promotion."""
+APPLICANT_INFORMATION = """3. EMPLOYEE PROFILE
+You are writing a narrative tailored to this specific employee, who was denied a promotion."""
 
 SHAP_VALUES_SECTION = """4. FEATURE IMPORTANCE ANALYSIS (Ranked by Influence)"""
 
 INSTRUCTIONS_SECTION = """5. YOUR NARRATIVE TASK"""
 
 SHAP_EXPLANATION = """2. TECHNICAL EXPLANATION: SHAP VALUES
-A SHAP value tells you how much a feature influenced the prediction (larger absolute value means a stronger influence) and its direction: positive pushes toward "will leave" (employee leaving), negative toward "will stay" (employee staying). Below are the top 3 features by absolute SHAP value."""
+A SHAP value tells you how much a feature influenced the prediction (larger absolute value means a stronger influence) and its direction: positive pushes toward leaving the job, negative toward staying in the job. Below are the top 3 features by absolute SHAP value."""
 
 SHAP_PROMPT_INSTRUCTIONS = """Write a detailed narrative explanation tailored to this non-technical reader that MUST explain:
-1) The model's predicted probability of leaving and what this means for the employee.
-2) Why the model predicted the employee will leave, which features were most important in driving this prediction and why (focus on the ranking of most important features).
-3) How each of the top 3 most important features contributed (either pushing toward leaving or toward staying). 
-4) What the organization or employee should consider next.
+1) The model's predicted probability of leaving the job and what this means for the employee.
+2) Why the employee was denied a promotion: which features were most important in driving this prediction and why (focus on the ranking of most important features).
+3) How each of the top 3 most important features contributed (either pushing toward leaving the job or toward staying in the job).
+4) What the employee should do next.
 
 CONSTRAINTS:
 - Do not use the numeric SHAP values in your answer. Instead, discuss the ranking and direction of influence.
 - Do not talk about model internals, algorithms, or training details.
-- Do not include greeting or closing statements, nor bullet points or tables. 
+- Do not include greeting or closing statements, nor bullet points or tables.
 STYLE:
 - Length: 250 words maximum.
-- Write a coherent narrative directly addressing the employee. 
+- Write a coherent narrative directly addressing the employee.
 - Do NOT copy-paste feature names, but instead incorporate them naturally in the narrative.
 - Include feature values and their comparisons to averages or distributions, but reserve this for features where it really clarifies the explanation."""
 
@@ -380,7 +391,8 @@ def build_shap_prompt(instance_index, shap_csv_path: str = None, adverse_csv_pat
 {APPLICANT_INFORMATION}
 {instance_desc_regular}
 The model's prediction:
-- Predicted probability of leaving: {pred_prob_str}
+- Predicted probability of leaving the job: {pred_prob_str}
+- Decision threshold: a predicted probability of leaving the job of {DECISION_THRESHOLD:.0%} or higher leads to this decision.
 
 {SHAP_VALUES_SECTION}
 {shap_table}

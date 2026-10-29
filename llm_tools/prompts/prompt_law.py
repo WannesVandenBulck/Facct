@@ -8,13 +8,23 @@ from pathlib import Path
 # Maximum number of most important SHAP features to include in narrative
 MAX_SHAP_FEATURES = 3  # None = include all features; integer = limit to top N features
 
+# Decision threshold used in datasets_prep/scripts/predictions.py (probability >= threshold -> adverse decision)
+DECISION_THRESHOLD = 0.5
+
+# Numeric values are shown as whole numbers, except these features which are shown with one decimal
+DECIMAL_FEATURES = ['lsat', 'ugpa']
+
+def format_number(feature_name, value):
+    """Format a numeric feature value for the prompt."""
+    return f"{float(value):.1f}" if feature_name in DECIMAL_FEATURES else f"{float(value):.0f}"
+
 # Protected attribute mappings for readable display in prompts
 ATTRIBUTE_VALUE_MAPPINGS = {
     "gender": {0: "female", 1: "male"},
     "race": {0: "white", 1: "hispanic", 2: "asian", 3: "black", 4: "other"},
-    "fulltime": {1: "Full-time", 1.0: "Full-time", 2: "Part-time", 2.0: "Part-time"},
-    "fam_inc": {1.0: "Low", 2.0: "Lower-middle", 3.0: "Middle", 4.0: "Upper-middle", 5.0: "High", 
-                1: "Low", 2: "Lower-middle", 3: "Middle", 4: "Upper-middle", 5: "High"},
+    "fulltime": {1: "full-time", 1.0: "full-time", 2: "part-time", 2.0: "part-time"},
+    "fam_inc": {1.0: "low", 2.0: "lower-middle", 3.0: "middle", 4.0: "upper-middle", 5.0: "high", 
+                1: "low", 2: "lower-middle", 3: "middle", 4: "upper-middle", 5: "high"},
 }
 
 # Categorical features (discrete/ordinal variables that should show distribution instead of average)
@@ -157,6 +167,7 @@ def create_instance_description_from_row(row):
         value = row[col]
         # Map attribute value if applicable
         mapped_value = map_attribute_value(col, value)
+        display_value = format_number(col, mapped_value) if isinstance(mapped_value, (int, float, np.number)) else mapped_value
         
         # Find feature description
         feature_info = feature_df[feature_df['feature_name'] == col]
@@ -165,16 +176,16 @@ def create_instance_description_from_row(row):
             
             # Protected attributes: show without comparisons
             if col in ['gender', 'race']:
-                feature_lines.append(f"- {col} = {mapped_value} ({desc})")
+                feature_lines.append(f"- {col} = {display_value} ({desc})")
             # Categorical features: show distribution for students who passed
             elif col in CATEGORICAL_FEATURES:
                 dist_positive = feature_info.iloc[0].get('feature_distribution_positive')
                 if pd.isna(dist_positive) or dist_positive is None:
                     dist_positive = fallback_stats.get(col, {}).get('distribution_positive')
                 if pd.notna(dist_positive) and dist_positive is not None:
-                    feature_lines.append(f"- {col} = {mapped_value} ({desc}) - distribution: {dist_positive}")
+                    feature_lines.append(f"- {col} = {display_value} ({desc}) - distribution: {dist_positive}")
                 else:
-                    feature_lines.append(f"- {col} = {mapped_value} ({desc})")
+                    feature_lines.append(f"- {col} = {display_value} ({desc})")
             # Numerical features: show average for students who passed
             else:
                 avg_positive = feature_info.iloc[0].get('feature_average_positive')
@@ -182,17 +193,16 @@ def create_instance_description_from_row(row):
                     avg_positive = fallback_stats.get(col, {}).get('feature_average_positive')
                 if pd.notna(avg_positive) and avg_positive is not None:
                     try:
-                        value_str = f"{float(mapped_value):.2f}" if isinstance(mapped_value, (int, float)) else mapped_value
-                        avg_str = f"{float(avg_positive):.2f}"
-                        feature_lines.append(f"- {col} = {value_str} ({desc}) - average: {avg_str}")
+                        avg_str = f"{float(avg_positive):.1f}"
+                        feature_lines.append(f"- {col} = {display_value} ({desc}) - average: {avg_str}")
                     except (ValueError, TypeError):
-                        feature_lines.append(f"- {col} = {mapped_value} ({desc})")
+                        feature_lines.append(f"- {col} = {display_value} ({desc})")
                 else:
-                    feature_lines.append(f"- {col} = {mapped_value} ({desc})")
+                    feature_lines.append(f"- {col} = {display_value} ({desc})")
         else:
-            feature_lines.append(f"- {col} = {mapped_value}")
+            feature_lines.append(f"- {col} = {display_value}")
     
-    instance_desc = f"""Feature values (with comparisons to students who were accepted where available - showing distribution or average among students who were accepted):
+    instance_desc = f"""Feature values (with comparisons to admitted students where available, showing the distribution or average among admitted students):
 {chr(10).join(feature_lines)}
 
 """
@@ -238,29 +248,29 @@ PROMPT_PREAMBLE_SHAP = """A machine learning model predicted that a student will
 
 DATASET_EXPLANATION = """1. DATASET INFORMATION"""
 
-APPLICANT_INFORMATION = """3. STUDENT PROFILE 
-You are writing a narrative tailored to this specific person who is rejected law school admission. """
+APPLICANT_INFORMATION = """3. STUDENT PROFILE
+You are writing a narrative tailored to this specific student, who was rejected for university admission."""
 
 SHAP_VALUES_SECTION = """4. FEATURE IMPORTANCE ANALYSIS (Ranked by Influence)"""
 
 INSTRUCTIONS_SECTION = """5. YOUR NARRATIVE TASK"""
 
 SHAP_EXPLANATION = """2. TECHNICAL EXPLANATION: SHAP VALUES
-A SHAP value tells you how much a feature influenced the prediction (larger absolute value means a stronger influence) and its direction: positive pushes toward "will fail" (bar exam failure), negative toward "will pass" (bar exam success). Below are the top 3 features by absolute SHAP value."""
+A SHAP value tells you how much a feature influenced the prediction (larger absolute value means a stronger influence) and its direction: positive pushes toward bar exam failure, negative toward bar exam success. Below are the top 3 features by absolute SHAP value."""
 
 SHAP_PROMPT_INSTRUCTIONS = """Write a detailed narrative explanation tailored to this non-technical reader that MUST explain:
 1) The model's predicted probability of bar exam failure and what this means for the student.
-2) Why the application was denied: which features were most important in driving this prediction and why (focus on the ranking of most important features).
-3) How each of the top 3 most important features contributed (either pushing toward bar exam failure or toward passing).
-4) What the applicant should do next.
+2) Why the application for university admission was rejected: which features were most important in driving this prediction and why (focus on the ranking of most important features).
+3) How each of the top 3 most important features contributed (either pushing toward bar exam failure or toward bar exam success).
+4) What the student should do next.
 
 CONSTRAINTS:
 - Do not use the numeric SHAP values in your answer. Instead, discuss the ranking and direction of influence.
 - Do not talk about model internals, algorithms, or training details.
-- Do not include greeting or closing statements, nor bullet points or tables. 
+- Do not include greeting or closing statements, nor bullet points or tables.
 STYLE:
 - Length: 250 words maximum.
-- Write a coherent narrative directly addressing the applicant.
+- Write a coherent narrative directly addressing the student.
 - Do NOT copy-paste feature names, but instead incorporate them naturally in the narrative.
 - Include feature values and their comparisons to averages or distributions, but reserve this for features where it really clarifies the explanation."""
 
@@ -369,7 +379,8 @@ def build_shap_prompt(instance_index, shap_csv_path: str = None, adverse_csv_pat
 {APPLICANT_INFORMATION}
 {instance_desc_regular}
 The model's prediction:
-- Predicted probability of failure: {pred_prob_str}
+- Predicted probability of bar exam failure: {pred_prob_str}
+- Decision threshold: a predicted probability of bar exam failure of {DECISION_THRESHOLD:.0%} or higher leads to this decision.
 
 {SHAP_VALUES_SECTION}
 {shap_table}

@@ -3,46 +3,94 @@ import numpy as np
 import pickle
 import os
 
+# Two-level comparison groups per protected attribute; these mirror assign_groups() in
+# scripts/fairness_eval/RQ1_total_disparity.py so the sample is balanced on the groups that get tested
+def median_split(s):
+    return np.where(s < s.median(), 'below_median', 'at_or_above_median')
+
+COMPARISON_GROUPS = {
+    'credit': {
+        'age': median_split,
+        'sex': lambda s: s.map({0: 'male', 1: 'female'}),
+        'foreign_worker': lambda s: s.map({1: 'yes', 2: 'no'}),
+    },
+    'law': {
+        'gender': lambda s: s.map({0: 'female', 1: 'male'}),
+        'race': lambda s: np.where(s == 0, 'white', 'non_white'),
+    },
+    'saudi': {
+        'Gender': lambda s: s.map({0: 'female', 1: 'male'}),
+        'Age': lambda s: np.where(s == 0, '21-30', '31+'),
+        'Health_Issues': lambda s: s.map({0: 'no', 1: 'yes'}),
+    },
+    'student': {
+        'sex': lambda s: s.map({0: 'female', 1: 'male'}),
+        'age': median_split,
+        'health': lambda s: np.where(s <= 3, 'very_bad_bad_fair', 'good_very_good'),
+    },
+}
+
 # Define dataset configurations
 # Target encoding: 1 = adverse/bad class (denied credit, failed exam)
 #                 0 = favorable/good class (approved credit, passed exam)
+# Each adverse set is reduced to a balanced sample of 100 over the comparison groups (see balanced_sample)
 datasets = {
     'credit': {
         'path': r'datasets_prep/data/credit_dataset',
         'target_col': 'target_credit',           
         'output_file': 'credit_adverse',
-        'threshold': 0.25  # Modify this to get more/fewer adverse instances
+        'threshold': 0.25,  # Modify this to get more/fewer adverse instances
+        'adverse_sample': {'n': 100, 'seed': 1234}
     },
     'law': {
         'path': r'datasets_prep/data/law_dataset',
         'target_col': 'target_law',                  
         'output_file': 'law_adverse',
         'threshold': 0.5,
-        # Keep the 0.5 threshold and draw a race x gender stratified subsample of the adverse set instead
-        'adverse_sample': {'n': 100, 'strata': ['race', 'gender'], 'seed': 1234}
+        'adverse_sample': {'n': 100, 'seed': 1234}
     },
     'saudi': {
         'path': r'datasets_prep/data/saudi_dataset',
         'target_col': 'target_saudi',
         'output_file': 'saudi_adverse',
-        'threshold': 0.4
+        'threshold': 0.4,
+        'adverse_sample': {'n': 100, 'seed': 1234}
     }, 
     'student': {
         'path': r'datasets_prep/data/student_dataset',
         'target_col': 'target_student',
         'output_file': 'student_adverse',
-        'threshold': 0.1  # Modify this to get more/fewer adverse instances
+        'threshold': 0.1,  # Modify this to get more/fewer adverse instances
+        'adverse_sample': {'n': 100, 'seed': 1234}
     }
 }
 
-def stratified_sample(df, n, strata, seed):
-    """Proportional stratified sample of n rows; largest-remainder allocation so the total is exactly n."""
-    sizes = df.groupby(strata).size()
-    exact = sizes * n / len(df)
-    alloc = np.floor(exact).astype(int)
-    leftover = n - alloc.sum()
-    alloc[(exact - alloc).sort_values(ascending=False, kind='stable').index[:leftover]] += 1
-    parts = [group.sample(alloc.loc[key], random_state=seed) for key, group in df.groupby(strata)]
+def balanced_sample(df, n, groups, seed):
+    """Sample n rows spread as evenly as possible over the joint cells of the comparison groups.
+
+    Every cell gets an equal share; cells smaller than their share contribute all their rows and
+    the shortfall is redistributed over the remaining cells, so small groups are kept whole.
+    """
+    cells = pd.DataFrame({attr: np.asarray(fn(df[attr])) for attr, fn in groups.items()}, index=df.index)
+    cell_key = cells.astype(str).agg('|'.join, axis=1)
+    sizes = cell_key.value_counts().sort_index()
+
+    alloc = pd.Series(0, index=sizes.index)
+    open_cells, remaining = list(sizes.index), n
+    while open_cells and remaining > 0:
+        share = remaining // len(open_cells)
+        full = [c for c in open_cells if sizes[c] <= share]
+        if not full:
+            alloc[open_cells] = share
+            # spread the remainder over randomly chosen open cells
+            extra = np.random.default_rng(seed).choice(open_cells, remaining - share * len(open_cells), replace=False)
+            alloc[list(extra)] += 1
+            break
+        alloc[full] = sizes[full]
+        remaining -= sizes[full].sum()
+        open_cells = [c for c in open_cells if c not in full]
+
+    parts = [df[cell_key == c].sample(alloc[c], random_state=seed) for c in sizes.index]
     return pd.concat(parts).sort_values('instance_index')
 
 def make_predictions(dataset_name, config):
@@ -123,11 +171,15 @@ def make_predictions(dataset_name, config):
 
     # instance_index keeps its full-adverse-set value so IDs stay stable across subsampling
     sample = config.get('adverse_sample')
-    if sample:
+    if sample and len(test_adverse) < sample['n']:
+        print(f"  WARNING: only {len(test_adverse)} adverse instances, fewer than the requested sample of {sample['n']}; lower the threshold")
+    elif sample:
         n_before = len(test_adverse)
-        test_adverse = stratified_sample(test_adverse, sample['n'], sample['strata'], sample['seed'])
-        print(f"  Stratified subsample by {sample['strata']}: {len(test_adverse)} of {n_before} adverse instances")
-        print(pd.crosstab(test_adverse[sample['strata'][0]], test_adverse[sample['strata'][1]], margins=True).to_string())
+        groups = COMPARISON_GROUPS[dataset_name]
+        test_adverse = balanced_sample(test_adverse, sample['n'], groups, sample['seed'])
+        print(f"  Balanced sample over {list(groups)}: {len(test_adverse)} of {n_before} adverse instances")
+        for attr, fn in groups.items():
+            print(f"    {attr}: {pd.Series(np.asarray(fn(test_adverse[attr]))).value_counts().to_dict()}")
 
     # Save adverse to CSV without index (instance_index is now an explicit column)
     output_path_adverse = os.path.join(dataset_path, f'{output_file}.csv')

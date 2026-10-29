@@ -8,6 +8,16 @@ from pathlib import Path
 # Maximum number of most important SHAP features to include in narrative
 MAX_SHAP_FEATURES = 3  # None = include all features; integer = limit to top N features
 
+# Decision threshold used in datasets_prep/scripts/predictions.py (probability >= threshold -> adverse decision)
+DECISION_THRESHOLD = 0.25
+
+# Numeric values are shown as whole numbers, except these features which are shown with one decimal
+DECIMAL_FEATURES = []
+
+def format_number(feature_name, value):
+    """Format a numeric feature value for the prompt."""
+    return f"{float(value):.1f}" if feature_name in DECIMAL_FEATURES else f"{float(value):.0f}"
+
 # Protected attribute mappings for readable display in prompts
 ATTRIBUTE_VALUE_MAPPINGS = {
     'status': {1: '<0 DM', 2: '0-200 DM', 3: '≥200 DM/salary', 4: 'none'},
@@ -15,6 +25,7 @@ ATTRIBUTE_VALUE_MAPPINGS = {
     'purpose': {1: 'new car', 2: 'used car', 3: 'furniture/equipment', 4: 'radio/TV', 5: 'domestic appliances', 6: 'repairs', 7: 'education', 8: 'retraining', 9: 'business', 10: 'others'},
     'savings': {1: '<100 DM', 2: '100-500 DM', 3: '500-1000 DM', 4: '≥1000 DM', 5: 'unknown/none'},
     'employment_duration': {1: 'unemployed', 2: '<1 year', 3: '1-4 years', 4: '4-7 years', 5: '≥7 years'},
+    'installment_rate': {1: '≥35%', 2: '25-35%', 3: '20-25%', 4: '<20%'},
     'sex':  {0: 'male', 1: 'female'},
     'other_debtors': {1: 'none', 2: 'co-applicant', 3: 'guarantor'},
     'property': {1: 'real estate', 2: 'building society/life insurance', 3: 'car/other', 4: 'unknown/none'},
@@ -27,7 +38,7 @@ ATTRIBUTE_VALUE_MAPPINGS = {
 }
 
 # Categorical features (discrete/ordinal variables that should show distribution instead of average)
-CATEGORICAL_FEATURES = ['status', 'credit_history', 'purpose', 'savings', 'employment_duration', 'sex', 'other_debtors', 'property', 'other_installment_plans', 'housing', 'job', 'telephone', 'foreign_worker']
+CATEGORICAL_FEATURES = ['status', 'credit_history', 'purpose', 'savings', 'employment_duration', 'installment_rate', 'sex', 'other_debtors', 'property', 'other_installment_plans', 'housing', 'job', 'telephone', 'foreign_worker']
 
 # Load dataset_info from pickle file
 DATASET_INFO_PATH = Path(__file__).parent.parent.parent / "datasets_prep" / "data" / "credit_dataset" / "dataset_info"
@@ -165,6 +176,7 @@ def create_instance_description_from_row(row):
             
         value = row[col]
         mapped_value = map_attribute_value(col, value)
+        display_value = format_number(col, mapped_value) if isinstance(mapped_value, (int, float, np.number)) else mapped_value
         feature_info = feature_df[feature_df['feature_name'] == col]
         
         if not feature_info.empty:
@@ -172,16 +184,16 @@ def create_instance_description_from_row(row):
             
             # Protected attributes: show without comparisons
             if col in ['sex', 'age', 'foreign_worker']:
-                feature_lines.append(f"- {col} = {mapped_value} ({desc})")
+                feature_lines.append(f"- {col} = {display_value} ({desc})")
             # Categorical features: show distribution for approved applicants
             elif col in CATEGORICAL_FEATURES:
                 distribution_positive = feature_info.iloc[0].get('feature_distribution_positive')
                 if pd.isna(distribution_positive) or distribution_positive is None:
                     distribution_positive = fallback_stats.get(col, {}).get('distribution_positive')
                 if pd.notna(distribution_positive) and distribution_positive is not None:
-                    feature_lines.append(f"- {col} = {mapped_value} ({desc}) - distribution: {distribution_positive}")
+                    feature_lines.append(f"- {col} = {display_value} ({desc}) - distribution: {distribution_positive}")
                 else:
-                    feature_lines.append(f"- {col} = {mapped_value} ({desc})")
+                    feature_lines.append(f"- {col} = {display_value} ({desc})")
             # Numerical features: show average for approved applicants
             else:
                 avg_positive = feature_info.iloc[0].get('feature_average_positive')
@@ -189,17 +201,16 @@ def create_instance_description_from_row(row):
                     avg_positive = fallback_stats.get(col, {}).get('feature_average_positive')
                 if pd.notna(avg_positive) and avg_positive is not None:
                     try:
-                        value_str = f"{float(mapped_value):.2f}" if isinstance(mapped_value, (int, float)) else mapped_value
-                        avg_str = f"{float(avg_positive):.2f}"
-                        feature_lines.append(f"- {col} = {value_str} ({desc}) - average: {avg_str}")
+                        avg_str = f"{float(avg_positive):.1f}"
+                        feature_lines.append(f"- {col} = {display_value} ({desc}) - average: {avg_str}")
                     except (ValueError, TypeError):
-                        feature_lines.append(f"- {col} = {mapped_value} ({desc})")
+                        feature_lines.append(f"- {col} = {display_value} ({desc})")
                 else:
-                    feature_lines.append(f"- {col} = {mapped_value} ({desc})")
+                    feature_lines.append(f"- {col} = {display_value} ({desc})")
         else:
-            feature_lines.append(f"- {col} = {mapped_value}")
+            feature_lines.append(f"- {col} = {display_value}")
     
-    instance_desc = f"""Feature values (with comparisons to approved applicants where available - showing distribution or average among approved applicants):
+    instance_desc = f"""Feature values (with comparisons to approved applicants where available, showing the distribution or average among approved applicants):
 {chr(10).join(feature_lines)}
 
 """
@@ -241,31 +252,30 @@ def separate_features_and_protected_attributes(original_instance):
 
 # prompt template SHAP only 
 
-PROMPT_PREAMBLE_SHAP = """
-A machine learning model predicted that a loan applicant represents a BAD CREDIT RISK and therefore their loan application was DENIED. Your goal is to generate an explanatory narrative based on the information provided (1-5), explaining why the loan application was denied for this applicant."""
+PROMPT_PREAMBLE_SHAP = """A machine learning model predicted that a loan applicant represents a BAD CREDIT RISK and therefore their loan application was DENIED. Your goal is to generate an explanatory narrative based on the information provided (1-5), explaining why the loan application was denied for this applicant."""
 
 DATASET_EXPLANATION = """1. DATASET INFORMATION"""
 
-APPLICANT_INFORMATION = """3. APPLICANT PROFILE 
-You are writing a narrative tailored to this specific person who is rejected a loan application. """
+APPLICANT_INFORMATION = """3. APPLICANT PROFILE
+You are writing a narrative tailored to this specific applicant, who was denied a loan."""
 
 SHAP_VALUES_SECTION = """4. FEATURE IMPORTANCE ANALYSIS (Ranked by Influence)"""
 
 INSTRUCTIONS_SECTION = """5. YOUR NARRATIVE TASK"""
 
 SHAP_EXPLANATION = """2. TECHNICAL EXPLANATION: SHAP VALUES
-A SHAP value tells you how much a feature influenced the prediction (larger absolute value means a stronger influence) and its direction: positive pushes toward "bad credit risk," negative toward "good credit." Below are the top 3 features by absolute SHAP value."""
+A SHAP value tells you how much a feature influenced the prediction (larger absolute value means a stronger influence) and its direction: positive pushes toward bad credit risk, negative toward good credit risk. Below are the top 3 features by absolute SHAP value."""
 
-SHAP_PROMPT_INSTRUCTIONS = """ Write a detailed narrative explanation tailored to this non-technical reader that MUST explain:
-1) The model's predicted probability of bad credit and what this means for the applicant.
-2) Why the application was denied: which features were most important in driving this prediction and why (focus on the ranking of most important features).
-3) How each of the top 3 most important features contributed (either pushing toward bad credit or toward good credit). 
-4) What the applicant should do next. 
+SHAP_PROMPT_INSTRUCTIONS = """Write a detailed narrative explanation tailored to this non-technical reader that MUST explain:
+1) The model's predicted probability of bad credit risk and what this means for the applicant.
+2) Why the loan application was denied: which features were most important in driving this prediction and why (focus on the ranking of most important features).
+3) How each of the top 3 most important features contributed (either pushing toward bad credit risk or toward good credit risk).
+4) What the applicant should do next.
 
 CONSTRAINTS:
 - Do not use the numeric SHAP values in your answer. Instead, discuss the ranking and direction of influence.
 - Do not talk about model internals, algorithms, or training details.
-- Do not include greeting or closing statements, nor bullet points or tables. 
+- Do not include greeting or closing statements, nor bullet points or tables.
 STYLE:
 - Length: 250 words maximum.
 - Write a coherent narrative directly addressing the applicant.
@@ -382,7 +392,8 @@ def build_shap_prompt(instance_index, shap_csv_path: str = None, adverse_csv_pat
 {APPLICANT_INFORMATION}
 {instance_desc_regular}
 The model's prediction:
-- Predicted probability of bad credit: {pred_prob_str}
+- Predicted probability of bad credit risk: {pred_prob_str}
+- Decision threshold: a predicted probability of bad credit risk of {DECISION_THRESHOLD:.0%} or higher leads to this decision.
 
 {SHAP_VALUES_SECTION}
 {shap_table}

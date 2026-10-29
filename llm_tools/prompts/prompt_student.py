@@ -8,13 +8,23 @@ from pathlib import Path
 # Maximum number of most important SHAP features to include in narrative
 MAX_SHAP_FEATURES = 3  # None = include all features; integer = limit to top N features
 
+# Decision threshold used in datasets_prep/scripts/predictions.py (probability >= threshold -> adverse decision)
+DECISION_THRESHOLD = 0.1
+
+# Numeric values are shown as whole numbers, except these features which are shown with one decimal
+DECIMAL_FEATURES = []
+
+def format_number(feature_name, value):
+    """Format a numeric feature value for the prompt."""
+    return f"{float(value):.1f}" if feature_name in DECIMAL_FEATURES else f"{float(value):.0f}"
+
 # Protected attribute mappings for readable display in prompts
 ATTRIBUTE_VALUE_MAPPINGS = {
-    'sex': {0: 'Female', 1: 'Male'},
+    'sex': {0: 'female', 1: 'male'},
     'age': {},  # Age is numeric, no mapping
     'health': {1: 'very bad', 2: 'bad', 3: 'fair', 4: 'good', 5: 'very good'},
     'famsize': {0: '>3', 1: '<=3'},
-    'Pstatus': {0: 'Apart', 1: 'Together'},
+    'Pstatus': {0: 'apart', 1: 'together'},
     'schoolsup': {0: 'yes', 1: 'no'},
     'famsup': {0: 'no', 1: 'yes'},
     'paid': {0: 'no', 1: 'yes'},
@@ -179,6 +189,7 @@ def create_instance_description_from_row(row):
             
         value = row[col]
         mapped_value = map_attribute_value(col, value)
+        display_value = format_number(col, mapped_value) if isinstance(mapped_value, (int, float, np.number)) else mapped_value
         feature_info = feature_df[feature_df['feature_name'] == col]
         
         if not feature_info.empty:
@@ -186,16 +197,16 @@ def create_instance_description_from_row(row):
             
             # Protected attributes: show without comparisons
             if col in ['sex', 'age', 'health']:
-                feature_lines.append(f"- {col} = {mapped_value} ({desc})")
+                feature_lines.append(f"- {col} = {display_value} ({desc})")
             # Categorical features: show distribution for students who passed
             elif col in CATEGORICAL_FEATURES:
                 distribution_positive = feature_info.iloc[0].get('feature_distribution_positive')
                 if pd.isna(distribution_positive) or distribution_positive is None:
                     distribution_positive = fallback_stats.get(col, {}).get('distribution_positive')
                 if pd.notna(distribution_positive) and distribution_positive is not None:
-                    feature_lines.append(f"- {col} = {mapped_value} ({desc}) - distribution: {distribution_positive}")
+                    feature_lines.append(f"- {col} = {display_value} ({desc}) - distribution: {distribution_positive}")
                 else:
-                    feature_lines.append(f"- {col} = {mapped_value} ({desc})")
+                    feature_lines.append(f"- {col} = {display_value} ({desc})")
             # Numerical features: show average for students who passed
             else:
                 avg_positive = feature_info.iloc[0].get('feature_average_positive')
@@ -203,17 +214,16 @@ def create_instance_description_from_row(row):
                     avg_positive = fallback_stats.get(col, {}).get('feature_average_positive')
                 if pd.notna(avg_positive) and avg_positive is not None:
                     try:
-                        value_str = f"{float(mapped_value):.2f}" if isinstance(mapped_value, (int, float)) else mapped_value
-                        avg_str = f"{float(avg_positive):.2f}"
-                        feature_lines.append(f"- {col} = {value_str} ({desc}) - average: {avg_str}")
+                        avg_str = f"{float(avg_positive):.1f}"
+                        feature_lines.append(f"- {col} = {display_value} ({desc}) - average: {avg_str}")
                     except (ValueError, TypeError):
-                        feature_lines.append(f"- {col} = {mapped_value} ({desc})")
+                        feature_lines.append(f"- {col} = {display_value} ({desc})")
                 else:
-                    feature_lines.append(f"- {col} = {mapped_value} ({desc})")
+                    feature_lines.append(f"- {col} = {display_value} ({desc})")
         else:
-            feature_lines.append(f"- {col} = {mapped_value}")
+            feature_lines.append(f"- {col} = {display_value}")
     
-    instance_desc = f"""Feature values (with comparisons to students who passed - showing distribution or average among students who passed):
+    instance_desc = f"""Feature values (with comparisons to students who are not obliged to take remedial courses where available, showing the distribution or average among students who are not obliged to take remedial courses):
 {chr(10).join(feature_lines)}
 
 """
@@ -259,27 +269,26 @@ PROMPT_PREAMBLE_SHAP = """A machine learning model predicted that a student will
 
 DATASET_EXPLANATION = """1. DATASET INFORMATION"""
 
-APPLICANT_INFORMATION = """3. STUDENT PROFILE 
-You are writing a narrative tailored to this specific student predicted to fail their final year."""
+APPLICANT_INFORMATION = """3. STUDENT PROFILE
+You are writing a narrative tailored to this specific student, who is obliged to take remedial courses."""
 
 SHAP_VALUES_SECTION = """4. FEATURE IMPORTANCE ANALYSIS (Ranked by Influence)"""
 
 INSTRUCTIONS_SECTION = """5. YOUR NARRATIVE TASK"""
 
 SHAP_EXPLANATION = """2. TECHNICAL EXPLANATION: SHAP VALUES
-A SHAP value tells you how much a feature influenced the prediction (larger absolute value means a stronger influence) and its direction: positive pushes toward "will fail" (student failing), negative toward "will pass" (student passing). Below are the top 3 features by absolute SHAP value."""
+A SHAP value tells you how much a feature influenced the prediction (larger absolute value means a stronger influence) and its direction: positive pushes toward failing the final year, negative toward passing the final year. Below are the top 3 features by absolute SHAP value."""
 
 SHAP_PROMPT_INSTRUCTIONS = """Write a detailed narrative explanation tailored to this non-technical reader that MUST explain:
-1) The model's predicted probability of failing and what this means for the student.
-2) Why the model predicted the student will fail, which features were most important in driving this prediction and why (focus on the ranking of most important features).
-3) How each of the top 3 most important features contributed (either pushing toward failing or toward passing). 
-4) What the student should consider next to improve their academic performance
+1) The model's predicted probability of failing the final year and what this means for the student.
+2) Why the student is obliged to take remedial courses: which features were most important in driving this prediction and why (focus on the ranking of most important features).
+3) How each of the top 3 most important features contributed (either pushing toward failing the final year or toward passing the final year).
+4) What the student should do next.
 
 CONSTRAINTS:
 - Do not use the numeric SHAP values in your answer. Instead, discuss the ranking and direction of influence.
 - Do not talk about model internals, algorithms, or training details.
-- Do not include greeting or closing statements, nor bullet points or tables
-
+- Do not include greeting or closing statements, nor bullet points or tables.
 STYLE:
 - Length: 250 words maximum.
 - Write a coherent narrative directly addressing the student.
@@ -396,7 +405,8 @@ def build_shap_prompt(instance_index, shap_csv_path: str = None, adverse_csv_pat
 {APPLICANT_INFORMATION}
 {instance_desc_regular}
 The model's prediction:
-- Predicted probability of failing: {pred_prob_str}
+- Predicted probability of failing the final year: {pred_prob_str}
+- Decision threshold: a predicted probability of failing the final year of {DECISION_THRESHOLD:.0%} or higher leads to this decision.
 
 {SHAP_VALUES_SECTION}
 {shap_table}
