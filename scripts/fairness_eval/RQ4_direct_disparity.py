@@ -32,8 +32,8 @@ results/fairness_eval/per_narrative_metrics_<dataset>.csv must contain rows
 with condition == "counterfactual_pa" (cf_label/cf_attr/cf_override_value
 populated). These are only produced once BOTH of the following have been
 run for the dataset's counterfactual_pa narratives:
-  1. scripts/extractions/extraction.py, with
-     NARRATIVE_CONDITION = "counterfactual_pa/<label>" (once per label)
+  1. scripts/extractions/run_extraction_batches.py
+     (every counterfactual_pa/<label> folder is extracted automatically)
   2. scripts/fairness_eval/generate_per_narrative_metrics.py (regenerated;
      it auto-discovers counterfactual_pa/<label> folders on disk)
 A dataset with no counterfactual_pa rows yet is skipped with a printed
@@ -97,7 +97,7 @@ ROOT = Path(__file__).parent.parent.parent
 FAIRNESS_EVAL_DIR = ROOT / "results" / "fairness_eval"
 
 DATASETS = ["credit", "saudi", "student", "law"]
-PROVIDERS = ["grok", "openai", "deepseek"]
+PROVIDERS = ["openai", "mistral", "claude", "deepseek"]  # providers without narratives (yet) are skipped
 MIN_GROUP_N = 5
 ALPHA = 0.05
 
@@ -271,11 +271,14 @@ def main():
     for dataset in DATASETS:
         print(f"\n{'=' * 80}\n{dataset.upper()}\n{'=' * 80}")
         path = FAIRNESS_EVAL_DIR / f"per_narrative_metrics_{dataset}.csv"
+        if not path.exists():
+            print(f"  No {path.name} yet -- skipping.")
+            continue
         df = pd.read_csv(path)
 
         if "cf_label" not in df.columns or df["cf_label"].notna().sum() == 0:
             print(f"  No counterfactual_pa rows found (cf_label all empty) -- "
-                  f"skipping. Run extraction.py + generate_per_narrative_metrics.py "
+                  f"skipping. Run run_extraction_batches.py + generate_per_narrative_metrics.py "
                   f"on this dataset's counterfactual_pa narratives first.")
             continue
 
@@ -287,7 +290,7 @@ def main():
         print(f"  {len(df)} narratives, {len(metrics)} metrics, "
               f"counterfactual jobs found: {cf_labels}")
 
-        for provider in PROVIDERS:
+        for provider in [p for p in PROVIDERS if p in set(df["provider"])]:
             psub = df[df["provider"] == provider]
             factual = psub[psub["condition"] == "pa_included"].set_index("instance_id")
 

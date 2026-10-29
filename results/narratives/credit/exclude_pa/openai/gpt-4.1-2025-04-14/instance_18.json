@@ -1,0 +1,39 @@
+{
+  "dataset": "credit",
+  "instance_idx": 18,
+  "provider": "openai",
+  "model": "gpt-4.1-2025-04-14",
+  "model_version": "gpt-4.1-2025-04-14",
+  "timestamp": "2026-10-29T16:32:45.323352",
+  "status": "success",
+  "narrative": "Your loan application was denied because the model estimated a 70% chance that you would be a bad credit risk, which is well above the threshold the bank uses to approve loans. This means that, based on your profile, there is a high likelihood you might have difficulty repaying the loan.\n\nThe most important factor influencing this decision was the length of time you requested to repay the loan. You applied for a 48-month term, while most approved applicants request much shorter durations, with the average being just over 18 months. Longer repayment periods are often seen as riskier, as they increase the chance that something could change in your financial situation over time.\n\nThe second most influential factor was the status of your checking account. Your account falls into the 0-200 DM range, which is less common among approved applicants—most have no checking account or a higher balance. A lower balance can signal to the bank that you may have less financial cushion to handle loan payments.\n\nOn the positive side, your credit history was not among the worst. While you have some critical or other credits in your history, this is not unusual—about 41% of approved applicants have a similar background. This aspect actually helped your application somewhat, but it was not enough to outweigh the concerns from the other factors.\n\nIf you wish to improve your chances in the future, consider applying for a shorter loan term or working to increase your account balance before reapplying.",
+  "error": null,
+  "system_prompt": "You are an expert at explaining machine learning predictions to non-technical users. Write clear narratives that help people understand model decisions.",
+  "prompt": "A machine learning model predicted that a loan applicant represents a BAD CREDIT RISK and therefore their loan application was DENIED. Your goal is to generate an explanatory narrative based on the information provided (1-5), explaining why the loan application was denied for this applicant.\n\n1. DATASET INFORMATION\nThe dataset contains information on a series of debtors that took a loan from the bank.\n\nThe target variable is whether the applicant will be a bad credit risk.\n\nProtected attributes sex, age and foreign_worker were not used to make the machine prediction.\n\n2. TECHNICAL EXPLANATION: SHAP VALUES\nA SHAP value tells you how much a feature influenced the prediction (larger absolute value means a stronger influence) and its direction: positive pushes toward bad credit risk, negative toward good credit risk. Below are the top 3 features by absolute SHAP value.\n\n3. APPLICANT PROFILE\nYou are writing a narrative tailored to this specific applicant, who was denied a loan.\nFeature values (with comparisons to approved applicants where available, showing the distribution or average among approved applicants):\n- status = 0-200 DM (status of checking account) - distribution: none: 71.2%, <0 DM: 13.6%, ≥200 DM/salary: 7.6%, 0-200 DM: 7.6%\n- duration = 48 (duration of credit request in months) - average: 18.2\n- credit_history = critical/other credits (credit history rating) - distribution: existing paid: 51.5%, critical/other credits: 40.9%, past delays: 6.1%, no credits/all paid: 1.5%\n- purpose = furniture/equipment (purpose of credit) - distribution: radio/TV: 37.9%, furniture/equipment: 22.7%, new car: 13.6%, used car: 13.6%, business: 7.6%, education: 3.0%, repairs: 1.5%\n- amount = 5096 (amount of credit requested in DM) - average: 2845.2\n- savings = <100 DM (savings account status) - distribution: <100 DM: 45.5%, unknown/none: 33.3%, 100-500 DM: 12.1%, 500-1000 DM: 6.1%, ≥1000 DM: 3.0%\n- employment_duration = 1-4 years (employment duration) - distribution: 1-4 years: 34.8%, ≥7 years: 34.8%, 4-7 years: 21.2%, <1 year: 7.6%, unemployed: 1.5%\n- installment_rate = 25-35% (installment rate as percentage of disposable income) - distribution: <20%: 51.5%, 25-35%: 22.7%, 20-25%: 15.2%, ≥35%: 10.6%\n- other_debtors = none (other debtors/guarantors) - distribution: none: 87.9%, co-applicant: 6.1%, guarantor: 6.1%\n- present_residence = 3 (years at present residence) - average: 2.9\n- property = car/other (property status) - distribution: car/other: 37.9%, real estate: 37.9%, building society/life insurance: 19.7%, unknown/none: 4.5%\n- other_installment_plans = none (other installment plans) - distribution: none: 95.5%, stores: 3.0%, bank: 1.5%\n- housing = own (housing situation) - distribution: own: 80.3%, rent: 16.7%, for free: 3.0%\n- number_credits = 1 (number of existing credits at this bank) - average: 1.4\n- job = management/self-employed/highly skilled (job type) - distribution: skilled/official: 65.2%, unskilled-resident: 21.2%, management/self-employed/highly skilled: 12.1%, unemployed/unskilled-non-resident: 1.5%\n- people_liable = 1 (number of people financially dependent) - average: 1.2\n- telephone = yes registered (has a telephone or not) - distribution: none: 57.6%, yes registered: 42.4%\n\n\nThe model's prediction:\n- Predicted probability of bad credit risk: 70.0%\n- Decision threshold: a predicted probability of bad credit risk of 25% or higher leads to this decision.\n\n4. FEATURE IMPORTANCE ANALYSIS (Ranked by Influence)\n       Feature  SHAP_Value\n      duration    0.135289\n        status    0.103536\ncredit_history   -0.067766\n\n5. YOUR NARRATIVE TASK\nWrite a detailed narrative explanation tailored to this non-technical reader that MUST explain:\n1) The model's predicted probability of bad credit risk and what this means for the applicant.\n2) Why the loan application was denied: which features were most important in driving this prediction and why (focus on the ranking of most important features).\n3) How each of the top 3 most important features contributed (either pushing toward bad credit risk or toward good credit risk).\n4) What the applicant should do next.\n\nCONSTRAINTS:\n- Do not use the numeric SHAP values in your answer. Instead, discuss the ranking and direction of influence.\n- Do not talk about model internals, algorithms, or training details.\n- Do not include greeting or closing statements, nor bullet points or tables.\nSTYLE:\n- Length: 250 words maximum.\n- Write a coherent narrative directly addressing the applicant.\n- Do NOT copy-paste feature names, but instead incorporate them naturally in the narrative.\n- Include feature values and their comparisons to averages or distributions, but reserve this for features where it really clarifies the explanation.\n",
+  "condition": "exclude_pa",
+  "exclude_protected_attributes": true,
+  "label": null,
+  "attr_column": null,
+  "override_value": null,
+  "target_value_label": null,
+  "temperature": 0,
+  "max_tokens": 4096,
+  "api_version": null,
+  "usage": {
+    "prompt_tokens": 1304,
+    "completion_tokens": 290,
+    "total_tokens": 1594,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "batch_id": "batch_6ae365f034a481909e35dd9c8c3658a9",
+  "custom_id": "credit__exclude_pa__18"
+}

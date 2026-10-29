@@ -50,3 +50,6 @@ Thumbs.db
 # Data files (optional - uncomment if needed)
 # *.csv
 # *.parquet
+
+# Test runs of the batch scripts (--test)
+results/*_test/

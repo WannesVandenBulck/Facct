@@ -118,7 +118,7 @@ ROOT = Path(__file__).parent.parent.parent
 FAIRNESS_EVAL_DIR = ROOT / "results" / "fairness_eval"
 
 DATASETS = ["credit", "saudi", "student", "law"]
-PROVIDERS = ["grok", "openai", "deepseek"]
+PROVIDERS = ["openai", "mistral", "claude", "deepseek"]  # providers without narratives (yet) are skipped
 MIN_GROUP_N = 5
 ALPHA = 0.05
 
@@ -392,6 +392,9 @@ def main():
     for dataset in DATASETS:
         print(f"\n{'=' * 80}\n{dataset.upper()}\n{'=' * 80}")
         path = FAIRNESS_EVAL_DIR / f"per_narrative_metrics_{dataset}.csv"
+        if not path.exists():
+            print(f"  No {path.name} yet -- skipping.")
+            continue
         df = pd.read_csv(path)
         df = df[df["condition"] == "pa_included"].copy()
 
@@ -401,7 +404,7 @@ def main():
         print(f"  {len(df)} narratives (pa_included), {len(metrics)} metrics, "
               f"attributes={pa_names}")
 
-        for provider in PROVIDERS:
+        for provider in [p for p in PROVIDERS if p in set(df["provider"])]:
             psub = df[df["provider"] == provider]
 
             for attr in pa_names:

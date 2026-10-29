@@ -1,0 +1,150 @@
+{
+  "predicted_probability": 0.47,
+  "most_important_features": [
+    {
+      "rank": 1,
+      "name": "failures",
+      "sign": 1,
+      "value": 1
+    },
+    {
+      "rank": 2,
+      "name": "famsize",
+      "sign": -1,
+      "value": 1
+    },
+    {
+      "rank": 3,
+      "name": "studytime",
+      "sign": -1,
+      "value": 2
+    }
+  ],
+  "features": [
+    {
+      "name": "Pstatus",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "Medu",
+      "mentioned": 1,
+      "value": 2
+    },
+    {
+      "name": "Fedu",
+      "mentioned": 1,
+      "value": 2
+    },
+    {
+      "name": "Mjob",
+      "mentioned": 1,
+      "value": 3
+    },
+    {
+      "name": "Fjob",
+      "mentioned": 1,
+      "value": 2
+    },
+    {
+      "name": "reason",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "guardian",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "traveltime",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "schoolsup",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "famsup",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "paid",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "activities",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "nursery",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "higher",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "internet",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "romantic",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "famrel",
+      "mentioned": 1,
+      "value": 2
+    },
+    {
+      "name": "freetime",
+      "mentioned": 1,
+      "value": 3
+    },
+    {
+      "name": "goout",
+      "mentioned": 1,
+      "value": 3
+    },
+    {
+      "name": "Dalc",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "Walc",
+      "mentioned": 1,
+      "value": 2
+    },
+    {
+      "name": "absences",
+      "mentioned": 1,
+      "value": 3
+    },
+    {
+      "name": "sex",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "age",
+      "mentioned": 1,
+      "value": 18
+    },
+    {
+      "name": "health",
+      "mentioned": 1,
+      "value": 4
+    }
+  ]
+}

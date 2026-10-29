@@ -1,0 +1,110 @@
+{
+  "predicted_probability": 0.49,
+  "most_important_features": [
+    {
+      "rank": 1,
+      "name": "present_residence",
+      "sign": -1,
+      "value": 1
+    },
+    {
+      "rank": 2,
+      "name": "amount",
+      "sign": -1,
+      "value": 2528
+    },
+    {
+      "rank": 3,
+      "name": "employment_duration",
+      "sign": 1,
+      "value": 2
+    }
+  ],
+  "features": [
+    {
+      "name": "status",
+      "mentioned": 1,
+      "value": 2
+    },
+    {
+      "name": "duration",
+      "mentioned": 1,
+      "value": 27
+    },
+    {
+      "name": "credit_history",
+      "mentioned": 1,
+      "value": 3
+    },
+    {
+      "name": "purpose",
+      "mentioned": 1,
+      "value": 9
+    },
+    {
+      "name": "savings",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "installment_rate",
+      "mentioned": 1,
+      "value": 4
+    },
+    {
+      "name": "other_debtors",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "property",
+      "mentioned": 1,
+      "value": 2
+    },
+    {
+      "name": "other_installment_plans",
+      "mentioned": 1,
+      "value": 3
+    },
+    {
+      "name": "housing",
+      "mentioned": 1,
+      "value": 2
+    },
+    {
+      "name": "number_credits",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "job",
+      "mentioned": 1,
+      "value": 3
+    },
+    {
+      "name": "people_liable",
+      "mentioned": 1,
+      "value": 2
+    },
+    {
+      "name": "telephone",
+      "mentioned": 1,
+      "value": 2
+    },
+    {
+      "name": "age",
+      "mentioned": 1,
+      "value": 32
+    },
+    {
+      "name": "sex",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "foreign_worker",
+      "mentioned": 1,
+      "value": 1
+    }
+  ]
+}

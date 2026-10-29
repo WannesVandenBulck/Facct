@@ -1,0 +1,50 @@
+{
+  "predicted_probability": 0.78,
+  "most_important_features": [
+    {
+      "rank": 1,
+      "name": "ugpa",
+      "sign": 1,
+      "value": 3.5
+    },
+    {
+      "rank": 2,
+      "name": "fam_inc",
+      "sign": 1,
+      "value": 3
+    },
+    {
+      "rank": 3,
+      "name": "decile1",
+      "sign": 1,
+      "value": 8
+    }
+  ],
+  "features": [
+    {
+      "name": "decile3",
+      "mentioned": 1,
+      "value": 7
+    },
+    {
+      "name": "lsat",
+      "mentioned": 1,
+      "value": 38
+    },
+    {
+      "name": "fulltime",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "gender",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "race",
+      "mentioned": 1,
+      "value": 0
+    }
+  ]
+}

@@ -6,7 +6,7 @@ Supplementary analysis, not one of the paper's core disparity RQs (total /
 indirect / disclosure / value / direct) -- kept separate and unnumbered so
 it isn't confused with RQ4 (direct disparity) or RQ5 (value disparity).
 
-Do the LLM providers used to generate narratives (grok / openai / deepseek)
+Do the LLM providers used to generate narratives (openai / mistral / claude / deepseek)
 differ from each other in feature-coverage / faithfulness metrics? Tested
 both OVERALL (pooled across all instances of a dataset/condition) and
 WITHIN each social group of every protected attribute (e.g. "is openai
@@ -32,7 +32,7 @@ on identical cases and understate statistical power / misstate the
 variance).
 
 Each unordered pair of providers is tested separately:
-  grok vs openai, grok vs deepseek, openai vs deepseek.
+  every pair of the providers present (with all four: 6 pairs).
 
 GROUPING (identical 2-group split per dataset/attribute as RQ1/RQ2)
 --------------------------------------------------------------------
@@ -172,8 +172,7 @@ ROOT = Path(__file__).parent.parent.parent
 FAIRNESS_EVAL_DIR = ROOT / "results" / "fairness_eval"
 
 DATASETS = ["credit", "saudi", "student", "law"]
-PROVIDERS = ["grok", "openai", "deepseek"]
-PROVIDER_PAIRS = list(combinations(PROVIDERS, 2))
+PROVIDERS = ["openai", "mistral", "claude", "deepseek"]  # providers without narratives (yet) are skipped
 CONDITIONS = ["pa_included", "pa_excluded"]
 CF_CONDITION_RAW = "counterfactual_pa"   # condition value in the metrics CSV
 CF_CONDITION = "pa_counterfactual"       # label used in the output files
@@ -413,7 +412,8 @@ def run_paired_tests(sub_df, metrics, dataset, condition, scope_type, attribute,
     test_rows = []
     aggregated_rows = []
 
-    provider_frames = {p: sub_df[sub_df["provider"] == p].set_index(id_col) for p in PROVIDERS}
+    provider_frames = {p: sub_df[sub_df["provider"] == p].set_index(id_col) for p in PROVIDERS
+                       if (sub_df["provider"] == p).any()}
 
     for provider, pframe in provider_frames.items():
         for metric_name, metric_type in metrics.items():
@@ -427,7 +427,7 @@ def run_paired_tests(sub_df, metrics, dataset, condition, scope_type, attribute,
                 mean=np.mean(valid) if len(valid) else np.nan,
             ))
 
-    for p1, p2 in PROVIDER_PAIRS:
+    for p1, p2 in combinations(provider_frames, 2):
         d1, d2 = provider_frames[p1], provider_frames[p2]
         common_ids = d1.index.intersection(d2.index)
         if len(common_ids) < MIN_GROUP_N:
@@ -497,6 +497,9 @@ def main():
     for dataset in DATASETS:
         print(f"\n{'=' * 80}\n{dataset.upper()}\n{'=' * 80}")
         path = FAIRNESS_EVAL_DIR / f"per_narrative_metrics_{dataset}.csv"
+        if not path.exists():
+            print(f"  No {path.name} yet -- skipping.")
+            continue
         df = pd.read_csv(path)
 
         pa_names = PROTECTED_ATTRS[dataset]
@@ -576,13 +579,13 @@ def main():
     # ---- pooled scope: providers compared across ALL datasets combined ----
     print(f"\n{'=' * 80}\nPOOLED (ALL DATASETS)\n{'=' * 80}")
     keep_cols = ["dataset", "provider", "condition", "instance_id"] + list(POOLED_METRICS)
-    pooled_df = pd.concat([dataset_dfs[d][keep_cols] for d in DATASETS], ignore_index=True)
+    pooled_df = pd.concat([df_[keep_cols] for df_ in dataset_dfs.values()], ignore_index=True)  # datasets present only
     # instance_id resets per dataset, so pair on a dataset-qualified key.
     pooled_df["pair_key"] = pooled_df["dataset"] + "_" + pooled_df["instance_id"].astype(str)
 
     for condition in CONDITIONS:
         csub = pooled_df[pooled_df["condition"] == condition]
-        print(f"  [{condition}] {len(csub)} narratives across {len(DATASETS)} datasets")
+        print(f"  [{condition}] {len(csub)} narratives across {len(dataset_dfs)} datasets")
         test_rows, agg_rows = run_paired_tests(
             csub, POOLED_METRICS, "ALL", condition, "pooled",
             attribute=np.nan, group=np.nan, group_raw_value=np.nan, id_col="pair_key",

@@ -229,10 +229,6 @@ def cmd_collect(args):
         else:
             results = adapter.fetch(entry["batch_id"], cfg)
 
-        raw = base / "raw" / f"{key.replace('/', '__')}.json"
-        raw.parent.mkdir(parents=True, exist_ok=True)
-        raw.write_text(json.dumps(results, indent=1, ensure_ascii=False), encoding="utf-8")
-
         reqs = {r["custom_id"]: r for r in load_requests(entry["dataset"], entry["condition"])}
         ok, failed = 0, []
         for cid in entry["custom_ids"]:

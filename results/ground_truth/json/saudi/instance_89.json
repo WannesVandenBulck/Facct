@@ -1,0 +1,155 @@
+{
+  "predicted_probability": 0.68,
+  "most_important_features": [
+    {
+      "rank": 1,
+      "name": "Job_Opportunities",
+      "sign": 1,
+      "value": 1
+    },
+    {
+      "rank": 2,
+      "name": "Years_experience_lastorganization",
+      "sign": -1,
+      "value": 1
+    },
+    {
+      "rank": 3,
+      "name": "Years_Experience",
+      "sign": 1,
+      "value": 1
+    }
+  ],
+  "features": [
+    {
+      "name": "Academic_degree",
+      "mentioned": 1,
+      "value": 2
+    },
+    {
+      "name": "Sector",
+      "mentioned": 1,
+      "value": 2
+    },
+    {
+      "name": "MonthlySalary",
+      "mentioned": 1,
+      "value": 2
+    },
+    {
+      "name": "MedicalInsurance",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "Bonus",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "OverTime",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "Payment_Overtime",
+      "mentioned": 1,
+      "value": 2
+    },
+    {
+      "name": "Rewards_Wages_Satisfaction",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "Get_Deserved_Promotion",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "Training_programs_During_last_three_years",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "Useful_Training_Programs",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "Business_Travel",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "Job_Support",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "Recognition",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "Emotional_Commitment",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "Job_Engagement",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "Distance_to_work",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "Work_Live_Balance",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "Physical_Stress",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "Psychological_Exhaustion",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "Job_Stability",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "Environment_Satisfaction",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "Job_Satisfaction",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "Gender",
+      "mentioned": 1,
+      "value": 1
+    },
+    {
+      "name": "Age",
+      "mentioned": 1,
+      "value": 2
+    },
+    {
+      "name": "Health_Issues",
+      "mentioned": 1,
+      "value": 0
+    }
+  ]
+}

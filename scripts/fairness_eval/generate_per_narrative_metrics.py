@@ -89,7 +89,7 @@ NARRATIVES_DIR = ROOT / "results" / "narratives"
 OUTPUT_DIR = ROOT / "results" / "fairness_eval"
 
 DATASETS = ["credit", "saudi", "student", "law"]
-NARRATIVE_PROVIDERS = ["grok", "openai", "deepseek"]
+NARRATIVE_PROVIDERS = ["openai", "mistral", "claude", "deepseek"]  # providers without narratives (yet) are skipped
 EXTRACTOR = "grok"  # fixed extractor for all "_extracted" fields (see decision 1)
 
 # condition directory name on disk -> value written to the "condition" column
@@ -490,6 +490,15 @@ def main():
     for dataset in DATASETS:
         print(f"\n{'=' * 80}\n{dataset.upper()}\n{'=' * 80}")
 
+        if not (GT_DIR / dataset).exists():
+            print(f"  No ground truth for {dataset} yet -- skipping.")
+            continue
+        providers = [p for p in NARRATIVE_PROVIDERS if (NARRATIVES_DIR / dataset / "include_pa" / p).exists()]
+        if not providers:
+            print(f"  No narratives for {dataset} yet -- skipping.")
+            continue
+        print(f"  providers with narratives: {providers}")
+
         pa_names = PROTECTED_ATTRS[dataset]
         other_features = discover_other_features(dataset, pa_names)
         instance_ids = list_instance_ids(dataset)
@@ -498,7 +507,7 @@ def main():
 
         rows = []
         for condition_dir in CONDITIONS:
-            for provider in NARRATIVE_PROVIDERS:
+            for provider in providers:
                 for instance_id in instance_ids:
                     row = build_row(dataset, provider, condition_dir, instance_id,
                                      pa_names, other_features)
@@ -512,7 +521,7 @@ def main():
             condition_dir = f"counterfactual_pa/{job['label']}"
             cf_override = {"label": job["label"], "attr": job["attr"],
                             "override_value": job["override_value"]}
-            for provider in NARRATIVE_PROVIDERS:
+            for provider in providers:
                 for instance_id in job["instance_ids"]:
                     row = build_row(dataset, provider, condition_dir, instance_id,
                                      pa_names, other_features, cf_override=cf_override)

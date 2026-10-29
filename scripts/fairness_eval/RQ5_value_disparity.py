@@ -56,10 +56,9 @@ metric_type) batch -- same granularity as RQ4.
 
 PROVIDERS
 ---------
-DeepSeek is EXCLUDED by default: its factual narratives (Aug 2026) and
-counterfactual narratives (Oct 2026) come from different model behaviour
-(see RQ4 notes), which would confound any comparison between them. Add it
-back to PROVIDERS once its factual narratives are regenerated.
+All narrative providers are included: factual and counterfactual narratives are
+generated in the same batch run from the same frozen prompts. Providers without
+narratives yet are skipped.
 
 OUTPUT
 ------
@@ -93,7 +92,7 @@ ROOT = Path(__file__).parent.parent.parent
 FAIRNESS_EVAL_DIR = ROOT / "results" / "fairness_eval"
 
 DATASETS = ["credit", "saudi", "student", "law"]
-PROVIDERS = ["grok", "openai", "deepseek"]  
+PROVIDERS = ["openai", "mistral", "claude", "deepseek"]  # providers without narratives (yet) are skipped
 MIN_GROUP_N = 5
 ALPHA = 0.05
 
@@ -334,8 +333,11 @@ def main():
 
     for dataset in DATASETS:
         print(f"\n{'=' * 80}\n{dataset.upper()}\n{'=' * 80}")
-        df = pd.read_csv(FAIRNESS_EVAL_DIR / f"per_narrative_metrics_{dataset}.csv",
-                         low_memory=False)
+        path = FAIRNESS_EVAL_DIR / f"per_narrative_metrics_{dataset}.csv"
+        if not path.exists():
+            print(f"  No {path.name} yet -- skipping.")
+            continue
+        df = pd.read_csv(path, low_memory=False)
         if "cf_label" not in df.columns or df["cf_label"].notna().sum() == 0:
             print("  No counterfactual_pa rows -- skipping.")
             continue
@@ -351,7 +353,7 @@ def main():
                    for pa in pa_names if (dataset, pa) in CONTINUOUS_PAS}
         cf_labels = sorted(df.loc[df["condition"] == "counterfactual_pa", "cf_label"].dropna().unique())
 
-        for provider in PROVIDERS:
+        for provider in [p for p in PROVIDERS if p in set(df["provider"])]:
             psub = df[df["provider"] == provider]
             factual_all = psub[psub["condition"] == "pa_included"]
 
