@@ -6753,9 +6753,10 @@
    "student__exclude_pa__99"
   ],
   "submitted_at": "2026-10-29T21:12:40",
-  "state": "running",
-  "collected": false,
-  "detail": "in_progress (78/100 done, 0 failed)"
+  "state": "done",
+  "collected": true,
+  "detail": "completed (100/100 done, 0 failed)",
+  "failed_ids": []
  },
  "openai/gpt-4.1-2025-04-14/student/counterfactual_pa/retry1": {
   "provider": "openai",
@@ -7067,8 +7068,9 @@
    "student__counterfactual_pa__health_good_to_bad__99"
   ],
   "submitted_at": "2026-10-29T21:12:41",
-  "state": "running",
-  "collected": false,
-  "detail": "in_progress (265/300 done, 0 failed)"
+  "state": "done",
+  "collected": true,
+  "detail": "completed (300/300 done, 0 failed)",
+  "failed_ids": []
  }
 }

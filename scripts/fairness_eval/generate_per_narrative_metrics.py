@@ -73,6 +73,7 @@ results/fairness_eval/per_narrative_metrics_<dataset>.csv
 """
 
 import json
+import re
 from pathlib import Path
 
 import numpy as np
@@ -109,6 +110,13 @@ PROTECTED_ATTRS = {
 }
 
 PROBABILITY_TOLERANCE = 0.01
+
+# ---- Sentiment lexicon -------------------------------------------------------
+# Bing Liu Opinion Lexicon (Hu & Liu, 2004), loaded via NLTK:
+#   pip install nltk ; python -c "import nltk; nltk.download('opinion_lexicon')"
+# Scored on the full narrative text as the reader receives it.
+SENTIMENT_COLS = ["sent_net"]
+TOKEN_RE = re.compile(r"[a-z]+(?:[-'][a-z]+)*")
 
 
 # ============================================================================
@@ -246,6 +254,25 @@ def load_narrative_text(dataset, condition_dir, provider, instance_id):
               f"(status={narrative_json.get('status')!r}, error={narrative_json.get('error')!r})")
         return np.nan
     return narrative_json["narrative"]
+
+
+def load_bing_liu():
+    from nltk.corpus import opinion_lexicon
+    return set(opinion_lexicon.positive()), set(opinion_lexicon.negative())
+
+
+BING_POS, BING_NEG = load_bing_liu()
+
+
+def sentiment_scores(text):
+    """Net sentiment of one narrative with the Bing Liu lexicon:
+    sent_net = (pos - neg) / (pos + neg), in [-1, 1]; 0 if no sentiment words."""
+    if not isinstance(text, str) or not text.strip():
+        return {"sent_net": np.nan}
+    tokens = TOKEN_RE.findall(text.lower())
+    pos = sum(t in BING_POS for t in tokens)
+    neg = sum(t in BING_NEG for t in tokens)
+    return {"sent_net": (pos - neg) / (pos + neg) if (pos + neg) else 0.0}
 
 
 # ============================================================================
@@ -450,6 +477,9 @@ def build_row(dataset, provider, condition_dir, instance_id, pa_names, other_fea
     # ---- narrative (raw text, always the final column) ---------------------
     row["narrative"] = load_narrative_text(dataset, condition_dir, provider, instance_id)
 
+    # ---- lexicon-based sentiment of the narrative text --------------------
+    row.update(sentiment_scores(row["narrative"]))
+
     return row
 
 
@@ -479,6 +509,7 @@ def build_column_order(pa_names, other_features):
         cols += [f"other_{feat}_mentioned", f"other_{feat}_value_GT",
                   f"other_{feat}_value_extracted", f"other_{feat}_value_scoring"]
 
+    cols += SENTIMENT_COLS
     cols += ["narrative"]
 
     return cols
