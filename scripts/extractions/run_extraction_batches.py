@@ -134,8 +134,11 @@ def cmd_status(args):
     registry = load_registry(base)
     for key, entry in registry.items():
         if entry["state"] != "done":
-            s = XAIBatch().status(entry["batch_id"], CFG)
-            entry["state"], entry["detail"] = s["state"], s["detail"]
+            try:
+                s = XAIBatch().status(entry["batch_id"], CFG)
+                entry["state"], entry["detail"] = s["state"], s["detail"]
+            except Exception as e:  # e.g. a temporary network error: keep the last known state
+                entry["detail"] = f"status check failed ({type(e).__name__}), will retry"
         print(f"  {key:55s} {'collected' if entry['collected'] else entry['state']:10s} {entry.get('detail', '')}")
     save_registry(base, registry)
 

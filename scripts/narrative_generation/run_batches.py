@@ -171,8 +171,12 @@ def cmd_status(args):
         if not matches(entry, args):
             continue
         if entry["state"] != "done":
-            s = get_adapter(find_cfg(entry["provider"], entry["model"])).status(entry["batch_id"], find_cfg(entry["provider"], entry["model"]))
-            entry["state"], entry["detail"] = s["state"], s["detail"]
+            cfg = find_cfg(entry["provider"], entry["model"])
+            try:
+                s = get_adapter(cfg).status(entry["batch_id"], cfg)
+                entry["state"], entry["detail"] = s["state"], s["detail"]
+            except Exception as e:  # e.g. a temporary network error: keep the last known state
+                entry["detail"] = f"status check failed ({type(e).__name__}), will retry"
         flag = "collected" if entry["collected"] else entry["state"]
         print(f"  {key:70s} {flag:10s} {entry.get('detail', '')}")
     save_registry(base, registry)

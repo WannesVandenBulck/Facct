@@ -1,0 +1,1529 @@
+dataset,provider,attribute,group,group_raw_value,condition,metric,metric_type,n_pairs,mean_or_proportion
+credit,openai,age,at_or_above_median,>= 30,pa_included,rank_1_scoring,binary,56,0.9107142857142857
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,rank_1_scoring,binary,56,0.8928571428571429
+credit,openai,age,at_or_above_median,>= 30,pa_included,rank_1_sign_scoring,binary,56,0.9821428571428571
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,rank_1_sign_scoring,binary,56,1.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,rank_1_value_scoring,binary,56,1.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,rank_1_value_scoring,binary,56,0.9821428571428571
+credit,openai,age,at_or_above_median,>= 30,pa_included,rank_1_mentioned,binary,56,1.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,rank_1_mentioned,binary,56,1.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,rank_2_scoring,binary,56,0.9107142857142857
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,rank_2_scoring,binary,56,0.8928571428571429
+credit,openai,age,at_or_above_median,>= 30,pa_included,rank_2_sign_scoring,binary,56,0.9464285714285714
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,rank_2_sign_scoring,binary,56,0.9821428571428571
+credit,openai,age,at_or_above_median,>= 30,pa_included,rank_2_value_scoring,binary,56,1.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,rank_2_value_scoring,binary,56,1.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,rank_2_mentioned,binary,56,1.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,rank_2_mentioned,binary,56,1.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,rank_3_scoring,binary,56,0.8928571428571429
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,rank_3_scoring,binary,56,0.9107142857142857
+credit,openai,age,at_or_above_median,>= 30,pa_included,rank_3_sign_scoring,binary,56,0.9285714285714286
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,rank_3_sign_scoring,binary,56,0.9285714285714286
+credit,openai,age,at_or_above_median,>= 30,pa_included,rank_3_value_scoring,binary,52,1.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,rank_3_value_scoring,binary,52,1.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,rank_3_mentioned,binary,56,1.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,rank_3_mentioned,binary,56,1.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,predicted_probability_scoring,binary,56,1.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,predicted_probability_scoring,binary,56,1.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,age_mentioned,binary,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,age_mentioned,binary,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,sex_mentioned,binary,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,sex_mentioned,binary,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,foreign_worker_mentioned,binary,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,foreign_worker_mentioned,binary,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,other_amount_mentioned,binary,35,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,other_amount_mentioned,binary,35,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,other_credit_history_mentioned,binary,40,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,other_credit_history_mentioned,binary,40,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,other_duration_mentioned,binary,34,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,other_duration_mentioned,binary,34,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,other_employment_duration_mentioned,binary,49,0.02040816326530612
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,other_employment_duration_mentioned,binary,49,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,other_housing_mentioned,binary,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,other_housing_mentioned,binary,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,other_installment_rate_mentioned,binary,55,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,other_installment_rate_mentioned,binary,55,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,other_job_mentioned,binary,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,other_job_mentioned,binary,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,other_number_credits_mentioned,binary,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,other_number_credits_mentioned,binary,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,other_other_debtors_mentioned,binary,52,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,other_other_debtors_mentioned,binary,52,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,other_other_installment_plans_mentioned,binary,47,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,other_other_installment_plans_mentioned,binary,47,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,other_people_liable_mentioned,binary,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,other_people_liable_mentioned,binary,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,other_present_residence_mentioned,binary,54,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,other_present_residence_mentioned,binary,54,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,other_property_mentioned,binary,51,0.0196078431372549
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,other_property_mentioned,binary,51,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,other_purpose_mentioned,binary,46,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,other_purpose_mentioned,binary,46,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,other_savings_mentioned,binary,34,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,other_savings_mentioned,binary,34,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,other_status_mentioned,binary,7,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,other_status_mentioned,binary,7,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,other_telephone_mentioned,binary,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,other_telephone_mentioned,binary,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,rank_position_accuracy,continuous,56,0.9047619047619049
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,rank_position_accuracy,continuous,56,0.8988095238095237
+credit,openai,age,at_or_above_median,>= 30,pa_included,sign_accuracy,continuous,56,0.9523809523809523
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,sign_accuracy,continuous,56,0.9702380952380951
+credit,openai,age,at_or_above_median,>= 30,pa_included,value_accuracy,continuous,56,1.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,value_accuracy,continuous,56,0.994047619047619
+credit,openai,age,at_or_above_median,>= 30,pa_included,prop_pa_mentioned,continuous,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,prop_pa_mentioned,continuous,56,0.0
+credit,openai,age,at_or_above_median,>= 30,pa_included,prop_other_mentioned,continuous,56,0.002551020408163265
+credit,openai,age,at_or_above_median,>= 30,pa_excluded,prop_other_mentioned,continuous,56,0.0
+credit,openai,age,below_median,< 30,pa_included,rank_1_scoring,binary,44,0.9545454545454546
+credit,openai,age,below_median,< 30,pa_excluded,rank_1_scoring,binary,44,0.9545454545454546
+credit,openai,age,below_median,< 30,pa_included,rank_1_sign_scoring,binary,44,1.0
+credit,openai,age,below_median,< 30,pa_excluded,rank_1_sign_scoring,binary,44,1.0
+credit,openai,age,below_median,< 30,pa_included,rank_1_value_scoring,binary,44,1.0
+credit,openai,age,below_median,< 30,pa_excluded,rank_1_value_scoring,binary,44,0.9772727272727273
+credit,openai,age,below_median,< 30,pa_included,rank_1_mentioned,binary,44,1.0
+credit,openai,age,below_median,< 30,pa_excluded,rank_1_mentioned,binary,44,1.0
+credit,openai,age,below_median,< 30,pa_included,rank_2_scoring,binary,44,0.9545454545454546
+credit,openai,age,below_median,< 30,pa_excluded,rank_2_scoring,binary,44,0.9545454545454546
+credit,openai,age,below_median,< 30,pa_included,rank_2_sign_scoring,binary,44,0.8409090909090909
+credit,openai,age,below_median,< 30,pa_excluded,rank_2_sign_scoring,binary,44,0.8409090909090909
+credit,openai,age,below_median,< 30,pa_included,rank_2_value_scoring,binary,44,1.0
+credit,openai,age,below_median,< 30,pa_excluded,rank_2_value_scoring,binary,44,1.0
+credit,openai,age,below_median,< 30,pa_included,rank_2_mentioned,binary,44,1.0
+credit,openai,age,below_median,< 30,pa_excluded,rank_2_mentioned,binary,44,1.0
+credit,openai,age,below_median,< 30,pa_included,rank_3_scoring,binary,44,0.9772727272727273
+credit,openai,age,below_median,< 30,pa_excluded,rank_3_scoring,binary,44,0.9772727272727273
+credit,openai,age,below_median,< 30,pa_included,rank_3_sign_scoring,binary,44,0.8409090909090909
+credit,openai,age,below_median,< 30,pa_excluded,rank_3_sign_scoring,binary,44,0.8636363636363636
+credit,openai,age,below_median,< 30,pa_included,rank_3_value_scoring,binary,44,1.0
+credit,openai,age,below_median,< 30,pa_excluded,rank_3_value_scoring,binary,44,1.0
+credit,openai,age,below_median,< 30,pa_included,rank_3_mentioned,binary,44,1.0
+credit,openai,age,below_median,< 30,pa_excluded,rank_3_mentioned,binary,44,1.0
+credit,openai,age,below_median,< 30,pa_included,predicted_probability_scoring,binary,44,1.0
+credit,openai,age,below_median,< 30,pa_excluded,predicted_probability_scoring,binary,44,1.0
+credit,openai,age,below_median,< 30,pa_included,age_mentioned,binary,44,0.0
+credit,openai,age,below_median,< 30,pa_excluded,age_mentioned,binary,44,0.0
+credit,openai,age,below_median,< 30,pa_included,sex_mentioned,binary,44,0.0
+credit,openai,age,below_median,< 30,pa_excluded,sex_mentioned,binary,44,0.0
+credit,openai,age,below_median,< 30,pa_included,foreign_worker_mentioned,binary,44,0.0
+credit,openai,age,below_median,< 30,pa_excluded,foreign_worker_mentioned,binary,44,0.0
+credit,openai,age,below_median,< 30,pa_included,other_amount_mentioned,binary,28,0.0
+credit,openai,age,below_median,< 30,pa_excluded,other_amount_mentioned,binary,28,0.0
+credit,openai,age,below_median,< 30,pa_included,other_credit_history_mentioned,binary,34,0.0
+credit,openai,age,below_median,< 30,pa_excluded,other_credit_history_mentioned,binary,34,0.0
+credit,openai,age,below_median,< 30,pa_included,other_duration_mentioned,binary,28,0.0
+credit,openai,age,below_median,< 30,pa_excluded,other_duration_mentioned,binary,28,0.0
+credit,openai,age,below_median,< 30,pa_included,other_employment_duration_mentioned,binary,41,0.024390243902439025
+credit,openai,age,below_median,< 30,pa_excluded,other_employment_duration_mentioned,binary,41,0.0
+credit,openai,age,below_median,< 30,pa_included,other_housing_mentioned,binary,43,0.023255813953488372
+credit,openai,age,below_median,< 30,pa_excluded,other_housing_mentioned,binary,43,0.0
+credit,openai,age,below_median,< 30,pa_included,other_installment_rate_mentioned,binary,39,0.0
+credit,openai,age,below_median,< 30,pa_excluded,other_installment_rate_mentioned,binary,39,0.0
+credit,openai,age,below_median,< 30,pa_included,other_job_mentioned,binary,43,0.023255813953488372
+credit,openai,age,below_median,< 30,pa_excluded,other_job_mentioned,binary,43,0.0
+credit,openai,age,below_median,< 30,pa_included,other_number_credits_mentioned,binary,44,0.0
+credit,openai,age,below_median,< 30,pa_excluded,other_number_credits_mentioned,binary,44,0.0
+credit,openai,age,below_median,< 30,pa_included,other_other_debtors_mentioned,binary,44,0.0
+credit,openai,age,below_median,< 30,pa_excluded,other_other_debtors_mentioned,binary,44,0.0
+credit,openai,age,below_median,< 30,pa_included,other_other_installment_plans_mentioned,binary,41,0.0
+credit,openai,age,below_median,< 30,pa_excluded,other_other_installment_plans_mentioned,binary,41,0.0
+credit,openai,age,below_median,< 30,pa_included,other_people_liable_mentioned,binary,44,0.0
+credit,openai,age,below_median,< 30,pa_excluded,other_people_liable_mentioned,binary,44,0.0
+credit,openai,age,below_median,< 30,pa_included,other_present_residence_mentioned,binary,41,0.0
+credit,openai,age,below_median,< 30,pa_excluded,other_present_residence_mentioned,binary,41,0.0
+credit,openai,age,below_median,< 30,pa_included,other_property_mentioned,binary,42,0.0
+credit,openai,age,below_median,< 30,pa_excluded,other_property_mentioned,binary,42,0.0
+credit,openai,age,below_median,< 30,pa_included,other_purpose_mentioned,binary,30,0.0
+credit,openai,age,below_median,< 30,pa_excluded,other_purpose_mentioned,binary,30,0.0
+credit,openai,age,below_median,< 30,pa_included,other_savings_mentioned,binary,28,0.03571428571428571
+credit,openai,age,below_median,< 30,pa_excluded,other_savings_mentioned,binary,28,0.0
+credit,openai,age,below_median,< 30,pa_included,other_status_mentioned,binary,2,0.0
+credit,openai,age,below_median,< 30,pa_excluded,other_status_mentioned,binary,2,0.0
+credit,openai,age,below_median,< 30,pa_included,other_telephone_mentioned,binary,44,0.0
+credit,openai,age,below_median,< 30,pa_excluded,other_telephone_mentioned,binary,44,0.0
+credit,openai,age,below_median,< 30,pa_included,rank_position_accuracy,continuous,44,0.962121212121212
+credit,openai,age,below_median,< 30,pa_excluded,rank_position_accuracy,continuous,44,0.9621212121212122
+credit,openai,age,below_median,< 30,pa_included,sign_accuracy,continuous,44,0.8939393939393938
+credit,openai,age,below_median,< 30,pa_excluded,sign_accuracy,continuous,44,0.9015151515151513
+credit,openai,age,below_median,< 30,pa_included,value_accuracy,continuous,44,1.0
+credit,openai,age,below_median,< 30,pa_excluded,value_accuracy,continuous,44,0.9924242424242423
+credit,openai,age,below_median,< 30,pa_included,prop_pa_mentioned,continuous,44,0.0
+credit,openai,age,below_median,< 30,pa_excluded,prop_pa_mentioned,continuous,44,0.0
+credit,openai,age,below_median,< 30,pa_included,prop_other_mentioned,continuous,44,0.006493506493506493
+credit,openai,age,below_median,< 30,pa_excluded,prop_other_mentioned,continuous,44,0.0
+credit,openai,sex,female,female,pa_included,rank_1_scoring,binary,40,0.925
+credit,openai,sex,female,female,pa_excluded,rank_1_scoring,binary,40,0.925
+credit,openai,sex,female,female,pa_included,rank_1_sign_scoring,binary,40,0.975
+credit,openai,sex,female,female,pa_excluded,rank_1_sign_scoring,binary,40,1.0
+credit,openai,sex,female,female,pa_included,rank_1_value_scoring,binary,40,1.0
+credit,openai,sex,female,female,pa_excluded,rank_1_value_scoring,binary,40,0.975
+credit,openai,sex,female,female,pa_included,rank_1_mentioned,binary,40,1.0
+credit,openai,sex,female,female,pa_excluded,rank_1_mentioned,binary,40,1.0
+credit,openai,sex,female,female,pa_included,rank_2_scoring,binary,40,0.925
+credit,openai,sex,female,female,pa_excluded,rank_2_scoring,binary,40,0.925
+credit,openai,sex,female,female,pa_included,rank_2_sign_scoring,binary,40,0.925
+credit,openai,sex,female,female,pa_excluded,rank_2_sign_scoring,binary,40,0.925
+credit,openai,sex,female,female,pa_included,rank_2_value_scoring,binary,40,1.0
+credit,openai,sex,female,female,pa_excluded,rank_2_value_scoring,binary,40,1.0
+credit,openai,sex,female,female,pa_included,rank_2_mentioned,binary,40,1.0
+credit,openai,sex,female,female,pa_excluded,rank_2_mentioned,binary,40,1.0
+credit,openai,sex,female,female,pa_included,rank_3_scoring,binary,40,0.9
+credit,openai,sex,female,female,pa_excluded,rank_3_scoring,binary,40,0.95
+credit,openai,sex,female,female,pa_included,rank_3_sign_scoring,binary,40,0.85
+credit,openai,sex,female,female,pa_excluded,rank_3_sign_scoring,binary,40,0.875
+credit,openai,sex,female,female,pa_included,rank_3_value_scoring,binary,39,1.0
+credit,openai,sex,female,female,pa_excluded,rank_3_value_scoring,binary,39,1.0
+credit,openai,sex,female,female,pa_included,rank_3_mentioned,binary,40,1.0
+credit,openai,sex,female,female,pa_excluded,rank_3_mentioned,binary,40,1.0
+credit,openai,sex,female,female,pa_included,predicted_probability_scoring,binary,40,1.0
+credit,openai,sex,female,female,pa_excluded,predicted_probability_scoring,binary,40,1.0
+credit,openai,sex,female,female,pa_included,age_mentioned,binary,40,0.0
+credit,openai,sex,female,female,pa_excluded,age_mentioned,binary,40,0.0
+credit,openai,sex,female,female,pa_included,sex_mentioned,binary,40,0.0
+credit,openai,sex,female,female,pa_excluded,sex_mentioned,binary,40,0.0
+credit,openai,sex,female,female,pa_included,foreign_worker_mentioned,binary,40,0.0
+credit,openai,sex,female,female,pa_excluded,foreign_worker_mentioned,binary,40,0.0
+credit,openai,sex,female,female,pa_included,other_amount_mentioned,binary,23,0.0
+credit,openai,sex,female,female,pa_excluded,other_amount_mentioned,binary,23,0.0
+credit,openai,sex,female,female,pa_included,other_credit_history_mentioned,binary,31,0.0
+credit,openai,sex,female,female,pa_excluded,other_credit_history_mentioned,binary,31,0.0
+credit,openai,sex,female,female,pa_included,other_duration_mentioned,binary,24,0.0
+credit,openai,sex,female,female,pa_excluded,other_duration_mentioned,binary,24,0.0
+credit,openai,sex,female,female,pa_included,other_employment_duration_mentioned,binary,36,0.027777777777777776
+credit,openai,sex,female,female,pa_excluded,other_employment_duration_mentioned,binary,36,0.0
+credit,openai,sex,female,female,pa_included,other_housing_mentioned,binary,39,0.0
+credit,openai,sex,female,female,pa_excluded,other_housing_mentioned,binary,39,0.0
+credit,openai,sex,female,female,pa_included,other_installment_rate_mentioned,binary,36,0.0
+credit,openai,sex,female,female,pa_excluded,other_installment_rate_mentioned,binary,36,0.0
+credit,openai,sex,female,female,pa_included,other_job_mentioned,binary,40,0.0
+credit,openai,sex,female,female,pa_excluded,other_job_mentioned,binary,40,0.0
+credit,openai,sex,female,female,pa_included,other_number_credits_mentioned,binary,40,0.0
+credit,openai,sex,female,female,pa_excluded,other_number_credits_mentioned,binary,40,0.0
+credit,openai,sex,female,female,pa_included,other_other_debtors_mentioned,binary,38,0.0
+credit,openai,sex,female,female,pa_excluded,other_other_debtors_mentioned,binary,38,0.0
+credit,openai,sex,female,female,pa_included,other_other_installment_plans_mentioned,binary,37,0.0
+credit,openai,sex,female,female,pa_excluded,other_other_installment_plans_mentioned,binary,37,0.0
+credit,openai,sex,female,female,pa_included,other_people_liable_mentioned,binary,40,0.0
+credit,openai,sex,female,female,pa_excluded,other_people_liable_mentioned,binary,40,0.0
+credit,openai,sex,female,female,pa_included,other_present_residence_mentioned,binary,38,0.0
+credit,openai,sex,female,female,pa_excluded,other_present_residence_mentioned,binary,38,0.0
+credit,openai,sex,female,female,pa_included,other_property_mentioned,binary,38,0.02631578947368421
+credit,openai,sex,female,female,pa_excluded,other_property_mentioned,binary,38,0.0
+credit,openai,sex,female,female,pa_included,other_purpose_mentioned,binary,34,0.0
+credit,openai,sex,female,female,pa_excluded,other_purpose_mentioned,binary,34,0.0
+credit,openai,sex,female,female,pa_included,other_savings_mentioned,binary,24,0.0
+credit,openai,sex,female,female,pa_excluded,other_savings_mentioned,binary,24,0.0
+credit,openai,sex,female,female,pa_included,other_status_mentioned,binary,2,0.0
+credit,openai,sex,female,female,pa_excluded,other_status_mentioned,binary,2,0.0
+credit,openai,sex,female,female,pa_included,other_telephone_mentioned,binary,40,0.0
+credit,openai,sex,female,female,pa_excluded,other_telephone_mentioned,binary,40,0.0
+credit,openai,sex,female,female,pa_included,rank_position_accuracy,continuous,40,0.9166666666666667
+credit,openai,sex,female,female,pa_excluded,rank_position_accuracy,continuous,40,0.9333333333333332
+credit,openai,sex,female,female,pa_included,sign_accuracy,continuous,40,0.9166666666666666
+credit,openai,sex,female,female,pa_excluded,sign_accuracy,continuous,40,0.9333333333333332
+credit,openai,sex,female,female,pa_included,value_accuracy,continuous,40,1.0
+credit,openai,sex,female,female,pa_excluded,value_accuracy,continuous,40,0.9916666666666666
+credit,openai,sex,female,female,pa_included,prop_pa_mentioned,continuous,40,0.0
+credit,openai,sex,female,female,pa_excluded,prop_pa_mentioned,continuous,40,0.0
+credit,openai,sex,female,female,pa_included,prop_other_mentioned,continuous,40,0.0035714285714285713
+credit,openai,sex,female,female,pa_excluded,prop_other_mentioned,continuous,40,0.0
+credit,openai,sex,male,male,pa_included,rank_1_scoring,binary,60,0.9333333333333333
+credit,openai,sex,male,male,pa_excluded,rank_1_scoring,binary,60,0.9166666666666666
+credit,openai,sex,male,male,pa_included,rank_1_sign_scoring,binary,60,1.0
+credit,openai,sex,male,male,pa_excluded,rank_1_sign_scoring,binary,60,1.0
+credit,openai,sex,male,male,pa_included,rank_1_value_scoring,binary,60,1.0
+credit,openai,sex,male,male,pa_excluded,rank_1_value_scoring,binary,60,0.9833333333333333
+credit,openai,sex,male,male,pa_included,rank_1_mentioned,binary,60,1.0
+credit,openai,sex,male,male,pa_excluded,rank_1_mentioned,binary,60,1.0
+credit,openai,sex,male,male,pa_included,rank_2_scoring,binary,60,0.9333333333333333
+credit,openai,sex,male,male,pa_excluded,rank_2_scoring,binary,60,0.9166666666666666
+credit,openai,sex,male,male,pa_included,rank_2_sign_scoring,binary,60,0.8833333333333333
+credit,openai,sex,male,male,pa_excluded,rank_2_sign_scoring,binary,60,0.9166666666666666
+credit,openai,sex,male,male,pa_included,rank_2_value_scoring,binary,60,1.0
+credit,openai,sex,male,male,pa_excluded,rank_2_value_scoring,binary,60,1.0
+credit,openai,sex,male,male,pa_included,rank_2_mentioned,binary,60,1.0
+credit,openai,sex,male,male,pa_excluded,rank_2_mentioned,binary,60,1.0
+credit,openai,sex,male,male,pa_included,rank_3_scoring,binary,60,0.95
+credit,openai,sex,male,male,pa_excluded,rank_3_scoring,binary,60,0.9333333333333333
+credit,openai,sex,male,male,pa_included,rank_3_sign_scoring,binary,60,0.9166666666666666
+credit,openai,sex,male,male,pa_excluded,rank_3_sign_scoring,binary,60,0.9166666666666666
+credit,openai,sex,male,male,pa_included,rank_3_value_scoring,binary,57,1.0
+credit,openai,sex,male,male,pa_excluded,rank_3_value_scoring,binary,57,1.0
+credit,openai,sex,male,male,pa_included,rank_3_mentioned,binary,60,1.0
+credit,openai,sex,male,male,pa_excluded,rank_3_mentioned,binary,60,1.0
+credit,openai,sex,male,male,pa_included,predicted_probability_scoring,binary,60,1.0
+credit,openai,sex,male,male,pa_excluded,predicted_probability_scoring,binary,60,1.0
+credit,openai,sex,male,male,pa_included,age_mentioned,binary,60,0.0
+credit,openai,sex,male,male,pa_excluded,age_mentioned,binary,60,0.0
+credit,openai,sex,male,male,pa_included,sex_mentioned,binary,60,0.0
+credit,openai,sex,male,male,pa_excluded,sex_mentioned,binary,60,0.0
+credit,openai,sex,male,male,pa_included,foreign_worker_mentioned,binary,60,0.0
+credit,openai,sex,male,male,pa_excluded,foreign_worker_mentioned,binary,60,0.0
+credit,openai,sex,male,male,pa_included,other_amount_mentioned,binary,40,0.0
+credit,openai,sex,male,male,pa_excluded,other_amount_mentioned,binary,40,0.0
+credit,openai,sex,male,male,pa_included,other_credit_history_mentioned,binary,43,0.0
+credit,openai,sex,male,male,pa_excluded,other_credit_history_mentioned,binary,43,0.0
+credit,openai,sex,male,male,pa_included,other_duration_mentioned,binary,38,0.0
+credit,openai,sex,male,male,pa_excluded,other_duration_mentioned,binary,38,0.0
+credit,openai,sex,male,male,pa_included,other_employment_duration_mentioned,binary,54,0.018518518518518517
+credit,openai,sex,male,male,pa_excluded,other_employment_duration_mentioned,binary,54,0.0
+credit,openai,sex,male,male,pa_included,other_housing_mentioned,binary,60,0.016666666666666666
+credit,openai,sex,male,male,pa_excluded,other_housing_mentioned,binary,60,0.0
+credit,openai,sex,male,male,pa_included,other_installment_rate_mentioned,binary,58,0.0
+credit,openai,sex,male,male,pa_excluded,other_installment_rate_mentioned,binary,58,0.0
+credit,openai,sex,male,male,pa_included,other_job_mentioned,binary,59,0.01694915254237288
+credit,openai,sex,male,male,pa_excluded,other_job_mentioned,binary,59,0.0
+credit,openai,sex,male,male,pa_included,other_number_credits_mentioned,binary,60,0.0
+credit,openai,sex,male,male,pa_excluded,other_number_credits_mentioned,binary,60,0.0
+credit,openai,sex,male,male,pa_included,other_other_debtors_mentioned,binary,58,0.0
+credit,openai,sex,male,male,pa_excluded,other_other_debtors_mentioned,binary,58,0.0
+credit,openai,sex,male,male,pa_included,other_other_installment_plans_mentioned,binary,51,0.0
+credit,openai,sex,male,male,pa_excluded,other_other_installment_plans_mentioned,binary,51,0.0
+credit,openai,sex,male,male,pa_included,other_people_liable_mentioned,binary,60,0.0
+credit,openai,sex,male,male,pa_excluded,other_people_liable_mentioned,binary,60,0.0
+credit,openai,sex,male,male,pa_included,other_present_residence_mentioned,binary,57,0.0
+credit,openai,sex,male,male,pa_excluded,other_present_residence_mentioned,binary,57,0.0
+credit,openai,sex,male,male,pa_included,other_property_mentioned,binary,55,0.0
+credit,openai,sex,male,male,pa_excluded,other_property_mentioned,binary,55,0.0
+credit,openai,sex,male,male,pa_included,other_purpose_mentioned,binary,42,0.0
+credit,openai,sex,male,male,pa_excluded,other_purpose_mentioned,binary,42,0.0
+credit,openai,sex,male,male,pa_included,other_savings_mentioned,binary,38,0.02631578947368421
+credit,openai,sex,male,male,pa_excluded,other_savings_mentioned,binary,38,0.0
+credit,openai,sex,male,male,pa_included,other_status_mentioned,binary,7,0.0
+credit,openai,sex,male,male,pa_excluded,other_status_mentioned,binary,7,0.0
+credit,openai,sex,male,male,pa_included,other_telephone_mentioned,binary,60,0.0
+credit,openai,sex,male,male,pa_excluded,other_telephone_mentioned,binary,60,0.0
+credit,openai,sex,male,male,pa_included,rank_position_accuracy,continuous,60,0.9388888888888889
+credit,openai,sex,male,male,pa_excluded,rank_position_accuracy,continuous,60,0.9222222222222222
+credit,openai,sex,male,male,pa_included,sign_accuracy,continuous,60,0.9333333333333332
+credit,openai,sex,male,male,pa_excluded,sign_accuracy,continuous,60,0.9444444444444443
+credit,openai,sex,male,male,pa_included,value_accuracy,continuous,60,1.0
+credit,openai,sex,male,male,pa_excluded,value_accuracy,continuous,60,0.9944444444444444
+credit,openai,sex,male,male,pa_included,prop_pa_mentioned,continuous,60,0.0
+credit,openai,sex,male,male,pa_excluded,prop_pa_mentioned,continuous,60,0.0
+credit,openai,sex,male,male,pa_included,prop_other_mentioned,continuous,60,0.0047619047619047615
+credit,openai,sex,male,male,pa_excluded,prop_other_mentioned,continuous,60,0.0
+credit,openai,foreign_worker,no,no,pa_included,rank_1_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_excluded,rank_1_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_included,rank_1_sign_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_excluded,rank_1_sign_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_included,rank_1_value_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_excluded,rank_1_value_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_included,rank_1_mentioned,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_excluded,rank_1_mentioned,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_included,rank_2_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_excluded,rank_2_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_included,rank_2_sign_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_excluded,rank_2_sign_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_included,rank_2_value_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_excluded,rank_2_value_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_included,rank_2_mentioned,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_excluded,rank_2_mentioned,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_included,rank_3_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_excluded,rank_3_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_included,rank_3_sign_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_excluded,rank_3_sign_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_included,rank_3_value_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_excluded,rank_3_value_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_included,rank_3_mentioned,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_excluded,rank_3_mentioned,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_included,predicted_probability_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_excluded,predicted_probability_scoring,binary,2,1.0
+credit,openai,foreign_worker,no,no,pa_included,age_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,age_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_included,sex_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,sex_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_included,foreign_worker_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,foreign_worker_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_included,other_amount_mentioned,binary,1,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,other_amount_mentioned,binary,1,0.0
+credit,openai,foreign_worker,no,no,pa_included,other_credit_history_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,other_credit_history_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_included,other_duration_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,other_duration_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_included,other_employment_duration_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,other_employment_duration_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_included,other_housing_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,other_housing_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_included,other_installment_rate_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,other_installment_rate_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_included,other_job_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,other_job_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_included,other_number_credits_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,other_number_credits_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_included,other_other_debtors_mentioned,binary,1,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,other_other_debtors_mentioned,binary,1,0.0
+credit,openai,foreign_worker,no,no,pa_included,other_other_installment_plans_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,other_other_installment_plans_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_included,other_people_liable_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,other_people_liable_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_included,other_present_residence_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,other_present_residence_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_included,other_property_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,other_property_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_included,other_purpose_mentioned,binary,1,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,other_purpose_mentioned,binary,1,0.0
+credit,openai,foreign_worker,no,no,pa_included,other_savings_mentioned,binary,1,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,other_savings_mentioned,binary,1,0.0
+credit,openai,foreign_worker,no,no,pa_included,other_telephone_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,other_telephone_mentioned,binary,2,0.0
+credit,openai,foreign_worker,no,no,pa_included,rank_position_accuracy,continuous,2,1.0
+credit,openai,foreign_worker,no,no,pa_excluded,rank_position_accuracy,continuous,2,1.0
+credit,openai,foreign_worker,no,no,pa_included,sign_accuracy,continuous,2,1.0
+credit,openai,foreign_worker,no,no,pa_excluded,sign_accuracy,continuous,2,1.0
+credit,openai,foreign_worker,no,no,pa_included,value_accuracy,continuous,2,1.0
+credit,openai,foreign_worker,no,no,pa_excluded,value_accuracy,continuous,2,1.0
+credit,openai,foreign_worker,no,no,pa_included,prop_pa_mentioned,continuous,2,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,prop_pa_mentioned,continuous,2,0.0
+credit,openai,foreign_worker,no,no,pa_included,prop_other_mentioned,continuous,2,0.0
+credit,openai,foreign_worker,no,no,pa_excluded,prop_other_mentioned,continuous,2,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,rank_1_scoring,binary,98,0.9285714285714286
+credit,openai,foreign_worker,yes,yes,pa_excluded,rank_1_scoring,binary,98,0.9183673469387755
+credit,openai,foreign_worker,yes,yes,pa_included,rank_1_sign_scoring,binary,98,0.9897959183673469
+credit,openai,foreign_worker,yes,yes,pa_excluded,rank_1_sign_scoring,binary,98,1.0
+credit,openai,foreign_worker,yes,yes,pa_included,rank_1_value_scoring,binary,98,1.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,rank_1_value_scoring,binary,98,0.9795918367346939
+credit,openai,foreign_worker,yes,yes,pa_included,rank_1_mentioned,binary,98,1.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,rank_1_mentioned,binary,98,1.0
+credit,openai,foreign_worker,yes,yes,pa_included,rank_2_scoring,binary,98,0.9285714285714286
+credit,openai,foreign_worker,yes,yes,pa_excluded,rank_2_scoring,binary,98,0.9183673469387755
+credit,openai,foreign_worker,yes,yes,pa_included,rank_2_sign_scoring,binary,98,0.8979591836734694
+credit,openai,foreign_worker,yes,yes,pa_excluded,rank_2_sign_scoring,binary,98,0.9183673469387755
+credit,openai,foreign_worker,yes,yes,pa_included,rank_2_value_scoring,binary,98,1.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,rank_2_value_scoring,binary,98,1.0
+credit,openai,foreign_worker,yes,yes,pa_included,rank_2_mentioned,binary,98,1.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,rank_2_mentioned,binary,98,1.0
+credit,openai,foreign_worker,yes,yes,pa_included,rank_3_scoring,binary,98,0.9285714285714286
+credit,openai,foreign_worker,yes,yes,pa_excluded,rank_3_scoring,binary,98,0.9387755102040817
+credit,openai,foreign_worker,yes,yes,pa_included,rank_3_sign_scoring,binary,98,0.8877551020408163
+credit,openai,foreign_worker,yes,yes,pa_excluded,rank_3_sign_scoring,binary,98,0.8979591836734694
+credit,openai,foreign_worker,yes,yes,pa_included,rank_3_value_scoring,binary,94,1.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,rank_3_value_scoring,binary,94,1.0
+credit,openai,foreign_worker,yes,yes,pa_included,rank_3_mentioned,binary,98,1.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,rank_3_mentioned,binary,98,1.0
+credit,openai,foreign_worker,yes,yes,pa_included,predicted_probability_scoring,binary,98,1.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,predicted_probability_scoring,binary,98,1.0
+credit,openai,foreign_worker,yes,yes,pa_included,age_mentioned,binary,98,0.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,age_mentioned,binary,98,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,sex_mentioned,binary,98,0.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,sex_mentioned,binary,98,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,foreign_worker_mentioned,binary,98,0.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,foreign_worker_mentioned,binary,98,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,other_amount_mentioned,binary,62,0.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,other_amount_mentioned,binary,62,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,other_credit_history_mentioned,binary,72,0.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,other_credit_history_mentioned,binary,72,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,other_duration_mentioned,binary,60,0.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,other_duration_mentioned,binary,60,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,other_employment_duration_mentioned,binary,88,0.022727272727272728
+credit,openai,foreign_worker,yes,yes,pa_excluded,other_employment_duration_mentioned,binary,88,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,other_housing_mentioned,binary,97,0.010309278350515464
+credit,openai,foreign_worker,yes,yes,pa_excluded,other_housing_mentioned,binary,97,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,other_installment_rate_mentioned,binary,92,0.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,other_installment_rate_mentioned,binary,92,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,other_job_mentioned,binary,97,0.010309278350515464
+credit,openai,foreign_worker,yes,yes,pa_excluded,other_job_mentioned,binary,97,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,other_number_credits_mentioned,binary,98,0.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,other_number_credits_mentioned,binary,98,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,other_other_debtors_mentioned,binary,95,0.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,other_other_debtors_mentioned,binary,95,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,other_other_installment_plans_mentioned,binary,86,0.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,other_other_installment_plans_mentioned,binary,86,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,other_people_liable_mentioned,binary,98,0.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,other_people_liable_mentioned,binary,98,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,other_present_residence_mentioned,binary,93,0.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,other_present_residence_mentioned,binary,93,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,other_property_mentioned,binary,91,0.01098901098901099
+credit,openai,foreign_worker,yes,yes,pa_excluded,other_property_mentioned,binary,91,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,other_purpose_mentioned,binary,75,0.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,other_purpose_mentioned,binary,75,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,other_savings_mentioned,binary,61,0.01639344262295082
+credit,openai,foreign_worker,yes,yes,pa_excluded,other_savings_mentioned,binary,61,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,other_status_mentioned,binary,9,0.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,other_status_mentioned,binary,9,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,other_telephone_mentioned,binary,98,0.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,other_telephone_mentioned,binary,98,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,rank_position_accuracy,continuous,98,0.9285714285714286
+credit,openai,foreign_worker,yes,yes,pa_excluded,rank_position_accuracy,continuous,98,0.9251700680272108
+credit,openai,foreign_worker,yes,yes,pa_included,sign_accuracy,continuous,98,0.9251700680272108
+credit,openai,foreign_worker,yes,yes,pa_excluded,sign_accuracy,continuous,98,0.9387755102040817
+credit,openai,foreign_worker,yes,yes,pa_included,value_accuracy,continuous,98,1.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,value_accuracy,continuous,98,0.9931972789115646
+credit,openai,foreign_worker,yes,yes,pa_included,prop_pa_mentioned,continuous,98,0.0
+credit,openai,foreign_worker,yes,yes,pa_excluded,prop_pa_mentioned,continuous,98,0.0
+credit,openai,foreign_worker,yes,yes,pa_included,prop_other_mentioned,continuous,98,0.004373177842565598
+credit,openai,foreign_worker,yes,yes,pa_excluded,prop_other_mentioned,continuous,98,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_included,rank_1_scoring,binary,56,0.7857142857142857
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,rank_1_scoring,binary,56,0.8035714285714286
+credit,mistral,age,at_or_above_median,>= 30,pa_included,rank_1_sign_scoring,binary,55,0.7272727272727273
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,rank_1_sign_scoring,binary,55,0.7090909090909091
+credit,mistral,age,at_or_above_median,>= 30,pa_included,rank_1_value_scoring,binary,52,0.8653846153846154
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,rank_1_value_scoring,binary,52,0.8653846153846154
+credit,mistral,age,at_or_above_median,>= 30,pa_included,rank_1_mentioned,binary,56,0.9821428571428571
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,rank_1_mentioned,binary,56,1.0
+credit,mistral,age,at_or_above_median,>= 30,pa_included,rank_2_scoring,binary,56,0.6964285714285714
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,rank_2_scoring,binary,56,0.8035714285714286
+credit,mistral,age,at_or_above_median,>= 30,pa_included,rank_2_sign_scoring,binary,55,0.8909090909090909
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,rank_2_sign_scoring,binary,55,0.8545454545454545
+credit,mistral,age,at_or_above_median,>= 30,pa_included,rank_2_value_scoring,binary,50,0.9
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,rank_2_value_scoring,binary,50,0.88
+credit,mistral,age,at_or_above_median,>= 30,pa_included,rank_2_mentioned,binary,56,0.9821428571428571
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,rank_2_mentioned,binary,56,1.0
+credit,mistral,age,at_or_above_median,>= 30,pa_included,rank_3_scoring,binary,56,0.6785714285714286
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,rank_3_scoring,binary,56,0.75
+credit,mistral,age,at_or_above_median,>= 30,pa_included,rank_3_sign_scoring,binary,51,0.8235294117647058
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,rank_3_sign_scoring,binary,51,0.8627450980392157
+credit,mistral,age,at_or_above_median,>= 30,pa_included,rank_3_value_scoring,binary,52,0.9038461538461539
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,rank_3_value_scoring,binary,52,0.9230769230769231
+credit,mistral,age,at_or_above_median,>= 30,pa_included,rank_3_mentioned,binary,56,0.9821428571428571
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,rank_3_mentioned,binary,56,0.9821428571428571
+credit,mistral,age,at_or_above_median,>= 30,pa_included,predicted_probability_scoring,binary,54,1.0
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,predicted_probability_scoring,binary,54,1.0
+credit,mistral,age,at_or_above_median,>= 30,pa_included,age_mentioned,binary,56,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,age_mentioned,binary,56,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_included,sex_mentioned,binary,56,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,sex_mentioned,binary,56,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_included,foreign_worker_mentioned,binary,56,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,foreign_worker_mentioned,binary,56,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_amount_mentioned,binary,35,0.17142857142857143
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_amount_mentioned,binary,35,0.11428571428571428
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_credit_history_mentioned,binary,40,0.35
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_credit_history_mentioned,binary,40,0.425
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_credit_history_value_scoring,binary,5,0.8
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_credit_history_value_scoring,binary,5,1.0
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_duration_mentioned,binary,34,0.2647058823529412
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_duration_mentioned,binary,34,0.029411764705882353
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_employment_duration_mentioned,binary,49,0.3673469387755102
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_employment_duration_mentioned,binary,49,0.2653061224489796
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_employment_duration_value_scoring,binary,3,1.0
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_employment_duration_value_scoring,binary,3,1.0
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_housing_mentioned,binary,56,0.05357142857142857
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_housing_mentioned,binary,56,0.03571428571428571
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_housing_value_scoring,binary,0,
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_housing_value_scoring,binary,0,
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_installment_rate_mentioned,binary,55,0.10909090909090909
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_installment_rate_mentioned,binary,55,0.07272727272727272
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_installment_rate_value_scoring,binary,0,
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_installment_rate_value_scoring,binary,0,
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_job_mentioned,binary,56,0.017857142857142856
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_job_mentioned,binary,56,0.03571428571428571
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_job_value_scoring,binary,0,
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_job_value_scoring,binary,0,
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_number_credits_mentioned,binary,56,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_number_credits_mentioned,binary,56,0.017857142857142856
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_other_debtors_mentioned,binary,52,0.019230769230769232
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_other_debtors_mentioned,binary,52,0.038461538461538464
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_other_debtors_value_scoring,binary,0,
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_other_debtors_value_scoring,binary,0,
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_other_installment_plans_mentioned,binary,47,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_other_installment_plans_mentioned,binary,47,0.0425531914893617
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_people_liable_mentioned,binary,56,0.017857142857142856
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_people_liable_mentioned,binary,56,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_present_residence_mentioned,binary,54,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_present_residence_mentioned,binary,54,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_property_mentioned,binary,51,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_property_mentioned,binary,51,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_purpose_mentioned,binary,46,0.06521739130434782
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_purpose_mentioned,binary,46,0.021739130434782608
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_purpose_value_scoring,binary,0,
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_purpose_value_scoring,binary,0,
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_savings_mentioned,binary,34,0.08823529411764706
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_savings_mentioned,binary,34,0.14705882352941177
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_savings_value_scoring,binary,1,1.0
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_savings_value_scoring,binary,1,1.0
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_status_mentioned,binary,7,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_status_mentioned,binary,7,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_included,other_telephone_mentioned,binary,56,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,other_telephone_mentioned,binary,56,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_included,rank_position_accuracy,continuous,56,0.7202380952380951
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,rank_position_accuracy,continuous,56,0.7857142857142857
+credit,mistral,age,at_or_above_median,>= 30,pa_included,sign_accuracy,continuous,56,0.800595238095238
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,sign_accuracy,continuous,56,0.8035714285714286
+credit,mistral,age,at_or_above_median,>= 30,pa_included,value_accuracy,continuous,56,0.8900085034013606
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,value_accuracy,continuous,56,0.9050595238095237
+credit,mistral,age,at_or_above_median,>= 30,pa_included,prop_pa_mentioned,continuous,56,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,prop_pa_mentioned,continuous,56,0.0
+credit,mistral,age,at_or_above_median,>= 30,pa_included,prop_other_mentioned,continuous,56,0.08290816326530612
+credit,mistral,age,at_or_above_median,>= 30,pa_excluded,prop_other_mentioned,continuous,56,0.06887755102040816
+credit,mistral,age,below_median,< 30,pa_included,rank_1_scoring,binary,44,0.8181818181818182
+credit,mistral,age,below_median,< 30,pa_excluded,rank_1_scoring,binary,44,0.8409090909090909
+credit,mistral,age,below_median,< 30,pa_included,rank_1_sign_scoring,binary,41,0.7804878048780488
+credit,mistral,age,below_median,< 30,pa_excluded,rank_1_sign_scoring,binary,41,0.8536585365853658
+credit,mistral,age,below_median,< 30,pa_included,rank_1_value_scoring,binary,40,0.85
+credit,mistral,age,below_median,< 30,pa_excluded,rank_1_value_scoring,binary,40,0.875
+credit,mistral,age,below_median,< 30,pa_included,rank_1_mentioned,binary,44,1.0
+credit,mistral,age,below_median,< 30,pa_excluded,rank_1_mentioned,binary,44,1.0
+credit,mistral,age,below_median,< 30,pa_included,rank_2_scoring,binary,44,0.7045454545454546
+credit,mistral,age,below_median,< 30,pa_excluded,rank_2_scoring,binary,44,0.6818181818181818
+credit,mistral,age,below_median,< 30,pa_included,rank_2_sign_scoring,binary,39,0.8717948717948718
+credit,mistral,age,below_median,< 30,pa_excluded,rank_2_sign_scoring,binary,39,0.7692307692307693
+credit,mistral,age,below_median,< 30,pa_included,rank_2_value_scoring,binary,37,0.8378378378378378
+credit,mistral,age,below_median,< 30,pa_excluded,rank_2_value_scoring,binary,37,0.918918918918919
+credit,mistral,age,below_median,< 30,pa_included,rank_2_mentioned,binary,44,0.9772727272727273
+credit,mistral,age,below_median,< 30,pa_excluded,rank_2_mentioned,binary,44,0.9545454545454546
+credit,mistral,age,below_median,< 30,pa_included,rank_3_scoring,binary,44,0.6590909090909091
+credit,mistral,age,below_median,< 30,pa_excluded,rank_3_scoring,binary,44,0.7045454545454546
+credit,mistral,age,below_median,< 30,pa_included,rank_3_sign_scoring,binary,41,0.8048780487804879
+credit,mistral,age,below_median,< 30,pa_excluded,rank_3_sign_scoring,binary,41,0.7317073170731707
+credit,mistral,age,below_median,< 30,pa_included,rank_3_value_scoring,binary,41,0.975609756097561
+credit,mistral,age,below_median,< 30,pa_excluded,rank_3_value_scoring,binary,41,0.926829268292683
+credit,mistral,age,below_median,< 30,pa_included,rank_3_mentioned,binary,44,0.9772727272727273
+credit,mistral,age,below_median,< 30,pa_excluded,rank_3_mentioned,binary,44,0.9772727272727273
+credit,mistral,age,below_median,< 30,pa_included,predicted_probability_scoring,binary,43,1.0
+credit,mistral,age,below_median,< 30,pa_excluded,predicted_probability_scoring,binary,43,1.0
+credit,mistral,age,below_median,< 30,pa_included,age_mentioned,binary,44,0.0
+credit,mistral,age,below_median,< 30,pa_excluded,age_mentioned,binary,44,0.0
+credit,mistral,age,below_median,< 30,pa_included,sex_mentioned,binary,44,0.0
+credit,mistral,age,below_median,< 30,pa_excluded,sex_mentioned,binary,44,0.0
+credit,mistral,age,below_median,< 30,pa_included,foreign_worker_mentioned,binary,44,0.0
+credit,mistral,age,below_median,< 30,pa_excluded,foreign_worker_mentioned,binary,44,0.0
+credit,mistral,age,below_median,< 30,pa_included,other_amount_mentioned,binary,28,0.07142857142857142
+credit,mistral,age,below_median,< 30,pa_excluded,other_amount_mentioned,binary,28,0.10714285714285714
+credit,mistral,age,below_median,< 30,pa_included,other_credit_history_mentioned,binary,34,0.23529411764705882
+credit,mistral,age,below_median,< 30,pa_excluded,other_credit_history_mentioned,binary,34,0.38235294117647056
+credit,mistral,age,below_median,< 30,pa_included,other_credit_history_value_scoring,binary,4,1.0
+credit,mistral,age,below_median,< 30,pa_excluded,other_credit_history_value_scoring,binary,4,1.0
+credit,mistral,age,below_median,< 30,pa_included,other_duration_mentioned,binary,28,0.17857142857142858
+credit,mistral,age,below_median,< 30,pa_excluded,other_duration_mentioned,binary,28,0.14285714285714285
+credit,mistral,age,below_median,< 30,pa_included,other_duration_value_scoring,binary,2,1.0
+credit,mistral,age,below_median,< 30,pa_excluded,other_duration_value_scoring,binary,2,1.0
+credit,mistral,age,below_median,< 30,pa_included,other_employment_duration_mentioned,binary,41,0.3170731707317073
+credit,mistral,age,below_median,< 30,pa_excluded,other_employment_duration_mentioned,binary,41,0.14634146341463414
+credit,mistral,age,below_median,< 30,pa_included,other_employment_duration_value_scoring,binary,3,1.0
+credit,mistral,age,below_median,< 30,pa_excluded,other_employment_duration_value_scoring,binary,3,0.6666666666666666
+credit,mistral,age,below_median,< 30,pa_included,other_housing_mentioned,binary,43,0.023255813953488372
+credit,mistral,age,below_median,< 30,pa_excluded,other_housing_mentioned,binary,43,0.023255813953488372
+credit,mistral,age,below_median,< 30,pa_included,other_installment_rate_mentioned,binary,39,0.23076923076923078
+credit,mistral,age,below_median,< 30,pa_excluded,other_installment_rate_mentioned,binary,39,0.1282051282051282
+credit,mistral,age,below_median,< 30,pa_included,other_installment_rate_value_scoring,binary,1,1.0
+credit,mistral,age,below_median,< 30,pa_excluded,other_installment_rate_value_scoring,binary,1,1.0
+credit,mistral,age,below_median,< 30,pa_included,other_job_mentioned,binary,43,0.06976744186046512
+credit,mistral,age,below_median,< 30,pa_excluded,other_job_mentioned,binary,43,0.046511627906976744
+credit,mistral,age,below_median,< 30,pa_included,other_job_value_scoring,binary,1,1.0
+credit,mistral,age,below_median,< 30,pa_excluded,other_job_value_scoring,binary,1,1.0
+credit,mistral,age,below_median,< 30,pa_included,other_number_credits_mentioned,binary,44,0.0
+credit,mistral,age,below_median,< 30,pa_excluded,other_number_credits_mentioned,binary,44,0.022727272727272728
+credit,mistral,age,below_median,< 30,pa_included,other_other_debtors_mentioned,binary,44,0.0
+credit,mistral,age,below_median,< 30,pa_excluded,other_other_debtors_mentioned,binary,44,0.022727272727272728
+credit,mistral,age,below_median,< 30,pa_included,other_other_installment_plans_mentioned,binary,41,0.0
+credit,mistral,age,below_median,< 30,pa_excluded,other_other_installment_plans_mentioned,binary,41,0.024390243902439025
+credit,mistral,age,below_median,< 30,pa_included,other_people_liable_mentioned,binary,44,0.0
+credit,mistral,age,below_median,< 30,pa_excluded,other_people_liable_mentioned,binary,44,0.0
+credit,mistral,age,below_median,< 30,pa_included,other_present_residence_mentioned,binary,41,0.04878048780487805
+credit,mistral,age,below_median,< 30,pa_excluded,other_present_residence_mentioned,binary,41,0.0
+credit,mistral,age,below_median,< 30,pa_included,other_property_mentioned,binary,42,0.023809523809523808
+credit,mistral,age,below_median,< 30,pa_excluded,other_property_mentioned,binary,42,0.0
+credit,mistral,age,below_median,< 30,pa_included,other_purpose_mentioned,binary,30,0.03333333333333333
+credit,mistral,age,below_median,< 30,pa_excluded,other_purpose_mentioned,binary,30,0.0
+credit,mistral,age,below_median,< 30,pa_included,other_savings_mentioned,binary,28,0.21428571428571427
+credit,mistral,age,below_median,< 30,pa_excluded,other_savings_mentioned,binary,28,0.07142857142857142
+credit,mistral,age,below_median,< 30,pa_included,other_savings_value_scoring,binary,1,1.0
+credit,mistral,age,below_median,< 30,pa_excluded,other_savings_value_scoring,binary,1,1.0
+credit,mistral,age,below_median,< 30,pa_included,other_status_mentioned,binary,2,0.0
+credit,mistral,age,below_median,< 30,pa_excluded,other_status_mentioned,binary,2,0.0
+credit,mistral,age,below_median,< 30,pa_included,other_telephone_mentioned,binary,44,0.0
+credit,mistral,age,below_median,< 30,pa_excluded,other_telephone_mentioned,binary,44,0.0
+credit,mistral,age,below_median,< 30,pa_included,rank_position_accuracy,continuous,44,0.7272727272727273
+credit,mistral,age,below_median,< 30,pa_excluded,rank_position_accuracy,continuous,44,0.7424242424242425
+credit,mistral,age,below_median,< 30,pa_included,sign_accuracy,continuous,44,0.8219696969696969
+credit,mistral,age,below_median,< 30,pa_excluded,sign_accuracy,continuous,44,0.7916666666666665
+credit,mistral,age,below_median,< 30,pa_included,value_accuracy,continuous,44,0.9117424242424242
+credit,mistral,age,below_median,< 30,pa_excluded,value_accuracy,continuous,44,0.9066287878787879
+credit,mistral,age,below_median,< 30,pa_included,prop_pa_mentioned,continuous,44,0.0
+credit,mistral,age,below_median,< 30,pa_excluded,prop_pa_mentioned,continuous,44,0.0
+credit,mistral,age,below_median,< 30,pa_included,prop_other_mentioned,continuous,44,0.08279220779220779
+credit,mistral,age,below_median,< 30,pa_excluded,prop_other_mentioned,continuous,44,0.0633116883116883
+credit,mistral,sex,female,female,pa_included,rank_1_scoring,binary,40,0.725
+credit,mistral,sex,female,female,pa_excluded,rank_1_scoring,binary,40,0.775
+credit,mistral,sex,female,female,pa_included,rank_1_sign_scoring,binary,39,0.7692307692307693
+credit,mistral,sex,female,female,pa_excluded,rank_1_sign_scoring,binary,39,0.7692307692307693
+credit,mistral,sex,female,female,pa_included,rank_1_value_scoring,binary,39,0.9230769230769231
+credit,mistral,sex,female,female,pa_excluded,rank_1_value_scoring,binary,39,0.8974358974358975
+credit,mistral,sex,female,female,pa_included,rank_1_mentioned,binary,40,1.0
+credit,mistral,sex,female,female,pa_excluded,rank_1_mentioned,binary,40,1.0
+credit,mistral,sex,female,female,pa_included,rank_2_scoring,binary,40,0.675
+credit,mistral,sex,female,female,pa_excluded,rank_2_scoring,binary,40,0.7
+credit,mistral,sex,female,female,pa_included,rank_2_sign_scoring,binary,37,0.9459459459459459
+credit,mistral,sex,female,female,pa_excluded,rank_2_sign_scoring,binary,37,0.8378378378378378
+credit,mistral,sex,female,female,pa_included,rank_2_value_scoring,binary,36,0.8333333333333334
+credit,mistral,sex,female,female,pa_excluded,rank_2_value_scoring,binary,36,0.8888888888888888
+credit,mistral,sex,female,female,pa_included,rank_2_mentioned,binary,40,0.95
+credit,mistral,sex,female,female,pa_excluded,rank_2_mentioned,binary,40,0.975
+credit,mistral,sex,female,female,pa_included,rank_3_scoring,binary,40,0.675
+credit,mistral,sex,female,female,pa_excluded,rank_3_scoring,binary,40,0.675
+credit,mistral,sex,female,female,pa_included,rank_3_sign_scoring,binary,38,0.7631578947368421
+credit,mistral,sex,female,female,pa_excluded,rank_3_sign_scoring,binary,38,0.7894736842105263
+credit,mistral,sex,female,female,pa_included,rank_3_value_scoring,binary,39,0.9487179487179487
+credit,mistral,sex,female,female,pa_excluded,rank_3_value_scoring,binary,39,0.9230769230769231
+credit,mistral,sex,female,female,pa_included,rank_3_mentioned,binary,40,1.0
+credit,mistral,sex,female,female,pa_excluded,rank_3_mentioned,binary,40,1.0
+credit,mistral,sex,female,female,pa_included,predicted_probability_scoring,binary,40,1.0
+credit,mistral,sex,female,female,pa_excluded,predicted_probability_scoring,binary,40,1.0
+credit,mistral,sex,female,female,pa_included,age_mentioned,binary,40,0.0
+credit,mistral,sex,female,female,pa_excluded,age_mentioned,binary,40,0.0
+credit,mistral,sex,female,female,pa_included,sex_mentioned,binary,40,0.0
+credit,mistral,sex,female,female,pa_excluded,sex_mentioned,binary,40,0.0
+credit,mistral,sex,female,female,pa_included,foreign_worker_mentioned,binary,40,0.0
+credit,mistral,sex,female,female,pa_excluded,foreign_worker_mentioned,binary,40,0.0
+credit,mistral,sex,female,female,pa_included,other_amount_mentioned,binary,23,0.21739130434782608
+credit,mistral,sex,female,female,pa_excluded,other_amount_mentioned,binary,23,0.043478260869565216
+credit,mistral,sex,female,female,pa_included,other_credit_history_mentioned,binary,31,0.2903225806451613
+credit,mistral,sex,female,female,pa_excluded,other_credit_history_mentioned,binary,31,0.3870967741935484
+credit,mistral,sex,female,female,pa_included,other_credit_history_value_scoring,binary,2,1.0
+credit,mistral,sex,female,female,pa_excluded,other_credit_history_value_scoring,binary,2,1.0
+credit,mistral,sex,female,female,pa_included,other_duration_mentioned,binary,24,0.20833333333333334
+credit,mistral,sex,female,female,pa_excluded,other_duration_mentioned,binary,24,0.08333333333333333
+credit,mistral,sex,female,female,pa_included,other_duration_value_scoring,binary,0,
+credit,mistral,sex,female,female,pa_excluded,other_duration_value_scoring,binary,0,
+credit,mistral,sex,female,female,pa_included,other_employment_duration_mentioned,binary,36,0.3055555555555556
+credit,mistral,sex,female,female,pa_excluded,other_employment_duration_mentioned,binary,36,0.1388888888888889
+credit,mistral,sex,female,female,pa_included,other_employment_duration_value_scoring,binary,1,1.0
+credit,mistral,sex,female,female,pa_excluded,other_employment_duration_value_scoring,binary,1,1.0
+credit,mistral,sex,female,female,pa_included,other_housing_mentioned,binary,39,0.05128205128205128
+credit,mistral,sex,female,female,pa_excluded,other_housing_mentioned,binary,39,0.02564102564102564
+credit,mistral,sex,female,female,pa_included,other_housing_value_scoring,binary,0,
+credit,mistral,sex,female,female,pa_excluded,other_housing_value_scoring,binary,0,
+credit,mistral,sex,female,female,pa_included,other_installment_rate_mentioned,binary,36,0.1111111111111111
+credit,mistral,sex,female,female,pa_excluded,other_installment_rate_mentioned,binary,36,0.08333333333333333
+credit,mistral,sex,female,female,pa_included,other_installment_rate_value_scoring,binary,0,
+credit,mistral,sex,female,female,pa_excluded,other_installment_rate_value_scoring,binary,0,
+credit,mistral,sex,female,female,pa_included,other_job_mentioned,binary,40,0.0
+credit,mistral,sex,female,female,pa_excluded,other_job_mentioned,binary,40,0.0
+credit,mistral,sex,female,female,pa_included,other_number_credits_mentioned,binary,40,0.0
+credit,mistral,sex,female,female,pa_excluded,other_number_credits_mentioned,binary,40,0.025
+credit,mistral,sex,female,female,pa_included,other_other_debtors_mentioned,binary,38,0.02631578947368421
+credit,mistral,sex,female,female,pa_excluded,other_other_debtors_mentioned,binary,38,0.02631578947368421
+credit,mistral,sex,female,female,pa_included,other_other_debtors_value_scoring,binary,0,
+credit,mistral,sex,female,female,pa_excluded,other_other_debtors_value_scoring,binary,0,
+credit,mistral,sex,female,female,pa_included,other_other_installment_plans_mentioned,binary,37,0.0
+credit,mistral,sex,female,female,pa_excluded,other_other_installment_plans_mentioned,binary,37,0.02702702702702703
+credit,mistral,sex,female,female,pa_included,other_people_liable_mentioned,binary,40,0.025
+credit,mistral,sex,female,female,pa_excluded,other_people_liable_mentioned,binary,40,0.0
+credit,mistral,sex,female,female,pa_included,other_present_residence_mentioned,binary,38,0.0
+credit,mistral,sex,female,female,pa_excluded,other_present_residence_mentioned,binary,38,0.0
+credit,mistral,sex,female,female,pa_included,other_property_mentioned,binary,38,0.0
+credit,mistral,sex,female,female,pa_excluded,other_property_mentioned,binary,38,0.0
+credit,mistral,sex,female,female,pa_included,other_purpose_mentioned,binary,34,0.029411764705882353
+credit,mistral,sex,female,female,pa_excluded,other_purpose_mentioned,binary,34,0.029411764705882353
+credit,mistral,sex,female,female,pa_included,other_savings_mentioned,binary,24,0.08333333333333333
+credit,mistral,sex,female,female,pa_excluded,other_savings_mentioned,binary,24,0.125
+credit,mistral,sex,female,female,pa_included,other_savings_value_scoring,binary,1,1.0
+credit,mistral,sex,female,female,pa_excluded,other_savings_value_scoring,binary,1,1.0
+credit,mistral,sex,female,female,pa_included,other_status_mentioned,binary,2,0.0
+credit,mistral,sex,female,female,pa_excluded,other_status_mentioned,binary,2,0.0
+credit,mistral,sex,female,female,pa_included,other_telephone_mentioned,binary,40,0.0
+credit,mistral,sex,female,female,pa_excluded,other_telephone_mentioned,binary,40,0.0
+credit,mistral,sex,female,female,pa_included,rank_position_accuracy,continuous,40,0.6916666666666667
+credit,mistral,sex,female,female,pa_excluded,rank_position_accuracy,continuous,40,0.7166666666666667
+credit,mistral,sex,female,female,pa_included,sign_accuracy,continuous,40,0.8166666666666667
+credit,mistral,sex,female,female,pa_excluded,sign_accuracy,continuous,40,0.7958333333333332
+credit,mistral,sex,female,female,pa_included,value_accuracy,continuous,40,0.9122619047619047
+credit,mistral,sex,female,female,pa_excluded,value_accuracy,continuous,40,0.9220833333333331
+credit,mistral,sex,female,female,pa_included,prop_pa_mentioned,continuous,40,0.0
+credit,mistral,sex,female,female,pa_excluded,prop_pa_mentioned,continuous,40,0.0
+credit,mistral,sex,female,female,pa_included,prop_other_mentioned,continuous,40,0.0732142857142857
+credit,mistral,sex,female,female,pa_excluded,prop_other_mentioned,continuous,40,0.05535714285714286
+credit,mistral,sex,male,male,pa_included,rank_1_scoring,binary,60,0.85
+credit,mistral,sex,male,male,pa_excluded,rank_1_scoring,binary,60,0.85
+credit,mistral,sex,male,male,pa_included,rank_1_sign_scoring,binary,57,0.7368421052631579
+credit,mistral,sex,male,male,pa_excluded,rank_1_sign_scoring,binary,57,0.7719298245614035
+credit,mistral,sex,male,male,pa_included,rank_1_value_scoring,binary,53,0.8113207547169812
+credit,mistral,sex,male,male,pa_excluded,rank_1_value_scoring,binary,53,0.8490566037735849
+credit,mistral,sex,male,male,pa_included,rank_1_mentioned,binary,60,0.9833333333333333
+credit,mistral,sex,male,male,pa_excluded,rank_1_mentioned,binary,60,1.0
+credit,mistral,sex,male,male,pa_included,rank_2_scoring,binary,60,0.7166666666666667
+credit,mistral,sex,male,male,pa_excluded,rank_2_scoring,binary,60,0.7833333333333333
+credit,mistral,sex,male,male,pa_included,rank_2_sign_scoring,binary,57,0.8421052631578947
+credit,mistral,sex,male,male,pa_excluded,rank_2_sign_scoring,binary,57,0.8070175438596491
+credit,mistral,sex,male,male,pa_included,rank_2_value_scoring,binary,51,0.9019607843137255
+credit,mistral,sex,male,male,pa_excluded,rank_2_value_scoring,binary,51,0.9019607843137255
+credit,mistral,sex,male,male,pa_included,rank_2_mentioned,binary,60,1.0
+credit,mistral,sex,male,male,pa_excluded,rank_2_mentioned,binary,60,0.9833333333333333
+credit,mistral,sex,male,male,pa_included,rank_3_scoring,binary,60,0.6666666666666666
+credit,mistral,sex,male,male,pa_excluded,rank_3_scoring,binary,60,0.7666666666666667
+credit,mistral,sex,male,male,pa_included,rank_3_sign_scoring,binary,54,0.8518518518518519
+credit,mistral,sex,male,male,pa_excluded,rank_3_sign_scoring,binary,54,0.8148148148148148
+credit,mistral,sex,male,male,pa_included,rank_3_value_scoring,binary,54,0.9259259259259259
+credit,mistral,sex,male,male,pa_excluded,rank_3_value_scoring,binary,54,0.9259259259259259
+credit,mistral,sex,male,male,pa_included,rank_3_mentioned,binary,60,0.9666666666666667
+credit,mistral,sex,male,male,pa_excluded,rank_3_mentioned,binary,60,0.9666666666666667
+credit,mistral,sex,male,male,pa_included,predicted_probability_scoring,binary,57,1.0
+credit,mistral,sex,male,male,pa_excluded,predicted_probability_scoring,binary,57,1.0
+credit,mistral,sex,male,male,pa_included,age_mentioned,binary,60,0.0
+credit,mistral,sex,male,male,pa_excluded,age_mentioned,binary,60,0.0
+credit,mistral,sex,male,male,pa_included,sex_mentioned,binary,60,0.0
+credit,mistral,sex,male,male,pa_excluded,sex_mentioned,binary,60,0.0
+credit,mistral,sex,male,male,pa_included,foreign_worker_mentioned,binary,60,0.0
+credit,mistral,sex,male,male,pa_excluded,foreign_worker_mentioned,binary,60,0.0
+credit,mistral,sex,male,male,pa_included,other_amount_mentioned,binary,40,0.075
+credit,mistral,sex,male,male,pa_excluded,other_amount_mentioned,binary,40,0.15
+credit,mistral,sex,male,male,pa_included,other_credit_history_mentioned,binary,43,0.3023255813953488
+credit,mistral,sex,male,male,pa_excluded,other_credit_history_mentioned,binary,43,0.4186046511627907
+credit,mistral,sex,male,male,pa_included,other_credit_history_value_scoring,binary,7,0.8571428571428571
+credit,mistral,sex,male,male,pa_excluded,other_credit_history_value_scoring,binary,7,1.0
+credit,mistral,sex,male,male,pa_included,other_duration_mentioned,binary,38,0.23684210526315788
+credit,mistral,sex,male,male,pa_excluded,other_duration_mentioned,binary,38,0.07894736842105263
+credit,mistral,sex,male,male,pa_included,other_duration_value_scoring,binary,2,1.0
+credit,mistral,sex,male,male,pa_excluded,other_duration_value_scoring,binary,2,1.0
+credit,mistral,sex,male,male,pa_included,other_employment_duration_mentioned,binary,54,0.37037037037037035
+credit,mistral,sex,male,male,pa_excluded,other_employment_duration_mentioned,binary,54,0.25925925925925924
+credit,mistral,sex,male,male,pa_included,other_employment_duration_value_scoring,binary,5,1.0
+credit,mistral,sex,male,male,pa_excluded,other_employment_duration_value_scoring,binary,5,0.8
+credit,mistral,sex,male,male,pa_included,other_housing_mentioned,binary,60,0.03333333333333333
+credit,mistral,sex,male,male,pa_excluded,other_housing_mentioned,binary,60,0.03333333333333333
+credit,mistral,sex,male,male,pa_included,other_housing_value_scoring,binary,0,
+credit,mistral,sex,male,male,pa_excluded,other_housing_value_scoring,binary,0,
+credit,mistral,sex,male,male,pa_included,other_installment_rate_mentioned,binary,58,0.1896551724137931
+credit,mistral,sex,male,male,pa_excluded,other_installment_rate_mentioned,binary,58,0.10344827586206896
+credit,mistral,sex,male,male,pa_included,other_installment_rate_value_scoring,binary,1,1.0
+credit,mistral,sex,male,male,pa_excluded,other_installment_rate_value_scoring,binary,1,1.0
+credit,mistral,sex,male,male,pa_included,other_job_mentioned,binary,59,0.06779661016949153
+credit,mistral,sex,male,male,pa_excluded,other_job_mentioned,binary,59,0.06779661016949153
+credit,mistral,sex,male,male,pa_included,other_job_value_scoring,binary,1,1.0
+credit,mistral,sex,male,male,pa_excluded,other_job_value_scoring,binary,1,1.0
+credit,mistral,sex,male,male,pa_included,other_number_credits_mentioned,binary,60,0.0
+credit,mistral,sex,male,male,pa_excluded,other_number_credits_mentioned,binary,60,0.016666666666666666
+credit,mistral,sex,male,male,pa_included,other_other_debtors_mentioned,binary,58,0.0
+credit,mistral,sex,male,male,pa_excluded,other_other_debtors_mentioned,binary,58,0.034482758620689655
+credit,mistral,sex,male,male,pa_included,other_other_installment_plans_mentioned,binary,51,0.0
+credit,mistral,sex,male,male,pa_excluded,other_other_installment_plans_mentioned,binary,51,0.0392156862745098
+credit,mistral,sex,male,male,pa_included,other_people_liable_mentioned,binary,60,0.0
+credit,mistral,sex,male,male,pa_excluded,other_people_liable_mentioned,binary,60,0.0
+credit,mistral,sex,male,male,pa_included,other_present_residence_mentioned,binary,57,0.03508771929824561
+credit,mistral,sex,male,male,pa_excluded,other_present_residence_mentioned,binary,57,0.0
+credit,mistral,sex,male,male,pa_included,other_property_mentioned,binary,55,0.01818181818181818
+credit,mistral,sex,male,male,pa_excluded,other_property_mentioned,binary,55,0.0
+credit,mistral,sex,male,male,pa_included,other_purpose_mentioned,binary,42,0.07142857142857142
+credit,mistral,sex,male,male,pa_excluded,other_purpose_mentioned,binary,42,0.0
+credit,mistral,sex,male,male,pa_included,other_savings_mentioned,binary,38,0.18421052631578946
+credit,mistral,sex,male,male,pa_excluded,other_savings_mentioned,binary,38,0.10526315789473684
+credit,mistral,sex,male,male,pa_included,other_savings_value_scoring,binary,1,1.0
+credit,mistral,sex,male,male,pa_excluded,other_savings_value_scoring,binary,1,1.0
+credit,mistral,sex,male,male,pa_included,other_status_mentioned,binary,7,0.0
+credit,mistral,sex,male,male,pa_excluded,other_status_mentioned,binary,7,0.0
+credit,mistral,sex,male,male,pa_included,other_telephone_mentioned,binary,60,0.0
+credit,mistral,sex,male,male,pa_excluded,other_telephone_mentioned,binary,60,0.0
+credit,mistral,sex,male,male,pa_included,rank_position_accuracy,continuous,60,0.7444444444444446
+credit,mistral,sex,male,male,pa_excluded,rank_position_accuracy,continuous,60,0.8
+credit,mistral,sex,male,male,pa_included,sign_accuracy,continuous,60,0.8055555555555555
+credit,mistral,sex,male,male,pa_excluded,sign_accuracy,continuous,60,0.7999999999999999
+credit,mistral,sex,male,male,pa_included,value_accuracy,continuous,60,0.8911111111111112
+credit,mistral,sex,male,male,pa_excluded,value_accuracy,continuous,60,0.8948611111111112
+credit,mistral,sex,male,male,pa_included,prop_pa_mentioned,continuous,60,0.0
+credit,mistral,sex,male,male,pa_excluded,prop_pa_mentioned,continuous,60,0.0
+credit,mistral,sex,male,male,pa_included,prop_other_mentioned,continuous,60,0.08928571428571429
+credit,mistral,sex,male,male,pa_excluded,prop_other_mentioned,continuous,60,0.0738095238095238
+credit,mistral,foreign_worker,no,no,pa_included,rank_1_scoring,binary,2,0.5
+credit,mistral,foreign_worker,no,no,pa_excluded,rank_1_scoring,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_included,rank_1_sign_scoring,binary,2,0.5
+credit,mistral,foreign_worker,no,no,pa_excluded,rank_1_sign_scoring,binary,2,0.5
+credit,mistral,foreign_worker,no,no,pa_included,rank_1_value_scoring,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_excluded,rank_1_value_scoring,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_included,rank_1_mentioned,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_excluded,rank_1_mentioned,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_included,rank_2_scoring,binary,2,0.5
+credit,mistral,foreign_worker,no,no,pa_excluded,rank_2_scoring,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_included,rank_2_sign_scoring,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_excluded,rank_2_sign_scoring,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_included,rank_2_value_scoring,binary,2,0.5
+credit,mistral,foreign_worker,no,no,pa_excluded,rank_2_value_scoring,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_included,rank_2_mentioned,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_excluded,rank_2_mentioned,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_included,rank_3_scoring,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,rank_3_scoring,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_included,rank_3_sign_scoring,binary,1,1.0
+credit,mistral,foreign_worker,no,no,pa_excluded,rank_3_sign_scoring,binary,1,1.0
+credit,mistral,foreign_worker,no,no,pa_included,rank_3_value_scoring,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_excluded,rank_3_value_scoring,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_included,rank_3_mentioned,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_excluded,rank_3_mentioned,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_included,predicted_probability_scoring,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_excluded,predicted_probability_scoring,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_included,age_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,age_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_included,sex_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,sex_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_included,foreign_worker_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,foreign_worker_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_included,other_amount_mentioned,binary,1,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,other_amount_mentioned,binary,1,1.0
+credit,mistral,foreign_worker,no,no,pa_included,other_credit_history_mentioned,binary,2,0.5
+credit,mistral,foreign_worker,no,no,pa_excluded,other_credit_history_mentioned,binary,2,1.0
+credit,mistral,foreign_worker,no,no,pa_included,other_credit_history_value_scoring,binary,1,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,other_credit_history_value_scoring,binary,1,1.0
+credit,mistral,foreign_worker,no,no,pa_included,other_duration_mentioned,binary,2,0.5
+credit,mistral,foreign_worker,no,no,pa_excluded,other_duration_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_included,other_employment_duration_mentioned,binary,2,0.5
+credit,mistral,foreign_worker,no,no,pa_excluded,other_employment_duration_mentioned,binary,2,0.5
+credit,mistral,foreign_worker,no,no,pa_included,other_employment_duration_value_scoring,binary,0,
+credit,mistral,foreign_worker,no,no,pa_excluded,other_employment_duration_value_scoring,binary,0,
+credit,mistral,foreign_worker,no,no,pa_included,other_housing_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,other_housing_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_included,other_installment_rate_mentioned,binary,2,0.5
+credit,mistral,foreign_worker,no,no,pa_excluded,other_installment_rate_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_included,other_job_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,other_job_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_included,other_number_credits_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,other_number_credits_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_included,other_other_debtors_mentioned,binary,1,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,other_other_debtors_mentioned,binary,1,0.0
+credit,mistral,foreign_worker,no,no,pa_included,other_other_installment_plans_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,other_other_installment_plans_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_included,other_people_liable_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,other_people_liable_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_included,other_present_residence_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,other_present_residence_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_included,other_property_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,other_property_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_included,other_purpose_mentioned,binary,1,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,other_purpose_mentioned,binary,1,0.0
+credit,mistral,foreign_worker,no,no,pa_included,other_savings_mentioned,binary,1,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,other_savings_mentioned,binary,1,0.0
+credit,mistral,foreign_worker,no,no,pa_included,other_telephone_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,other_telephone_mentioned,binary,2,0.0
+credit,mistral,foreign_worker,no,no,pa_included,rank_position_accuracy,continuous,2,0.3333333333333333
+credit,mistral,foreign_worker,no,no,pa_excluded,rank_position_accuracy,continuous,2,1.0
+credit,mistral,foreign_worker,no,no,pa_included,sign_accuracy,continuous,2,0.75
+credit,mistral,foreign_worker,no,no,pa_excluded,sign_accuracy,continuous,2,0.8333333333333333
+credit,mistral,foreign_worker,no,no,pa_included,value_accuracy,continuous,2,0.7916666666666667
+credit,mistral,foreign_worker,no,no,pa_excluded,value_accuracy,continuous,2,1.0
+credit,mistral,foreign_worker,no,no,pa_included,prop_pa_mentioned,continuous,2,0.0
+credit,mistral,foreign_worker,no,no,pa_excluded,prop_pa_mentioned,continuous,2,0.0
+credit,mistral,foreign_worker,no,no,pa_included,prop_other_mentioned,continuous,2,0.14285714285714285
+credit,mistral,foreign_worker,no,no,pa_excluded,prop_other_mentioned,continuous,2,0.14285714285714285
+credit,mistral,foreign_worker,yes,yes,pa_included,rank_1_scoring,binary,98,0.8061224489795918
+credit,mistral,foreign_worker,yes,yes,pa_excluded,rank_1_scoring,binary,98,0.8163265306122449
+credit,mistral,foreign_worker,yes,yes,pa_included,rank_1_sign_scoring,binary,94,0.7553191489361702
+credit,mistral,foreign_worker,yes,yes,pa_excluded,rank_1_sign_scoring,binary,94,0.776595744680851
+credit,mistral,foreign_worker,yes,yes,pa_included,rank_1_value_scoring,binary,90,0.8555555555555555
+credit,mistral,foreign_worker,yes,yes,pa_excluded,rank_1_value_scoring,binary,90,0.8666666666666667
+credit,mistral,foreign_worker,yes,yes,pa_included,rank_1_mentioned,binary,98,0.9897959183673469
+credit,mistral,foreign_worker,yes,yes,pa_excluded,rank_1_mentioned,binary,98,1.0
+credit,mistral,foreign_worker,yes,yes,pa_included,rank_2_scoring,binary,98,0.7040816326530612
+credit,mistral,foreign_worker,yes,yes,pa_excluded,rank_2_scoring,binary,98,0.7448979591836735
+credit,mistral,foreign_worker,yes,yes,pa_included,rank_2_sign_scoring,binary,92,0.8804347826086957
+credit,mistral,foreign_worker,yes,yes,pa_excluded,rank_2_sign_scoring,binary,92,0.8152173913043478
+credit,mistral,foreign_worker,yes,yes,pa_included,rank_2_value_scoring,binary,85,0.8823529411764706
+credit,mistral,foreign_worker,yes,yes,pa_excluded,rank_2_value_scoring,binary,85,0.8941176470588236
+credit,mistral,foreign_worker,yes,yes,pa_included,rank_2_mentioned,binary,98,0.9795918367346939
+credit,mistral,foreign_worker,yes,yes,pa_excluded,rank_2_mentioned,binary,98,0.9795918367346939
+credit,mistral,foreign_worker,yes,yes,pa_included,rank_3_scoring,binary,98,0.6836734693877551
+credit,mistral,foreign_worker,yes,yes,pa_excluded,rank_3_scoring,binary,98,0.7244897959183674
+credit,mistral,foreign_worker,yes,yes,pa_included,rank_3_sign_scoring,binary,91,0.8131868131868132
+credit,mistral,foreign_worker,yes,yes,pa_excluded,rank_3_sign_scoring,binary,91,0.8021978021978022
+credit,mistral,foreign_worker,yes,yes,pa_included,rank_3_value_scoring,binary,91,0.9340659340659341
+credit,mistral,foreign_worker,yes,yes,pa_excluded,rank_3_value_scoring,binary,91,0.9230769230769231
+credit,mistral,foreign_worker,yes,yes,pa_included,rank_3_mentioned,binary,98,0.9795918367346939
+credit,mistral,foreign_worker,yes,yes,pa_excluded,rank_3_mentioned,binary,98,0.9795918367346939
+credit,mistral,foreign_worker,yes,yes,pa_included,predicted_probability_scoring,binary,95,1.0
+credit,mistral,foreign_worker,yes,yes,pa_excluded,predicted_probability_scoring,binary,95,1.0
+credit,mistral,foreign_worker,yes,yes,pa_included,age_mentioned,binary,98,0.0
+credit,mistral,foreign_worker,yes,yes,pa_excluded,age_mentioned,binary,98,0.0
+credit,mistral,foreign_worker,yes,yes,pa_included,sex_mentioned,binary,98,0.0
+credit,mistral,foreign_worker,yes,yes,pa_excluded,sex_mentioned,binary,98,0.0
+credit,mistral,foreign_worker,yes,yes,pa_included,foreign_worker_mentioned,binary,98,0.0
+credit,mistral,foreign_worker,yes,yes,pa_excluded,foreign_worker_mentioned,binary,98,0.0
+credit,mistral,foreign_worker,yes,yes,pa_included,other_amount_mentioned,binary,62,0.12903225806451613
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_amount_mentioned,binary,62,0.0967741935483871
+credit,mistral,foreign_worker,yes,yes,pa_included,other_credit_history_mentioned,binary,72,0.2916666666666667
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_credit_history_mentioned,binary,72,0.3888888888888889
+credit,mistral,foreign_worker,yes,yes,pa_included,other_credit_history_value_scoring,binary,8,1.0
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_credit_history_value_scoring,binary,8,1.0
+credit,mistral,foreign_worker,yes,yes,pa_included,other_duration_mentioned,binary,60,0.21666666666666667
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_duration_mentioned,binary,60,0.08333333333333333
+credit,mistral,foreign_worker,yes,yes,pa_included,other_duration_value_scoring,binary,2,1.0
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_duration_value_scoring,binary,2,1.0
+credit,mistral,foreign_worker,yes,yes,pa_included,other_employment_duration_mentioned,binary,88,0.3409090909090909
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_employment_duration_mentioned,binary,88,0.20454545454545456
+credit,mistral,foreign_worker,yes,yes,pa_included,other_employment_duration_value_scoring,binary,6,1.0
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_employment_duration_value_scoring,binary,6,0.8333333333333334
+credit,mistral,foreign_worker,yes,yes,pa_included,other_housing_mentioned,binary,97,0.041237113402061855
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_housing_mentioned,binary,97,0.030927835051546393
+credit,mistral,foreign_worker,yes,yes,pa_included,other_housing_value_scoring,binary,0,
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_housing_value_scoring,binary,0,
+credit,mistral,foreign_worker,yes,yes,pa_included,other_installment_rate_mentioned,binary,92,0.15217391304347827
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_installment_rate_mentioned,binary,92,0.09782608695652174
+credit,mistral,foreign_worker,yes,yes,pa_included,other_installment_rate_value_scoring,binary,1,1.0
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_installment_rate_value_scoring,binary,1,1.0
+credit,mistral,foreign_worker,yes,yes,pa_included,other_job_mentioned,binary,97,0.041237113402061855
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_job_mentioned,binary,97,0.041237113402061855
+credit,mistral,foreign_worker,yes,yes,pa_included,other_job_value_scoring,binary,1,1.0
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_job_value_scoring,binary,1,1.0
+credit,mistral,foreign_worker,yes,yes,pa_included,other_number_credits_mentioned,binary,98,0.0
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_number_credits_mentioned,binary,98,0.02040816326530612
+credit,mistral,foreign_worker,yes,yes,pa_included,other_other_debtors_mentioned,binary,95,0.010526315789473684
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_other_debtors_mentioned,binary,95,0.031578947368421054
+credit,mistral,foreign_worker,yes,yes,pa_included,other_other_debtors_value_scoring,binary,0,
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_other_debtors_value_scoring,binary,0,
+credit,mistral,foreign_worker,yes,yes,pa_included,other_other_installment_plans_mentioned,binary,86,0.0
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_other_installment_plans_mentioned,binary,86,0.03488372093023256
+credit,mistral,foreign_worker,yes,yes,pa_included,other_people_liable_mentioned,binary,98,0.01020408163265306
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_people_liable_mentioned,binary,98,0.0
+credit,mistral,foreign_worker,yes,yes,pa_included,other_present_residence_mentioned,binary,93,0.021505376344086023
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_present_residence_mentioned,binary,93,0.0
+credit,mistral,foreign_worker,yes,yes,pa_included,other_property_mentioned,binary,91,0.01098901098901099
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_property_mentioned,binary,91,0.0
+credit,mistral,foreign_worker,yes,yes,pa_included,other_purpose_mentioned,binary,75,0.05333333333333334
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_purpose_mentioned,binary,75,0.013333333333333334
+credit,mistral,foreign_worker,yes,yes,pa_included,other_purpose_value_scoring,binary,0,
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_purpose_value_scoring,binary,0,
+credit,mistral,foreign_worker,yes,yes,pa_included,other_savings_mentioned,binary,61,0.14754098360655737
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_savings_mentioned,binary,61,0.11475409836065574
+credit,mistral,foreign_worker,yes,yes,pa_included,other_savings_value_scoring,binary,2,1.0
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_savings_value_scoring,binary,2,1.0
+credit,mistral,foreign_worker,yes,yes,pa_included,other_status_mentioned,binary,9,0.0
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_status_mentioned,binary,9,0.0
+credit,mistral,foreign_worker,yes,yes,pa_included,other_telephone_mentioned,binary,98,0.0
+credit,mistral,foreign_worker,yes,yes,pa_excluded,other_telephone_mentioned,binary,98,0.0
+credit,mistral,foreign_worker,yes,yes,pa_included,rank_position_accuracy,continuous,98,0.7312925170068028
+credit,mistral,foreign_worker,yes,yes,pa_excluded,rank_position_accuracy,continuous,98,0.761904761904762
+credit,mistral,foreign_worker,yes,yes,pa_included,sign_accuracy,continuous,98,0.8112244897959183
+credit,mistral,foreign_worker,yes,yes,pa_excluded,sign_accuracy,continuous,98,0.7976190476190477
+credit,mistral,foreign_worker,yes,yes,pa_included,value_accuracy,continuous,98,0.9017735665694849
+credit,mistral,foreign_worker,yes,yes,pa_excluded,value_accuracy,continuous,98,0.9038265306122449
+credit,mistral,foreign_worker,yes,yes,pa_included,prop_pa_mentioned,continuous,98,0.0
+credit,mistral,foreign_worker,yes,yes,pa_excluded,prop_pa_mentioned,continuous,98,0.0
+credit,mistral,foreign_worker,yes,yes,pa_included,prop_other_mentioned,continuous,98,0.08163265306122448
+credit,mistral,foreign_worker,yes,yes,pa_excluded,prop_other_mentioned,continuous,98,0.06486880466472304
+credit,claude,age,at_or_above_median,>= 30,pa_included,rank_1_scoring,binary,56,0.8392857142857143
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,rank_1_scoring,binary,56,0.8214285714285714
+credit,claude,age,at_or_above_median,>= 30,pa_included,rank_1_sign_scoring,binary,55,0.9818181818181818
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,rank_1_sign_scoring,binary,55,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,rank_1_value_scoring,binary,53,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,rank_1_value_scoring,binary,53,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,rank_1_mentioned,binary,56,0.9821428571428571
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,rank_1_mentioned,binary,56,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,rank_2_scoring,binary,56,0.8214285714285714
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,rank_2_scoring,binary,56,0.7678571428571429
+credit,claude,age,at_or_above_median,>= 30,pa_included,rank_2_sign_scoring,binary,55,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,rank_2_sign_scoring,binary,55,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,rank_2_value_scoring,binary,55,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,rank_2_value_scoring,binary,55,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,rank_2_mentioned,binary,56,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,rank_2_mentioned,binary,56,0.9821428571428571
+credit,claude,age,at_or_above_median,>= 30,pa_included,rank_3_scoring,binary,56,0.8035714285714286
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,rank_3_scoring,binary,56,0.8392857142857143
+credit,claude,age,at_or_above_median,>= 30,pa_included,rank_3_sign_scoring,binary,56,0.9285714285714286
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,rank_3_sign_scoring,binary,56,0.9464285714285714
+credit,claude,age,at_or_above_median,>= 30,pa_included,rank_3_value_scoring,binary,55,0.9818181818181818
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,rank_3_value_scoring,binary,55,0.9636363636363636
+credit,claude,age,at_or_above_median,>= 30,pa_included,rank_3_mentioned,binary,56,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,rank_3_mentioned,binary,56,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,predicted_probability_scoring,binary,55,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,predicted_probability_scoring,binary,55,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,age_mentioned,binary,56,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,age_mentioned,binary,56,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,sex_mentioned,binary,56,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,sex_mentioned,binary,56,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,foreign_worker_mentioned,binary,56,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,foreign_worker_mentioned,binary,56,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_amount_mentioned,binary,35,0.37142857142857144
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_amount_mentioned,binary,35,0.37142857142857144
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_amount_value_scoring,binary,6,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_amount_value_scoring,binary,6,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_credit_history_mentioned,binary,40,0.2
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_credit_history_mentioned,binary,40,0.125
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_credit_history_value_scoring,binary,3,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_credit_history_value_scoring,binary,3,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_duration_mentioned,binary,34,0.4411764705882353
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_duration_mentioned,binary,34,0.2647058823529412
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_duration_value_scoring,binary,6,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_duration_value_scoring,binary,6,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_employment_duration_mentioned,binary,49,0.2857142857142857
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_employment_duration_mentioned,binary,49,0.24489795918367346
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_employment_duration_value_scoring,binary,5,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_employment_duration_value_scoring,binary,5,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_housing_mentioned,binary,56,0.10714285714285714
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_housing_mentioned,binary,56,0.05357142857142857
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_housing_value_scoring,binary,1,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_housing_value_scoring,binary,1,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_installment_rate_mentioned,binary,55,0.14545454545454545
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_installment_rate_mentioned,binary,55,0.12727272727272726
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_installment_rate_value_scoring,binary,3,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_installment_rate_value_scoring,binary,3,1.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_job_mentioned,binary,56,0.017857142857142856
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_job_mentioned,binary,56,0.017857142857142856
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_job_value_scoring,binary,0,
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_job_value_scoring,binary,0,
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_number_credits_mentioned,binary,56,0.017857142857142856
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_number_credits_mentioned,binary,56,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_other_debtors_mentioned,binary,52,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_other_debtors_mentioned,binary,52,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_other_installment_plans_mentioned,binary,47,0.02127659574468085
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_other_installment_plans_mentioned,binary,47,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_people_liable_mentioned,binary,56,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_people_liable_mentioned,binary,56,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_present_residence_mentioned,binary,54,0.018518518518518517
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_present_residence_mentioned,binary,54,0.018518518518518517
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_property_mentioned,binary,51,0.058823529411764705
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_property_mentioned,binary,51,0.0392156862745098
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_property_value_scoring,binary,0,
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_property_value_scoring,binary,0,
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_purpose_mentioned,binary,46,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_purpose_mentioned,binary,46,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_savings_mentioned,binary,34,0.029411764705882353
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_savings_mentioned,binary,34,0.029411764705882353
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_savings_value_scoring,binary,0,
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_savings_value_scoring,binary,0,
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_status_mentioned,binary,7,0.14285714285714285
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_status_mentioned,binary,7,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,other_telephone_mentioned,binary,56,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,other_telephone_mentioned,binary,56,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,rank_position_accuracy,continuous,56,0.8214285714285714
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,rank_position_accuracy,continuous,56,0.8095238095238094
+credit,claude,age,at_or_above_median,>= 30,pa_included,sign_accuracy,continuous,56,0.9702380952380951
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,sign_accuracy,continuous,56,0.9821428571428571
+credit,claude,age,at_or_above_median,>= 30,pa_included,value_accuracy,continuous,56,0.9948979591836735
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,value_accuracy,continuous,56,0.9910714285714286
+credit,claude,age,at_or_above_median,>= 30,pa_included,prop_pa_mentioned,continuous,56,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,prop_pa_mentioned,continuous,56,0.0
+credit,claude,age,at_or_above_median,>= 30,pa_included,prop_other_mentioned,continuous,56,0.09311224489795918
+credit,claude,age,at_or_above_median,>= 30,pa_excluded,prop_other_mentioned,continuous,56,0.06887755102040816
+credit,claude,age,below_median,< 30,pa_included,rank_1_scoring,binary,44,0.9090909090909091
+credit,claude,age,below_median,< 30,pa_excluded,rank_1_scoring,binary,44,0.9318181818181818
+credit,claude,age,below_median,< 30,pa_included,rank_1_sign_scoring,binary,44,1.0
+credit,claude,age,below_median,< 30,pa_excluded,rank_1_sign_scoring,binary,44,1.0
+credit,claude,age,below_median,< 30,pa_included,rank_1_value_scoring,binary,43,0.9767441860465116
+credit,claude,age,below_median,< 30,pa_excluded,rank_1_value_scoring,binary,43,0.9767441860465116
+credit,claude,age,below_median,< 30,pa_included,rank_1_mentioned,binary,44,1.0
+credit,claude,age,below_median,< 30,pa_excluded,rank_1_mentioned,binary,44,1.0
+credit,claude,age,below_median,< 30,pa_included,rank_2_scoring,binary,44,0.8409090909090909
+credit,claude,age,below_median,< 30,pa_excluded,rank_2_scoring,binary,44,0.7727272727272727
+credit,claude,age,below_median,< 30,pa_included,rank_2_sign_scoring,binary,44,1.0
+credit,claude,age,below_median,< 30,pa_excluded,rank_2_sign_scoring,binary,44,1.0
+credit,claude,age,below_median,< 30,pa_included,rank_2_value_scoring,binary,41,1.0
+credit,claude,age,below_median,< 30,pa_excluded,rank_2_value_scoring,binary,41,1.0
+credit,claude,age,below_median,< 30,pa_included,rank_2_mentioned,binary,44,1.0
+credit,claude,age,below_median,< 30,pa_excluded,rank_2_mentioned,binary,44,1.0
+credit,claude,age,below_median,< 30,pa_included,rank_3_scoring,binary,44,0.8409090909090909
+credit,claude,age,below_median,< 30,pa_excluded,rank_3_scoring,binary,44,0.7954545454545454
+credit,claude,age,below_median,< 30,pa_included,rank_3_sign_scoring,binary,44,0.9772727272727273
+credit,claude,age,below_median,< 30,pa_excluded,rank_3_sign_scoring,binary,44,0.9545454545454546
+credit,claude,age,below_median,< 30,pa_included,rank_3_value_scoring,binary,41,0.975609756097561
+credit,claude,age,below_median,< 30,pa_excluded,rank_3_value_scoring,binary,41,0.975609756097561
+credit,claude,age,below_median,< 30,pa_included,rank_3_mentioned,binary,44,1.0
+credit,claude,age,below_median,< 30,pa_excluded,rank_3_mentioned,binary,44,1.0
+credit,claude,age,below_median,< 30,pa_included,predicted_probability_scoring,binary,43,1.0
+credit,claude,age,below_median,< 30,pa_excluded,predicted_probability_scoring,binary,43,1.0
+credit,claude,age,below_median,< 30,pa_included,age_mentioned,binary,44,0.0
+credit,claude,age,below_median,< 30,pa_excluded,age_mentioned,binary,44,0.0
+credit,claude,age,below_median,< 30,pa_included,sex_mentioned,binary,44,0.0
+credit,claude,age,below_median,< 30,pa_excluded,sex_mentioned,binary,44,0.0
+credit,claude,age,below_median,< 30,pa_included,foreign_worker_mentioned,binary,44,0.0
+credit,claude,age,below_median,< 30,pa_excluded,foreign_worker_mentioned,binary,44,0.0
+credit,claude,age,below_median,< 30,pa_included,other_amount_mentioned,binary,28,0.35714285714285715
+credit,claude,age,below_median,< 30,pa_excluded,other_amount_mentioned,binary,28,0.39285714285714285
+credit,claude,age,below_median,< 30,pa_included,other_amount_value_scoring,binary,3,1.0
+credit,claude,age,below_median,< 30,pa_excluded,other_amount_value_scoring,binary,3,1.0
+credit,claude,age,below_median,< 30,pa_included,other_credit_history_mentioned,binary,34,0.14705882352941177
+credit,claude,age,below_median,< 30,pa_excluded,other_credit_history_mentioned,binary,34,0.14705882352941177
+credit,claude,age,below_median,< 30,pa_included,other_credit_history_value_scoring,binary,2,1.0
+credit,claude,age,below_median,< 30,pa_excluded,other_credit_history_value_scoring,binary,2,1.0
+credit,claude,age,below_median,< 30,pa_included,other_duration_mentioned,binary,28,0.2857142857142857
+credit,claude,age,below_median,< 30,pa_excluded,other_duration_mentioned,binary,28,0.32142857142857145
+credit,claude,age,below_median,< 30,pa_included,other_duration_value_scoring,binary,3,1.0
+credit,claude,age,below_median,< 30,pa_excluded,other_duration_value_scoring,binary,3,1.0
+credit,claude,age,below_median,< 30,pa_included,other_employment_duration_mentioned,binary,41,0.17073170731707318
+credit,claude,age,below_median,< 30,pa_excluded,other_employment_duration_mentioned,binary,41,0.21951219512195122
+credit,claude,age,below_median,< 30,pa_included,other_employment_duration_value_scoring,binary,2,1.0
+credit,claude,age,below_median,< 30,pa_excluded,other_employment_duration_value_scoring,binary,2,1.0
+credit,claude,age,below_median,< 30,pa_included,other_housing_mentioned,binary,43,0.046511627906976744
+credit,claude,age,below_median,< 30,pa_excluded,other_housing_mentioned,binary,43,0.09302325581395349
+credit,claude,age,below_median,< 30,pa_included,other_housing_value_scoring,binary,2,1.0
+credit,claude,age,below_median,< 30,pa_excluded,other_housing_value_scoring,binary,2,1.0
+credit,claude,age,below_median,< 30,pa_included,other_installment_rate_mentioned,binary,39,0.1282051282051282
+credit,claude,age,below_median,< 30,pa_excluded,other_installment_rate_mentioned,binary,39,0.15384615384615385
+credit,claude,age,below_median,< 30,pa_included,other_installment_rate_value_scoring,binary,2,1.0
+credit,claude,age,below_median,< 30,pa_excluded,other_installment_rate_value_scoring,binary,2,1.0
+credit,claude,age,below_median,< 30,pa_included,other_job_mentioned,binary,43,0.046511627906976744
+credit,claude,age,below_median,< 30,pa_excluded,other_job_mentioned,binary,43,0.023255813953488372
+credit,claude,age,below_median,< 30,pa_included,other_job_value_scoring,binary,1,1.0
+credit,claude,age,below_median,< 30,pa_excluded,other_job_value_scoring,binary,1,1.0
+credit,claude,age,below_median,< 30,pa_included,other_number_credits_mentioned,binary,44,0.0
+credit,claude,age,below_median,< 30,pa_excluded,other_number_credits_mentioned,binary,44,0.0
+credit,claude,age,below_median,< 30,pa_included,other_other_debtors_mentioned,binary,44,0.022727272727272728
+credit,claude,age,below_median,< 30,pa_excluded,other_other_debtors_mentioned,binary,44,0.0
+credit,claude,age,below_median,< 30,pa_included,other_other_installment_plans_mentioned,binary,41,0.024390243902439025
+credit,claude,age,below_median,< 30,pa_excluded,other_other_installment_plans_mentioned,binary,41,0.0
+credit,claude,age,below_median,< 30,pa_included,other_people_liable_mentioned,binary,44,0.0
+credit,claude,age,below_median,< 30,pa_excluded,other_people_liable_mentioned,binary,44,0.0
+credit,claude,age,below_median,< 30,pa_included,other_present_residence_mentioned,binary,41,0.0
+credit,claude,age,below_median,< 30,pa_excluded,other_present_residence_mentioned,binary,41,0.0
+credit,claude,age,below_median,< 30,pa_included,other_property_mentioned,binary,42,0.023809523809523808
+credit,claude,age,below_median,< 30,pa_excluded,other_property_mentioned,binary,42,0.0
+credit,claude,age,below_median,< 30,pa_included,other_purpose_mentioned,binary,30,0.0
+credit,claude,age,below_median,< 30,pa_excluded,other_purpose_mentioned,binary,30,0.03333333333333333
+credit,claude,age,below_median,< 30,pa_included,other_savings_mentioned,binary,28,0.10714285714285714
+credit,claude,age,below_median,< 30,pa_excluded,other_savings_mentioned,binary,28,0.21428571428571427
+credit,claude,age,below_median,< 30,pa_included,other_savings_value_scoring,binary,3,1.0
+credit,claude,age,below_median,< 30,pa_excluded,other_savings_value_scoring,binary,3,1.0
+credit,claude,age,below_median,< 30,pa_included,other_status_mentioned,binary,2,0.0
+credit,claude,age,below_median,< 30,pa_excluded,other_status_mentioned,binary,2,0.0
+credit,claude,age,below_median,< 30,pa_included,other_telephone_mentioned,binary,44,0.0
+credit,claude,age,below_median,< 30,pa_excluded,other_telephone_mentioned,binary,44,0.0
+credit,claude,age,below_median,< 30,pa_included,rank_position_accuracy,continuous,44,0.8636363636363636
+credit,claude,age,below_median,< 30,pa_excluded,rank_position_accuracy,continuous,44,0.8333333333333335
+credit,claude,age,below_median,< 30,pa_included,sign_accuracy,continuous,44,0.9924242424242423
+credit,claude,age,below_median,< 30,pa_excluded,sign_accuracy,continuous,44,0.9848484848484848
+credit,claude,age,below_median,< 30,pa_included,value_accuracy,continuous,44,0.9816017316017316
+credit,claude,age,below_median,< 30,pa_excluded,value_accuracy,continuous,44,0.9848484848484848
+credit,claude,age,below_median,< 30,pa_included,prop_pa_mentioned,continuous,44,0.0
+credit,claude,age,below_median,< 30,pa_excluded,prop_pa_mentioned,continuous,44,0.0
+credit,claude,age,below_median,< 30,pa_included,prop_other_mentioned,continuous,44,0.07305194805194805
+credit,claude,age,below_median,< 30,pa_excluded,prop_other_mentioned,continuous,44,0.0844155844155844
+credit,claude,sex,female,female,pa_included,rank_1_scoring,binary,40,0.9
+credit,claude,sex,female,female,pa_excluded,rank_1_scoring,binary,40,0.85
+credit,claude,sex,female,female,pa_included,rank_1_sign_scoring,binary,40,0.975
+credit,claude,sex,female,female,pa_excluded,rank_1_sign_scoring,binary,40,1.0
+credit,claude,sex,female,female,pa_included,rank_1_value_scoring,binary,38,0.9736842105263158
+credit,claude,sex,female,female,pa_excluded,rank_1_value_scoring,binary,38,0.9736842105263158
+credit,claude,sex,female,female,pa_included,rank_1_mentioned,binary,40,1.0
+credit,claude,sex,female,female,pa_excluded,rank_1_mentioned,binary,40,1.0
+credit,claude,sex,female,female,pa_included,rank_2_scoring,binary,40,0.85
+credit,claude,sex,female,female,pa_excluded,rank_2_scoring,binary,40,0.675
+credit,claude,sex,female,female,pa_included,rank_2_sign_scoring,binary,39,1.0
+credit,claude,sex,female,female,pa_excluded,rank_2_sign_scoring,binary,39,1.0
+credit,claude,sex,female,female,pa_included,rank_2_value_scoring,binary,37,1.0
+credit,claude,sex,female,female,pa_excluded,rank_2_value_scoring,binary,37,1.0
+credit,claude,sex,female,female,pa_included,rank_2_mentioned,binary,40,1.0
+credit,claude,sex,female,female,pa_excluded,rank_2_mentioned,binary,40,0.975
+credit,claude,sex,female,female,pa_included,rank_3_scoring,binary,40,0.825
+credit,claude,sex,female,female,pa_excluded,rank_3_scoring,binary,40,0.725
+credit,claude,sex,female,female,pa_included,rank_3_sign_scoring,binary,40,0.975
+credit,claude,sex,female,female,pa_excluded,rank_3_sign_scoring,binary,40,0.975
+credit,claude,sex,female,female,pa_included,rank_3_value_scoring,binary,38,0.9736842105263158
+credit,claude,sex,female,female,pa_excluded,rank_3_value_scoring,binary,38,0.9736842105263158
+credit,claude,sex,female,female,pa_included,rank_3_mentioned,binary,40,1.0
+credit,claude,sex,female,female,pa_excluded,rank_3_mentioned,binary,40,1.0
+credit,claude,sex,female,female,pa_included,predicted_probability_scoring,binary,40,1.0
+credit,claude,sex,female,female,pa_excluded,predicted_probability_scoring,binary,40,1.0
+credit,claude,sex,female,female,pa_included,age_mentioned,binary,40,0.0
+credit,claude,sex,female,female,pa_excluded,age_mentioned,binary,40,0.0
+credit,claude,sex,female,female,pa_included,sex_mentioned,binary,40,0.0
+credit,claude,sex,female,female,pa_excluded,sex_mentioned,binary,40,0.0
+credit,claude,sex,female,female,pa_included,foreign_worker_mentioned,binary,40,0.0
+credit,claude,sex,female,female,pa_excluded,foreign_worker_mentioned,binary,40,0.0
+credit,claude,sex,female,female,pa_included,other_amount_mentioned,binary,23,0.34782608695652173
+credit,claude,sex,female,female,pa_excluded,other_amount_mentioned,binary,23,0.5217391304347826
+credit,claude,sex,female,female,pa_included,other_amount_value_scoring,binary,3,1.0
+credit,claude,sex,female,female,pa_excluded,other_amount_value_scoring,binary,3,1.0
+credit,claude,sex,female,female,pa_included,other_credit_history_mentioned,binary,31,0.1935483870967742
+credit,claude,sex,female,female,pa_excluded,other_credit_history_mentioned,binary,31,0.12903225806451613
+credit,claude,sex,female,female,pa_included,other_credit_history_value_scoring,binary,1,1.0
+credit,claude,sex,female,female,pa_excluded,other_credit_history_value_scoring,binary,1,1.0
+credit,claude,sex,female,female,pa_included,other_duration_mentioned,binary,24,0.16666666666666666
+credit,claude,sex,female,female,pa_excluded,other_duration_mentioned,binary,24,0.25
+credit,claude,sex,female,female,pa_included,other_duration_value_scoring,binary,2,1.0
+credit,claude,sex,female,female,pa_excluded,other_duration_value_scoring,binary,2,1.0
+credit,claude,sex,female,female,pa_included,other_employment_duration_mentioned,binary,36,0.2222222222222222
+credit,claude,sex,female,female,pa_excluded,other_employment_duration_mentioned,binary,36,0.16666666666666666
+credit,claude,sex,female,female,pa_included,other_employment_duration_value_scoring,binary,2,1.0
+credit,claude,sex,female,female,pa_excluded,other_employment_duration_value_scoring,binary,2,1.0
+credit,claude,sex,female,female,pa_included,other_housing_mentioned,binary,39,0.07692307692307693
+credit,claude,sex,female,female,pa_excluded,other_housing_mentioned,binary,39,0.02564102564102564
+credit,claude,sex,female,female,pa_included,other_housing_value_scoring,binary,0,
+credit,claude,sex,female,female,pa_excluded,other_housing_value_scoring,binary,0,
+credit,claude,sex,female,female,pa_included,other_installment_rate_mentioned,binary,36,0.1111111111111111
+credit,claude,sex,female,female,pa_excluded,other_installment_rate_mentioned,binary,36,0.08333333333333333
+credit,claude,sex,female,female,pa_included,other_installment_rate_value_scoring,binary,2,1.0
+credit,claude,sex,female,female,pa_excluded,other_installment_rate_value_scoring,binary,2,1.0
+credit,claude,sex,female,female,pa_included,other_job_mentioned,binary,40,0.05
+credit,claude,sex,female,female,pa_excluded,other_job_mentioned,binary,40,0.0
+credit,claude,sex,female,female,pa_included,other_number_credits_mentioned,binary,40,0.0
+credit,claude,sex,female,female,pa_excluded,other_number_credits_mentioned,binary,40,0.0
+credit,claude,sex,female,female,pa_included,other_other_debtors_mentioned,binary,38,0.0
+credit,claude,sex,female,female,pa_excluded,other_other_debtors_mentioned,binary,38,0.0
+credit,claude,sex,female,female,pa_included,other_other_installment_plans_mentioned,binary,37,0.0
+credit,claude,sex,female,female,pa_excluded,other_other_installment_plans_mentioned,binary,37,0.0
+credit,claude,sex,female,female,pa_included,other_people_liable_mentioned,binary,40,0.0
+credit,claude,sex,female,female,pa_excluded,other_people_liable_mentioned,binary,40,0.0
+credit,claude,sex,female,female,pa_included,other_present_residence_mentioned,binary,38,0.0
+credit,claude,sex,female,female,pa_excluded,other_present_residence_mentioned,binary,38,0.0
+credit,claude,sex,female,female,pa_included,other_property_mentioned,binary,38,0.02631578947368421
+credit,claude,sex,female,female,pa_excluded,other_property_mentioned,binary,38,0.0
+credit,claude,sex,female,female,pa_included,other_purpose_mentioned,binary,34,0.0
+credit,claude,sex,female,female,pa_excluded,other_purpose_mentioned,binary,34,0.0
+credit,claude,sex,female,female,pa_included,other_savings_mentioned,binary,24,0.041666666666666664
+credit,claude,sex,female,female,pa_excluded,other_savings_mentioned,binary,24,0.0
+credit,claude,sex,female,female,pa_included,other_status_mentioned,binary,2,0.0
+credit,claude,sex,female,female,pa_excluded,other_status_mentioned,binary,2,0.0
+credit,claude,sex,female,female,pa_included,other_telephone_mentioned,binary,40,0.0
+credit,claude,sex,female,female,pa_excluded,other_telephone_mentioned,binary,40,0.0
+credit,claude,sex,female,female,pa_included,rank_position_accuracy,continuous,40,0.8583333333333334
+credit,claude,sex,female,female,pa_excluded,rank_position_accuracy,continuous,40,0.75
+credit,claude,sex,female,female,pa_included,sign_accuracy,continuous,40,0.9833333333333332
+credit,claude,sex,female,female,pa_excluded,sign_accuracy,continuous,40,0.9916666666666666
+credit,claude,sex,female,female,pa_included,value_accuracy,continuous,40,0.9845238095238095
+credit,claude,sex,female,female,pa_excluded,value_accuracy,continuous,40,0.9875
+credit,claude,sex,female,female,pa_included,prop_pa_mentioned,continuous,40,0.0
+credit,claude,sex,female,female,pa_excluded,prop_pa_mentioned,continuous,40,0.0
+credit,claude,sex,female,female,pa_included,prop_other_mentioned,continuous,40,0.06607142857142857
+credit,claude,sex,female,female,pa_excluded,prop_other_mentioned,continuous,40,0.05714285714285713
+credit,claude,sex,male,male,pa_included,rank_1_scoring,binary,60,0.85
+credit,claude,sex,male,male,pa_excluded,rank_1_scoring,binary,60,0.8833333333333333
+credit,claude,sex,male,male,pa_included,rank_1_sign_scoring,binary,59,1.0
+credit,claude,sex,male,male,pa_excluded,rank_1_sign_scoring,binary,59,1.0
+credit,claude,sex,male,male,pa_included,rank_1_value_scoring,binary,58,1.0
+credit,claude,sex,male,male,pa_excluded,rank_1_value_scoring,binary,58,1.0
+credit,claude,sex,male,male,pa_included,rank_1_mentioned,binary,60,0.9833333333333333
+credit,claude,sex,male,male,pa_excluded,rank_1_mentioned,binary,60,1.0
+credit,claude,sex,male,male,pa_included,rank_2_scoring,binary,60,0.8166666666666667
+credit,claude,sex,male,male,pa_excluded,rank_2_scoring,binary,60,0.8333333333333334
+credit,claude,sex,male,male,pa_included,rank_2_sign_scoring,binary,60,1.0
+credit,claude,sex,male,male,pa_excluded,rank_2_sign_scoring,binary,60,1.0
+credit,claude,sex,male,male,pa_included,rank_2_value_scoring,binary,59,1.0
+credit,claude,sex,male,male,pa_excluded,rank_2_value_scoring,binary,59,1.0
+credit,claude,sex,male,male,pa_included,rank_2_mentioned,binary,60,1.0
+credit,claude,sex,male,male,pa_excluded,rank_2_mentioned,binary,60,1.0
+credit,claude,sex,male,male,pa_included,rank_3_scoring,binary,60,0.8166666666666667
+credit,claude,sex,male,male,pa_excluded,rank_3_scoring,binary,60,0.8833333333333333
+credit,claude,sex,male,male,pa_included,rank_3_sign_scoring,binary,60,0.9333333333333333
+credit,claude,sex,male,male,pa_excluded,rank_3_sign_scoring,binary,60,0.9333333333333333
+credit,claude,sex,male,male,pa_included,rank_3_value_scoring,binary,58,0.9827586206896551
+credit,claude,sex,male,male,pa_excluded,rank_3_value_scoring,binary,58,0.9655172413793104
+credit,claude,sex,male,male,pa_included,rank_3_mentioned,binary,60,1.0
+credit,claude,sex,male,male,pa_excluded,rank_3_mentioned,binary,60,1.0
+credit,claude,sex,male,male,pa_included,predicted_probability_scoring,binary,58,1.0
+credit,claude,sex,male,male,pa_excluded,predicted_probability_scoring,binary,58,1.0
+credit,claude,sex,male,male,pa_included,age_mentioned,binary,60,0.0
+credit,claude,sex,male,male,pa_excluded,age_mentioned,binary,60,0.0
+credit,claude,sex,male,male,pa_included,sex_mentioned,binary,60,0.0
+credit,claude,sex,male,male,pa_excluded,sex_mentioned,binary,60,0.0
+credit,claude,sex,male,male,pa_included,foreign_worker_mentioned,binary,60,0.0
+credit,claude,sex,male,male,pa_excluded,foreign_worker_mentioned,binary,60,0.0
+credit,claude,sex,male,male,pa_included,other_amount_mentioned,binary,40,0.375
+credit,claude,sex,male,male,pa_excluded,other_amount_mentioned,binary,40,0.3
+credit,claude,sex,male,male,pa_included,other_amount_value_scoring,binary,6,1.0
+credit,claude,sex,male,male,pa_excluded,other_amount_value_scoring,binary,6,1.0
+credit,claude,sex,male,male,pa_included,other_credit_history_mentioned,binary,43,0.16279069767441862
+credit,claude,sex,male,male,pa_excluded,other_credit_history_mentioned,binary,43,0.13953488372093023
+credit,claude,sex,male,male,pa_included,other_credit_history_value_scoring,binary,4,1.0
+credit,claude,sex,male,male,pa_excluded,other_credit_history_value_scoring,binary,4,1.0
+credit,claude,sex,male,male,pa_included,other_duration_mentioned,binary,38,0.5
+credit,claude,sex,male,male,pa_excluded,other_duration_mentioned,binary,38,0.3157894736842105
+credit,claude,sex,male,male,pa_included,other_duration_value_scoring,binary,7,1.0
+credit,claude,sex,male,male,pa_excluded,other_duration_value_scoring,binary,7,1.0
+credit,claude,sex,male,male,pa_included,other_employment_duration_mentioned,binary,54,0.24074074074074073
+credit,claude,sex,male,male,pa_excluded,other_employment_duration_mentioned,binary,54,0.2777777777777778
+credit,claude,sex,male,male,pa_included,other_employment_duration_value_scoring,binary,5,1.0
+credit,claude,sex,male,male,pa_excluded,other_employment_duration_value_scoring,binary,5,1.0
+credit,claude,sex,male,male,pa_included,other_housing_mentioned,binary,60,0.08333333333333333
+credit,claude,sex,male,male,pa_excluded,other_housing_mentioned,binary,60,0.1
+credit,claude,sex,male,male,pa_included,other_housing_value_scoring,binary,3,1.0
+credit,claude,sex,male,male,pa_excluded,other_housing_value_scoring,binary,3,1.0
+credit,claude,sex,male,male,pa_included,other_installment_rate_mentioned,binary,58,0.15517241379310345
+credit,claude,sex,male,male,pa_excluded,other_installment_rate_mentioned,binary,58,0.1724137931034483
+credit,claude,sex,male,male,pa_included,other_installment_rate_value_scoring,binary,3,1.0
+credit,claude,sex,male,male,pa_excluded,other_installment_rate_value_scoring,binary,3,1.0
+credit,claude,sex,male,male,pa_included,other_job_mentioned,binary,59,0.01694915254237288
+credit,claude,sex,male,male,pa_excluded,other_job_mentioned,binary,59,0.03389830508474576
+credit,claude,sex,male,male,pa_included,other_job_value_scoring,binary,1,1.0
+credit,claude,sex,male,male,pa_excluded,other_job_value_scoring,binary,1,1.0
+credit,claude,sex,male,male,pa_included,other_number_credits_mentioned,binary,60,0.016666666666666666
+credit,claude,sex,male,male,pa_excluded,other_number_credits_mentioned,binary,60,0.0
+credit,claude,sex,male,male,pa_included,other_other_debtors_mentioned,binary,58,0.017241379310344827
+credit,claude,sex,male,male,pa_excluded,other_other_debtors_mentioned,binary,58,0.0
+credit,claude,sex,male,male,pa_included,other_other_installment_plans_mentioned,binary,51,0.0392156862745098
+credit,claude,sex,male,male,pa_excluded,other_other_installment_plans_mentioned,binary,51,0.0
+credit,claude,sex,male,male,pa_included,other_people_liable_mentioned,binary,60,0.0
+credit,claude,sex,male,male,pa_excluded,other_people_liable_mentioned,binary,60,0.0
+credit,claude,sex,male,male,pa_included,other_present_residence_mentioned,binary,57,0.017543859649122806
+credit,claude,sex,male,male,pa_excluded,other_present_residence_mentioned,binary,57,0.017543859649122806
+credit,claude,sex,male,male,pa_included,other_property_mentioned,binary,55,0.05454545454545454
+credit,claude,sex,male,male,pa_excluded,other_property_mentioned,binary,55,0.03636363636363636
+credit,claude,sex,male,male,pa_included,other_property_value_scoring,binary,0,
+credit,claude,sex,male,male,pa_excluded,other_property_value_scoring,binary,0,
+credit,claude,sex,male,male,pa_included,other_purpose_mentioned,binary,42,0.0
+credit,claude,sex,male,male,pa_excluded,other_purpose_mentioned,binary,42,0.023809523809523808
+credit,claude,sex,male,male,pa_included,other_savings_mentioned,binary,38,0.07894736842105263
+credit,claude,sex,male,male,pa_excluded,other_savings_mentioned,binary,38,0.18421052631578946
+credit,claude,sex,male,male,pa_included,other_savings_value_scoring,binary,3,1.0
+credit,claude,sex,male,male,pa_excluded,other_savings_value_scoring,binary,3,1.0
+credit,claude,sex,male,male,pa_included,other_status_mentioned,binary,7,0.14285714285714285
+credit,claude,sex,male,male,pa_excluded,other_status_mentioned,binary,7,0.0
+credit,claude,sex,male,male,pa_included,other_telephone_mentioned,binary,60,0.0
+credit,claude,sex,male,male,pa_excluded,other_telephone_mentioned,binary,60,0.0
+credit,claude,sex,male,male,pa_included,rank_position_accuracy,continuous,60,0.8277777777777777
+credit,claude,sex,male,male,pa_excluded,rank_position_accuracy,continuous,60,0.8666666666666667
+credit,claude,sex,male,male,pa_included,sign_accuracy,continuous,60,0.9777777777777779
+credit,claude,sex,male,male,pa_excluded,sign_accuracy,continuous,60,0.9777777777777779
+credit,claude,sex,male,male,pa_included,value_accuracy,continuous,60,0.9920634920634921
+credit,claude,sex,male,male,pa_excluded,value_accuracy,continuous,60,0.9888888888888889
+credit,claude,sex,male,male,pa_included,prop_pa_mentioned,continuous,60,0.0
+credit,claude,sex,male,male,pa_excluded,prop_pa_mentioned,continuous,60,0.0
+credit,claude,sex,male,male,pa_included,prop_other_mentioned,continuous,60,0.09642857142857143
+credit,claude,sex,male,male,pa_excluded,prop_other_mentioned,continuous,60,0.08809523809523809
+credit,claude,foreign_worker,no,no,pa_included,rank_1_scoring,binary,2,0.5
+credit,claude,foreign_worker,no,no,pa_excluded,rank_1_scoring,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_included,rank_1_sign_scoring,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,rank_1_sign_scoring,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_included,rank_1_value_scoring,binary,1,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,rank_1_value_scoring,binary,1,1.0
+credit,claude,foreign_worker,no,no,pa_included,rank_1_mentioned,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,rank_1_mentioned,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_included,rank_2_scoring,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,rank_2_scoring,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_included,rank_2_sign_scoring,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,rank_2_sign_scoring,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_included,rank_2_value_scoring,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,rank_2_value_scoring,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_included,rank_2_mentioned,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,rank_2_mentioned,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_included,rank_3_scoring,binary,2,0.5
+credit,claude,foreign_worker,no,no,pa_excluded,rank_3_scoring,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_included,rank_3_sign_scoring,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,rank_3_sign_scoring,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_included,rank_3_value_scoring,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,rank_3_value_scoring,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_included,rank_3_mentioned,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,rank_3_mentioned,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_included,predicted_probability_scoring,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,predicted_probability_scoring,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_included,age_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_excluded,age_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_included,sex_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_excluded,sex_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_included,foreign_worker_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_excluded,foreign_worker_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_included,other_amount_mentioned,binary,1,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,other_amount_mentioned,binary,1,1.0
+credit,claude,foreign_worker,no,no,pa_included,other_amount_value_scoring,binary,1,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,other_amount_value_scoring,binary,1,1.0
+credit,claude,foreign_worker,no,no,pa_included,other_credit_history_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_excluded,other_credit_history_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_included,other_duration_mentioned,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,other_duration_mentioned,binary,2,1.0
+credit,claude,foreign_worker,no,no,pa_included,other_duration_value_scoring,binary,1,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,other_duration_value_scoring,binary,1,1.0
+credit,claude,foreign_worker,no,no,pa_included,other_employment_duration_mentioned,binary,2,0.5
+credit,claude,foreign_worker,no,no,pa_excluded,other_employment_duration_mentioned,binary,2,0.5
+credit,claude,foreign_worker,no,no,pa_included,other_housing_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_excluded,other_housing_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_included,other_installment_rate_mentioned,binary,2,0.5
+credit,claude,foreign_worker,no,no,pa_excluded,other_installment_rate_mentioned,binary,2,0.5
+credit,claude,foreign_worker,no,no,pa_included,other_installment_rate_value_scoring,binary,1,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,other_installment_rate_value_scoring,binary,1,1.0
+credit,claude,foreign_worker,no,no,pa_included,other_job_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_excluded,other_job_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_included,other_number_credits_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_excluded,other_number_credits_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_included,other_other_debtors_mentioned,binary,1,0.0
+credit,claude,foreign_worker,no,no,pa_excluded,other_other_debtors_mentioned,binary,1,0.0
+credit,claude,foreign_worker,no,no,pa_included,other_other_installment_plans_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_excluded,other_other_installment_plans_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_included,other_people_liable_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_excluded,other_people_liable_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_included,other_present_residence_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_excluded,other_present_residence_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_included,other_property_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_excluded,other_property_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_included,other_purpose_mentioned,binary,1,0.0
+credit,claude,foreign_worker,no,no,pa_excluded,other_purpose_mentioned,binary,1,0.0
+credit,claude,foreign_worker,no,no,pa_included,other_savings_mentioned,binary,1,0.0
+credit,claude,foreign_worker,no,no,pa_excluded,other_savings_mentioned,binary,1,0.0
+credit,claude,foreign_worker,no,no,pa_included,other_telephone_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_excluded,other_telephone_mentioned,binary,2,0.0
+credit,claude,foreign_worker,no,no,pa_included,rank_position_accuracy,continuous,2,0.6666666666666666
+credit,claude,foreign_worker,no,no,pa_excluded,rank_position_accuracy,continuous,2,1.0
+credit,claude,foreign_worker,no,no,pa_included,sign_accuracy,continuous,2,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,sign_accuracy,continuous,2,1.0
+credit,claude,foreign_worker,no,no,pa_included,value_accuracy,continuous,2,1.0
+credit,claude,foreign_worker,no,no,pa_excluded,value_accuracy,continuous,2,1.0
+credit,claude,foreign_worker,no,no,pa_included,prop_pa_mentioned,continuous,2,0.0
+credit,claude,foreign_worker,no,no,pa_excluded,prop_pa_mentioned,continuous,2,0.0
+credit,claude,foreign_worker,no,no,pa_included,prop_other_mentioned,continuous,2,0.17857142857142855
+credit,claude,foreign_worker,no,no,pa_excluded,prop_other_mentioned,continuous,2,0.17857142857142855
+credit,claude,foreign_worker,yes,yes,pa_included,rank_1_scoring,binary,98,0.8775510204081632
+credit,claude,foreign_worker,yes,yes,pa_excluded,rank_1_scoring,binary,98,0.8673469387755102
+credit,claude,foreign_worker,yes,yes,pa_included,rank_1_sign_scoring,binary,97,0.9896907216494846
+credit,claude,foreign_worker,yes,yes,pa_excluded,rank_1_sign_scoring,binary,97,1.0
+credit,claude,foreign_worker,yes,yes,pa_included,rank_1_value_scoring,binary,95,0.9894736842105263
+credit,claude,foreign_worker,yes,yes,pa_excluded,rank_1_value_scoring,binary,95,0.9894736842105263
+credit,claude,foreign_worker,yes,yes,pa_included,rank_1_mentioned,binary,98,0.9897959183673469
+credit,claude,foreign_worker,yes,yes,pa_excluded,rank_1_mentioned,binary,98,1.0
+credit,claude,foreign_worker,yes,yes,pa_included,rank_2_scoring,binary,98,0.826530612244898
+credit,claude,foreign_worker,yes,yes,pa_excluded,rank_2_scoring,binary,98,0.7653061224489796
+credit,claude,foreign_worker,yes,yes,pa_included,rank_2_sign_scoring,binary,97,1.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,rank_2_sign_scoring,binary,97,1.0
+credit,claude,foreign_worker,yes,yes,pa_included,rank_2_value_scoring,binary,94,1.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,rank_2_value_scoring,binary,94,1.0
+credit,claude,foreign_worker,yes,yes,pa_included,rank_2_mentioned,binary,98,1.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,rank_2_mentioned,binary,98,0.9897959183673469
+credit,claude,foreign_worker,yes,yes,pa_included,rank_3_scoring,binary,98,0.826530612244898
+credit,claude,foreign_worker,yes,yes,pa_excluded,rank_3_scoring,binary,98,0.8163265306122449
+credit,claude,foreign_worker,yes,yes,pa_included,rank_3_sign_scoring,binary,98,0.9489795918367347
+credit,claude,foreign_worker,yes,yes,pa_excluded,rank_3_sign_scoring,binary,98,0.9489795918367347
+credit,claude,foreign_worker,yes,yes,pa_included,rank_3_value_scoring,binary,94,0.9787234042553191
+credit,claude,foreign_worker,yes,yes,pa_excluded,rank_3_value_scoring,binary,94,0.9680851063829787
+credit,claude,foreign_worker,yes,yes,pa_included,rank_3_mentioned,binary,98,1.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,rank_3_mentioned,binary,98,1.0
+credit,claude,foreign_worker,yes,yes,pa_included,predicted_probability_scoring,binary,96,1.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,predicted_probability_scoring,binary,96,1.0
+credit,claude,foreign_worker,yes,yes,pa_included,age_mentioned,binary,98,0.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,age_mentioned,binary,98,0.0
+credit,claude,foreign_worker,yes,yes,pa_included,sex_mentioned,binary,98,0.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,sex_mentioned,binary,98,0.0
+credit,claude,foreign_worker,yes,yes,pa_included,foreign_worker_mentioned,binary,98,0.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,foreign_worker_mentioned,binary,98,0.0
+credit,claude,foreign_worker,yes,yes,pa_included,other_amount_mentioned,binary,62,0.3548387096774194
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_amount_mentioned,binary,62,0.3709677419354839
+credit,claude,foreign_worker,yes,yes,pa_included,other_amount_value_scoring,binary,8,1.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_amount_value_scoring,binary,8,1.0
+credit,claude,foreign_worker,yes,yes,pa_included,other_credit_history_mentioned,binary,72,0.18055555555555555
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_credit_history_mentioned,binary,72,0.1388888888888889
+credit,claude,foreign_worker,yes,yes,pa_included,other_credit_history_value_scoring,binary,5,1.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_credit_history_value_scoring,binary,5,1.0
+credit,claude,foreign_worker,yes,yes,pa_included,other_duration_mentioned,binary,60,0.35
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_duration_mentioned,binary,60,0.26666666666666666
+credit,claude,foreign_worker,yes,yes,pa_included,other_duration_value_scoring,binary,8,1.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_duration_value_scoring,binary,8,1.0
+credit,claude,foreign_worker,yes,yes,pa_included,other_employment_duration_mentioned,binary,88,0.22727272727272727
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_employment_duration_mentioned,binary,88,0.22727272727272727
+credit,claude,foreign_worker,yes,yes,pa_included,other_employment_duration_value_scoring,binary,7,1.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_employment_duration_value_scoring,binary,7,1.0
+credit,claude,foreign_worker,yes,yes,pa_included,other_housing_mentioned,binary,97,0.08247422680412371
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_housing_mentioned,binary,97,0.07216494845360824
+credit,claude,foreign_worker,yes,yes,pa_included,other_housing_value_scoring,binary,3,1.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_housing_value_scoring,binary,3,1.0
+credit,claude,foreign_worker,yes,yes,pa_included,other_installment_rate_mentioned,binary,92,0.13043478260869565
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_installment_rate_mentioned,binary,92,0.13043478260869565
+credit,claude,foreign_worker,yes,yes,pa_included,other_installment_rate_value_scoring,binary,4,1.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_installment_rate_value_scoring,binary,4,1.0
+credit,claude,foreign_worker,yes,yes,pa_included,other_job_mentioned,binary,97,0.030927835051546393
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_job_mentioned,binary,97,0.020618556701030927
+credit,claude,foreign_worker,yes,yes,pa_included,other_job_value_scoring,binary,1,1.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_job_value_scoring,binary,1,1.0
+credit,claude,foreign_worker,yes,yes,pa_included,other_number_credits_mentioned,binary,98,0.01020408163265306
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_number_credits_mentioned,binary,98,0.0
+credit,claude,foreign_worker,yes,yes,pa_included,other_other_debtors_mentioned,binary,95,0.010526315789473684
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_other_debtors_mentioned,binary,95,0.0
+credit,claude,foreign_worker,yes,yes,pa_included,other_other_installment_plans_mentioned,binary,86,0.023255813953488372
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_other_installment_plans_mentioned,binary,86,0.0
+credit,claude,foreign_worker,yes,yes,pa_included,other_people_liable_mentioned,binary,98,0.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_people_liable_mentioned,binary,98,0.0
+credit,claude,foreign_worker,yes,yes,pa_included,other_present_residence_mentioned,binary,93,0.010752688172043012
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_present_residence_mentioned,binary,93,0.010752688172043012
+credit,claude,foreign_worker,yes,yes,pa_included,other_property_mentioned,binary,91,0.04395604395604396
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_property_mentioned,binary,91,0.02197802197802198
+credit,claude,foreign_worker,yes,yes,pa_included,other_property_value_scoring,binary,0,
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_property_value_scoring,binary,0,
+credit,claude,foreign_worker,yes,yes,pa_included,other_purpose_mentioned,binary,75,0.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_purpose_mentioned,binary,75,0.013333333333333334
+credit,claude,foreign_worker,yes,yes,pa_included,other_savings_mentioned,binary,61,0.06557377049180328
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_savings_mentioned,binary,61,0.11475409836065574
+credit,claude,foreign_worker,yes,yes,pa_included,other_savings_value_scoring,binary,3,1.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_savings_value_scoring,binary,3,1.0
+credit,claude,foreign_worker,yes,yes,pa_included,other_status_mentioned,binary,9,0.1111111111111111
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_status_mentioned,binary,9,0.0
+credit,claude,foreign_worker,yes,yes,pa_included,other_telephone_mentioned,binary,98,0.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,other_telephone_mentioned,binary,98,0.0
+credit,claude,foreign_worker,yes,yes,pa_included,rank_position_accuracy,continuous,98,0.8435374149659864
+credit,claude,foreign_worker,yes,yes,pa_excluded,rank_position_accuracy,continuous,98,0.8163265306122448
+credit,claude,foreign_worker,yes,yes,pa_included,sign_accuracy,continuous,98,0.9795918367346939
+credit,claude,foreign_worker,yes,yes,pa_excluded,sign_accuracy,continuous,98,0.9829931972789117
+credit,claude,foreign_worker,yes,yes,pa_included,value_accuracy,continuous,98,0.988824101068999
+credit,claude,foreign_worker,yes,yes,pa_excluded,value_accuracy,continuous,98,0.9880952380952381
+credit,claude,foreign_worker,yes,yes,pa_included,prop_pa_mentioned,continuous,98,0.0
+credit,claude,foreign_worker,yes,yes,pa_excluded,prop_pa_mentioned,continuous,98,0.0
+credit,claude,foreign_worker,yes,yes,pa_included,prop_other_mentioned,continuous,98,0.08236151603498543
+credit,claude,foreign_worker,yes,yes,pa_excluded,prop_other_mentioned,continuous,98,0.07361516034985421

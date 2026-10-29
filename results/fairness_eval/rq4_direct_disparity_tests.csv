@@ -1,0 +1,335 @@
+dataset,provider,cf_label,attribute,override_value,metric,metric_type,test,statistic,p_value,effect_size,effect_size_type,n_pairs,mean_counterfactual,mean_factual,n_discordant,p_value_fdr,significant_raw,significant_fdr
+credit,openai,age_atabove_to_young,age,25.0,rank_1_scoring,binary,McNemar,1.0,0.375,4.0,odds_ratio,56,0.9642857142857143,0.9107142857142857,5,1.0,False,False
+credit,openai,age_atabove_to_young,age,25.0,rank_1_sign_scoring,binary,McNemar,1.0,1.0,1.0,odds_ratio,56,0.9821428571428571,0.9821428571428571,2,1.0,False,False
+credit,openai,age_atabove_to_young,age,25.0,rank_1_value_scoring,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,56,0.9821428571428571,1.0,1,1.0,False,False
+credit,openai,age_atabove_to_young,age,25.0,rank_2_scoring,binary,McNemar,1.0,0.21875,5.0,odds_ratio,56,0.9821428571428571,0.9107142857142857,6,1.0,False,False
+credit,openai,age_atabove_to_young,age,25.0,rank_2_sign_scoring,binary,McNemar,0.0,1.0,3.0,odds_ratio,56,0.9642857142857143,0.9464285714285714,1,1.0,False,False
+credit,openai,age_atabove_to_young,age,25.0,rank_3_scoring,binary,McNemar,1.0,0.21875,5.0,odds_ratio,56,0.9642857142857143,0.8928571428571429,6,1.0,False,False
+credit,openai,age_atabove_to_young,age,25.0,rank_3_sign_scoring,binary,McNemar,1.0,1.0,0.5,odds_ratio,56,0.9107142857142857,0.9285714285714286,3,1.0,False,False
+credit,openai,age_atabove_to_young,age,25.0,age_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,56,0.017857142857142856,0.0,1,1.0,False,False
+credit,openai,age_atabove_to_young,age,25.0,sex_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,56,0.017857142857142856,0.0,1,1.0,False,False
+credit,openai,age_atabove_to_young,age,25.0,foreign_worker_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,56,0.017857142857142856,0.0,1,1.0,False,False
+credit,openai,age_atabove_to_young,age,25.0,other_employment_duration_mentioned,binary,McNemar,1.0,1.0,1.0,odds_ratio,49,0.02040816326530612,0.02040816326530612,2,1.0,False,False
+credit,openai,age_atabove_to_young,age,25.0,other_property_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,51,0.0,0.0196078431372549,1,1.0,False,False
+credit,openai,age_atabove_to_young,age,25.0,other_savings_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,34,0.029411764705882353,0.0,1,1.0,False,False
+credit,openai,age_atabove_to_young,age,25.0,rank_position_accuracy,continuous,Wilcoxon signed-rank,5.5,0.14269076751638637,0.7142857142857143,matched_rank_biserial_r,56,0.9702380952380952,0.9047619047619049,7,0.5288508464381902,False,False
+credit,openai,age_atabove_to_young,age,25.0,sign_accuracy,continuous,Wilcoxon signed-rank,9.0,0.7388826803635273,0.0,matched_rank_biserial_r,56,0.9523809523809523,0.9523809523809523,6,0.9236033504544091,False,False
+credit,openai,age_atabove_to_young,age,25.0,value_accuracy,continuous,Wilcoxon signed-rank,0.0,0.31731050786291415,-1.0,matched_rank_biserial_r,56,0.9940476190476192,1.0,1,0.5288508464381902,False,False
+credit,openai,age_atabove_to_young,age,25.0,prop_pa_mentioned,continuous,Wilcoxon signed-rank,0.0,0.31731050786291415,1.0,matched_rank_biserial_r,56,0.017857142857142856,0.0,1,0.5288508464381902,False,False
+credit,openai,age_atabove_to_young,age,25.0,prop_other_mentioned,continuous,Wilcoxon signed-rank,1.5,1.0,0.0,matched_rank_biserial_r,56,0.002551020408163265,0.002551020408163265,2,1.0,False,False
+credit,openai,age_below_to_old,age,38.0,rank_1_scoring,binary,McNemar,2.0,1.0,0.6666666666666666,odds_ratio,44,0.9318181818181818,0.9545454545454546,5,1.0,False,False
+credit,openai,age_below_to_old,age,38.0,rank_1_sign_scoring,binary,McNemar,0.0,0.5,0.2,odds_ratio,44,0.9545454545454546,1.0,2,1.0,False,False
+credit,openai,age_below_to_old,age,38.0,rank_2_scoring,binary,McNemar,2.0,1.0,1.0,odds_ratio,44,0.9545454545454546,0.9545454545454546,4,1.0,False,False
+credit,openai,age_below_to_old,age,38.0,rank_2_sign_scoring,binary,McNemar,1.0,0.625,3.0,odds_ratio,44,0.8863636363636364,0.8409090909090909,4,1.0,False,False
+credit,openai,age_below_to_old,age,38.0,rank_2_value_scoring,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,44,0.9772727272727273,1.0,1,1.0,False,False
+credit,openai,age_below_to_old,age,38.0,rank_3_scoring,binary,McNemar,1.0,1.0,0.5,odds_ratio,44,0.9545454545454546,0.9772727272727273,3,1.0,False,False
+credit,openai,age_below_to_old,age,38.0,rank_3_sign_scoring,binary,McNemar,0.0,1.0,3.0,odds_ratio,44,0.8636363636363636,0.8409090909090909,1,1.0,False,False
+credit,openai,age_below_to_old,age,38.0,other_amount_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,28,0.03571428571428571,0.0,1,1.0,False,False
+credit,openai,age_below_to_old,age,38.0,other_employment_duration_mentioned,binary,McNemar,1.0,1.0,1.0,odds_ratio,41,0.024390243902439025,0.024390243902439025,2,1.0,False,False
+credit,openai,age_below_to_old,age,38.0,other_housing_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,43,0.0,0.023255813953488372,1,1.0,False,False
+credit,openai,age_below_to_old,age,38.0,other_job_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,43,0.0,0.023255813953488372,1,1.0,False,False
+credit,openai,age_below_to_old,age,38.0,other_savings_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,28,0.0,0.03571428571428571,1,1.0,False,False
+credit,openai,age_below_to_old,age,38.0,rank_position_accuracy,continuous,Wilcoxon signed-rank,6.5,0.7825279247400674,-0.2,matched_rank_biserial_r,44,0.9469696969696969,0.962121212121212,5,0.7825279247400674,False,False
+credit,openai,age_below_to_old,age,38.0,sign_accuracy,continuous,Wilcoxon signed-rank,12.0,0.7054569861112734,0.14285714285714285,matched_rank_biserial_r,44,0.9015151515151513,0.8939393939393938,7,0.7825279247400674,False,False
+credit,openai,age_below_to_old,age,38.0,value_accuracy,continuous,Wilcoxon signed-rank,0.0,0.31731050786291415,-1.0,matched_rank_biserial_r,44,0.9924242424242423,1.0,1,0.7825279247400674,False,False
+credit,openai,age_below_to_old,age,38.0,prop_other_mentioned,continuous,Wilcoxon signed-rank,1.0,0.6547208460185769,0.0,matched_rank_biserial_r,44,0.0032467532467532465,0.006493506493506493,2,0.7825279247400674,False,False
+credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,rank_1_scoring,binary,McNemar,2.0,0.6875,2.0,odds_ratio,98,0.9489795918367347,0.9285714285714286,6,1.0,False,False
+credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,rank_1_sign_scoring,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,98,0.9795918367346939,0.9897959183673469,1,1.0,False,False
+credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,rank_1_value_scoring,binary,McNemar,0.0,0.5,0.2,odds_ratio,98,0.9795918367346939,1.0,2,1.0,False,False
+credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,rank_2_scoring,binary,McNemar,3.0,1.0,0.75,odds_ratio,98,0.9183673469387755,0.9285714285714286,7,1.0,False,False
+credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,rank_2_sign_scoring,binary,McNemar,0.0,0.5,5.0,odds_ratio,98,0.9183673469387755,0.8979591836734694,2,1.0,False,False
+credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,rank_3_scoring,binary,McNemar,3.0,1.0,0.75,odds_ratio,98,0.9183673469387755,0.9285714285714286,7,1.0,False,False
+credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,rank_3_sign_scoring,binary,McNemar,3.0,1.0,1.0,odds_ratio,98,0.8877551020408163,0.8877551020408163,6,1.0,False,False
+credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,other_employment_duration_mentioned,binary,McNemar,1.0,1.0,0.5,odds_ratio,88,0.011363636363636364,0.022727272727272728,3,1.0,False,False
+credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,other_housing_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,97,0.020618556701030927,0.010309278350515464,1,1.0,False,False
+credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,other_property_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,91,0.0,0.01098901098901099,1,1.0,False,False
+credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,other_savings_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,61,0.0,0.01639344262295082,1,1.0,False,False
+credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,rank_position_accuracy,continuous,Wilcoxon signed-rank,18.0,1.0,0.0,matched_rank_biserial_r,98,0.9285714285714286,0.9285714285714286,8,1.0,False,False
+credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,sign_accuracy,continuous,Wilcoxon signed-rank,17.5,0.5211976866336556,0.1111111111111111,matched_rank_biserial_r,98,0.9285714285714286,0.9251700680272108,9,0.7516038155343642,False,False
+credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,value_accuracy,continuous,Wilcoxon signed-rank,0.0,0.15729920705028502,-1.0,matched_rank_biserial_r,98,0.9931972789115646,1.0,2,0.6291968282011401,False,False
+credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,prop_other_mentioned,continuous,Wilcoxon signed-rank,2.0,0.5637028616507731,-0.3333333333333333,matched_rank_biserial_r,98,0.0029154518950437317,0.004373177842565598,3,0.7516038155343642,False,False
+credit,openai,sex_female_to_male,sex,0.0,rank_1_scoring,binary,McNemar,2.0,0.6875,0.5,odds_ratio,40,0.875,0.925,6,1.0,False,False
+credit,openai,sex_female_to_male,sex,0.0,rank_1_sign_scoring,binary,McNemar,0.0,1.0,3.0,odds_ratio,40,1.0,0.975,1,1.0,False,False
+credit,openai,sex_female_to_male,sex,0.0,rank_2_scoring,binary,McNemar,1.0,0.375,0.25,odds_ratio,40,0.85,0.925,5,1.0,False,False
+credit,openai,sex_female_to_male,sex,0.0,rank_2_sign_scoring,binary,McNemar,0.0,1.0,3.0,odds_ratio,40,0.95,0.925,1,1.0,False,False
+credit,openai,sex_female_to_male,sex,0.0,rank_3_scoring,binary,McNemar,2.0,1.0,0.6666666666666666,odds_ratio,40,0.875,0.9,5,1.0,False,False
+credit,openai,sex_female_to_male,sex,0.0,rank_3_sign_scoring,binary,McNemar,0.0,1.0,3.0,odds_ratio,40,0.875,0.85,1,1.0,False,False
+credit,openai,sex_female_to_male,sex,0.0,other_employment_duration_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,36,0.0,0.027777777777777776,1,1.0,False,False
+credit,openai,sex_female_to_male,sex,0.0,other_property_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,38,0.0,0.02631578947368421,1,1.0,False,False
+credit,openai,sex_female_to_male,sex,0.0,rank_position_accuracy,continuous,Wilcoxon signed-rank,6.0,0.3303900488487942,-0.3333333333333333,matched_rank_biserial_r,40,0.8666666666666668,0.9166666666666667,6,0.3303900488487942,False,False
+credit,openai,sex_female_to_male,sex,0.0,sign_accuracy,continuous,Wilcoxon signed-rank,0.0,0.17971249487899976,1.0,matched_rank_biserial_r,40,0.9416666666666667,0.9166666666666666,2,0.3303900488487942,False,False
+credit,openai,sex_female_to_male,sex,0.0,prop_other_mentioned,continuous,Wilcoxon signed-rank,0.0,0.31731050786291415,-1.0,matched_rank_biserial_r,40,0.0,0.0035714285714285713,1,0.3303900488487942,False,False
+credit,openai,sex_male_to_female,sex,1.0,rank_1_scoring,binary,McNemar,2.0,1.0,1.5,odds_ratio,60,0.95,0.9333333333333333,5,1.0,False,False
+credit,openai,sex_male_to_female,sex,1.0,rank_1_sign_scoring,binary,McNemar,0.0,0.5,0.2,odds_ratio,60,0.9666666666666667,1.0,2,1.0,False,False
+credit,openai,sex_male_to_female,sex,1.0,rank_1_value_scoring,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,60,0.9833333333333333,1.0,1,1.0,False,False
+credit,openai,sex_male_to_female,sex,1.0,rank_2_scoring,binary,McNemar,1.0,0.625,3.0,odds_ratio,60,0.9666666666666667,0.9333333333333333,4,1.0,False,False
+credit,openai,sex_male_to_female,sex,1.0,rank_2_sign_scoring,binary,McNemar,1.0,1.0,0.5,odds_ratio,60,0.8666666666666667,0.8833333333333333,3,1.0,False,False
+credit,openai,sex_male_to_female,sex,1.0,rank_3_scoring,binary,McNemar,2.0,1.0,1.0,odds_ratio,60,0.95,0.95,4,1.0,False,False
+credit,openai,sex_male_to_female,sex,1.0,rank_3_sign_scoring,binary,McNemar,1.0,1.0,0.5,odds_ratio,60,0.9,0.9166666666666666,3,1.0,False,False
+credit,openai,sex_male_to_female,sex,1.0,rank_position_accuracy,continuous,Wilcoxon signed-rank,5.5,0.580912420333197,0.2,matched_rank_biserial_r,60,0.9555555555555556,0.9388888888888889,5,0.580912420333197,False,False
+credit,openai,sex_male_to_female,sex,1.0,sign_accuracy,continuous,Wilcoxon signed-rank,10.0,0.22779999398822914,-0.5,matched_rank_biserial_r,60,0.9111111111111111,0.9333333333333332,8,0.4759657617943712,False,False
+credit,openai,sex_male_to_female,sex,1.0,value_accuracy,continuous,Wilcoxon signed-rank,0.0,0.31731050786291415,-1.0,matched_rank_biserial_r,60,0.9944444444444446,1.0,1,0.4759657617943712,False,False
+credit,mistral,age_atabove_to_young,age,25.0,rank_1_scoring,binary,McNemar,0.0,0.125,9.0,odds_ratio,56,0.8571428571428571,0.7857142857142857,4,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,rank_1_sign_scoring,binary,McNemar,7.0,0.803619384765625,0.7777777777777778,odds_ratio,55,0.6909090909090909,0.7272727272727273,16,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,rank_1_value_scoring,binary,McNemar,4.0,1.0,1.0,odds_ratio,54,0.8703703703703703,0.8703703703703703,8,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,rank_1_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,56,1.0,0.9821428571428571,1,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,rank_2_scoring,binary,McNemar,2.0,0.0654296875,4.5,odds_ratio,56,0.8214285714285714,0.6964285714285714,11,0.916015625,False,False
+credit,mistral,age_atabove_to_young,age,25.0,rank_2_sign_scoring,binary,McNemar,2.0,0.453125,0.4,odds_ratio,54,0.8333333333333334,0.8888888888888888,7,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,rank_2_value_scoring,binary,McNemar,3.0,1.0,0.75,odds_ratio,50,0.88,0.9,7,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,rank_2_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,56,1.0,0.9821428571428571,1,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,rank_3_scoring,binary,McNemar,2.0,0.0654296875,4.5,odds_ratio,56,0.8035714285714286,0.6785714285714286,11,0.916015625,False,False
+credit,mistral,age_atabove_to_young,age,25.0,rank_3_sign_scoring,binary,McNemar,3.0,1.0,1.0,odds_ratio,51,0.803921568627451,0.803921568627451,6,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,rank_3_value_scoring,binary,McNemar,3.0,1.0,1.3333333333333333,odds_ratio,48,0.9166666666666666,0.8958333333333334,7,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,rank_3_mentioned,binary,McNemar,1.0,1.0,1.0,odds_ratio,56,0.9821428571428571,0.9821428571428571,2,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,other_amount_mentioned,binary,McNemar,2.0,0.1796875,3.5,odds_ratio,35,0.3142857142857143,0.17142857142857143,9,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,other_credit_history_mentioned,binary,McNemar,6.0,0.6072387695312499,1.5,odds_ratio,40,0.425,0.35,15,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,other_credit_history_value_scoring,binary,McNemar,0.0,1.0,3.0,odds_ratio,5,1.0,0.8,1,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,other_duration_mentioned,binary,McNemar,6.0,1.0,1.0,odds_ratio,34,0.2647058823529412,0.2647058823529412,12,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,other_employment_duration_mentioned,binary,McNemar,5.0,0.143463134765625,0.4166666666666667,odds_ratio,49,0.22448979591836735,0.3673469387755102,17,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,other_housing_mentioned,binary,McNemar,3.0,1.0,1.0,odds_ratio,56,0.05357142857142857,0.05357142857142857,6,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,other_installment_rate_mentioned,binary,McNemar,5.0,1.0,1.0,odds_ratio,55,0.10909090909090909,0.10909090909090909,10,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,other_job_mentioned,binary,McNemar,1.0,1.0,2.0,odds_ratio,56,0.03571428571428571,0.017857142857142856,3,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,other_other_debtors_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,52,0.0,0.019230769230769232,1,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,other_other_installment_plans_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,47,0.02127659574468085,0.0,1,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,other_people_liable_mentioned,binary,McNemar,1.0,1.0,1.0,odds_ratio,56,0.017857142857142856,0.017857142857142856,2,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,other_present_residence_mentioned,binary,McNemar,0.0,0.5,5.0,odds_ratio,54,0.037037037037037035,0.0,2,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,other_property_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,51,0.0196078431372549,0.0,1,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,other_purpose_mentioned,binary,McNemar,1.0,0.625,0.3333333333333333,odds_ratio,46,0.021739130434782608,0.06521739130434782,4,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,other_savings_mentioned,binary,McNemar,3.0,1.0,1.0,odds_ratio,34,0.08823529411764706,0.08823529411764706,6,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,other_status_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,7,0.14285714285714285,0.0,1,1.0,False,False
+credit,mistral,age_atabove_to_young,age,25.0,rank_position_accuracy,continuous,Wilcoxon signed-rank,14.0,0.008372788566037709,0.7333333333333333,matched_rank_biserial_r,56,0.8273809523809524,0.7202380952380951,15,0.033491154264150835,True,True
+credit,mistral,age_atabove_to_young,age,25.0,sign_accuracy,continuous,Wilcoxon signed-rank,65.5,0.22426372395855576,-0.05263157894736842,matched_rank_biserial_r,56,0.7738095238095237,0.800595238095238,19,0.4485274479171115,False,False
+credit,mistral,age_atabove_to_young,age,25.0,value_accuracy,continuous,Wilcoxon signed-rank,135.0,0.6677406566087083,0.16666666666666666,matched_rank_biserial_r,56,0.9013180272108843,0.8900085034013606,24,0.8903208754782778,False,False
+credit,mistral,age_atabove_to_young,age,25.0,prop_other_mentioned,continuous,Wilcoxon signed-rank,278.0,0.9637232773016174,-0.09090909090909091,matched_rank_biserial_r,56,0.08801020408163265,0.08290816326530612,33,0.9637232773016174,False,False
+credit,mistral,age_below_to_old,age,38.0,rank_1_scoring,binary,McNemar,1.0,0.21875,5.0,odds_ratio,44,0.9090909090909091,0.8181818181818182,6,0.984375,False,False
+credit,mistral,age_below_to_old,age,38.0,rank_1_sign_scoring,binary,McNemar,1.0,0.375,0.25,odds_ratio,43,0.7209302325581395,0.7906976744186046,5,0.984375,False,False
+credit,mistral,age_below_to_old,age,38.0,rank_1_value_scoring,binary,McNemar,4.0,0.75390625,0.6666666666666666,odds_ratio,41,0.8048780487804879,0.8536585365853658,10,1.0,False,False
+credit,mistral,age_below_to_old,age,38.0,rank_2_scoring,binary,McNemar,2.0,0.0654296875,4.5,odds_ratio,44,0.8636363636363636,0.7045454545454546,11,0.68701171875,False,False
+credit,mistral,age_below_to_old,age,38.0,rank_2_sign_scoring,binary,McNemar,1.0,0.625,0.3333333333333333,odds_ratio,42,0.8095238095238095,0.8571428571428571,4,1.0,False,False
+credit,mistral,age_below_to_old,age,38.0,rank_2_value_scoring,binary,McNemar,2.0,1.0,1.5,odds_ratio,38,0.868421052631579,0.8421052631578947,5,1.0,False,False
+credit,mistral,age_below_to_old,age,38.0,rank_3_scoring,binary,McNemar,2.0,0.0654296875,4.5,odds_ratio,44,0.8181818181818182,0.6590909090909091,11,0.68701171875,False,False
+credit,mistral,age_below_to_old,age,38.0,rank_3_sign_scoring,binary,McNemar,4.0,0.75390625,0.6666666666666666,odds_ratio,42,0.7619047619047619,0.8095238095238095,10,1.0,False,False
+credit,mistral,age_below_to_old,age,38.0,rank_3_value_scoring,binary,McNemar,0.0,1.0,3.0,odds_ratio,38,1.0,0.9736842105263158,1,1.0,False,False
+credit,mistral,age_below_to_old,age,38.0,rank_3_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,44,0.9545454545454546,0.9772727272727273,1,1.0,False,False
+credit,mistral,age_below_to_old,age,38.0,other_amount_mentioned,binary,McNemar,2.0,0.1796875,3.5,odds_ratio,28,0.25,0.07142857142857142,9,0.984375,False,False
+credit,mistral,age_below_to_old,age,38.0,other_credit_history_mentioned,binary,McNemar,4.0,0.548828125,1.75,odds_ratio,34,0.3235294117647059,0.23529411764705882,11,1.0,False,False
+credit,mistral,age_below_to_old,age,38.0,other_duration_mentioned,binary,McNemar,3.0,0.5078125,2.0,odds_ratio,28,0.2857142857142857,0.17857142857142858,9,1.0,False,False
+credit,mistral,age_below_to_old,age,38.0,other_employment_duration_mentioned,binary,McNemar,7.0,0.359283447265625,0.5833333333333334,odds_ratio,41,0.1951219512195122,0.3170731707317073,19,0.984375,False,False
+credit,mistral,age_below_to_old,age,38.0,other_housing_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,43,0.0,0.023255813953488372,1,1.0,False,False
+credit,mistral,age_below_to_old,age,38.0,other_installment_rate_mentioned,binary,McNemar,3.0,0.34375,0.42857142857142855,odds_ratio,39,0.1282051282051282,0.23076923076923078,10,0.984375,False,False
+credit,mistral,age_below_to_old,age,38.0,other_job_mentioned,binary,McNemar,0.0,0.25,0.14285714285714285,odds_ratio,43,0.0,0.06976744186046512,3,0.984375,False,False
+credit,mistral,age_below_to_old,age,38.0,other_present_residence_mentioned,binary,McNemar,1.0,1.0,0.5,odds_ratio,41,0.024390243902439025,0.04878048780487805,3,1.0,False,False
+credit,mistral,age_below_to_old,age,38.0,other_property_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,42,0.0,0.023809523809523808,1,1.0,False,False
+credit,mistral,age_below_to_old,age,38.0,other_purpose_mentioned,binary,McNemar,1.0,1.0,1.0,odds_ratio,30,0.03333333333333333,0.03333333333333333,2,1.0,False,False
+credit,mistral,age_below_to_old,age,38.0,other_savings_mentioned,binary,McNemar,3.0,0.5078125,0.5,odds_ratio,28,0.10714285714285714,0.21428571428571427,9,1.0,False,False
+credit,mistral,age_below_to_old,age,38.0,rank_position_accuracy,continuous,Wilcoxon signed-rank,18.0,0.045607379928361724,0.6923076923076923,matched_rank_biserial_r,44,0.8636363636363636,0.7272727272727273,13,0.1824295197134469,True,False
+credit,mistral,age_below_to_old,age,38.0,sign_accuracy,continuous,Wilcoxon signed-rank,28.0,0.12032654496488641,-0.42857142857142855,matched_rank_biserial_r,44,0.75,0.8219696969696969,14,0.24065308992977283,False,False
+credit,mistral,age_below_to_old,age,38.0,value_accuracy,continuous,Wilcoxon signed-rank,66.5,0.9378534142669196,0.0,matched_rank_biserial_r,44,0.9109848484848484,0.9117424242424242,16,0.9378534142669196,False,False
+credit,mistral,age_below_to_old,age,38.0,prop_other_mentioned,continuous,Wilcoxon signed-rank,213.5,0.6930564254029965,-0.13333333333333333,matched_rank_biserial_r,44,0.07142857142857144,0.08279220779220779,30,0.924075233870662,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,rank_1_scoring,binary,McNemar,6.0,1.0,1.1666666666666667,odds_ratio,98,0.8163265306122449,0.8061224489795918,13,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,rank_1_sign_scoring,binary,McNemar,6.0,1.0,0.8571428571428571,odds_ratio,96,0.75,0.7604166666666666,13,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,rank_1_value_scoring,binary,McNemar,7.0,0.629058837890625,0.7,odds_ratio,93,0.8279569892473119,0.8602150537634409,17,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,rank_1_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,98,1.0,0.9897959183673469,1,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,rank_2_scoring,binary,McNemar,1.2413793103448276,0.2652053925915044,1.6363636363636365,odds_ratio,98,0.7755102040816326,0.7040816326530612,29,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,rank_2_sign_scoring,binary,McNemar,2.0,0.6875,0.5,odds_ratio,93,0.8494623655913979,0.8709677419354839,6,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,rank_2_value_scoring,binary,McNemar,5.0,1.0,0.8333333333333334,odds_ratio,87,0.8735632183908046,0.8850574712643678,11,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,rank_2_mentioned,binary,McNemar,1.0,1.0,1.0,odds_ratio,98,0.9795918367346939,0.9795918367346939,2,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,rank_3_scoring,binary,McNemar,3.1153846153846154,0.0775561667436654,2.25,odds_ratio,98,0.7857142857142857,0.6836734693877551,26,0.721893310546875,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,rank_3_sign_scoring,binary,McNemar,5.0,1.0,0.8333333333333334,odds_ratio,90,0.8,0.8111111111111111,11,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,rank_3_value_scoring,binary,McNemar,4.0,0.75390625,0.6666666666666666,odds_ratio,87,0.9080459770114943,0.9310344827586207,10,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,rank_3_mentioned,binary,McNemar,0.0,0.5,0.2,odds_ratio,98,0.9591836734693877,0.9795918367346939,2,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,age_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,98,0.01020408163265306,0.0,1,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,other_amount_mentioned,binary,McNemar,5.0,0.04138946533203125,3.0,odds_ratio,62,0.2903225806451613,0.12903225806451613,20,0.6208419799804688,True,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,other_credit_history_mentioned,binary,McNemar,7.5,0.0061698993205441645,3.2857142857142856,odds_ratio,72,0.5138888888888888,0.2916666666666667,30,0.18509697961632493,True,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,other_credit_history_value_scoring,binary,McNemar,1.0,1.0,1.0,odds_ratio,12,0.9166666666666666,0.9166666666666666,2,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,other_duration_mentioned,binary,McNemar,8.0,0.38331031799316406,1.625,odds_ratio,60,0.3,0.21666666666666667,21,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,other_employment_duration_mentioned,binary,McNemar,0.03571428571428571,0.8501067391385259,1.0,odds_ratio,88,0.3409090909090909,0.3409090909090909,28,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,other_employment_duration_value_scoring,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,12,0.9166666666666666,1.0,1,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,other_housing_mentioned,binary,McNemar,4.0,0.3876953125,2.0,odds_ratio,97,0.08247422680412371,0.041237113402061855,12,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,other_installment_rate_mentioned,binary,McNemar,6.0,0.6072387695312499,0.6666666666666666,odds_ratio,92,0.11956521739130435,0.15217391304347827,15,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,other_job_mentioned,binary,McNemar,3.0,1.0,1.0,odds_ratio,97,0.041237113402061855,0.041237113402061855,6,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,other_other_debtors_mentioned,binary,McNemar,1.0,1.0,1.0,odds_ratio,95,0.010526315789473684,0.010526315789473684,2,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,other_other_installment_plans_mentioned,binary,McNemar,0.0,0.25,7.0,odds_ratio,86,0.03488372093023256,0.0,3,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,other_people_liable_mentioned,binary,McNemar,1.0,1.0,2.0,odds_ratio,98,0.02040816326530612,0.01020408163265306,3,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,other_present_residence_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,93,0.010752688172043012,0.021505376344086023,1,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,other_property_mentioned,binary,McNemar,1.0,1.0,1.0,odds_ratio,91,0.01098901098901099,0.01098901098901099,2,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,other_purpose_mentioned,binary,McNemar,2.0,1.0,1.0,odds_ratio,75,0.05333333333333334,0.05333333333333334,4,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,other_savings_mentioned,binary,McNemar,5.0,0.09625244140625,2.6,odds_ratio,61,0.2786885245901639,0.14754098360655737,18,0.721893310546875,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,other_status_mentioned,binary,McNemar,0.0,0.5,5.0,odds_ratio,9,0.2222222222222222,0.0,2,1.0,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,rank_position_accuracy,continuous,Wilcoxon signed-rank,214.0,0.14542190087414555,0.29411764705882354,matched_rank_biserial_r,98,0.792517006802721,0.7312925170068028,34,0.36355475218536387,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,sign_accuracy,continuous,Wilcoxon signed-rank,131.5,0.258606212675379,0.0,matched_rank_biserial_r,98,0.7891156462585034,0.8112244897959183,26,0.3927945435801401,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,value_accuracy,continuous,Wilcoxon signed-rank,462.5,0.3927945435801401,-0.21739130434782608,matched_rank_biserial_r,98,0.881268221574344,0.9017735665694849,46,0.3927945435801401,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,prop_pa_mentioned,continuous,Wilcoxon signed-rank,0.0,0.31731050786291415,1.0,matched_rank_biserial_r,98,0.003401360544217687,0.0,1,0.3927945435801401,False,False
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,prop_other_mentioned,continuous,Wilcoxon signed-rank,712.0,0.011146170643840068,0.24242424242424243,matched_rank_biserial_r,98,0.11443148688046645,0.08163265306122448,66,0.05573085321920034,True,False
+credit,mistral,sex_female_to_male,sex,0.0,rank_1_scoring,binary,McNemar,1.0,0.375,4.0,odds_ratio,40,0.8,0.725,5,0.75,False,False
+credit,mistral,sex_female_to_male,sex,0.0,rank_1_sign_scoring,binary,McNemar,2.0,0.2890625,3.0,odds_ratio,38,0.8947368421052632,0.7894736842105263,8,0.75,False,False
+credit,mistral,sex_female_to_male,sex,0.0,rank_1_value_scoring,binary,McNemar,1.0,0.125,0.16666666666666666,odds_ratio,38,0.7894736842105263,0.9210526315789473,7,0.75,False,False
+credit,mistral,sex_female_to_male,sex,0.0,rank_2_scoring,binary,McNemar,3.0,0.34375,2.3333333333333335,odds_ratio,40,0.775,0.675,10,0.75,False,False
+credit,mistral,sex_female_to_male,sex,0.0,rank_2_sign_scoring,binary,McNemar,0.0,0.25,0.14285714285714285,odds_ratio,38,0.8421052631578947,0.9210526315789473,3,0.75,False,False
+credit,mistral,sex_female_to_male,sex,0.0,rank_2_value_scoring,binary,McNemar,4.0,1.0,1.25,odds_ratio,35,0.8571428571428571,0.8285714285714286,9,1.0,False,False
+credit,mistral,sex_female_to_male,sex,0.0,rank_2_mentioned,binary,McNemar,0.0,0.5,5.0,odds_ratio,40,1.0,0.95,2,0.9166666666666667,False,False
+credit,mistral,sex_female_to_male,sex,0.0,rank_3_scoring,binary,McNemar,2.0,0.1796875,3.5,odds_ratio,40,0.8,0.675,9,0.75,False,False
+credit,mistral,sex_female_to_male,sex,0.0,rank_3_sign_scoring,binary,McNemar,1.0,0.375,4.0,odds_ratio,38,0.868421052631579,0.7894736842105263,5,0.75,False,False
+credit,mistral,sex_female_to_male,sex,0.0,rank_3_value_scoring,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,35,0.9428571428571428,0.9714285714285714,1,1.0,False,False
+credit,mistral,sex_female_to_male,sex,0.0,other_amount_mentioned,binary,McNemar,3.0,1.0,1.3333333333333333,odds_ratio,23,0.2608695652173913,0.21739130434782608,7,1.0,False,False
+credit,mistral,sex_female_to_male,sex,0.0,other_credit_history_mentioned,binary,McNemar,3.0,0.03515625,4.0,odds_ratio,31,0.5806451612903226,0.2903225806451613,15,0.75,True,False
+credit,mistral,sex_female_to_male,sex,0.0,other_duration_mentioned,binary,McNemar,3.0,0.34375,2.3333333333333335,odds_ratio,24,0.375,0.20833333333333334,10,0.75,False,False
+credit,mistral,sex_female_to_male,sex,0.0,other_employment_duration_mentioned,binary,McNemar,4.0,0.266845703125,2.25,odds_ratio,36,0.4444444444444444,0.3055555555555556,13,0.75,False,False
+credit,mistral,sex_female_to_male,sex,0.0,other_housing_mentioned,binary,McNemar,2.0,1.0,1.0,odds_ratio,39,0.05128205128205128,0.05128205128205128,4,1.0,False,False
+credit,mistral,sex_female_to_male,sex,0.0,other_installment_rate_mentioned,binary,McNemar,1.0,0.625,0.3333333333333333,odds_ratio,36,0.05555555555555555,0.1111111111111111,4,1.0,False,False
+credit,mistral,sex_female_to_male,sex,0.0,other_job_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,40,0.025,0.0,1,1.0,False,False
+credit,mistral,sex_female_to_male,sex,0.0,other_other_debtors_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,38,0.0,0.02631578947368421,1,1.0,False,False
+credit,mistral,sex_female_to_male,sex,0.0,other_people_liable_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,40,0.0,0.025,1,1.0,False,False
+credit,mistral,sex_female_to_male,sex,0.0,other_present_residence_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,38,0.02631578947368421,0.0,1,1.0,False,False
+credit,mistral,sex_female_to_male,sex,0.0,other_purpose_mentioned,binary,McNemar,1.0,1.0,2.0,odds_ratio,34,0.058823529411764705,0.029411764705882353,3,1.0,False,False
+credit,mistral,sex_female_to_male,sex,0.0,other_savings_mentioned,binary,McNemar,1.0,0.125,6.0,odds_ratio,24,0.2916666666666667,0.08333333333333333,7,0.75,False,False
+credit,mistral,sex_female_to_male,sex,0.0,rank_position_accuracy,continuous,Wilcoxon signed-rank,7.0,0.11701302504718607,0.75,matched_rank_biserial_r,40,0.7916666666666666,0.6916666666666667,8,0.23402605009437213,False,False
+credit,mistral,sex_female_to_male,sex,0.0,sign_accuracy,continuous,Wilcoxon signed-rank,27.0,0.3351145185269776,0.3333333333333333,matched_rank_biserial_r,40,0.8541666666666666,0.8166666666666667,12,0.3351145185269776,False,False
+credit,mistral,sex_female_to_male,sex,0.0,value_accuracy,continuous,Wilcoxon signed-rank,67.5,0.2668374849757945,-0.3684210526315789,matched_rank_biserial_r,40,0.8708333333333332,0.9122619047619047,19,0.3351145185269776,False,False
+credit,mistral,sex_female_to_male,sex,0.0,prop_other_mentioned,continuous,Wilcoxon signed-rank,74.0,0.015578166895921097,0.36,matched_rank_biserial_r,40,0.11428571428571428,0.0732142857142857,25,0.06231266758368439,True,False
+credit,mistral,sex_male_to_female,sex,1.0,rank_1_scoring,binary,McNemar,5.0,1.0,1.0,odds_ratio,60,0.85,0.85,10,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,rank_1_sign_scoring,binary,McNemar,2.0,0.1796875,3.5,odds_ratio,58,0.8275862068965517,0.7413793103448276,9,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,rank_1_value_scoring,binary,McNemar,5.0,0.7744140625,1.4,odds_ratio,54,0.8518518518518519,0.8148148148148148,12,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,rank_1_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,60,1.0,0.9833333333333333,1,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,rank_2_scoring,binary,McNemar,8.0,0.6476058959960938,1.375,odds_ratio,60,0.7666666666666667,0.7166666666666667,19,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,rank_2_sign_scoring,binary,McNemar,2.0,1.0,0.6666666666666666,odds_ratio,57,0.8245614035087719,0.8421052631578947,5,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,rank_2_value_scoring,binary,McNemar,2.0,0.6875,2.0,odds_ratio,52,0.9423076923076923,0.9038461538461539,6,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,rank_2_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,60,0.9833333333333333,1.0,1,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,rank_3_scoring,binary,McNemar,6.0,0.454498291015625,1.6666666666666667,odds_ratio,60,0.7333333333333333,0.6666666666666666,16,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,rank_3_sign_scoring,binary,McNemar,1.0,0.625,0.3333333333333333,odds_ratio,54,0.7962962962962963,0.8333333333333334,4,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,rank_3_value_scoring,binary,McNemar,2.0,1.0,1.0,odds_ratio,51,0.9215686274509803,0.9215686274509803,4,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,rank_3_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,60,0.9833333333333333,0.9666666666666667,1,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,other_amount_mentioned,binary,McNemar,2.0,0.0654296875,4.5,odds_ratio,40,0.25,0.075,11,0.7451171875,False,False
+credit,mistral,sex_male_to_female,sex,1.0,other_credit_history_mentioned,binary,McNemar,7.0,1.0,1.1428571428571428,odds_ratio,43,0.32558139534883723,0.3023255813953488,15,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,other_duration_mentioned,binary,McNemar,6.0,0.79052734375,1.3333333333333333,odds_ratio,38,0.2894736842105263,0.23684210526315788,14,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,other_employment_duration_mentioned,binary,McNemar,7.0,0.0931396484375,0.4375,odds_ratio,54,0.2037037037037037,0.37037037037037035,23,0.7451171875,False,False
+credit,mistral,sex_male_to_female,sex,1.0,other_housing_mentioned,binary,McNemar,2.0,1.0,1.5,odds_ratio,60,0.05,0.03333333333333333,5,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,other_installment_rate_mentioned,binary,McNemar,1.0,0.01171875,0.1,odds_ratio,58,0.034482758620689655,0.1896551724137931,11,0.28125,True,False
+credit,mistral,sex_male_to_female,sex,1.0,other_job_mentioned,binary,McNemar,4.0,1.0,1.25,odds_ratio,59,0.0847457627118644,0.06779661016949153,9,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,other_people_liable_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,60,0.016666666666666666,0.0,1,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,other_present_residence_mentioned,binary,McNemar,0.0,0.5,0.2,odds_ratio,57,0.0,0.03508771929824561,2,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,other_property_mentioned,binary,McNemar,1.0,1.0,1.0,odds_ratio,55,0.01818181818181818,0.01818181818181818,2,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,other_purpose_mentioned,binary,McNemar,2.0,1.0,0.6666666666666666,odds_ratio,42,0.047619047619047616,0.07142857142857142,5,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,other_savings_mentioned,binary,McNemar,3.0,0.5078125,0.5,odds_ratio,38,0.10526315789473684,0.18421052631578946,9,1.0,False,False
+credit,mistral,sex_male_to_female,sex,1.0,rank_position_accuracy,continuous,Wilcoxon signed-rank,98.5,0.5453218536609614,0.23809523809523808,matched_rank_biserial_r,60,0.7833333333333333,0.7444444444444446,21,0.7270958048812819,False,False
+credit,mistral,sex_male_to_female,sex,1.0,sign_accuracy,continuous,Wilcoxon signed-rank,42.5,0.8326212028332123,0.07692307692307693,matched_rank_biserial_r,60,0.8027777777777777,0.8055555555555555,13,0.8326212028332123,False,False
+credit,mistral,sex_male_to_female,sex,1.0,value_accuracy,continuous,Wilcoxon signed-rank,159.5,0.47665293103043527,0.25925925925925924,matched_rank_biserial_r,60,0.9208333333333332,0.8911111111111112,27,0.7270958048812819,False,False
+credit,mistral,sex_male_to_female,sex,1.0,prop_other_mentioned,continuous,Wilcoxon signed-rank,290.0,0.49440109558950196,-0.1111111111111111,matched_rank_biserial_r,60,0.0761904761904762,0.08928571428571429,36,0.7270958048812819,False,False
+credit,claude,age_atabove_to_young,age,25.0,rank_1_scoring,binary,McNemar,3.0,1.0,1.0,odds_ratio,56,0.8392857142857143,0.8392857142857143,6,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,rank_1_sign_scoring,binary,McNemar,0.0,1.0,3.0,odds_ratio,54,1.0,0.9814814814814815,1,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,rank_1_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,56,1.0,0.9821428571428571,1,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,rank_2_scoring,binary,McNemar,2.0,1.0,0.6666666666666666,odds_ratio,56,0.8035714285714286,0.8214285714285714,5,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,rank_3_scoring,binary,McNemar,1.0,0.625,3.0,odds_ratio,56,0.8392857142857143,0.8035714285714286,4,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,rank_3_sign_scoring,binary,McNemar,1.0,1.0,2.0,odds_ratio,56,0.9464285714285714,0.9285714285714286,3,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,rank_3_value_scoring,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,54,0.9629629629629629,0.9814814814814815,1,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,other_amount_mentioned,binary,McNemar,4.0,0.75390625,1.5,odds_ratio,35,0.42857142857142855,0.37142857142857144,10,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,other_credit_history_mentioned,binary,McNemar,1.0,0.125,0.16666666666666666,odds_ratio,40,0.075,0.2,7,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,other_duration_mentioned,binary,McNemar,4.0,1.0,1.0,odds_ratio,34,0.4411764705882353,0.4411764705882353,8,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,other_employment_duration_mentioned,binary,McNemar,7.0,1.0,1.1428571428571428,odds_ratio,49,0.30612244897959184,0.2857142857142857,15,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,other_housing_mentioned,binary,McNemar,3.0,1.0,0.75,odds_ratio,56,0.08928571428571429,0.10714285714285714,7,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,other_installment_rate_mentioned,binary,McNemar,3.0,1.0,1.3333333333333333,odds_ratio,55,0.16363636363636364,0.14545454545454545,7,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,other_job_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,56,0.03571428571428571,0.017857142857142856,1,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,other_number_credits_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,56,0.0,0.017857142857142856,1,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,other_other_installment_plans_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,47,0.0,0.02127659574468085,1,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,other_present_residence_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,54,0.0,0.018518518518518517,1,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,other_property_mentioned,binary,McNemar,3.0,1.0,1.0,odds_ratio,51,0.058823529411764705,0.058823529411764705,6,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,other_savings_mentioned,binary,McNemar,1.0,0.625,3.0,odds_ratio,34,0.08823529411764706,0.029411764705882353,4,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,other_status_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,7,0.0,0.14285714285714285,1,1.0,False,False
+credit,claude,age_atabove_to_young,age,25.0,rank_position_accuracy,continuous,Wilcoxon signed-rank,9.0,0.7498050727300336,0.0,matched_rank_biserial_r,56,0.8273809523809524,0.8214285714285714,6,0.9350943244968873,False,False
+credit,claude,age_atabove_to_young,age,25.0,sign_accuracy,continuous,Wilcoxon signed-rank,2.5,0.31731050786291415,0.5,matched_rank_biserial_r,56,0.9821428571428571,0.9702380952380951,4,0.6346210157258283,False,False
+credit,claude,age_atabove_to_young,age,25.0,value_accuracy,continuous,Wilcoxon signed-rank,0.0,0.31731050786291415,-1.0,matched_rank_biserial_r,56,0.9889455782312925,0.9948979591836735,1,0.6346210157258283,False,False
+credit,claude,age_atabove_to_young,age,25.0,prop_other_mentioned,continuous,Wilcoxon signed-rank,276.0,0.9350943244968873,-0.030303030303030304,matched_rank_biserial_r,56,0.08928571428571429,0.09311224489795918,33,0.9350943244968873,False,False
+credit,claude,age_below_to_old,age,38.0,rank_1_scoring,binary,McNemar,2.0,1.0,0.6666666666666666,odds_ratio,44,0.8863636363636364,0.9090909090909091,5,1.0,False,False
+credit,claude,age_below_to_old,age,38.0,rank_1_sign_scoring,binary,McNemar,0.0,0.5,0.2,odds_ratio,44,0.9545454545454546,1.0,2,1.0,False,False
+credit,claude,age_below_to_old,age,38.0,rank_2_scoring,binary,McNemar,3.0,1.0,0.75,odds_ratio,44,0.8181818181818182,0.8409090909090909,7,1.0,False,False
+credit,claude,age_below_to_old,age,38.0,rank_3_scoring,binary,McNemar,3.0,1.0,1.0,odds_ratio,44,0.8409090909090909,0.8409090909090909,6,1.0,False,False
+credit,claude,age_below_to_old,age,38.0,other_amount_mentioned,binary,McNemar,2.0,0.453125,2.5,odds_ratio,28,0.4642857142857143,0.35714285714285715,7,1.0,False,False
+credit,claude,age_below_to_old,age,38.0,other_credit_history_mentioned,binary,McNemar,1.0,1.0,2.0,odds_ratio,34,0.17647058823529413,0.14705882352941177,3,1.0,False,False
+credit,claude,age_below_to_old,age,38.0,other_duration_mentioned,binary,McNemar,1.0,0.125,6.0,odds_ratio,28,0.4642857142857143,0.2857142857142857,7,1.0,False,False
+credit,claude,age_below_to_old,age,38.0,other_employment_duration_mentioned,binary,McNemar,2.0,0.2890625,3.0,odds_ratio,41,0.2682926829268293,0.17073170731707318,8,1.0,False,False
+credit,claude,age_below_to_old,age,38.0,other_housing_mentioned,binary,McNemar,0.0,0.25,7.0,odds_ratio,43,0.11627906976744186,0.046511627906976744,3,1.0,False,False
+credit,claude,age_below_to_old,age,38.0,other_installment_rate_mentioned,binary,McNemar,2.0,0.6875,2.0,odds_ratio,39,0.1794871794871795,0.1282051282051282,6,1.0,False,False
+credit,claude,age_below_to_old,age,38.0,other_job_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,43,0.023255813953488372,0.046511627906976744,1,1.0,False,False
+credit,claude,age_below_to_old,age,38.0,other_other_installment_plans_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,41,0.0,0.024390243902439025,1,1.0,False,False
+credit,claude,age_below_to_old,age,38.0,other_property_mentioned,binary,McNemar,1.0,1.0,2.0,odds_ratio,42,0.047619047619047616,0.023809523809523808,3,1.0,False,False
+credit,claude,age_below_to_old,age,38.0,other_purpose_mentioned,binary,McNemar,0.0,0.5,5.0,odds_ratio,30,0.06666666666666667,0.0,2,1.0,False,False
+credit,claude,age_below_to_old,age,38.0,other_savings_mentioned,binary,McNemar,1.0,1.0,0.5,odds_ratio,28,0.07142857142857142,0.10714285714285714,3,1.0,False,False
+credit,claude,age_below_to_old,age,38.0,rank_position_accuracy,continuous,Wilcoxon signed-rank,13.0,0.8623197383894363,-0.14285714285714285,matched_rank_biserial_r,44,0.8484848484848484,0.8636363636363636,7,0.8623197383894363,False,False
+credit,claude,age_below_to_old,age,38.0,sign_accuracy,continuous,Wilcoxon signed-rank,0.0,0.15729920705028502,-1.0,matched_rank_biserial_r,44,0.9772727272727273,0.9924242424242423,2,0.23961665983866634,False,False
+credit,claude,age_below_to_old,age,38.0,value_accuracy,continuous,Wilcoxon signed-rank,0.0,0.17971249487899976,1.0,matched_rank_biserial_r,44,0.9878787878787879,0.9816017316017316,2,0.23961665983866634,False,False
+credit,claude,age_below_to_old,age,38.0,prop_other_mentioned,continuous,Wilcoxon signed-rank,62.0,0.032254306511915784,0.45454545454545453,matched_rank_biserial_r,44,0.10227272727272728,0.07305194805194805,22,0.12901722604766314,True,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,rank_1_scoring,binary,McNemar,7.0,0.803619384765625,1.2857142857142858,odds_ratio,98,0.8979591836734694,0.8775510204081632,16,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,rank_1_sign_scoring,binary,McNemar,1.0,1.0,1.0,odds_ratio,97,0.9896907216494846,0.9896907216494846,2,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,rank_1_value_scoring,binary,McNemar,1.0,1.0,1.0,odds_ratio,95,0.9894736842105263,0.9894736842105263,2,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,rank_1_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,98,1.0,0.9897959183673469,1,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,rank_2_scoring,binary,McNemar,8.0,1.0,1.0,odds_ratio,98,0.826530612244898,0.826530612244898,16,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,rank_3_scoring,binary,McNemar,4.0,0.266845703125,2.25,odds_ratio,98,0.8775510204081632,0.826530612244898,13,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,rank_3_sign_scoring,binary,McNemar,1.0,1.0,2.0,odds_ratio,98,0.9591836734693877,0.9489795918367347,3,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,age_mentioned,binary,McNemar,0.0,0.5,5.0,odds_ratio,98,0.02040816326530612,0.0,2,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,sex_mentioned,binary,McNemar,0.0,0.5,5.0,odds_ratio,98,0.02040816326530612,0.0,2,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,other_amount_mentioned,binary,McNemar,6.0,0.1670684814453125,2.1666666666666665,odds_ratio,62,0.46774193548387094,0.3548387096774194,19,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,other_credit_history_mentioned,binary,McNemar,2.0,0.453125,0.4,odds_ratio,72,0.1388888888888889,0.18055555555555555,7,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,other_duration_mentioned,binary,McNemar,6.0,0.79052734375,1.3333333333333333,odds_ratio,60,0.38333333333333336,0.35,14,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,other_employment_duration_mentioned,binary,McNemar,8.0,1.0,1.0,odds_ratio,88,0.22727272727272727,0.22727272727272727,16,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,other_housing_mentioned,binary,McNemar,3.0,1.0,0.75,odds_ratio,97,0.07216494845360824,0.08247422680412371,7,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,other_installment_rate_mentioned,binary,McNemar,6.0,0.79052734375,1.3333333333333333,odds_ratio,92,0.15217391304347827,0.13043478260869565,14,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,other_job_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,97,0.041237113402061855,0.030927835051546393,1,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,other_other_installment_plans_mentioned,binary,McNemar,0.0,0.5,0.2,odds_ratio,86,0.0,0.023255813953488372,2,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,other_present_residence_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,93,0.0,0.010752688172043012,1,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,other_property_mentioned,binary,McNemar,2.0,0.6875,0.5,odds_ratio,91,0.02197802197802198,0.04395604395604396,6,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,other_purpose_mentioned,binary,McNemar,0.0,0.125,9.0,odds_ratio,75,0.05333333333333334,0.0,4,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,other_savings_mentioned,binary,McNemar,2.0,1.0,1.0,odds_ratio,61,0.06557377049180328,0.06557377049180328,4,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,other_status_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,9,0.0,0.1111111111111111,1,1.0,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,rank_position_accuracy,continuous,Wilcoxon signed-rank,52.0,0.23259433640775518,0.058823529411764705,matched_rank_biserial_r,98,0.8673469387755101,0.8435374149659864,17,0.5814858410193879,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,sign_accuracy,continuous,Wilcoxon signed-rank,6.0,0.6547208460185769,0.2,matched_rank_biserial_r,98,0.9829931972789117,0.9795918367346939,5,0.7854947471183542,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,value_accuracy,continuous,Wilcoxon signed-rank,2.5,0.7854947471183542,0.3333333333333333,matched_rank_biserial_r,98,0.9902818270165208,0.988824101068999,3,0.7854947471183542,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,prop_pa_mentioned,continuous,Wilcoxon signed-rank,0.0,0.15729920705028502,1.0,matched_rank_biserial_r,98,0.013605442176870748,0.0,2,0.5814858410193879,False,False
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,prop_other_mentioned,continuous,Wilcoxon signed-rank,484.5,0.7041569598228482,0.1111111111111111,matched_rank_biserial_r,98,0.086734693877551,0.08236151603498543,45,0.7854947471183542,False,False
+credit,claude,sex_female_to_male,sex,0.0,rank_1_scoring,binary,McNemar,2.0,0.453125,0.4,odds_ratio,40,0.825,0.9,7,1.0,False,False
+credit,claude,sex_female_to_male,sex,0.0,rank_1_sign_scoring,binary,McNemar,0.0,1.0,3.0,odds_ratio,40,1.0,0.975,1,1.0,False,False
+credit,claude,sex_female_to_male,sex,0.0,rank_1_value_scoring,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,37,0.9459459459459459,0.972972972972973,1,1.0,False,False
+credit,claude,sex_female_to_male,sex,0.0,rank_2_scoring,binary,McNemar,3.0,0.2265625,0.375,odds_ratio,40,0.725,0.85,11,1.0,False,False
+credit,claude,sex_female_to_male,sex,0.0,rank_3_scoring,binary,McNemar,4.0,1.0,0.8,odds_ratio,40,0.8,0.825,9,1.0,False,False
+credit,claude,sex_female_to_male,sex,0.0,rank_3_value_scoring,binary,McNemar,0.0,1.0,3.0,odds_ratio,39,1.0,0.9743589743589743,1,1.0,False,False
+credit,claude,sex_female_to_male,sex,0.0,other_amount_mentioned,binary,McNemar,4.0,1.0,0.8,odds_ratio,23,0.30434782608695654,0.34782608695652173,9,1.0,False,False
+credit,claude,sex_female_to_male,sex,0.0,other_credit_history_mentioned,binary,McNemar,1.0,1.0,1.0,odds_ratio,31,0.1935483870967742,0.1935483870967742,2,1.0,False,False
+credit,claude,sex_female_to_male,sex,0.0,other_duration_mentioned,binary,McNemar,2.0,0.2890625,3.0,odds_ratio,24,0.3333333333333333,0.16666666666666666,8,1.0,False,False
+credit,claude,sex_female_to_male,sex,0.0,other_employment_duration_mentioned,binary,McNemar,3.0,0.34375,2.3333333333333335,odds_ratio,36,0.3333333333333333,0.2222222222222222,10,1.0,False,False
+credit,claude,sex_female_to_male,sex,0.0,other_housing_mentioned,binary,McNemar,3.0,1.0,1.0,odds_ratio,39,0.07692307692307693,0.07692307692307693,6,1.0,False,False
+credit,claude,sex_female_to_male,sex,0.0,other_installment_rate_mentioned,binary,McNemar,2.0,0.6875,0.5,odds_ratio,36,0.05555555555555555,0.1111111111111111,6,1.0,False,False
+credit,claude,sex_female_to_male,sex,0.0,other_job_mentioned,binary,McNemar,1.0,1.0,2.0,odds_ratio,40,0.075,0.05,3,1.0,False,False
+credit,claude,sex_female_to_male,sex,0.0,other_property_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,38,0.0,0.02631578947368421,1,1.0,False,False
+credit,claude,sex_female_to_male,sex,0.0,other_purpose_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,34,0.029411764705882353,0.0,1,1.0,False,False
+credit,claude,sex_female_to_male,sex,0.0,other_savings_mentioned,binary,McNemar,1.0,1.0,2.0,odds_ratio,24,0.08333333333333333,0.041666666666666664,3,1.0,False,False
+credit,claude,sex_female_to_male,sex,0.0,rank_position_accuracy,continuous,Wilcoxon signed-rank,26.0,0.28362036331636575,-0.3333333333333333,matched_rank_biserial_r,40,0.7833333333333334,0.8583333333333334,12,0.6346210157258283,False,False
+credit,claude,sex_female_to_male,sex,0.0,sign_accuracy,continuous,Wilcoxon signed-rank,0.0,0.31731050786291415,1.0,matched_rank_biserial_r,40,0.9916666666666666,0.9833333333333332,1,0.6346210157258283,False,False
+credit,claude,sex_female_to_male,sex,0.0,value_accuracy,continuous,Wilcoxon signed-rank,1.0,0.6547208460185769,0.0,matched_rank_biserial_r,40,0.9833333333333332,0.9845238095238095,2,0.6547208460185769,False,False
+credit,claude,sex_female_to_male,sex,0.0,prop_other_mentioned,continuous,Wilcoxon signed-rank,87.5,0.508369431709399,0.2,matched_rank_biserial_r,40,0.07857142857142857,0.06607142857142857,20,0.6547208460185769,False,False
+credit,claude,sex_male_to_female,sex,1.0,rank_1_scoring,binary,McNemar,3.0,0.7265625,1.6666666666666667,odds_ratio,60,0.8833333333333333,0.85,8,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,rank_1_value_scoring,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,57,0.9824561403508771,1.0,1,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,rank_1_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,60,1.0,0.9833333333333333,1,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,rank_2_scoring,binary,McNemar,3.0,0.5078125,2.0,odds_ratio,60,0.8666666666666667,0.8166666666666667,9,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,rank_3_scoring,binary,McNemar,2.0,0.2890625,3.0,odds_ratio,60,0.8833333333333333,0.8166666666666667,8,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,rank_3_sign_scoring,binary,McNemar,1.0,0.625,3.0,odds_ratio,60,0.9666666666666667,0.9333333333333333,4,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,age_mentioned,binary,McNemar,0.0,0.5,5.0,odds_ratio,60,0.03333333333333333,0.0,2,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,sex_mentioned,binary,McNemar,0.0,0.5,5.0,odds_ratio,60,0.03333333333333333,0.0,2,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,foreign_worker_mentioned,binary,McNemar,0.0,0.5,5.0,odds_ratio,60,0.03333333333333333,0.0,2,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,other_amount_mentioned,binary,McNemar,5.0,0.5810546875,1.6,odds_ratio,40,0.45,0.375,13,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,other_credit_history_mentioned,binary,McNemar,3.0,0.7265625,0.6,odds_ratio,43,0.11627906976744186,0.16279069767441862,8,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,other_duration_mentioned,binary,McNemar,5.0,1.0,0.8333333333333334,odds_ratio,38,0.47368421052631576,0.5,11,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,other_employment_duration_mentioned,binary,McNemar,4.0,0.75390625,0.6666666666666666,odds_ratio,54,0.2037037037037037,0.24074074074074073,10,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,other_housing_mentioned,binary,McNemar,2.0,1.0,0.6666666666666666,odds_ratio,60,0.06666666666666667,0.08333333333333333,5,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,other_installment_rate_mentioned,binary,McNemar,6.0,0.454498291015625,1.6666666666666667,odds_ratio,58,0.22413793103448276,0.15517241379310345,16,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,other_job_mentioned,binary,McNemar,0.0,1.0,3.0,odds_ratio,59,0.03389830508474576,0.01694915254237288,1,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,other_other_debtors_mentioned,binary,McNemar,1.0,1.0,1.0,odds_ratio,58,0.017241379310344827,0.017241379310344827,2,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,other_other_installment_plans_mentioned,binary,McNemar,1.0,1.0,0.5,odds_ratio,51,0.0196078431372549,0.0392156862745098,3,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,other_present_residence_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,57,0.0,0.017543859649122806,1,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,other_property_mentioned,binary,McNemar,1.0,0.625,0.3333333333333333,odds_ratio,55,0.01818181818181818,0.05454545454545454,4,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,other_purpose_mentioned,binary,McNemar,0.0,0.5,5.0,odds_ratio,42,0.047619047619047616,0.0,2,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,other_savings_mentioned,binary,McNemar,0.0,0.25,7.0,odds_ratio,38,0.15789473684210525,0.07894736842105263,3,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,other_status_mentioned,binary,McNemar,0.0,1.0,0.3333333333333333,odds_ratio,7,0.0,0.14285714285714285,1,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,rank_position_accuracy,continuous,Wilcoxon signed-rank,18.0,0.3203080806180544,0.4,matched_rank_biserial_r,60,0.8777777777777778,0.8277777777777777,10,0.5338468010300906,False,False
+credit,claude,sex_male_to_female,sex,1.0,sign_accuracy,continuous,Wilcoxon signed-rank,2.5,0.31731050786291415,0.5,matched_rank_biserial_r,60,0.9888888888888888,0.9777777777777779,4,0.5338468010300906,False,False
+credit,claude,sex_male_to_female,sex,1.0,value_accuracy,continuous,Wilcoxon signed-rank,1.5,1.0,0.0,matched_rank_biserial_r,60,0.9920634920634921,0.9920634920634921,2,1.0,False,False
+credit,claude,sex_male_to_female,sex,1.0,prop_pa_mentioned,continuous,Wilcoxon signed-rank,0.0,0.15729920705028502,1.0,matched_rank_biserial_r,60,0.03333333333333333,0.0,2,0.5338468010300906,False,False
+credit,claude,sex_male_to_female,sex,1.0,prop_other_mentioned,continuous,Wilcoxon signed-rank,207.5,0.8269244148499562,0.034482758620689655,matched_rank_biserial_r,60,0.0988095238095238,0.09642857142857143,29,1.0,False,False

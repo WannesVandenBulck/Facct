@@ -1,0 +1,41 @@
+{
+  "dataset": "student",
+  "instance_idx": 15,
+  "provider": "mistral",
+  "model": "mistral-large-2512",
+  "model_version": "mistral-large-2512",
+  "timestamp": "2026-10-29T21:29:59.547758",
+  "status": "success",
+  "narrative": "The system estimates there’s a 23 % chance you won’t pass your final year, which is above the 10 % threshold that triggers extra support. Because of this, you’re required to take remedial courses to help you stay on track.\n\nThe main reasons the system reached this conclusion are three key aspects of your situation. First, you’ve never failed a class before, and this actually works in your favor—it lowers the estimated risk. Second, your mother’s education level is lower than most of your peers’, and this slightly increases the predicted risk. Finally, you’ve expressed a strong desire to continue to higher education, which again lowers the risk the system sees.\n\nOther factors also played a role, though less strongly. For example, your parents live together, you have internet at home, and you’re not in a romantic relationship—all of which are common among students who pass. However, your weekly study time is on the lower side compared to many of your classmates, and you don’t take part in extra-curricular activities, which may have nudged the estimate upward.\n\nThe remedial courses are designed to give you the extra time and attention you need. Focus on using this opportunity to build consistent study habits, ask questions, and take advantage of the support available. Your goal of higher education is still very much within reach—these courses are here to help you get there.",
+  "error": null,
+  "system_prompt": "You are an expert at explaining machine learning predictions to non-technical users. Write clear narratives that help people understand model decisions.",
+  "prompt": "A machine learning model predicted that a student will FAIL their final year and therefore they are OBLIGED to take remedial courses. Your goal is to generate an explanatory narrative based on the information provided (1-5), explaining why the student must take additional courses.\n\n1. DATASET INFORMATION\nThe dataset contains information on students from two Portuguese high schools.\n\nThe target variable is whether the student will fail their final year.\n\nProtected attributes sex, age and health were not used to make the machine prediction.\n\n2. TECHNICAL EXPLANATION: SHAP VALUES\nA SHAP value tells you how much a feature influenced the prediction (larger absolute value means a stronger influence) and its direction: positive pushes toward failing the final year, negative toward passing the final year. Below are the top 3 features by absolute SHAP value.\n\n3. STUDENT PROFILE\nYou are writing a narrative tailored to this specific student, who is obliged to take remedial courses.\nFeature values (with comparisons to students who are not obliged to take remedial courses where available, showing the distribution or average among students who are not obliged to take remedial courses):\n- famsize = >3 (size of the family of the student) - distribution: >3: 63.3%, <=3: 36.7%\n- Pstatus = together (parents cohabitation status) - distribution: together: 90.0%, apart: 10.0%\n- Medu = primary (mother's education) - distribution: higher: 50.0%, secondary: 23.3%, 5-9th grade: 20.0%, primary: 6.7%\n- Fedu = 5-9th grade (father's education) - distribution: 5-9th grade: 46.7%, secondary: 26.7%, higher: 23.3%, primary: 3.3%\n- Mjob = at_home (mother's job) - distribution: services: 33.3%, teacher: 26.7%, other: 23.3%, health: 10.0%, at_home: 6.7%\n- Fjob = other (father's job) - distribution: other: 60.0%, services: 33.3%, at_home: 3.3%, teacher: 3.3%\n- reason = course (reason to choose this school) - distribution: course: 36.7%, home: 30.0%, reputation: 26.7%, other: 6.7%\n- guardian = mother (student's guardian) - distribution: mother: 73.3%, father: 26.7%\n- traveltime = <15 min (home to school travel time) - distribution: <15 min: 70.0%, 15-30 min: 26.7%, >60 min: 3.3%\n- studytime = 2-5 hours (weekly study time) - distribution: 2-5 hours: 60.0%, 5-10 hours: 33.3%, >10 hours: 6.7%\n- failures = 0 (number of past class failures) - average: 0.0\n- schoolsup = no (student receiving extra educational support) - distribution: no: 96.7%, yes: 3.3%\n- famsup = yes (student receiving family educational support) - distribution: yes: 60.0%, no: 40.0%\n- paid = no (student taking extra paid classes within the course subject) - distribution: no: 96.7%, yes: 3.3%\n- activities = no (student taking part in extra-curricular activities) - distribution: no: 60.0%, yes: 40.0%\n- nursery = no (student has attended nursery school) - distribution: yes: 86.7%, no: 13.3%\n- higher = yes (student wants to get higher education) - distribution: yes: 100.0%\n- internet = yes (student has internet access at home) - distribution: yes: 90.0%, no: 10.0%\n- romantic = no (student is in a romantic relationship) - distribution: no: 56.7%, yes: 43.3%\n- famrel = good (quality of family relationships) - distribution: good: 73.3%, very good: 16.7%, fair: 10.0%\n- freetime = medium (free time after school) - distribution: medium: 46.7%, high: 33.3%, low: 16.7%, very low: 3.3%\n- goout = low (going out with friends) - distribution: medium: 56.7%, low: 26.7%, high: 13.3%, very high: 3.3%\n- Dalc = very low (workday alcohol consumption) - distribution: very low: 76.7%, low: 23.3%\n- Walc = very low (weekend alcohol consumption) - distribution: medium: 33.3%, very low: 33.3%, low: 30.0%, high: 3.3%\n- absences = 6 (number of school absences) - average: 2.8\n\n\nThe model's prediction:\n- Predicted probability of failing the final year: 23.0%\n- Decision threshold: a predicted probability of failing the final year of 10% or higher leads to this decision.\n\n4. FEATURE IMPORTANCE ANALYSIS (Ranked by Influence)\n Feature  SHAP_Value\nfailures   -0.111995\n    Medu    0.069501\n  higher   -0.050053\n\n5. YOUR NARRATIVE TASK\nWrite a detailed narrative explanation tailored to this non-technical reader that MUST explain:\n1) The model's predicted probability of failing the final year and what this means for the student.\n2) Why the student is obliged to take remedial courses: which features were most important in driving this prediction and why (focus on the ranking of most important features).\n3) How each of the top 3 most important features contributed (either pushing toward failing the final year or toward passing the final year).\n4) What the student should do next.\n\nCONSTRAINTS:\n- Do not use the numeric SHAP values in your answer. Instead, discuss the ranking and direction of influence.\n- Do not talk about model internals, algorithms, or training details.\n- Do not include greeting or closing statements, nor bullet points or tables.\nSTYLE:\n- Length: 250 words maximum.\n- Write a coherent narrative directly addressing the student.\n- Do NOT copy-paste feature names, but instead incorporate them naturally in the narrative.\n- Include feature values and their comparisons to averages or distributions, but reserve this for features where it really clarifies the explanation.\n",
+  "condition": "exclude_pa",
+  "exclude_protected_attributes": true,
+  "label": null,
+  "attr_column": null,
+  "override_value": null,
+  "target_value_label": null,
+  "temperature": 0,
+  "max_tokens": 4096,
+  "api_version": null,
+  "usage": {
+    "prompt_tokens": 1564,
+    "completion_tokens": 285,
+    "total_tokens": 1849,
+    "prompt_audio_seconds": null,
+    "service_tier": null,
+    "request_count": 0,
+    "prompt_tokens_details": {
+      "messages": [],
+      "cached_tokens": 384,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_token_details": null
+  },
+  "batch_id": "135c2d50-e44c-4e08-bcd3-05080a497715",
+  "custom_id": "student__exclude_pa__15"
+}
