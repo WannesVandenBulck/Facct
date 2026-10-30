@@ -1,0 +1,125 @@
+{
+  "predicted_probability": 0.26,
+  "most_important_features": [
+    {
+      "rank": 1,
+      "name": "status",
+      "sign": 1,
+      "value": "NaN"
+    },
+    {
+      "rank": 2,
+      "name": "duration",
+      "sign": 1,
+      "value": "NaN"
+    },
+    {
+      "rank": 3,
+      "name": "purpose",
+      "sign": 1,
+      "value": 4
+    }
+  ],
+  "features": [
+    {
+      "name": "status",
+      "mentioned": 1,
+      "value": "NaN"
+    },
+    {
+      "name": "savings",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "credit_history",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "duration",
+      "mentioned": 1,
+      "value": "NaN"
+    },
+    {
+      "name": "purpose",
+      "mentioned": 1,
+      "value": 4
+    },
+    {
+      "name": "amount",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "employment_duration",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "installment_rate",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "other_debtors",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "present_residence",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "property",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "other_installment_plans",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "housing",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "number_credits",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "job",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "people_liable",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "telephone",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "age",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "sex",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "foreign_worker",
+      "mentioned": 0,
+      "value": "NaN"
+    }
+  ]
+}

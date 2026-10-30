@@ -1,0 +1,65 @@
+{
+  "predicted_probability": 0.62,
+  "most_important_features": [
+    {
+      "rank": 1,
+      "name": "decile1",
+      "sign": 1,
+      "value": "NaN"
+    },
+    {
+      "rank": 2,
+      "name": "decile3",
+      "sign": 1,
+      "value": "NaN"
+    },
+    {
+      "rank": 3,
+      "name": "lsat",
+      "sign": -1,
+      "value": 43
+    }
+  ],
+  "features": [
+    {
+      "name": "decile3",
+      "mentioned": 1,
+      "value": "NaN"
+    },
+    {
+      "name": "decile1",
+      "mentioned": 1,
+      "value": "NaN"
+    },
+    {
+      "name": "fam_inc",
+      "mentioned": 1,
+      "value": "NaN"
+    },
+    {
+      "name": "lsat",
+      "mentioned": 1,
+      "value": 43
+    },
+    {
+      "name": "ugpa",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "fulltime",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "gender",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "race",
+      "mentioned": 0,
+      "value": "NaN"
+    }
+  ]
+}

@@ -6238,8 +6238,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:55:18",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "credit/openai_small/exclude_pa": {
   "batch_id": "batch_66314b5b-9504-4d29-be17-765fb75b7e36",
@@ -6348,8 +6350,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:55:21",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "credit/openai_small/counterfactual_pa": {
   "batch_id": "batch_dcf672ed-1e56-465e-a2f9-c1f60ea9cda8",
@@ -6658,8 +6662,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:55:29",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "300/300 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "credit/mistral_small/include_pa": {
   "batch_id": "batch_f02b0671-851c-48e4-9dbf-56aebbca4c55",
@@ -6768,8 +6774,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:55:32",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "credit/mistral_small/exclude_pa": {
   "batch_id": "batch_328f3844-31c0-484a-b092-7c7aea71eeeb",
@@ -6878,8 +6886,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:55:34",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "credit/mistral_small/counterfactual_pa": {
   "batch_id": "batch_e18224ab-9aa8-43dc-b2b8-c25548150330",
@@ -7188,8 +7198,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:55:41",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "300/300 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "law/openai_small/include_pa": {
   "batch_id": "batch_aa39c67a-dd0b-4036-9e4b-eed037a6ba10",
@@ -7298,8 +7310,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:55:43",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "law/openai_small/exclude_pa": {
   "batch_id": "batch_bcd62d8c-cbf1-409c-a602-c241bb8dc917",
@@ -7408,8 +7422,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:55:45",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "law/openai_small/counterfactual_pa": {
   "batch_id": "batch_300a65d4-14e6-4352-b3be-740e572f0cf4",
@@ -7618,8 +7634,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:55:49",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "200/200 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "law/mistral_small/include_pa": {
   "batch_id": "batch_ab6bcd33-1835-4b60-b4f7-1e4c2bc28777",
@@ -7728,8 +7746,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:55:51",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "law/mistral_small/exclude_pa": {
   "batch_id": "batch_c844fa15-9310-489c-bcef-6c9156fe1335",
@@ -7838,8 +7858,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:55:53",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "law/mistral_small/counterfactual_pa": {
   "batch_id": "batch_1896e07b-66b3-4a7a-8500-c14523961b94",
@@ -8048,8 +8070,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:55:58",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "200/200 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "saudi/openai_small/include_pa": {
   "batch_id": "batch_f8431c85-ea21-4edb-8bdd-014773df950a",
@@ -8158,8 +8182,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:56:01",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "saudi/openai_small/exclude_pa": {
   "batch_id": "batch_fbe49619-81ed-443e-b2f0-01c88451d2da",
@@ -8268,8 +8294,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:56:03",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "saudi/openai_small/counterfactual_pa": {
   "batch_id": "batch_bd26a060-728e-4913-bbec-fb10866c5535",
@@ -8578,8 +8606,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:56:10",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "300/300 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "saudi/mistral_small/include_pa": {
   "batch_id": "batch_5b159406-c6fd-483e-bb62-de4eb561de87",
@@ -8688,8 +8718,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:56:13",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "saudi/mistral_small/exclude_pa": {
   "batch_id": "batch_8fd8ff7b-3651-4b7b-86f2-88ca2cc119ac",
@@ -8798,8 +8830,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:56:16",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "saudi/mistral_small/counterfactual_pa": {
   "batch_id": "batch_10432cb1-7802-4fd3-bc9d-678bb1b51222",
@@ -9108,8 +9142,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:56:22",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "300/300 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "student/openai_small/include_pa": {
   "batch_id": "batch_ce1499e7-ebf5-4b2e-9914-e4b47083fa24",
@@ -9218,8 +9254,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:56:24",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "student/openai_small/exclude_pa": {
   "batch_id": "batch_24090ed9-2d3b-4603-81e7-08ec41164639",
@@ -9328,8 +9366,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:56:27",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "student/openai_small/counterfactual_pa": {
   "batch_id": "batch_7430c8f1-e64a-4912-a6dd-a148cb98aac3",
@@ -9638,8 +9678,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:56:32",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "300/300 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "student/mistral_small/include_pa": {
   "batch_id": "batch_d195bb7f-0658-42bd-9d7d-962d9456ad62",
@@ -9748,8 +9790,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:56:35",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "student/mistral_small/exclude_pa": {
   "batch_id": "batch_853a93f8-e4ff-476f-820c-c8e9241f8b41",
@@ -9858,8 +9902,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:56:37",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "student/mistral_small/counterfactual_pa": {
   "batch_id": "batch_b1500a51-6daa-4982-adfb-2c3cd3fd3b3f",
@@ -10168,7 +10214,9 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-30T12:56:43",
-  "state": "submitted",
-  "collected": false
+  "state": "done",
+  "collected": true,
+  "detail": "300/300 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  }
 }
