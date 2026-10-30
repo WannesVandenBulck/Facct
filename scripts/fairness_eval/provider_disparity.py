@@ -208,6 +208,7 @@ POOLED_METRICS["sign_accuracy"] = "continuous"
 POOLED_METRICS["value_accuracy"] = "continuous"
 POOLED_METRICS["prop_pa_mentioned"] = "continuous"
 POOLED_METRICS["prop_other_mentioned"] = "continuous"
+POOLED_METRICS["sent_net"] = "continuous"  # same lexicon and scale for every dataset
 
 
 
@@ -311,6 +312,10 @@ def discover_metrics(df, pa_names):
     metrics["value_accuracy"] = "continuous"
     metrics["prop_pa_mentioned"] = "continuous"
     metrics["prop_other_mentioned"] = "continuous"
+
+    # lexicon-based sentiment (computed in generate_per_narrative_metrics.py)
+    if "sent_net" in df.columns:
+        metrics["sent_net"] = "continuous"
 
     return metrics
 

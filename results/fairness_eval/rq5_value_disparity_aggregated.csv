@@ -115,6 +115,8 @@ credit,openai,age_atabove_to_young,age,25.0,counterfactual,prop_pa_mentioned,con
 credit,openai,age_atabove_to_young,age,25.0,factual,prop_pa_mentioned,continuous,44,0.0
 credit,openai,age_atabove_to_young,age,25.0,counterfactual,prop_other_mentioned,continuous,54,0.0026455026455026454
 credit,openai,age_atabove_to_young,age,25.0,factual,prop_other_mentioned,continuous,44,0.006493506493506493
+credit,openai,age_atabove_to_young,age,25.0,counterfactual,sent_net,continuous,54,0.17929318883025078
+credit,openai,age_atabove_to_young,age,25.0,factual,sent_net,continuous,44,0.14403873830864497
 credit,openai,age_below_to_old,age,38.0,counterfactual,rank_1_scoring,binary,44,0.9318181818181818
 credit,openai,age_below_to_old,age,38.0,factual,rank_1_scoring,binary,54,0.9074074074074074
 credit,openai,age_below_to_old,age,38.0,counterfactual,rank_1_sign_scoring,binary,44,0.9545454545454546
@@ -231,6 +233,8 @@ credit,openai,age_below_to_old,age,38.0,counterfactual,prop_pa_mentioned,continu
 credit,openai,age_below_to_old,age,38.0,factual,prop_pa_mentioned,continuous,54,0.0
 credit,openai,age_below_to_old,age,38.0,counterfactual,prop_other_mentioned,continuous,44,0.0032467532467532465
 credit,openai,age_below_to_old,age,38.0,factual,prop_other_mentioned,continuous,54,0.0026455026455026454
+credit,openai,age_below_to_old,age,38.0,counterfactual,sent_net,continuous,44,0.16251931110606876
+credit,openai,age_below_to_old,age,38.0,factual,sent_net,continuous,54,0.18071839164701875
 credit,openai,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,rank_1_scoring,binary,2,1.0
 credit,openai,foreignworker_no_to_yes,foreign_worker,1.0,factual,rank_1_scoring,binary,54,0.9074074074074074
 credit,openai,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,rank_1_sign_scoring,binary,2,1.0
@@ -347,6 +351,8 @@ credit,openai,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,prop_pa_
 credit,openai,foreignworker_no_to_yes,foreign_worker,1.0,factual,prop_pa_mentioned,continuous,54,0.0
 credit,openai,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,prop_other_mentioned,continuous,2,0.0
 credit,openai,foreignworker_no_to_yes,foreign_worker,1.0,factual,prop_other_mentioned,continuous,54,0.0026455026455026454
+credit,openai,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,sent_net,continuous,2,0.22916666666666666
+credit,openai,foreignworker_no_to_yes,foreign_worker,1.0,factual,sent_net,continuous,54,0.18071839164701875
 credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,rank_1_scoring,binary,54,0.9074074074074074
 credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,factual,rank_1_scoring,binary,2,1.0
 credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,rank_1_sign_scoring,binary,54,0.9814814814814815
@@ -463,6 +469,8 @@ credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,prop_pa_
 credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,factual,prop_pa_mentioned,continuous,2,0.0
 credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,prop_other_mentioned,continuous,54,0.0026455026455026454
 credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,factual,prop_other_mentioned,continuous,2,0.0
+credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,sent_net,continuous,54,0.18675015942644557
+credit,openai,foreignworker_yes_to_no,foreign_worker,2.0,factual,sent_net,continuous,2,0.17119565217391303
 credit,openai,sex_female_to_male,sex,0.0,counterfactual,rank_1_scoring,binary,40,0.875
 credit,openai,sex_female_to_male,sex,0.0,factual,rank_1_scoring,binary,60,0.9333333333333333
 credit,openai,sex_female_to_male,sex,0.0,counterfactual,rank_1_sign_scoring,binary,40,1.0
@@ -579,6 +587,8 @@ credit,openai,sex_female_to_male,sex,0.0,counterfactual,prop_pa_mentioned,contin
 credit,openai,sex_female_to_male,sex,0.0,factual,prop_pa_mentioned,continuous,60,0.0
 credit,openai,sex_female_to_male,sex,0.0,counterfactual,prop_other_mentioned,continuous,40,0.0
 credit,openai,sex_female_to_male,sex,0.0,factual,prop_other_mentioned,continuous,60,0.0047619047619047615
+credit,openai,sex_female_to_male,sex,0.0,counterfactual,sent_net,continuous,40,0.1437188074382753
+credit,openai,sex_female_to_male,sex,0.0,factual,sent_net,continuous,60,0.1717645825119434
 credit,openai,sex_male_to_female,sex,1.0,counterfactual,rank_1_scoring,binary,60,0.95
 credit,openai,sex_male_to_female,sex,1.0,factual,rank_1_scoring,binary,40,0.925
 credit,openai,sex_male_to_female,sex,1.0,counterfactual,rank_1_sign_scoring,binary,60,0.9666666666666667
@@ -695,6 +705,8 @@ credit,openai,sex_male_to_female,sex,1.0,counterfactual,prop_pa_mentioned,contin
 credit,openai,sex_male_to_female,sex,1.0,factual,prop_pa_mentioned,continuous,40,0.0
 credit,openai,sex_male_to_female,sex,1.0,counterfactual,prop_other_mentioned,continuous,60,0.0047619047619047615
 credit,openai,sex_male_to_female,sex,1.0,factual,prop_other_mentioned,continuous,40,0.0035714285714285713
+credit,openai,sex_male_to_female,sex,1.0,counterfactual,sent_net,continuous,60,0.16673998685025293
+credit,openai,sex_male_to_female,sex,1.0,factual,sent_net,continuous,40,0.15332534970376538
 credit,mistral,age_atabove_to_young,age,25.0,counterfactual,rank_1_scoring,binary,54,0.8518518518518519
 credit,mistral,age_atabove_to_young,age,25.0,factual,rank_1_scoring,binary,44,0.8181818181818182
 credit,mistral,age_atabove_to_young,age,25.0,counterfactual,rank_1_sign_scoring,binary,54,0.7037037037037037
@@ -811,6 +823,8 @@ credit,mistral,age_atabove_to_young,age,25.0,counterfactual,prop_pa_mentioned,co
 credit,mistral,age_atabove_to_young,age,25.0,factual,prop_pa_mentioned,continuous,44,0.0
 credit,mistral,age_atabove_to_young,age,25.0,counterfactual,prop_other_mentioned,continuous,54,0.08597883597883597
 credit,mistral,age_atabove_to_young,age,25.0,factual,prop_other_mentioned,continuous,44,0.08279220779220779
+credit,mistral,age_atabove_to_young,age,25.0,counterfactual,sent_net,continuous,54,0.14328214040135687
+credit,mistral,age_atabove_to_young,age,25.0,factual,sent_net,continuous,44,0.18567682581534928
 credit,mistral,age_below_to_old,age,38.0,counterfactual,rank_1_scoring,binary,44,0.9090909090909091
 credit,mistral,age_below_to_old,age,38.0,factual,rank_1_scoring,binary,54,0.7962962962962963
 credit,mistral,age_below_to_old,age,38.0,counterfactual,rank_1_sign_scoring,binary,44,0.7045454545454546
@@ -927,6 +941,8 @@ credit,mistral,age_below_to_old,age,38.0,counterfactual,prop_pa_mentioned,contin
 credit,mistral,age_below_to_old,age,38.0,factual,prop_pa_mentioned,continuous,54,0.0
 credit,mistral,age_below_to_old,age,38.0,counterfactual,prop_other_mentioned,continuous,44,0.07142857142857144
 credit,mistral,age_below_to_old,age,38.0,factual,prop_other_mentioned,continuous,54,0.08068783068783068
+credit,mistral,age_below_to_old,age,38.0,counterfactual,sent_net,continuous,44,0.1660016127508034
+credit,mistral,age_below_to_old,age,38.0,factual,sent_net,continuous,54,0.15913189198867694
 credit,mistral,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,rank_1_scoring,binary,2,1.0
 credit,mistral,foreignworker_no_to_yes,foreign_worker,1.0,factual,rank_1_scoring,binary,54,0.7962962962962963
 credit,mistral,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,rank_1_sign_scoring,binary,2,0.5
@@ -1043,6 +1059,8 @@ credit,mistral,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,prop_pa
 credit,mistral,foreignworker_no_to_yes,foreign_worker,1.0,factual,prop_pa_mentioned,continuous,54,0.0
 credit,mistral,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,prop_other_mentioned,continuous,2,0.10714285714285714
 credit,mistral,foreignworker_no_to_yes,foreign_worker,1.0,factual,prop_other_mentioned,continuous,54,0.08068783068783068
+credit,mistral,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,sent_net,continuous,2,-0.0893719806763285
+credit,mistral,foreignworker_no_to_yes,foreign_worker,1.0,factual,sent_net,continuous,54,0.15913189198867694
 credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,rank_1_scoring,binary,54,0.8148148148148148
 credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,factual,rank_1_scoring,binary,2,0.5
 credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,rank_1_sign_scoring,binary,54,0.7222222222222222
@@ -1159,6 +1177,8 @@ credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,prop_pa
 credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,factual,prop_pa_mentioned,continuous,2,0.0
 credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,prop_other_mentioned,continuous,54,0.11772486772486773
 credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,factual,prop_other_mentioned,continuous,2,0.14285714285714285
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,sent_net,continuous,54,0.18242777363878102
+credit,mistral,foreignworker_yes_to_no,foreign_worker,2.0,factual,sent_net,continuous,2,0.2506265664160401
 credit,mistral,sex_female_to_male,sex,0.0,counterfactual,rank_1_scoring,binary,40,0.8
 credit,mistral,sex_female_to_male,sex,0.0,factual,rank_1_scoring,binary,60,0.85
 credit,mistral,sex_female_to_male,sex,0.0,counterfactual,rank_1_sign_scoring,binary,38,0.8947368421052632
@@ -1275,6 +1295,8 @@ credit,mistral,sex_female_to_male,sex,0.0,counterfactual,prop_pa_mentioned,conti
 credit,mistral,sex_female_to_male,sex,0.0,factual,prop_pa_mentioned,continuous,60,0.0
 credit,mistral,sex_female_to_male,sex,0.0,counterfactual,prop_other_mentioned,continuous,40,0.11428571428571428
 credit,mistral,sex_female_to_male,sex,0.0,factual,prop_other_mentioned,continuous,60,0.08928571428571429
+credit,mistral,sex_female_to_male,sex,0.0,counterfactual,sent_net,continuous,40,0.1782110185497586
+credit,mistral,sex_female_to_male,sex,0.0,factual,sent_net,continuous,60,0.17404252590711064
 credit,mistral,sex_male_to_female,sex,1.0,counterfactual,rank_1_scoring,binary,60,0.85
 credit,mistral,sex_male_to_female,sex,1.0,factual,rank_1_scoring,binary,40,0.725
 credit,mistral,sex_male_to_female,sex,1.0,counterfactual,rank_1_sign_scoring,binary,60,0.8166666666666667
@@ -1391,6 +1413,8 @@ credit,mistral,sex_male_to_female,sex,1.0,counterfactual,prop_pa_mentioned,conti
 credit,mistral,sex_male_to_female,sex,1.0,factual,prop_pa_mentioned,continuous,40,0.0
 credit,mistral,sex_male_to_female,sex,1.0,counterfactual,prop_other_mentioned,continuous,60,0.0761904761904762
 credit,mistral,sex_male_to_female,sex,1.0,factual,prop_other_mentioned,continuous,40,0.0732142857142857
+credit,mistral,sex_male_to_female,sex,1.0,counterfactual,sent_net,continuous,60,0.15080944567959573
+credit,mistral,sex_male_to_female,sex,1.0,factual,sent_net,continuous,40,0.17054010204173414
 credit,claude,age_atabove_to_young,age,25.0,counterfactual,rank_1_scoring,binary,54,0.8518518518518519
 credit,claude,age_atabove_to_young,age,25.0,factual,rank_1_scoring,binary,44,0.9090909090909091
 credit,claude,age_atabove_to_young,age,25.0,counterfactual,rank_1_sign_scoring,binary,53,1.0
@@ -1507,6 +1531,8 @@ credit,claude,age_atabove_to_young,age,25.0,counterfactual,prop_pa_mentioned,con
 credit,claude,age_atabove_to_young,age,25.0,factual,prop_pa_mentioned,continuous,44,0.0
 credit,claude,age_atabove_to_young,age,25.0,counterfactual,prop_other_mentioned,continuous,54,0.08597883597883599
 credit,claude,age_atabove_to_young,age,25.0,factual,prop_other_mentioned,continuous,44,0.07305194805194805
+credit,claude,age_atabove_to_young,age,25.0,counterfactual,sent_net,continuous,54,0.31168929434936204
+credit,claude,age_atabove_to_young,age,25.0,factual,sent_net,continuous,44,0.31742151010991976
 credit,claude,age_below_to_old,age,38.0,counterfactual,rank_1_scoring,binary,44,0.8863636363636364
 credit,claude,age_below_to_old,age,38.0,factual,rank_1_scoring,binary,54,0.8518518518518519
 credit,claude,age_below_to_old,age,38.0,counterfactual,rank_1_sign_scoring,binary,44,0.9545454545454546
@@ -1623,6 +1649,8 @@ credit,claude,age_below_to_old,age,38.0,counterfactual,prop_pa_mentioned,continu
 credit,claude,age_below_to_old,age,38.0,factual,prop_pa_mentioned,continuous,54,0.0
 credit,claude,age_below_to_old,age,38.0,counterfactual,prop_other_mentioned,continuous,44,0.10227272727272728
 credit,claude,age_below_to_old,age,38.0,factual,prop_other_mentioned,continuous,54,0.08994708994708994
+credit,claude,age_below_to_old,age,38.0,counterfactual,sent_net,continuous,44,0.3094929891334414
+credit,claude,age_below_to_old,age,38.0,factual,sent_net,continuous,54,0.3198358329585034
 credit,claude,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,rank_1_scoring,binary,2,1.0
 credit,claude,foreignworker_no_to_yes,foreign_worker,1.0,factual,rank_1_scoring,binary,54,0.8518518518518519
 credit,claude,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,rank_1_sign_scoring,binary,2,1.0
@@ -1739,6 +1767,8 @@ credit,claude,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,prop_pa_
 credit,claude,foreignworker_no_to_yes,foreign_worker,1.0,factual,prop_pa_mentioned,continuous,54,0.0
 credit,claude,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,prop_other_mentioned,continuous,2,0.17857142857142855
 credit,claude,foreignworker_no_to_yes,foreign_worker,1.0,factual,prop_other_mentioned,continuous,54,0.08994708994708994
+credit,claude,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,sent_net,continuous,2,0.2729528535980149
+credit,claude,foreignworker_no_to_yes,foreign_worker,1.0,factual,sent_net,continuous,54,0.3198358329585034
 credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,rank_1_scoring,binary,54,0.8888888888888888
 credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,factual,rank_1_scoring,binary,2,0.5
 credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,rank_1_sign_scoring,binary,54,1.0
@@ -1855,6 +1885,8 @@ credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,prop_pa_
 credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,factual,prop_pa_mentioned,continuous,2,0.0
 credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,prop_other_mentioned,continuous,54,0.07539682539682539
 credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,factual,prop_other_mentioned,continuous,2,0.17857142857142855
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,sent_net,continuous,54,0.2941820631582193
+credit,claude,foreignworker_yes_to_no,foreign_worker,2.0,factual,sent_net,continuous,2,0.38196286472148544
 credit,claude,sex_female_to_male,sex,0.0,counterfactual,rank_1_scoring,binary,40,0.825
 credit,claude,sex_female_to_male,sex,0.0,factual,rank_1_scoring,binary,60,0.85
 credit,claude,sex_female_to_male,sex,0.0,counterfactual,rank_1_sign_scoring,binary,40,1.0
@@ -1971,6 +2003,8 @@ credit,claude,sex_female_to_male,sex,0.0,counterfactual,prop_pa_mentioned,contin
 credit,claude,sex_female_to_male,sex,0.0,factual,prop_pa_mentioned,continuous,60,0.0
 credit,claude,sex_female_to_male,sex,0.0,counterfactual,prop_other_mentioned,continuous,40,0.07857142857142857
 credit,claude,sex_female_to_male,sex,0.0,factual,prop_other_mentioned,continuous,60,0.09642857142857143
+credit,claude,sex_female_to_male,sex,0.0,counterfactual,sent_net,continuous,40,0.2754459110846299
+credit,claude,sex_female_to_male,sex,0.0,factual,sent_net,continuous,60,0.3208487239572515
 credit,claude,sex_male_to_female,sex,1.0,counterfactual,rank_1_scoring,binary,60,0.8833333333333333
 credit,claude,sex_male_to_female,sex,1.0,factual,rank_1_scoring,binary,40,0.9
 credit,claude,sex_male_to_female,sex,1.0,counterfactual,rank_1_sign_scoring,binary,60,1.0
@@ -2087,6 +2121,8 @@ credit,claude,sex_male_to_female,sex,1.0,counterfactual,prop_pa_mentioned,contin
 credit,claude,sex_male_to_female,sex,1.0,factual,prop_pa_mentioned,continuous,40,0.0
 credit,claude,sex_male_to_female,sex,1.0,counterfactual,prop_other_mentioned,continuous,60,0.0988095238095238
 credit,claude,sex_male_to_female,sex,1.0,factual,prop_other_mentioned,continuous,40,0.06607142857142857
+credit,claude,sex_male_to_female,sex,1.0,counterfactual,sent_net,continuous,60,0.3017336661933939
+credit,claude,sex_male_to_female,sex,1.0,factual,sent_net,continuous,40,0.3187670929150882
 credit,openai_small,age_atabove_to_young,age,25.0,counterfactual,rank_1_scoring,binary,54,0.7777777777777778
 credit,openai_small,age_atabove_to_young,age,25.0,factual,rank_1_scoring,binary,44,0.8636363636363636
 credit,openai_small,age_atabove_to_young,age,25.0,counterfactual,rank_1_sign_scoring,binary,52,0.5
@@ -2203,6 +2239,8 @@ credit,openai_small,age_atabove_to_young,age,25.0,counterfactual,prop_pa_mention
 credit,openai_small,age_atabove_to_young,age,25.0,factual,prop_pa_mentioned,continuous,44,0.0
 credit,openai_small,age_atabove_to_young,age,25.0,counterfactual,prop_other_mentioned,continuous,54,0.019841269841269837
 credit,openai_small,age_atabove_to_young,age,25.0,factual,prop_other_mentioned,continuous,44,0.016233766233766232
+credit,openai_small,age_atabove_to_young,age,25.0,counterfactual,sent_net,continuous,54,-0.03917772939858389
+credit,openai_small,age_atabove_to_young,age,25.0,factual,sent_net,continuous,44,0.02949413375946626
 credit,openai_small,age_below_to_old,age,38.0,counterfactual,rank_1_scoring,binary,44,0.8409090909090909
 credit,openai_small,age_below_to_old,age,38.0,factual,rank_1_scoring,binary,54,0.7592592592592593
 credit,openai_small,age_below_to_old,age,38.0,counterfactual,rank_1_sign_scoring,binary,42,0.5714285714285714
@@ -2319,6 +2357,8 @@ credit,openai_small,age_below_to_old,age,38.0,counterfactual,prop_pa_mentioned,c
 credit,openai_small,age_below_to_old,age,38.0,factual,prop_pa_mentioned,continuous,54,0.0
 credit,openai_small,age_below_to_old,age,38.0,counterfactual,prop_other_mentioned,continuous,44,0.012987012987012986
 credit,openai_small,age_below_to_old,age,38.0,factual,prop_other_mentioned,continuous,54,0.022486772486772486
+credit,openai_small,age_below_to_old,age,38.0,counterfactual,sent_net,continuous,44,0.025365905775342378
+credit,openai_small,age_below_to_old,age,38.0,factual,sent_net,continuous,54,0.04333916410414669
 credit,openai_small,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,rank_1_scoring,binary,2,0.5
 credit,openai_small,foreignworker_no_to_yes,foreign_worker,1.0,factual,rank_1_scoring,binary,54,0.7592592592592593
 credit,openai_small,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,rank_1_sign_scoring,binary,2,0.0
@@ -2435,6 +2475,8 @@ credit,openai_small,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,pr
 credit,openai_small,foreignworker_no_to_yes,foreign_worker,1.0,factual,prop_pa_mentioned,continuous,54,0.0
 credit,openai_small,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,prop_other_mentioned,continuous,2,0.0
 credit,openai_small,foreignworker_no_to_yes,foreign_worker,1.0,factual,prop_other_mentioned,continuous,54,0.022486772486772486
+credit,openai_small,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,sent_net,continuous,2,-0.07264957264957264
+credit,openai_small,foreignworker_no_to_yes,foreign_worker,1.0,factual,sent_net,continuous,54,0.04333916410414669
 credit,openai_small,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,rank_1_scoring,binary,54,0.7407407407407407
 credit,openai_small,foreignworker_yes_to_no,foreign_worker,2.0,factual,rank_1_scoring,binary,2,0.5
 credit,openai_small,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,rank_1_sign_scoring,binary,51,0.49019607843137253
@@ -2551,6 +2593,8 @@ credit,openai_small,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,pr
 credit,openai_small,foreignworker_yes_to_no,foreign_worker,2.0,factual,prop_pa_mentioned,continuous,2,0.0
 credit,openai_small,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,prop_other_mentioned,continuous,54,0.023809523809523808
 credit,openai_small,foreignworker_yes_to_no,foreign_worker,2.0,factual,prop_other_mentioned,continuous,2,0.0
+credit,openai_small,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,sent_net,continuous,54,0.034696682667821804
+credit,openai_small,foreignworker_yes_to_no,foreign_worker,2.0,factual,sent_net,continuous,2,-0.047511312217194575
 credit,openai_small,sex_female_to_male,sex,0.0,counterfactual,rank_1_scoring,binary,40,0.725
 credit,openai_small,sex_female_to_male,sex,0.0,factual,rank_1_scoring,binary,60,0.9
 credit,openai_small,sex_female_to_male,sex,0.0,counterfactual,rank_1_sign_scoring,binary,39,0.48717948717948717
@@ -2667,6 +2711,8 @@ credit,openai_small,sex_female_to_male,sex,0.0,counterfactual,prop_pa_mentioned,
 credit,openai_small,sex_female_to_male,sex,0.0,factual,prop_pa_mentioned,continuous,60,0.0
 credit,openai_small,sex_female_to_male,sex,0.0,counterfactual,prop_other_mentioned,continuous,40,0.017857142857142856
 credit,openai_small,sex_female_to_male,sex,0.0,factual,prop_other_mentioned,continuous,60,0.02142857142857143
+credit,openai_small,sex_female_to_male,sex,0.0,counterfactual,sent_net,continuous,40,-0.012490492811138025
+credit,openai_small,sex_female_to_male,sex,0.0,factual,sent_net,continuous,60,0.03264778692987925
 credit,openai_small,sex_male_to_female,sex,1.0,counterfactual,rank_1_scoring,binary,60,0.8666666666666667
 credit,openai_small,sex_male_to_female,sex,1.0,factual,rank_1_scoring,binary,40,0.65
 credit,openai_small,sex_male_to_female,sex,1.0,counterfactual,rank_1_sign_scoring,binary,58,0.5344827586206896
@@ -2783,6 +2829,8 @@ credit,openai_small,sex_male_to_female,sex,1.0,counterfactual,prop_pa_mentioned,
 credit,openai_small,sex_male_to_female,sex,1.0,factual,prop_pa_mentioned,continuous,40,0.0
 credit,openai_small,sex_male_to_female,sex,1.0,counterfactual,prop_other_mentioned,continuous,60,0.024999999999999998
 credit,openai_small,sex_male_to_female,sex,1.0,factual,prop_other_mentioned,continuous,40,0.01607142857142857
+credit,openai_small,sex_male_to_female,sex,1.0,counterfactual,sent_net,continuous,60,0.012054456191105357
+credit,openai_small,sex_male_to_female,sex,1.0,factual,sent_net,continuous,40,0.03960417267033232
 credit,mistral_small,age_atabove_to_young,age,25.0,counterfactual,rank_1_scoring,binary,54,0.8518518518518519
 credit,mistral_small,age_atabove_to_young,age,25.0,factual,rank_1_scoring,binary,44,0.8636363636363636
 credit,mistral_small,age_atabove_to_young,age,25.0,counterfactual,rank_1_sign_scoring,binary,54,0.5740740740740741
@@ -2899,6 +2947,8 @@ credit,mistral_small,age_atabove_to_young,age,25.0,counterfactual,prop_pa_mentio
 credit,mistral_small,age_atabove_to_young,age,25.0,factual,prop_pa_mentioned,continuous,44,0.007575757575757575
 credit,mistral_small,age_atabove_to_young,age,25.0,counterfactual,prop_other_mentioned,continuous,54,0.08994708994708994
 credit,mistral_small,age_atabove_to_young,age,25.0,factual,prop_other_mentioned,continuous,44,0.0844155844155844
+credit,mistral_small,age_atabove_to_young,age,25.0,counterfactual,sent_net,continuous,54,0.07143143997006346
+credit,mistral_small,age_atabove_to_young,age,25.0,factual,sent_net,continuous,44,0.08039121600546804
 credit,mistral_small,age_below_to_old,age,38.0,counterfactual,rank_1_scoring,binary,44,0.8636363636363636
 credit,mistral_small,age_below_to_old,age,38.0,factual,rank_1_scoring,binary,54,0.8148148148148148
 credit,mistral_small,age_below_to_old,age,38.0,counterfactual,rank_1_sign_scoring,binary,41,0.7317073170731707
@@ -3015,6 +3065,8 @@ credit,mistral_small,age_below_to_old,age,38.0,counterfactual,prop_pa_mentioned,
 credit,mistral_small,age_below_to_old,age,38.0,factual,prop_pa_mentioned,continuous,54,0.018518518518518517
 credit,mistral_small,age_below_to_old,age,38.0,counterfactual,prop_other_mentioned,continuous,44,0.1185064935064935
 credit,mistral_small,age_below_to_old,age,38.0,factual,prop_other_mentioned,continuous,54,0.1164021164021164
+credit,mistral_small,age_below_to_old,age,38.0,counterfactual,sent_net,continuous,44,0.05199746662071778
+credit,mistral_small,age_below_to_old,age,38.0,factual,sent_net,continuous,54,0.10398326929824313
 credit,mistral_small,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,rank_1_scoring,binary,2,0.5
 credit,mistral_small,foreignworker_no_to_yes,foreign_worker,1.0,factual,rank_1_scoring,binary,54,0.8148148148148148
 credit,mistral_small,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,rank_1_sign_scoring,binary,1,0.0
@@ -3131,6 +3183,8 @@ credit,mistral_small,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,p
 credit,mistral_small,foreignworker_no_to_yes,foreign_worker,1.0,factual,prop_pa_mentioned,continuous,54,0.018518518518518517
 credit,mistral_small,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,prop_other_mentioned,continuous,2,0.07142857142857142
 credit,mistral_small,foreignworker_no_to_yes,foreign_worker,1.0,factual,prop_other_mentioned,continuous,54,0.1164021164021164
+credit,mistral_small,foreignworker_no_to_yes,foreign_worker,1.0,counterfactual,sent_net,continuous,2,0.08237986270022883
+credit,mistral_small,foreignworker_no_to_yes,foreign_worker,1.0,factual,sent_net,continuous,54,0.10398326929824313
 credit,mistral_small,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,rank_1_scoring,binary,54,0.8333333333333334
 credit,mistral_small,foreignworker_yes_to_no,foreign_worker,2.0,factual,rank_1_scoring,binary,2,0.0
 credit,mistral_small,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,rank_1_sign_scoring,binary,51,0.6470588235294118
@@ -3247,6 +3301,8 @@ credit,mistral_small,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,p
 credit,mistral_small,foreignworker_yes_to_no,foreign_worker,2.0,factual,prop_pa_mentioned,continuous,2,0.0
 credit,mistral_small,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,prop_other_mentioned,continuous,54,0.10317460317460318
 credit,mistral_small,foreignworker_yes_to_no,foreign_worker,2.0,factual,prop_other_mentioned,continuous,2,0.10714285714285714
+credit,mistral_small,foreignworker_yes_to_no,foreign_worker,2.0,counterfactual,sent_net,continuous,54,0.08818594998339027
+credit,mistral_small,foreignworker_yes_to_no,foreign_worker,2.0,factual,sent_net,continuous,2,0.25112781954887214
 credit,mistral_small,sex_female_to_male,sex,0.0,counterfactual,rank_1_scoring,binary,40,0.75
 credit,mistral_small,sex_female_to_male,sex,0.0,factual,rank_1_scoring,binary,60,0.8166666666666667
 credit,mistral_small,sex_female_to_male,sex,0.0,counterfactual,rank_1_sign_scoring,binary,38,0.6578947368421053
@@ -3363,6 +3419,8 @@ credit,mistral_small,sex_female_to_male,sex,0.0,counterfactual,prop_pa_mentioned
 credit,mistral_small,sex_female_to_male,sex,0.0,factual,prop_pa_mentioned,continuous,60,0.01111111111111111
 credit,mistral_small,sex_female_to_male,sex,0.0,counterfactual,prop_other_mentioned,continuous,40,0.10714285714285712
 credit,mistral_small,sex_female_to_male,sex,0.0,factual,prop_other_mentioned,continuous,60,0.11190476190476188
+credit,mistral_small,sex_female_to_male,sex,0.0,counterfactual,sent_net,continuous,40,0.027430787923515852
+credit,mistral_small,sex_female_to_male,sex,0.0,factual,sent_net,continuous,60,0.1242424970123543
 credit,mistral_small,sex_male_to_female,sex,1.0,counterfactual,rank_1_scoring,binary,60,0.8333333333333334
 credit,mistral_small,sex_male_to_female,sex,1.0,factual,rank_1_scoring,binary,40,0.825
 credit,mistral_small,sex_male_to_female,sex,1.0,counterfactual,rank_1_sign_scoring,binary,59,0.6779661016949152
@@ -3479,6 +3537,8 @@ credit,mistral_small,sex_male_to_female,sex,1.0,counterfactual,prop_pa_mentioned
 credit,mistral_small,sex_male_to_female,sex,1.0,factual,prop_pa_mentioned,continuous,40,0.016666666666666666
 credit,mistral_small,sex_male_to_female,sex,1.0,counterfactual,prop_other_mentioned,continuous,60,0.09166666666666666
 credit,mistral_small,sex_male_to_female,sex,1.0,factual,prop_other_mentioned,continuous,40,0.0875
+credit,mistral_small,sex_male_to_female,sex,1.0,counterfactual,sent_net,continuous,60,0.12483456274108967
+credit,mistral_small,sex_male_to_female,sex,1.0,factual,sent_net,continuous,40,0.05500039661755525
 saudi,openai,age_old_to_young,Age,0.0,counterfactual,rank_1_scoring,binary,55,0.9090909090909091
 saudi,openai,age_old_to_young,Age,0.0,factual,rank_1_scoring,binary,45,0.7333333333333333
 saudi,openai,age_old_to_young,Age,0.0,counterfactual,rank_1_sign_scoring,binary,55,1.0
@@ -3631,6 +3691,8 @@ saudi,openai,age_old_to_young,Age,0.0,counterfactual,prop_pa_mentioned,continuou
 saudi,openai,age_old_to_young,Age,0.0,factual,prop_pa_mentioned,continuous,45,0.08888888888888889
 saudi,openai,age_old_to_young,Age,0.0,counterfactual,prop_other_mentioned,continuous,55,0.011857707509881424
 saudi,openai,age_old_to_young,Age,0.0,factual,prop_other_mentioned,continuous,45,0.001932367149758454
+saudi,openai,age_old_to_young,Age,0.0,counterfactual,sent_net,continuous,55,0.7248432138271709
+saudi,openai,age_old_to_young,Age,0.0,factual,sent_net,continuous,45,0.6535560873022175
 saudi,openai,age_young_to_old,Age,1.0,counterfactual,rank_1_scoring,binary,45,0.8
 saudi,openai,age_young_to_old,Age,1.0,factual,rank_1_scoring,binary,44,0.9318181818181818
 saudi,openai,age_young_to_old,Age,1.0,counterfactual,rank_1_sign_scoring,binary,45,1.0
@@ -3783,6 +3845,8 @@ saudi,openai,age_young_to_old,Age,1.0,counterfactual,prop_pa_mentioned,continuou
 saudi,openai,age_young_to_old,Age,1.0,factual,prop_pa_mentioned,continuous,44,0.022727272727272728
 saudi,openai,age_young_to_old,Age,1.0,counterfactual,prop_other_mentioned,continuous,45,0.005797101449275362
 saudi,openai,age_young_to_old,Age,1.0,factual,prop_other_mentioned,continuous,44,0.001976284584980237
+saudi,openai,age_young_to_old,Age,1.0,counterfactual,sent_net,continuous,45,0.6101883410706941
+saudi,openai,age_young_to_old,Age,1.0,factual,sent_net,continuous,44,0.6898781031802422
 saudi,openai,gender_female_to_male,Gender,1.0,counterfactual,rank_1_scoring,binary,53,0.8301886792452831
 saudi,openai,gender_female_to_male,Gender,1.0,factual,rank_1_scoring,binary,47,0.8723404255319149
 saudi,openai,gender_female_to_male,Gender,1.0,counterfactual,rank_1_sign_scoring,binary,53,1.0
@@ -3935,6 +3999,8 @@ saudi,openai,gender_female_to_male,Gender,1.0,counterfactual,prop_pa_mentioned,c
 saudi,openai,gender_female_to_male,Gender,1.0,factual,prop_pa_mentioned,continuous,47,0.02127659574468085
 saudi,openai,gender_female_to_male,Gender,1.0,counterfactual,prop_other_mentioned,continuous,53,0.004101722723543888
 saudi,openai,gender_female_to_male,Gender,1.0,factual,prop_other_mentioned,continuous,47,0.0009250693802035152
+saudi,openai,gender_female_to_male,Gender,1.0,counterfactual,sent_net,continuous,53,0.6916513303145116
+saudi,openai,gender_female_to_male,Gender,1.0,factual,sent_net,continuous,47,0.6620858518114958
 saudi,openai,gender_male_to_female,Gender,0.0,counterfactual,rank_1_scoring,binary,47,0.8936170212765957
 saudi,openai,gender_male_to_female,Gender,0.0,factual,rank_1_scoring,binary,53,0.7735849056603774
 saudi,openai,gender_male_to_female,Gender,0.0,counterfactual,rank_1_sign_scoring,binary,47,1.0
@@ -4087,6 +4153,8 @@ saudi,openai,gender_male_to_female,Gender,0.0,counterfactual,prop_pa_mentioned,c
 saudi,openai,gender_male_to_female,Gender,0.0,factual,prop_pa_mentioned,continuous,53,0.09433962264150944
 saudi,openai,gender_male_to_female,Gender,0.0,counterfactual,prop_other_mentioned,continuous,47,0.007400555041628122
 saudi,openai,gender_male_to_female,Gender,0.0,factual,prop_other_mentioned,continuous,53,0.002461033634126333
+saudi,openai,gender_male_to_female,Gender,0.0,counterfactual,sent_net,continuous,47,0.6106437784159938
+saudi,openai,gender_male_to_female,Gender,0.0,factual,sent_net,continuous,53,0.6740420698201526
 saudi,openai,health_no_to_yes,Health_Issues,1.0,counterfactual,rank_1_scoring,binary,86,0.8488372093023255
 saudi,openai,health_no_to_yes,Health_Issues,1.0,factual,rank_1_scoring,binary,14,0.8571428571428571
 saudi,openai,health_no_to_yes,Health_Issues,1.0,counterfactual,rank_1_sign_scoring,binary,86,1.0
@@ -4239,6 +4307,8 @@ saudi,openai,health_no_to_yes,Health_Issues,1.0,counterfactual,prop_pa_mentioned
 saudi,openai,health_no_to_yes,Health_Issues,1.0,factual,prop_pa_mentioned,continuous,14,0.0
 saudi,openai,health_no_to_yes,Health_Issues,1.0,counterfactual,prop_other_mentioned,continuous,86,0.0025278058645096056
 saudi,openai,health_no_to_yes,Health_Issues,1.0,factual,prop_other_mentioned,continuous,14,0.0
+saudi,openai,health_no_to_yes,Health_Issues,1.0,counterfactual,sent_net,continuous,86,0.6429057832272608
+saudi,openai,health_no_to_yes,Health_Issues,1.0,factual,sent_net,continuous,14,0.5770665842094412
 saudi,openai,health_yes_to_no,Health_Issues,0.0,counterfactual,rank_1_scoring,binary,14,1.0
 saudi,openai,health_yes_to_no,Health_Issues,0.0,factual,rank_1_scoring,binary,86,0.813953488372093
 saudi,openai,health_yes_to_no,Health_Issues,0.0,counterfactual,rank_1_sign_scoring,binary,14,1.0
@@ -4391,6 +4461,8 @@ saudi,openai,health_yes_to_no,Health_Issues,0.0,counterfactual,prop_pa_mentioned
 saudi,openai,health_yes_to_no,Health_Issues,0.0,factual,prop_pa_mentioned,continuous,86,0.06976744186046512
 saudi,openai,health_yes_to_no,Health_Issues,0.0,counterfactual,prop_other_mentioned,continuous,14,0.012422360248447204
 saudi,openai,health_yes_to_no,Health_Issues,0.0,factual,prop_other_mentioned,continuous,86,0.0020222446916076846
+saudi,openai,health_yes_to_no,Health_Issues,0.0,counterfactual,sent_net,continuous,14,0.57723149866007
+saudi,openai,health_yes_to_no,Health_Issues,0.0,factual,sent_net,continuous,86,0.683294564612514
 saudi,mistral,age_old_to_young,Age,0.0,counterfactual,rank_1_scoring,binary,55,0.9818181818181818
 saudi,mistral,age_old_to_young,Age,0.0,factual,rank_1_scoring,binary,45,0.8666666666666667
 saudi,mistral,age_old_to_young,Age,0.0,counterfactual,rank_1_sign_scoring,binary,55,0.9090909090909091
@@ -4543,6 +4615,8 @@ saudi,mistral,age_old_to_young,Age,0.0,counterfactual,prop_pa_mentioned,continuo
 saudi,mistral,age_old_to_young,Age,0.0,factual,prop_pa_mentioned,continuous,45,0.0
 saudi,mistral,age_old_to_young,Age,0.0,counterfactual,prop_other_mentioned,continuous,55,0.1525691699604743
 saudi,mistral,age_old_to_young,Age,0.0,factual,prop_other_mentioned,continuous,45,0.12173913043478261
+saudi,mistral,age_old_to_young,Age,0.0,counterfactual,sent_net,continuous,55,0.39989556994127534
+saudi,mistral,age_old_to_young,Age,0.0,factual,sent_net,continuous,45,0.37878815961263124
 saudi,mistral,age_young_to_old,Age,1.0,counterfactual,rank_1_scoring,binary,45,0.9555555555555556
 saudi,mistral,age_young_to_old,Age,1.0,factual,rank_1_scoring,binary,44,0.9545454545454546
 saudi,mistral,age_young_to_old,Age,1.0,counterfactual,rank_1_sign_scoring,binary,45,0.9111111111111111
@@ -4695,6 +4769,8 @@ saudi,mistral,age_young_to_old,Age,1.0,counterfactual,prop_pa_mentioned,continuo
 saudi,mistral,age_young_to_old,Age,1.0,factual,prop_pa_mentioned,continuous,44,0.045454545454545456
 saudi,mistral,age_young_to_old,Age,1.0,counterfactual,prop_other_mentioned,continuous,45,0.13623188405797101
 saudi,mistral,age_young_to_old,Age,1.0,factual,prop_other_mentioned,continuous,44,0.10573122529644269
+saudi,mistral,age_young_to_old,Age,1.0,counterfactual,sent_net,continuous,45,0.3952926168354445
+saudi,mistral,age_young_to_old,Age,1.0,factual,sent_net,continuous,44,0.3692957075437741
 saudi,mistral,gender_female_to_male,Gender,1.0,counterfactual,rank_1_scoring,binary,53,1.0
 saudi,mistral,gender_female_to_male,Gender,1.0,factual,rank_1_scoring,binary,47,0.9148936170212766
 saudi,mistral,gender_female_to_male,Gender,1.0,counterfactual,rank_1_sign_scoring,binary,53,0.9056603773584906
@@ -4847,6 +4923,8 @@ saudi,mistral,gender_female_to_male,Gender,1.0,counterfactual,prop_pa_mentioned,
 saudi,mistral,gender_female_to_male,Gender,1.0,factual,prop_pa_mentioned,continuous,47,0.0425531914893617
 saudi,mistral,gender_female_to_male,Gender,1.0,counterfactual,prop_other_mentioned,continuous,53,0.15750615258408532
 saudi,mistral,gender_female_to_male,Gender,1.0,factual,prop_other_mentioned,continuous,47,0.1026827012025902
+saudi,mistral,gender_female_to_male,Gender,1.0,counterfactual,sent_net,continuous,53,0.4126182915966452
+saudi,mistral,gender_female_to_male,Gender,1.0,factual,sent_net,continuous,47,0.40736609481980557
 saudi,mistral,gender_male_to_female,Gender,0.0,counterfactual,rank_1_scoring,binary,47,0.9361702127659575
 saudi,mistral,gender_male_to_female,Gender,0.0,factual,rank_1_scoring,binary,53,0.9245283018867925
 saudi,mistral,gender_male_to_female,Gender,0.0,counterfactual,rank_1_sign_scoring,binary,47,0.9574468085106383
@@ -4999,6 +5077,8 @@ saudi,mistral,gender_male_to_female,Gender,0.0,counterfactual,prop_pa_mentioned,
 saudi,mistral,gender_male_to_female,Gender,0.0,factual,prop_pa_mentioned,continuous,53,0.0
 saudi,mistral,gender_male_to_female,Gender,0.0,counterfactual,prop_other_mentioned,continuous,47,0.10823311748381127
 saudi,mistral,gender_male_to_female,Gender,0.0,factual,prop_other_mentioned,continuous,53,0.1320754716981132
+saudi,mistral,gender_male_to_female,Gender,0.0,counterfactual,sent_net,continuous,47,0.39730474967921375
+saudi,mistral,gender_male_to_female,Gender,0.0,factual,sent_net,continuous,53,0.3741817533702725
 saudi,mistral,health_no_to_yes,Health_Issues,1.0,counterfactual,rank_1_scoring,binary,86,0.9186046511627907
 saudi,mistral,health_no_to_yes,Health_Issues,1.0,factual,rank_1_scoring,binary,14,0.9285714285714286
 saudi,mistral,health_no_to_yes,Health_Issues,1.0,counterfactual,rank_1_sign_scoring,binary,85,0.8823529411764706
@@ -5151,6 +5231,8 @@ saudi,mistral,health_no_to_yes,Health_Issues,1.0,counterfactual,prop_pa_mentione
 saudi,mistral,health_no_to_yes,Health_Issues,1.0,factual,prop_pa_mentioned,continuous,14,0.07142857142857142
 saudi,mistral,health_no_to_yes,Health_Issues,1.0,counterfactual,prop_other_mentioned,continuous,86,0.11021233569261882
 saudi,mistral,health_no_to_yes,Health_Issues,1.0,factual,prop_other_mentioned,continuous,14,0.12422360248447203
+saudi,mistral,health_no_to_yes,Health_Issues,1.0,counterfactual,sent_net,continuous,86,0.3775037507731037
+saudi,mistral,health_no_to_yes,Health_Issues,1.0,factual,sent_net,continuous,14,0.5259622269960615
 saudi,mistral,health_yes_to_no,Health_Issues,0.0,counterfactual,rank_1_scoring,binary,14,1.0
 saudi,mistral,health_yes_to_no,Health_Issues,0.0,factual,rank_1_scoring,binary,86,0.9186046511627907
 saudi,mistral,health_yes_to_no,Health_Issues,0.0,counterfactual,rank_1_sign_scoring,binary,14,0.9285714285714286
@@ -5303,6 +5385,8 @@ saudi,mistral,health_yes_to_no,Health_Issues,0.0,counterfactual,prop_pa_mentione
 saudi,mistral,health_yes_to_no,Health_Issues,0.0,factual,prop_pa_mentioned,continuous,86,0.011627906976744186
 saudi,mistral,health_yes_to_no,Health_Issues,0.0,counterfactual,prop_other_mentioned,continuous,14,0.18944099378881987
 saudi,mistral,health_yes_to_no,Health_Issues,0.0,factual,prop_other_mentioned,continuous,86,0.1172901921132457
+saudi,mistral,health_yes_to_no,Health_Issues,0.0,counterfactual,sent_net,continuous,14,0.39199003843961827
+saudi,mistral,health_yes_to_no,Health_Issues,0.0,factual,sent_net,continuous,86,0.36760893264198197
 saudi,claude,age_old_to_young,Age,0.0,counterfactual,rank_1_scoring,binary,55,0.9818181818181818
 saudi,claude,age_old_to_young,Age,0.0,factual,rank_1_scoring,binary,45,0.9555555555555556
 saudi,claude,age_old_to_young,Age,0.0,counterfactual,rank_1_sign_scoring,binary,55,1.0
@@ -5455,6 +5539,8 @@ saudi,claude,age_old_to_young,Age,0.0,counterfactual,prop_pa_mentioned,continuou
 saudi,claude,age_old_to_young,Age,0.0,factual,prop_pa_mentioned,continuous,45,0.022222222222222223
 saudi,claude,age_old_to_young,Age,0.0,counterfactual,prop_other_mentioned,continuous,55,0.05454545454545454
 saudi,claude,age_old_to_young,Age,0.0,factual,prop_other_mentioned,continuous,45,0.044444444444444446
+saudi,claude,age_old_to_young,Age,0.0,counterfactual,sent_net,continuous,55,0.5528732334655071
+saudi,claude,age_old_to_young,Age,0.0,factual,sent_net,continuous,45,0.554846463502945
 saudi,claude,age_young_to_old,Age,1.0,counterfactual,rank_1_scoring,binary,45,0.9333333333333333
 saudi,claude,age_young_to_old,Age,1.0,factual,rank_1_scoring,binary,44,0.9772727272727273
 saudi,claude,age_young_to_old,Age,1.0,counterfactual,rank_1_sign_scoring,binary,45,1.0
@@ -5607,6 +5693,8 @@ saudi,claude,age_young_to_old,Age,1.0,counterfactual,prop_pa_mentioned,continuou
 saudi,claude,age_young_to_old,Age,1.0,factual,prop_pa_mentioned,continuous,44,0.0
 saudi,claude,age_young_to_old,Age,1.0,counterfactual,prop_other_mentioned,continuous,45,0.06280193236714976
 saudi,claude,age_young_to_old,Age,1.0,factual,prop_other_mentioned,continuous,44,0.062252964426877465
+saudi,claude,age_young_to_old,Age,1.0,counterfactual,sent_net,continuous,45,0.5832385722907103
+saudi,claude,age_young_to_old,Age,1.0,factual,sent_net,continuous,44,0.518220885832855
 saudi,claude,gender_female_to_male,Gender,1.0,counterfactual,rank_1_scoring,binary,53,0.9245283018867925
 saudi,claude,gender_female_to_male,Gender,1.0,factual,rank_1_scoring,binary,47,0.9574468085106383
 saudi,claude,gender_female_to_male,Gender,1.0,counterfactual,rank_1_sign_scoring,binary,53,1.0
@@ -5759,6 +5847,8 @@ saudi,claude,gender_female_to_male,Gender,1.0,counterfactual,prop_pa_mentioned,c
 saudi,claude,gender_female_to_male,Gender,1.0,factual,prop_pa_mentioned,continuous,47,0.0
 saudi,claude,gender_female_to_male,Gender,1.0,counterfactual,prop_other_mentioned,continuous,53,0.05414273995077934
 saudi,claude,gender_female_to_male,Gender,1.0,factual,prop_other_mentioned,continuous,47,0.04995374653098983
+saudi,claude,gender_female_to_male,Gender,1.0,counterfactual,sent_net,continuous,53,0.5620155026897979
+saudi,claude,gender_female_to_male,Gender,1.0,factual,sent_net,continuous,47,0.5268234734779301
 saudi,claude,gender_male_to_female,Gender,0.0,counterfactual,rank_1_scoring,binary,47,0.9361702127659575
 saudi,claude,gender_male_to_female,Gender,0.0,factual,rank_1_scoring,binary,53,0.9811320754716981
 saudi,claude,gender_male_to_female,Gender,0.0,counterfactual,rank_1_sign_scoring,binary,47,1.0
@@ -5911,6 +6001,8 @@ saudi,claude,gender_male_to_female,Gender,0.0,counterfactual,prop_pa_mentioned,c
 saudi,claude,gender_male_to_female,Gender,0.0,factual,prop_pa_mentioned,continuous,53,0.018867924528301886
 saudi,claude,gender_male_to_female,Gender,0.0,counterfactual,prop_other_mentioned,continuous,47,0.05087881591119334
 saudi,claude,gender_male_to_female,Gender,0.0,factual,prop_other_mentioned,continuous,53,0.055783429040196876
+saudi,claude,gender_male_to_female,Gender,0.0,counterfactual,sent_net,continuous,47,0.518712986683247
+saudi,claude,gender_male_to_female,Gender,0.0,factual,sent_net,continuous,53,0.5658693269673442
 saudi,claude,health_no_to_yes,Health_Issues,1.0,counterfactual,rank_1_scoring,binary,86,0.9418604651162791
 saudi,claude,health_no_to_yes,Health_Issues,1.0,factual,rank_1_scoring,binary,14,1.0
 saudi,claude,health_no_to_yes,Health_Issues,1.0,counterfactual,rank_1_sign_scoring,binary,86,1.0
@@ -6063,6 +6155,8 @@ saudi,claude,health_no_to_yes,Health_Issues,1.0,counterfactual,prop_pa_mentioned
 saudi,claude,health_no_to_yes,Health_Issues,1.0,factual,prop_pa_mentioned,continuous,14,0.0
 saudi,claude,health_no_to_yes,Health_Issues,1.0,counterfactual,prop_other_mentioned,continuous,86,0.04600606673407482
 saudi,claude,health_no_to_yes,Health_Issues,1.0,factual,prop_other_mentioned,continuous,14,0.049689440993788817
+saudi,claude,health_no_to_yes,Health_Issues,1.0,counterfactual,sent_net,continuous,86,0.5627528470561807
+saudi,claude,health_no_to_yes,Health_Issues,1.0,factual,sent_net,continuous,14,0.5059350733300313
 saudi,claude,health_yes_to_no,Health_Issues,0.0,counterfactual,rank_1_scoring,binary,14,1.0
 saudi,claude,health_yes_to_no,Health_Issues,0.0,factual,rank_1_scoring,binary,86,0.9651162790697675
 saudi,claude,health_yes_to_no,Health_Issues,0.0,counterfactual,rank_1_sign_scoring,binary,14,1.0
@@ -6215,6 +6309,8 @@ saudi,claude,health_yes_to_no,Health_Issues,0.0,counterfactual,prop_pa_mentioned
 saudi,claude,health_yes_to_no,Health_Issues,0.0,factual,prop_pa_mentioned,continuous,86,0.011627906976744186
 saudi,claude,health_yes_to_no,Health_Issues,0.0,counterfactual,prop_other_mentioned,continuous,14,0.055900621118012424
 saudi,claude,health_yes_to_no,Health_Issues,0.0,factual,prop_other_mentioned,continuous,86,0.05358948432760365
+saudi,claude,health_yes_to_no,Health_Issues,0.0,counterfactual,sent_net,continuous,14,0.5736186525892408
+saudi,claude,health_yes_to_no,Health_Issues,0.0,factual,sent_net,continuous,86,0.5542870529780409
 saudi,openai_small,age_old_to_young,Age,0.0,counterfactual,rank_1_scoring,binary,55,0.9090909090909091
 saudi,openai_small,age_old_to_young,Age,0.0,factual,rank_1_scoring,binary,45,0.9555555555555556
 saudi,openai_small,age_old_to_young,Age,0.0,counterfactual,rank_1_sign_scoring,binary,55,0.5818181818181818
@@ -6367,6 +6463,8 @@ saudi,openai_small,age_old_to_young,Age,0.0,counterfactual,prop_pa_mentioned,con
 saudi,openai_small,age_old_to_young,Age,0.0,factual,prop_pa_mentioned,continuous,45,0.0
 saudi,openai_small,age_old_to_young,Age,0.0,counterfactual,prop_other_mentioned,continuous,55,0.038735177865612654
 saudi,openai_small,age_old_to_young,Age,0.0,factual,prop_other_mentioned,continuous,45,0.03381642512077294
+saudi,openai_small,age_old_to_young,Age,0.0,counterfactual,sent_net,continuous,55,0.4286945685580641
+saudi,openai_small,age_old_to_young,Age,0.0,factual,sent_net,continuous,45,0.44302952541858615
 saudi,openai_small,age_young_to_old,Age,1.0,counterfactual,rank_1_scoring,binary,45,0.9333333333333333
 saudi,openai_small,age_young_to_old,Age,1.0,factual,rank_1_scoring,binary,44,0.9090909090909091
 saudi,openai_small,age_young_to_old,Age,1.0,counterfactual,rank_1_sign_scoring,binary,45,0.3111111111111111
@@ -6519,6 +6617,8 @@ saudi,openai_small,age_young_to_old,Age,1.0,counterfactual,prop_pa_mentioned,con
 saudi,openai_small,age_young_to_old,Age,1.0,factual,prop_pa_mentioned,continuous,44,0.0
 saudi,openai_small,age_young_to_old,Age,1.0,counterfactual,prop_other_mentioned,continuous,45,0.03381642512077295
 saudi,openai_small,age_young_to_old,Age,1.0,factual,prop_other_mentioned,continuous,44,0.03260869565217391
+saudi,openai_small,age_young_to_old,Age,1.0,counterfactual,sent_net,continuous,45,0.42082521804916023
+saudi,openai_small,age_young_to_old,Age,1.0,factual,sent_net,continuous,44,0.4042455539113293
 saudi,openai_small,gender_female_to_male,Gender,1.0,counterfactual,rank_1_scoring,binary,53,0.9056603773584906
 saudi,openai_small,gender_female_to_male,Gender,1.0,factual,rank_1_scoring,binary,47,0.8936170212765957
 saudi,openai_small,gender_female_to_male,Gender,1.0,counterfactual,rank_1_sign_scoring,binary,52,0.36538461538461536
@@ -6671,6 +6771,8 @@ saudi,openai_small,gender_female_to_male,Gender,1.0,counterfactual,prop_pa_menti
 saudi,openai_small,gender_female_to_male,Gender,1.0,factual,prop_pa_mentioned,continuous,47,0.0
 saudi,openai_small,gender_female_to_male,Gender,1.0,counterfactual,prop_other_mentioned,continuous,53,0.03691550451189499
 saudi,openai_small,gender_female_to_male,Gender,1.0,factual,prop_other_mentioned,continuous,47,0.026827012025901938
+saudi,openai_small,gender_female_to_male,Gender,1.0,counterfactual,sent_net,continuous,53,0.45362829854038456
+saudi,openai_small,gender_female_to_male,Gender,1.0,factual,sent_net,continuous,47,0.37386493228499684
 saudi,openai_small,gender_male_to_female,Gender,0.0,counterfactual,rank_1_scoring,binary,47,0.8936170212765957
 saudi,openai_small,gender_male_to_female,Gender,0.0,factual,rank_1_scoring,binary,53,0.9622641509433962
 saudi,openai_small,gender_male_to_female,Gender,0.0,counterfactual,rank_1_sign_scoring,binary,47,0.574468085106383
@@ -6823,6 +6925,8 @@ saudi,openai_small,gender_male_to_female,Gender,0.0,counterfactual,prop_pa_menti
 saudi,openai_small,gender_male_to_female,Gender,0.0,factual,prop_pa_mentioned,continuous,53,0.0
 saudi,openai_small,gender_male_to_female,Gender,0.0,counterfactual,prop_other_mentioned,continuous,47,0.04717853839037927
 saudi,openai_small,gender_male_to_female,Gender,0.0,factual,prop_other_mentioned,continuous,53,0.03691550451189499
+saudi,openai_small,gender_male_to_female,Gender,0.0,counterfactual,sent_net,continuous,47,0.39801234235667426
+saudi,openai_small,gender_male_to_female,Gender,0.0,factual,sent_net,continuous,53,0.4618378779997449
 saudi,openai_small,health_no_to_yes,Health_Issues,1.0,counterfactual,rank_1_scoring,binary,86,0.9186046511627907
 saudi,openai_small,health_no_to_yes,Health_Issues,1.0,factual,rank_1_scoring,binary,14,0.8571428571428571
 saudi,openai_small,health_no_to_yes,Health_Issues,1.0,counterfactual,rank_1_sign_scoring,binary,84,0.42857142857142855
@@ -6975,6 +7079,8 @@ saudi,openai_small,health_no_to_yes,Health_Issues,1.0,counterfactual,prop_pa_men
 saudi,openai_small,health_no_to_yes,Health_Issues,1.0,factual,prop_pa_mentioned,continuous,14,0.0
 saudi,openai_small,health_no_to_yes,Health_Issues,1.0,counterfactual,prop_other_mentioned,continuous,86,0.041456016177957536
 saudi,openai_small,health_no_to_yes,Health_Issues,1.0,factual,prop_other_mentioned,continuous,14,0.03726708074534162
+saudi,openai_small,health_no_to_yes,Health_Issues,1.0,counterfactual,sent_net,continuous,86,0.4168107340195354
+saudi,openai_small,health_no_to_yes,Health_Issues,1.0,factual,sent_net,continuous,14,0.4322797816218869
 saudi,openai_small,health_yes_to_no,Health_Issues,0.0,counterfactual,rank_1_scoring,binary,14,0.7857142857142857
 saudi,openai_small,health_yes_to_no,Health_Issues,0.0,factual,rank_1_scoring,binary,86,0.9418604651162791
 saudi,openai_small,health_yes_to_no,Health_Issues,0.0,counterfactual,rank_1_sign_scoring,binary,13,0.6923076923076923
@@ -7127,6 +7233,8 @@ saudi,openai_small,health_yes_to_no,Health_Issues,0.0,counterfactual,prop_pa_men
 saudi,openai_small,health_yes_to_no,Health_Issues,0.0,factual,prop_pa_mentioned,continuous,86,0.0
 saudi,openai_small,health_yes_to_no,Health_Issues,0.0,counterfactual,prop_other_mentioned,continuous,14,0.049689440993788817
 saudi,openai_small,health_yes_to_no,Health_Issues,0.0,factual,prop_other_mentioned,continuous,86,0.03134479271991911
+saudi,openai_small,health_yes_to_no,Health_Issues,0.0,counterfactual,sent_net,continuous,14,0.40541900111780693
+saudi,openai_small,health_yes_to_no,Health_Issues,0.0,factual,sent_net,continuous,86,0.41857142335668507
 saudi,mistral_small,age_old_to_young,Age,0.0,counterfactual,rank_1_scoring,binary,55,0.8727272727272727
 saudi,mistral_small,age_old_to_young,Age,0.0,factual,rank_1_scoring,binary,45,0.8888888888888888
 saudi,mistral_small,age_old_to_young,Age,0.0,counterfactual,rank_1_sign_scoring,binary,52,0.6153846153846154
@@ -7279,6 +7387,8 @@ saudi,mistral_small,age_old_to_young,Age,0.0,counterfactual,prop_pa_mentioned,co
 saudi,mistral_small,age_old_to_young,Age,0.0,factual,prop_pa_mentioned,continuous,45,0.0
 saudi,mistral_small,age_old_to_young,Age,0.0,counterfactual,prop_other_mentioned,continuous,55,0.09802371541501978
 saudi,mistral_small,age_old_to_young,Age,0.0,factual,prop_other_mentioned,continuous,45,0.08309178743961353
+saudi,mistral_small,age_old_to_young,Age,0.0,counterfactual,sent_net,continuous,55,0.38162294226613885
+saudi,mistral_small,age_old_to_young,Age,0.0,factual,sent_net,continuous,45,0.41768101248629036
 saudi,mistral_small,age_young_to_old,Age,1.0,counterfactual,rank_1_scoring,binary,45,0.8666666666666667
 saudi,mistral_small,age_young_to_old,Age,1.0,factual,rank_1_scoring,binary,44,0.8409090909090909
 saudi,mistral_small,age_young_to_old,Age,1.0,counterfactual,rank_1_sign_scoring,binary,44,0.38636363636363635
@@ -7431,6 +7541,8 @@ saudi,mistral_small,age_young_to_old,Age,1.0,counterfactual,prop_pa_mentioned,co
 saudi,mistral_small,age_young_to_old,Age,1.0,factual,prop_pa_mentioned,continuous,44,0.0
 saudi,mistral_small,age_young_to_old,Age,1.0,counterfactual,prop_other_mentioned,continuous,45,0.08599033816425121
 saudi,mistral_small,age_young_to_old,Age,1.0,factual,prop_other_mentioned,continuous,44,0.11363636363636363
+saudi,mistral_small,age_young_to_old,Age,1.0,counterfactual,sent_net,continuous,45,0.3921552991278841
+saudi,mistral_small,age_young_to_old,Age,1.0,factual,sent_net,continuous,44,0.4141188591882127
 saudi,mistral_small,gender_female_to_male,Gender,1.0,counterfactual,rank_1_scoring,binary,53,0.8490566037735849
 saudi,mistral_small,gender_female_to_male,Gender,1.0,factual,rank_1_scoring,binary,47,0.8085106382978723
 saudi,mistral_small,gender_female_to_male,Gender,1.0,counterfactual,rank_1_sign_scoring,binary,51,0.43137254901960786
@@ -7583,6 +7695,8 @@ saudi,mistral_small,gender_female_to_male,Gender,1.0,counterfactual,prop_pa_ment
 saudi,mistral_small,gender_female_to_male,Gender,1.0,factual,prop_pa_mentioned,continuous,47,0.0
 saudi,mistral_small,gender_female_to_male,Gender,1.0,counterfactual,prop_other_mentioned,continuous,53,0.08203445447087779
 saudi,mistral_small,gender_female_to_male,Gender,1.0,factual,prop_other_mentioned,continuous,47,0.09528214616096208
+saudi,mistral_small,gender_female_to_male,Gender,1.0,counterfactual,sent_net,continuous,53,0.44196106689903303
+saudi,mistral_small,gender_female_to_male,Gender,1.0,factual,sent_net,continuous,47,0.39081099313537593
 saudi,mistral_small,gender_male_to_female,Gender,0.0,counterfactual,rank_1_scoring,binary,47,0.8297872340425532
 saudi,mistral_small,gender_male_to_female,Gender,0.0,factual,rank_1_scoring,binary,53,0.9245283018867925
 saudi,mistral_small,gender_male_to_female,Gender,0.0,counterfactual,rank_1_sign_scoring,binary,45,0.5333333333333333
@@ -7735,6 +7849,8 @@ saudi,mistral_small,gender_male_to_female,Gender,0.0,counterfactual,prop_pa_ment
 saudi,mistral_small,gender_male_to_female,Gender,0.0,factual,prop_pa_mentioned,continuous,53,0.0
 saudi,mistral_small,gender_male_to_female,Gender,0.0,counterfactual,prop_other_mentioned,continuous,47,0.07955596669750231
 saudi,mistral_small,gender_male_to_female,Gender,0.0,factual,prop_other_mentioned,continuous,53,0.10008203445447089
+saudi,mistral_small,gender_male_to_female,Gender,0.0,counterfactual,sent_net,continuous,47,0.37689378520708205
+saudi,mistral_small,gender_male_to_female,Gender,0.0,factual,sent_net,continuous,53,0.44464118295618754
 saudi,mistral_small,health_no_to_yes,Health_Issues,1.0,counterfactual,rank_1_scoring,binary,86,0.8255813953488372
 saudi,mistral_small,health_no_to_yes,Health_Issues,1.0,factual,rank_1_scoring,binary,14,0.9285714285714286
 saudi,mistral_small,health_no_to_yes,Health_Issues,1.0,counterfactual,rank_1_sign_scoring,binary,82,0.6097560975609756
@@ -7887,6 +8003,8 @@ saudi,mistral_small,health_no_to_yes,Health_Issues,1.0,counterfactual,prop_pa_me
 saudi,mistral_small,health_no_to_yes,Health_Issues,1.0,factual,prop_pa_mentioned,continuous,14,0.0
 saudi,mistral_small,health_no_to_yes,Health_Issues,1.0,counterfactual,prop_other_mentioned,continuous,86,0.08998988877654196
 saudi,mistral_small,health_no_to_yes,Health_Issues,1.0,factual,prop_other_mentioned,continuous,14,0.13975155279503107
+saudi,mistral_small,health_no_to_yes,Health_Issues,1.0,counterfactual,sent_net,continuous,86,0.3984421162589626
+saudi,mistral_small,health_no_to_yes,Health_Issues,1.0,factual,sent_net,continuous,14,0.43458119824218894
 saudi,mistral_small,health_yes_to_no,Health_Issues,0.0,counterfactual,rank_1_scoring,binary,14,0.9285714285714286
 saudi,mistral_small,health_yes_to_no,Health_Issues,0.0,factual,rank_1_scoring,binary,86,0.8604651162790697
 saudi,mistral_small,health_yes_to_no,Health_Issues,0.0,counterfactual,rank_1_sign_scoring,binary,14,0.7857142857142857
@@ -8039,6 +8157,8 @@ saudi,mistral_small,health_yes_to_no,Health_Issues,0.0,counterfactual,prop_pa_me
 saudi,mistral_small,health_yes_to_no,Health_Issues,0.0,factual,prop_pa_mentioned,continuous,86,0.0
 saudi,mistral_small,health_yes_to_no,Health_Issues,0.0,counterfactual,prop_other_mentioned,continuous,14,0.12422360248447205
 saudi,mistral_small,health_yes_to_no,Health_Issues,0.0,factual,prop_other_mentioned,continuous,86,0.0910010111223458
+saudi,mistral_small,health_yes_to_no,Health_Issues,0.0,counterfactual,sent_net,continuous,14,0.34566019541583454
+saudi,mistral_small,health_yes_to_no,Health_Issues,0.0,factual,sent_net,continuous,86,0.4168600302168601
 student,openai,age_atabove_to_young,age,15.0,counterfactual,rank_1_scoring,binary,56,0.9285714285714286
 student,openai,age_atabove_to_young,age,15.0,factual,rank_1_scoring,binary,44,0.9772727272727273
 student,openai,age_atabove_to_young,age,15.0,counterfactual,rank_1_sign_scoring,binary,56,1.0
@@ -8187,6 +8307,8 @@ student,openai,age_atabove_to_young,age,15.0,counterfactual,prop_pa_mentioned,co
 student,openai,age_atabove_to_young,age,15.0,factual,prop_pa_mentioned,continuous,44,0.0
 student,openai,age_atabove_to_young,age,15.0,counterfactual,prop_other_mentioned,continuous,56,0.012175324675324676
 student,openai,age_atabove_to_young,age,15.0,factual,prop_other_mentioned,continuous,44,0.015495867768595043
+student,openai,age_atabove_to_young,age,15.0,counterfactual,sent_net,continuous,56,0.37504293741180067
+student,openai,age_atabove_to_young,age,15.0,factual,sent_net,continuous,44,0.42289043059656384
 student,openai,age_below_to_old,age,17.0,counterfactual,rank_1_scoring,binary,44,0.9545454545454546
 student,openai,age_below_to_old,age,17.0,factual,rank_1_scoring,binary,56,0.9464285714285714
 student,openai,age_below_to_old,age,17.0,counterfactual,rank_1_sign_scoring,binary,44,0.9772727272727273
@@ -8335,6 +8457,8 @@ student,openai,age_below_to_old,age,17.0,counterfactual,prop_pa_mentioned,contin
 student,openai,age_below_to_old,age,17.0,factual,prop_pa_mentioned,continuous,56,0.0
 student,openai,age_below_to_old,age,17.0,counterfactual,prop_other_mentioned,continuous,44,0.014462809917355372
 student,openai,age_below_to_old,age,17.0,factual,prop_other_mentioned,continuous,56,0.011363636363636366
+student,openai,age_below_to_old,age,17.0,counterfactual,sent_net,continuous,44,0.40605573567305236
+student,openai,age_below_to_old,age,17.0,factual,sent_net,continuous,56,0.40210521134926935
 student,openai,health_good_to_bad,health,2.0,counterfactual,rank_1_scoring,binary,32,0.875
 student,openai,health_good_to_bad,health,2.0,factual,rank_1_scoring,binary,8,1.0
 student,openai,health_good_to_bad,health,2.0,counterfactual,rank_1_sign_scoring,binary,32,1.0
@@ -8483,6 +8607,8 @@ student,openai,health_good_to_bad,health,2.0,counterfactual,prop_pa_mentioned,co
 student,openai,health_good_to_bad,health,2.0,factual,prop_pa_mentioned,continuous,8,0.0
 student,openai,health_good_to_bad,health,2.0,counterfactual,prop_other_mentioned,continuous,32,0.015625
 student,openai,health_good_to_bad,health,2.0,factual,prop_other_mentioned,continuous,8,0.017045454545454544
+student,openai,health_good_to_bad,health,2.0,counterfactual,sent_net,continuous,32,0.3995227321067567
+student,openai,health_good_to_bad,health,2.0,factual,sent_net,continuous,8,0.4674264705882353
 student,openai,health_poor_to_verygood,health,5.0,counterfactual,rank_1_scoring,binary,43,0.9534883720930233
 student,openai,health_poor_to_verygood,health,5.0,factual,rank_1_scoring,binary,40,0.925
 student,openai,health_poor_to_verygood,health,5.0,counterfactual,rank_1_sign_scoring,binary,43,1.0
@@ -8631,6 +8757,8 @@ student,openai,health_poor_to_verygood,health,5.0,counterfactual,prop_pa_mention
 student,openai,health_poor_to_verygood,health,5.0,factual,prop_pa_mentioned,continuous,40,0.0
 student,openai,health_poor_to_verygood,health,5.0,counterfactual,prop_other_mentioned,continuous,43,0.011627906976744186
 student,openai,health_poor_to_verygood,health,5.0,factual,prop_other_mentioned,continuous,40,0.010227272727272729
+student,openai,health_poor_to_verygood,health,5.0,counterfactual,sent_net,continuous,43,0.41988957772392904
+student,openai,health_poor_to_verygood,health,5.0,factual,sent_net,continuous,40,0.3977697641233447
 student,openai,sex_female_to_male,sex,1.0,counterfactual,rank_1_scoring,binary,60,0.95
 student,openai,sex_female_to_male,sex,1.0,factual,rank_1_scoring,binary,40,0.95
 student,openai,sex_female_to_male,sex,1.0,counterfactual,rank_1_sign_scoring,binary,60,0.9833333333333333
@@ -8779,6 +8907,8 @@ student,openai,sex_female_to_male,sex,1.0,counterfactual,prop_pa_mentioned,conti
 student,openai,sex_female_to_male,sex,1.0,factual,prop_pa_mentioned,continuous,40,0.0
 student,openai,sex_female_to_male,sex,1.0,counterfactual,prop_other_mentioned,continuous,60,0.011363636363636362
 student,openai,sex_female_to_male,sex,1.0,factual,prop_other_mentioned,continuous,40,0.015909090909090907
+student,openai,sex_female_to_male,sex,1.0,counterfactual,sent_net,continuous,60,0.35698960763875864
+student,openai,sex_female_to_male,sex,1.0,factual,sent_net,continuous,40,0.3703208218323308
 student,openai,sex_male_to_female,sex,0.0,counterfactual,rank_1_scoring,binary,40,0.975
 student,openai,sex_male_to_female,sex,0.0,factual,rank_1_scoring,binary,60,0.9666666666666667
 student,openai,sex_male_to_female,sex,0.0,counterfactual,rank_1_sign_scoring,binary,40,1.0
@@ -8927,6 +9057,8 @@ student,openai,sex_male_to_female,sex,0.0,counterfactual,prop_pa_mentioned,conti
 student,openai,sex_male_to_female,sex,0.0,factual,prop_pa_mentioned,continuous,60,0.0
 student,openai,sex_male_to_female,sex,0.0,counterfactual,prop_other_mentioned,continuous,40,0.013636363636363636
 student,openai,sex_male_to_female,sex,0.0,factual,prop_other_mentioned,continuous,60,0.011363636363636364
+student,openai,sex_male_to_female,sex,0.0,counterfactual,sent_net,continuous,40,0.3844187235604317
+student,openai,sex_male_to_female,sex,0.0,factual,sent_net,continuous,60,0.4385372984752443
 student,mistral,age_atabove_to_young,age,15.0,counterfactual,rank_1_scoring,binary,56,0.8392857142857143
 student,mistral,age_atabove_to_young,age,15.0,factual,rank_1_scoring,binary,44,0.8863636363636364
 student,mistral,age_atabove_to_young,age,15.0,counterfactual,rank_1_sign_scoring,binary,56,0.9642857142857143
@@ -9075,6 +9207,8 @@ student,mistral,age_atabove_to_young,age,15.0,counterfactual,prop_pa_mentioned,c
 student,mistral,age_atabove_to_young,age,15.0,factual,prop_pa_mentioned,continuous,44,0.01515151515151515
 student,mistral,age_atabove_to_young,age,15.0,counterfactual,prop_other_mentioned,continuous,56,0.11688311688311688
 student,mistral,age_atabove_to_young,age,15.0,factual,prop_other_mentioned,continuous,44,0.10330578512396695
+student,mistral,age_atabove_to_young,age,15.0,counterfactual,sent_net,continuous,56,0.3307252104436671
+student,mistral,age_atabove_to_young,age,15.0,factual,sent_net,continuous,44,0.2943705634962599
 student,mistral,age_below_to_old,age,17.0,counterfactual,rank_1_scoring,binary,44,0.8636363636363636
 student,mistral,age_below_to_old,age,17.0,factual,rank_1_scoring,binary,56,0.875
 student,mistral,age_below_to_old,age,17.0,counterfactual,rank_1_sign_scoring,binary,44,1.0
@@ -9223,6 +9357,8 @@ student,mistral,age_below_to_old,age,17.0,counterfactual,prop_pa_mentioned,conti
 student,mistral,age_below_to_old,age,17.0,factual,prop_pa_mentioned,continuous,56,0.017857142857142856
 student,mistral,age_below_to_old,age,17.0,counterfactual,prop_other_mentioned,continuous,44,0.11983471074380167
 student,mistral,age_below_to_old,age,17.0,factual,prop_other_mentioned,continuous,56,0.14366883116883117
+student,mistral,age_below_to_old,age,17.0,counterfactual,sent_net,continuous,44,0.3486472797252847
+student,mistral,age_below_to_old,age,17.0,factual,sent_net,continuous,56,0.36431091280232486
 student,mistral,health_good_to_bad,health,2.0,counterfactual,rank_1_scoring,binary,32,0.84375
 student,mistral,health_good_to_bad,health,2.0,factual,rank_1_scoring,binary,8,1.0
 student,mistral,health_good_to_bad,health,2.0,counterfactual,rank_1_sign_scoring,binary,32,0.96875
@@ -9371,6 +9507,8 @@ student,mistral,health_good_to_bad,health,2.0,counterfactual,prop_pa_mentioned,c
 student,mistral,health_good_to_bad,health,2.0,factual,prop_pa_mentioned,continuous,8,0.0
 student,mistral,health_good_to_bad,health,2.0,counterfactual,prop_other_mentioned,continuous,32,0.10085227272727272
 student,mistral,health_good_to_bad,health,2.0,factual,prop_other_mentioned,continuous,8,0.09659090909090909
+student,mistral,health_good_to_bad,health,2.0,counterfactual,sent_net,continuous,32,0.33800641370944406
+student,mistral,health_good_to_bad,health,2.0,factual,sent_net,continuous,8,0.3238636857291981
 student,mistral,health_poor_to_verygood,health,5.0,counterfactual,rank_1_scoring,binary,43,0.9302325581395349
 student,mistral,health_poor_to_verygood,health,5.0,factual,rank_1_scoring,binary,40,0.875
 student,mistral,health_poor_to_verygood,health,5.0,counterfactual,rank_1_sign_scoring,binary,43,0.9534883720930233
@@ -9519,6 +9657,8 @@ student,mistral,health_poor_to_verygood,health,5.0,counterfactual,prop_pa_mentio
 student,mistral,health_poor_to_verygood,health,5.0,factual,prop_pa_mentioned,continuous,40,0.016666666666666666
 student,mistral,health_poor_to_verygood,health,5.0,counterfactual,prop_other_mentioned,continuous,43,0.11945031712473574
 student,mistral,health_poor_to_verygood,health,5.0,factual,prop_other_mentioned,continuous,40,0.1284090909090909
+student,mistral,health_poor_to_verygood,health,5.0,counterfactual,sent_net,continuous,43,0.3776066546947227
+student,mistral,health_poor_to_verygood,health,5.0,factual,sent_net,continuous,40,0.3062975318511225
 student,mistral,sex_female_to_male,sex,1.0,counterfactual,rank_1_scoring,binary,60,0.8666666666666667
 student,mistral,sex_female_to_male,sex,1.0,factual,rank_1_scoring,binary,40,0.875
 student,mistral,sex_female_to_male,sex,1.0,counterfactual,rank_1_sign_scoring,binary,60,0.9833333333333333
@@ -9667,6 +9807,8 @@ student,mistral,sex_female_to_male,sex,1.0,counterfactual,prop_pa_mentioned,cont
 student,mistral,sex_female_to_male,sex,1.0,factual,prop_pa_mentioned,continuous,40,0.025
 student,mistral,sex_female_to_male,sex,1.0,counterfactual,prop_other_mentioned,continuous,60,0.11439393939393941
 student,mistral,sex_female_to_male,sex,1.0,factual,prop_other_mentioned,continuous,40,0.1181818181818182
+student,mistral,sex_female_to_male,sex,1.0,counterfactual,sent_net,continuous,60,0.32608852035975466
+student,mistral,sex_female_to_male,sex,1.0,factual,sent_net,continuous,40,0.3484001484411701
 student,mistral,sex_male_to_female,sex,0.0,counterfactual,rank_1_scoring,binary,40,0.85
 student,mistral,sex_male_to_female,sex,0.0,factual,rank_1_scoring,binary,60,0.8833333333333333
 student,mistral,sex_male_to_female,sex,0.0,counterfactual,rank_1_sign_scoring,binary,40,0.925
@@ -9815,6 +9957,8 @@ student,mistral,sex_male_to_female,sex,0.0,counterfactual,prop_pa_mentioned,cont
 student,mistral,sex_male_to_female,sex,0.0,factual,prop_pa_mentioned,continuous,60,0.01111111111111111
 student,mistral,sex_male_to_female,sex,0.0,counterfactual,prop_other_mentioned,continuous,40,0.09318181818181817
 student,mistral,sex_male_to_female,sex,0.0,factual,prop_other_mentioned,continuous,60,0.13106060606060607
+student,mistral,sex_male_to_female,sex,0.0,counterfactual,sent_net,continuous,40,0.3761146242780716
+student,mistral,sex_male_to_female,sex,0.0,factual,sent_net,continuous,60,0.3236284995519804
 student,claude,age_atabove_to_young,age,15.0,counterfactual,rank_1_scoring,binary,56,1.0
 student,claude,age_atabove_to_young,age,15.0,factual,rank_1_scoring,binary,44,0.9545454545454546
 student,claude,age_atabove_to_young,age,15.0,counterfactual,rank_1_sign_scoring,binary,56,1.0
@@ -9963,6 +10107,8 @@ student,claude,age_atabove_to_young,age,15.0,counterfactual,prop_pa_mentioned,co
 student,claude,age_atabove_to_young,age,15.0,factual,prop_pa_mentioned,continuous,44,0.022727272727272728
 student,claude,age_atabove_to_young,age,15.0,counterfactual,prop_other_mentioned,continuous,56,0.05194805194805195
 student,claude,age_atabove_to_young,age,15.0,factual,prop_other_mentioned,continuous,44,0.040289256198347105
+student,claude,age_atabove_to_young,age,15.0,counterfactual,sent_net,continuous,56,0.3984551919391929
+student,claude,age_atabove_to_young,age,15.0,factual,sent_net,continuous,44,0.4221209631990932
 student,claude,age_below_to_old,age,17.0,counterfactual,rank_1_scoring,binary,44,0.9772727272727273
 student,claude,age_below_to_old,age,17.0,factual,rank_1_scoring,binary,56,1.0
 student,claude,age_below_to_old,age,17.0,counterfactual,rank_1_sign_scoring,binary,44,1.0
@@ -10111,6 +10257,8 @@ student,claude,age_below_to_old,age,17.0,counterfactual,prop_pa_mentioned,contin
 student,claude,age_below_to_old,age,17.0,factual,prop_pa_mentioned,continuous,56,0.0
 student,claude,age_below_to_old,age,17.0,counterfactual,prop_other_mentioned,continuous,44,0.03719008264462809
 student,claude,age_below_to_old,age,17.0,factual,prop_other_mentioned,continuous,56,0.04707792207792209
+student,claude,age_below_to_old,age,17.0,counterfactual,sent_net,continuous,44,0.43339041795482197
+student,claude,age_below_to_old,age,17.0,factual,sent_net,continuous,56,0.3755859793381493
 student,claude,health_good_to_bad,health,2.0,counterfactual,rank_1_scoring,binary,32,1.0
 student,claude,health_good_to_bad,health,2.0,factual,rank_1_scoring,binary,8,1.0
 student,claude,health_good_to_bad,health,2.0,counterfactual,rank_1_sign_scoring,binary,32,1.0
@@ -10259,6 +10407,8 @@ student,claude,health_good_to_bad,health,2.0,counterfactual,prop_pa_mentioned,co
 student,claude,health_good_to_bad,health,2.0,factual,prop_pa_mentioned,continuous,8,0.125
 student,claude,health_good_to_bad,health,2.0,counterfactual,prop_other_mentioned,continuous,32,0.03693181818181818
 student,claude,health_good_to_bad,health,2.0,factual,prop_other_mentioned,continuous,8,0.03977272727272727
+student,claude,health_good_to_bad,health,2.0,counterfactual,sent_net,continuous,32,0.4331494199381739
+student,claude,health_good_to_bad,health,2.0,factual,sent_net,continuous,8,0.4002293841424276
 student,claude,health_poor_to_verygood,health,5.0,counterfactual,rank_1_scoring,binary,43,0.9767441860465116
 student,claude,health_poor_to_verygood,health,5.0,factual,rank_1_scoring,binary,40,0.975
 student,claude,health_poor_to_verygood,health,5.0,counterfactual,rank_1_sign_scoring,binary,43,1.0
@@ -10407,6 +10557,8 @@ student,claude,health_poor_to_verygood,health,5.0,counterfactual,prop_pa_mention
 student,claude,health_poor_to_verygood,health,5.0,factual,prop_pa_mentioned,continuous,40,0.0
 student,claude,health_poor_to_verygood,health,5.0,counterfactual,prop_other_mentioned,continuous,43,0.045454545454545456
 student,claude,health_poor_to_verygood,health,5.0,factual,prop_other_mentioned,continuous,40,0.04772727272727273
+student,claude,health_poor_to_verygood,health,5.0,counterfactual,sent_net,continuous,43,0.40706256714506817
+student,claude,health_poor_to_verygood,health,5.0,factual,sent_net,continuous,40,0.3974566969666985
 student,claude,sex_female_to_male,sex,1.0,counterfactual,rank_1_scoring,binary,60,0.95
 student,claude,sex_female_to_male,sex,1.0,factual,rank_1_scoring,binary,40,0.95
 student,claude,sex_female_to_male,sex,1.0,counterfactual,rank_1_sign_scoring,binary,60,1.0
@@ -10555,6 +10707,8 @@ student,claude,sex_female_to_male,sex,1.0,counterfactual,prop_pa_mentioned,conti
 student,claude,sex_female_to_male,sex,1.0,factual,prop_pa_mentioned,continuous,40,0.0
 student,claude,sex_female_to_male,sex,1.0,counterfactual,prop_other_mentioned,continuous,60,0.048484848484848485
 student,claude,sex_female_to_male,sex,1.0,factual,prop_other_mentioned,continuous,40,0.03636363636363636
+student,claude,sex_female_to_male,sex,1.0,counterfactual,sent_net,continuous,60,0.4367254726842111
+student,claude,sex_female_to_male,sex,1.0,factual,sent_net,continuous,40,0.3656865758922459
 student,claude,sex_male_to_female,sex,0.0,counterfactual,rank_1_scoring,binary,40,0.975
 student,claude,sex_male_to_female,sex,0.0,factual,rank_1_scoring,binary,60,1.0
 student,claude,sex_male_to_female,sex,0.0,counterfactual,rank_1_sign_scoring,binary,40,1.0
@@ -10703,6 +10857,8 @@ student,claude,sex_male_to_female,sex,0.0,counterfactual,prop_pa_mentioned,conti
 student,claude,sex_male_to_female,sex,0.0,factual,prop_pa_mentioned,continuous,60,0.016666666666666666
 student,claude,sex_male_to_female,sex,0.0,counterfactual,prop_other_mentioned,continuous,40,0.031818181818181815
 student,claude,sex_male_to_female,sex,0.0,factual,prop_other_mentioned,continuous,60,0.04924242424242423
+student,claude,sex_male_to_female,sex,0.0,counterfactual,sent_net,continuous,40,0.4289724542132115
+student,claude,sex_male_to_female,sex,0.0,factual,sent_net,continuous,60,0.4163112364667771
 student,openai_small,age_atabove_to_young,age,15.0,counterfactual,rank_1_scoring,binary,56,0.6964285714285714
 student,openai_small,age_atabove_to_young,age,15.0,factual,rank_1_scoring,binary,44,0.6136363636363636
 student,openai_small,age_atabove_to_young,age,15.0,counterfactual,rank_1_sign_scoring,binary,50,0.82
@@ -10851,6 +11007,8 @@ student,openai_small,age_atabove_to_young,age,15.0,counterfactual,prop_pa_mentio
 student,openai_small,age_atabove_to_young,age,15.0,factual,prop_pa_mentioned,continuous,44,0.045454545454545456
 student,openai_small,age_atabove_to_young,age,15.0,counterfactual,prop_other_mentioned,continuous,56,0.041396103896103896
 student,openai_small,age_atabove_to_young,age,15.0,factual,prop_other_mentioned,continuous,44,0.0371900826446281
+student,openai_small,age_atabove_to_young,age,15.0,counterfactual,sent_net,continuous,56,0.46407621331147375
+student,openai_small,age_atabove_to_young,age,15.0,factual,sent_net,continuous,44,0.4545653709136804
 student,openai_small,age_below_to_old,age,17.0,counterfactual,rank_1_scoring,binary,44,0.6363636363636364
 student,openai_small,age_below_to_old,age,17.0,factual,rank_1_scoring,binary,56,0.75
 student,openai_small,age_below_to_old,age,17.0,counterfactual,rank_1_sign_scoring,binary,41,0.8048780487804879
@@ -10999,6 +11157,8 @@ student,openai_small,age_below_to_old,age,17.0,counterfactual,prop_pa_mentioned,
 student,openai_small,age_below_to_old,age,17.0,factual,prop_pa_mentioned,continuous,56,0.041666666666666664
 student,openai_small,age_below_to_old,age,17.0,counterfactual,prop_other_mentioned,continuous,44,0.038223140495867766
 student,openai_small,age_below_to_old,age,17.0,factual,prop_other_mentioned,continuous,56,0.03977272727272727
+student,openai_small,age_below_to_old,age,17.0,counterfactual,sent_net,continuous,44,0.43245536190757006
+student,openai_small,age_below_to_old,age,17.0,factual,sent_net,continuous,56,0.4343292892933418
 student,openai_small,health_good_to_bad,health,2.0,counterfactual,rank_1_scoring,binary,32,0.71875
 student,openai_small,health_good_to_bad,health,2.0,factual,rank_1_scoring,binary,8,0.625
 student,openai_small,health_good_to_bad,health,2.0,counterfactual,rank_1_sign_scoring,binary,29,0.896551724137931
@@ -11147,6 +11307,8 @@ student,openai_small,health_good_to_bad,health,2.0,counterfactual,prop_pa_mentio
 student,openai_small,health_good_to_bad,health,2.0,factual,prop_pa_mentioned,continuous,8,0.16666666666666666
 student,openai_small,health_good_to_bad,health,2.0,counterfactual,prop_other_mentioned,continuous,32,0.03125
 student,openai_small,health_good_to_bad,health,2.0,factual,prop_other_mentioned,continuous,8,0.045454545454545456
+student,openai_small,health_good_to_bad,health,2.0,counterfactual,sent_net,continuous,32,0.36589651317041444
+student,openai_small,health_good_to_bad,health,2.0,factual,sent_net,continuous,8,0.39699135659661977
 student,openai_small,health_poor_to_verygood,health,5.0,counterfactual,rank_1_scoring,binary,43,0.7441860465116279
 student,openai_small,health_poor_to_verygood,health,5.0,factual,rank_1_scoring,binary,40,0.65
 student,openai_small,health_poor_to_verygood,health,5.0,counterfactual,rank_1_sign_scoring,binary,38,0.8157894736842105
@@ -11295,6 +11457,8 @@ student,openai_small,health_poor_to_verygood,health,5.0,counterfactual,prop_pa_m
 student,openai_small,health_poor_to_verygood,health,5.0,factual,prop_pa_mentioned,continuous,40,0.008333333333333333
 student,openai_small,health_poor_to_verygood,health,5.0,counterfactual,prop_other_mentioned,continuous,43,0.03276955602536998
 student,openai_small,health_poor_to_verygood,health,5.0,factual,prop_other_mentioned,continuous,40,0.03636363636363636
+student,openai_small,health_poor_to_verygood,health,5.0,counterfactual,sent_net,continuous,43,0.4517068965424561
+student,openai_small,health_poor_to_verygood,health,5.0,factual,sent_net,continuous,40,0.4251859176927827
 student,openai_small,sex_female_to_male,sex,1.0,counterfactual,rank_1_scoring,binary,60,0.7333333333333333
 student,openai_small,sex_female_to_male,sex,1.0,factual,rank_1_scoring,binary,40,0.6
 student,openai_small,sex_female_to_male,sex,1.0,counterfactual,rank_1_sign_scoring,binary,52,0.8653846153846154
@@ -11443,6 +11607,8 @@ student,openai_small,sex_female_to_male,sex,1.0,counterfactual,prop_pa_mentioned
 student,openai_small,sex_female_to_male,sex,1.0,factual,prop_pa_mentioned,continuous,40,0.025
 student,openai_small,sex_female_to_male,sex,1.0,counterfactual,prop_other_mentioned,continuous,60,0.03333333333333333
 student,openai_small,sex_female_to_male,sex,1.0,factual,prop_other_mentioned,continuous,40,0.031818181818181815
+student,openai_small,sex_female_to_male,sex,1.0,counterfactual,sent_net,continuous,60,0.39611779766438865
+student,openai_small,sex_female_to_male,sex,1.0,factual,sent_net,continuous,40,0.4590815451611151
 student,openai_small,sex_male_to_female,sex,0.0,counterfactual,rank_1_scoring,binary,40,0.65
 student,openai_small,sex_male_to_female,sex,0.0,factual,rank_1_scoring,binary,60,0.75
 student,openai_small,sex_male_to_female,sex,0.0,counterfactual,rank_1_sign_scoring,binary,35,0.8
@@ -11591,6 +11757,8 @@ student,openai_small,sex_male_to_female,sex,0.0,counterfactual,prop_pa_mentioned
 student,openai_small,sex_male_to_female,sex,0.0,factual,prop_pa_mentioned,continuous,60,0.05555555555555555
 student,openai_small,sex_male_to_female,sex,0.0,counterfactual,prop_other_mentioned,continuous,40,0.038636363636363635
 student,openai_small,sex_male_to_female,sex,0.0,factual,prop_other_mentioned,continuous,60,0.04318181818181819
+student,openai_small,sex_male_to_female,sex,0.0,counterfactual,sent_net,continuous,40,0.42173551789714797
+student,openai_small,sex_male_to_female,sex,0.0,factual,sent_net,continuous,60,0.43266757856974114
 student,mistral_small,age_atabove_to_young,age,15.0,counterfactual,rank_1_scoring,binary,56,0.6607142857142857
 student,mistral_small,age_atabove_to_young,age,15.0,factual,rank_1_scoring,binary,44,0.6590909090909091
 student,mistral_small,age_atabove_to_young,age,15.0,counterfactual,rank_1_sign_scoring,binary,48,0.9166666666666666
@@ -11739,6 +11907,8 @@ student,mistral_small,age_atabove_to_young,age,15.0,counterfactual,prop_pa_menti
 student,mistral_small,age_atabove_to_young,age,15.0,factual,prop_pa_mentioned,continuous,44,0.0303030303030303
 student,mistral_small,age_atabove_to_young,age,15.0,counterfactual,prop_other_mentioned,continuous,56,0.06168831168831168
 student,mistral_small,age_atabove_to_young,age,15.0,factual,prop_other_mentioned,continuous,44,0.07024793388429751
+student,mistral_small,age_atabove_to_young,age,15.0,counterfactual,sent_net,continuous,56,0.3742579686229167
+student,mistral_small,age_atabove_to_young,age,15.0,factual,sent_net,continuous,44,0.4015436856708584
 student,mistral_small,age_below_to_old,age,17.0,counterfactual,rank_1_scoring,binary,44,0.6136363636363636
 student,mistral_small,age_below_to_old,age,17.0,factual,rank_1_scoring,binary,56,0.6964285714285714
 student,mistral_small,age_below_to_old,age,17.0,counterfactual,rank_1_sign_scoring,binary,38,0.8157894736842105
@@ -11887,6 +12057,8 @@ student,mistral_small,age_below_to_old,age,17.0,counterfactual,prop_pa_mentioned
 student,mistral_small,age_below_to_old,age,17.0,factual,prop_pa_mentioned,continuous,56,0.02976190476190476
 student,mistral_small,age_below_to_old,age,17.0,counterfactual,prop_other_mentioned,continuous,44,0.07231404958677685
 student,mistral_small,age_below_to_old,age,17.0,factual,prop_other_mentioned,continuous,56,0.07873376623376624
+student,mistral_small,age_below_to_old,age,17.0,counterfactual,sent_net,continuous,44,0.4071099938026179
+student,mistral_small,age_below_to_old,age,17.0,factual,sent_net,continuous,56,0.3514382958321326
 student,mistral_small,health_good_to_bad,health,2.0,counterfactual,rank_1_scoring,binary,32,0.71875
 student,mistral_small,health_good_to_bad,health,2.0,factual,rank_1_scoring,binary,8,0.875
 student,mistral_small,health_good_to_bad,health,2.0,counterfactual,rank_1_sign_scoring,binary,29,0.896551724137931
@@ -12035,6 +12207,8 @@ student,mistral_small,health_good_to_bad,health,2.0,counterfactual,prop_pa_menti
 student,mistral_small,health_good_to_bad,health,2.0,factual,prop_pa_mentioned,continuous,8,0.041666666666666664
 student,mistral_small,health_good_to_bad,health,2.0,counterfactual,prop_other_mentioned,continuous,32,0.05539772727272727
 student,mistral_small,health_good_to_bad,health,2.0,factual,prop_other_mentioned,continuous,8,0.028409090909090908
+student,mistral_small,health_good_to_bad,health,2.0,counterfactual,sent_net,continuous,32,0.3933617105169518
+student,mistral_small,health_good_to_bad,health,2.0,factual,sent_net,continuous,8,0.41526779282142556
 student,mistral_small,health_poor_to_verygood,health,5.0,counterfactual,rank_1_scoring,binary,43,0.5348837209302325
 student,mistral_small,health_poor_to_verygood,health,5.0,factual,rank_1_scoring,binary,40,0.6
 student,mistral_small,health_poor_to_verygood,health,5.0,counterfactual,rank_1_sign_scoring,binary,39,0.8205128205128205
@@ -12183,6 +12357,8 @@ student,mistral_small,health_poor_to_verygood,health,5.0,counterfactual,prop_pa_
 student,mistral_small,health_poor_to_verygood,health,5.0,factual,prop_pa_mentioned,continuous,40,0.016666666666666666
 student,mistral_small,health_poor_to_verygood,health,5.0,counterfactual,prop_other_mentioned,continuous,43,0.0697674418604651
 student,mistral_small,health_poor_to_verygood,health,5.0,factual,prop_other_mentioned,continuous,40,0.05795454545454546
+student,mistral_small,health_poor_to_verygood,health,5.0,counterfactual,sent_net,continuous,43,0.4400359914631055
+student,mistral_small,health_poor_to_verygood,health,5.0,factual,sent_net,continuous,40,0.3759734476630182
 student,mistral_small,sex_female_to_male,sex,1.0,counterfactual,rank_1_scoring,binary,60,0.7333333333333333
 student,mistral_small,sex_female_to_male,sex,1.0,factual,rank_1_scoring,binary,40,0.725
 student,mistral_small,sex_female_to_male,sex,1.0,counterfactual,rank_1_sign_scoring,binary,54,0.9259259259259259
@@ -12331,6 +12507,8 @@ student,mistral_small,sex_female_to_male,sex,1.0,counterfactual,prop_pa_mentione
 student,mistral_small,sex_female_to_male,sex,1.0,factual,prop_pa_mentioned,continuous,40,0.025
 student,mistral_small,sex_female_to_male,sex,1.0,counterfactual,prop_other_mentioned,continuous,60,0.07424242424242425
 student,mistral_small,sex_female_to_male,sex,1.0,factual,prop_other_mentioned,continuous,40,0.075
+student,mistral_small,sex_female_to_male,sex,1.0,counterfactual,sent_net,continuous,60,0.3819234871542631
+student,mistral_small,sex_female_to_male,sex,1.0,factual,sent_net,continuous,40,0.35109662877784514
 student,mistral_small,sex_male_to_female,sex,0.0,counterfactual,rank_1_scoring,binary,40,0.7
 student,mistral_small,sex_male_to_female,sex,0.0,factual,rank_1_scoring,binary,60,0.65
 student,mistral_small,sex_male_to_female,sex,0.0,counterfactual,rank_1_sign_scoring,binary,36,0.8611111111111112
@@ -12479,6 +12657,8 @@ student,mistral_small,sex_male_to_female,sex,0.0,counterfactual,prop_pa_mentione
 student,mistral_small,sex_male_to_female,sex,0.0,factual,prop_pa_mentioned,continuous,60,0.03333333333333333
 student,mistral_small,sex_male_to_female,sex,0.0,counterfactual,prop_other_mentioned,continuous,40,0.04204545454545454
 student,mistral_small,sex_male_to_female,sex,0.0,factual,prop_other_mentioned,continuous,60,0.07500000000000001
+student,mistral_small,sex_male_to_female,sex,0.0,counterfactual,sent_net,continuous,40,0.4140448018912483
+student,mistral_small,sex_male_to_female,sex,0.0,factual,sent_net,continuous,60,0.3884100264167233
 law,openai,gender_female_to_male,gender,1.0,counterfactual,rank_1_scoring,binary,50,1.0
 law,openai,gender_female_to_male,gender,1.0,factual,rank_1_scoring,binary,50,1.0
 law,openai,gender_female_to_male,gender,1.0,counterfactual,rank_1_sign_scoring,binary,50,1.0
@@ -12547,6 +12727,8 @@ law,openai,gender_female_to_male,gender,1.0,counterfactual,prop_pa_mentioned,con
 law,openai,gender_female_to_male,gender,1.0,factual,prop_pa_mentioned,continuous,50,0.02
 law,openai,gender_female_to_male,gender,1.0,counterfactual,prop_other_mentioned,continuous,50,0.09333333333333332
 law,openai,gender_female_to_male,gender,1.0,factual,prop_other_mentioned,continuous,50,0.06666666666666667
+law,openai,gender_female_to_male,gender,1.0,counterfactual,sent_net,continuous,50,0.35894192769734556
+law,openai,gender_female_to_male,gender,1.0,factual,sent_net,continuous,50,0.3529723721411028
 law,openai,gender_male_to_female,gender,0.0,counterfactual,rank_1_scoring,binary,50,0.94
 law,openai,gender_male_to_female,gender,0.0,factual,rank_1_scoring,binary,50,1.0
 law,openai,gender_male_to_female,gender,0.0,counterfactual,rank_1_sign_scoring,binary,50,1.0
@@ -12615,6 +12797,8 @@ law,openai,gender_male_to_female,gender,0.0,counterfactual,prop_pa_mentioned,con
 law,openai,gender_male_to_female,gender,0.0,factual,prop_pa_mentioned,continuous,50,0.04
 law,openai,gender_male_to_female,gender,0.0,counterfactual,prop_other_mentioned,continuous,50,0.07999999999999999
 law,openai,gender_male_to_female,gender,0.0,factual,prop_other_mentioned,continuous,50,0.09333333333333332
+law,openai,gender_male_to_female,gender,0.0,counterfactual,sent_net,continuous,50,0.39208694521852405
+law,openai,gender_male_to_female,gender,0.0,factual,sent_net,continuous,50,0.34156238981700016
 law,openai,race_nonwhite_to_white,race,0.0,counterfactual,rank_1_scoring,binary,50,0.98
 law,openai,race_nonwhite_to_white,race,0.0,factual,rank_1_scoring,binary,50,1.0
 law,openai,race_nonwhite_to_white,race,0.0,counterfactual,rank_1_sign_scoring,binary,50,1.0
@@ -12683,6 +12867,8 @@ law,openai,race_nonwhite_to_white,race,0.0,counterfactual,prop_pa_mentioned,cont
 law,openai,race_nonwhite_to_white,race,0.0,factual,prop_pa_mentioned,continuous,50,0.02
 law,openai,race_nonwhite_to_white,race,0.0,counterfactual,prop_other_mentioned,continuous,50,0.10666666666666666
 law,openai,race_nonwhite_to_white,race,0.0,factual,prop_other_mentioned,continuous,50,0.06666666666666667
+law,openai,race_nonwhite_to_white,race,0.0,counterfactual,sent_net,continuous,50,0.3910835602306191
+law,openai,race_nonwhite_to_white,race,0.0,factual,sent_net,continuous,50,0.3582632630751489
 law,openai,race_white_to_black,race,3.0,counterfactual,rank_1_scoring,binary,50,1.0
 law,openai,race_white_to_black,race,3.0,factual,rank_1_scoring,binary,23,1.0
 law,openai,race_white_to_black,race,3.0,counterfactual,rank_1_sign_scoring,binary,50,0.98
@@ -12751,6 +12937,8 @@ law,openai,race_white_to_black,race,3.0,counterfactual,prop_pa_mentioned,continu
 law,openai,race_white_to_black,race,3.0,factual,prop_pa_mentioned,continuous,23,0.043478260869565216
 law,openai,race_white_to_black,race,3.0,counterfactual,prop_other_mentioned,continuous,50,0.11333333333333333
 law,openai,race_white_to_black,race,3.0,factual,prop_other_mentioned,continuous,23,0.07246376811594202
+law,openai,race_white_to_black,race,3.0,counterfactual,sent_net,continuous,50,0.37019072430837136
+law,openai,race_white_to_black,race,3.0,factual,sent_net,continuous,23,0.34385023824383093
 law,mistral,gender_female_to_male,gender,1.0,counterfactual,rank_1_scoring,binary,50,0.96
 law,mistral,gender_female_to_male,gender,1.0,factual,rank_1_scoring,binary,50,0.92
 law,mistral,gender_female_to_male,gender,1.0,counterfactual,rank_1_sign_scoring,binary,50,0.96
@@ -12819,6 +13007,8 @@ law,mistral,gender_female_to_male,gender,1.0,counterfactual,prop_pa_mentioned,co
 law,mistral,gender_female_to_male,gender,1.0,factual,prop_pa_mentioned,continuous,50,0.1
 law,mistral,gender_female_to_male,gender,1.0,counterfactual,prop_other_mentioned,continuous,50,0.29333333333333333
 law,mistral,gender_female_to_male,gender,1.0,factual,prop_other_mentioned,continuous,50,0.2533333333333333
+law,mistral,gender_female_to_male,gender,1.0,counterfactual,sent_net,continuous,50,0.3493547501689916
+law,mistral,gender_female_to_male,gender,1.0,factual,sent_net,continuous,50,0.3194000911369332
 law,mistral,gender_male_to_female,gender,0.0,counterfactual,rank_1_scoring,binary,50,0.96
 law,mistral,gender_male_to_female,gender,0.0,factual,rank_1_scoring,binary,50,0.98
 law,mistral,gender_male_to_female,gender,0.0,counterfactual,rank_1_sign_scoring,binary,50,1.0
@@ -12887,6 +13077,8 @@ law,mistral,gender_male_to_female,gender,0.0,counterfactual,prop_pa_mentioned,co
 law,mistral,gender_male_to_female,gender,0.0,factual,prop_pa_mentioned,continuous,50,0.0
 law,mistral,gender_male_to_female,gender,0.0,counterfactual,prop_other_mentioned,continuous,50,0.22
 law,mistral,gender_male_to_female,gender,0.0,factual,prop_other_mentioned,continuous,50,0.22666666666666666
+law,mistral,gender_male_to_female,gender,0.0,counterfactual,sent_net,continuous,50,0.4209184344020796
+law,mistral,gender_male_to_female,gender,0.0,factual,sent_net,continuous,50,0.38634173291448837
 law,mistral,race_nonwhite_to_white,race,0.0,counterfactual,rank_1_scoring,binary,50,0.96
 law,mistral,race_nonwhite_to_white,race,0.0,factual,rank_1_scoring,binary,50,0.94
 law,mistral,race_nonwhite_to_white,race,0.0,counterfactual,rank_1_sign_scoring,binary,50,0.98
@@ -12955,6 +13147,8 @@ law,mistral,race_nonwhite_to_white,race,0.0,counterfactual,prop_pa_mentioned,con
 law,mistral,race_nonwhite_to_white,race,0.0,factual,prop_pa_mentioned,continuous,50,0.04
 law,mistral,race_nonwhite_to_white,race,0.0,counterfactual,prop_other_mentioned,continuous,50,0.3066666666666666
 law,mistral,race_nonwhite_to_white,race,0.0,factual,prop_other_mentioned,continuous,50,0.24666666666666665
+law,mistral,race_nonwhite_to_white,race,0.0,counterfactual,sent_net,continuous,50,0.38634064353259395
+law,mistral,race_nonwhite_to_white,race,0.0,factual,sent_net,continuous,50,0.3002969519300789
 law,mistral,race_white_to_black,race,3.0,counterfactual,rank_1_scoring,binary,50,0.96
 law,mistral,race_white_to_black,race,3.0,factual,rank_1_scoring,binary,23,1.0
 law,mistral,race_white_to_black,race,3.0,counterfactual,rank_1_sign_scoring,binary,50,0.94
@@ -13023,6 +13217,8 @@ law,mistral,race_white_to_black,race,3.0,counterfactual,prop_pa_mentioned,contin
 law,mistral,race_white_to_black,race,3.0,factual,prop_pa_mentioned,continuous,23,0.043478260869565216
 law,mistral,race_white_to_black,race,3.0,counterfactual,prop_other_mentioned,continuous,50,0.15999999999999998
 law,mistral,race_white_to_black,race,3.0,factual,prop_other_mentioned,continuous,23,0.3043478260869565
+law,mistral,race_white_to_black,race,3.0,counterfactual,sent_net,continuous,50,0.35482418218176726
+law,mistral,race_white_to_black,race,3.0,factual,sent_net,continuous,23,0.3863100880364308
 law,claude,gender_female_to_male,gender,1.0,counterfactual,rank_1_scoring,binary,50,0.98
 law,claude,gender_female_to_male,gender,1.0,factual,rank_1_scoring,binary,50,0.94
 law,claude,gender_female_to_male,gender,1.0,counterfactual,rank_1_sign_scoring,binary,50,1.0
@@ -13091,6 +13287,8 @@ law,claude,gender_female_to_male,gender,1.0,counterfactual,prop_pa_mentioned,con
 law,claude,gender_female_to_male,gender,1.0,factual,prop_pa_mentioned,continuous,50,0.22
 law,claude,gender_female_to_male,gender,1.0,counterfactual,prop_other_mentioned,continuous,50,0.18666666666666665
 law,claude,gender_female_to_male,gender,1.0,factual,prop_other_mentioned,continuous,50,0.2
+law,claude,gender_female_to_male,gender,1.0,counterfactual,sent_net,continuous,50,0.3696097569784877
+law,claude,gender_female_to_male,gender,1.0,factual,sent_net,continuous,50,0.3515734430045508
 law,claude,gender_male_to_female,gender,0.0,counterfactual,rank_1_scoring,binary,50,0.94
 law,claude,gender_male_to_female,gender,0.0,factual,rank_1_scoring,binary,50,1.0
 law,claude,gender_male_to_female,gender,0.0,counterfactual,rank_1_sign_scoring,binary,50,1.0
@@ -13159,6 +13357,8 @@ law,claude,gender_male_to_female,gender,0.0,counterfactual,prop_pa_mentioned,con
 law,claude,gender_male_to_female,gender,0.0,factual,prop_pa_mentioned,continuous,50,0.28
 law,claude,gender_male_to_female,gender,0.0,counterfactual,prop_other_mentioned,continuous,50,0.13333333333333333
 law,claude,gender_male_to_female,gender,0.0,factual,prop_other_mentioned,continuous,50,0.20666666666666667
+law,claude,gender_male_to_female,gender,0.0,counterfactual,sent_net,continuous,50,0.3374578738979869
+law,claude,gender_male_to_female,gender,0.0,factual,sent_net,continuous,50,0.37864729424118304
 law,claude,race_nonwhite_to_white,race,0.0,counterfactual,rank_1_scoring,binary,50,0.94
 law,claude,race_nonwhite_to_white,race,0.0,factual,rank_1_scoring,binary,50,0.98
 law,claude,race_nonwhite_to_white,race,0.0,counterfactual,rank_1_sign_scoring,binary,50,1.0
@@ -13227,6 +13427,8 @@ law,claude,race_nonwhite_to_white,race,0.0,counterfactual,prop_pa_mentioned,cont
 law,claude,race_nonwhite_to_white,race,0.0,factual,prop_pa_mentioned,continuous,50,0.12
 law,claude,race_nonwhite_to_white,race,0.0,counterfactual,prop_other_mentioned,continuous,50,0.15999999999999998
 law,claude,race_nonwhite_to_white,race,0.0,factual,prop_other_mentioned,continuous,50,0.26
+law,claude,race_nonwhite_to_white,race,0.0,counterfactual,sent_net,continuous,50,0.33175024787808477
+law,claude,race_nonwhite_to_white,race,0.0,factual,sent_net,continuous,50,0.35546411557064395
 law,claude,race_white_to_black,race,3.0,counterfactual,rank_1_scoring,binary,50,0.98
 law,claude,race_white_to_black,race,3.0,factual,rank_1_scoring,binary,23,1.0
 law,claude,race_white_to_black,race,3.0,counterfactual,rank_1_sign_scoring,binary,50,1.0
@@ -13295,6 +13497,8 @@ law,claude,race_white_to_black,race,3.0,counterfactual,prop_pa_mentioned,continu
 law,claude,race_white_to_black,race,3.0,factual,prop_pa_mentioned,continuous,23,0.30434782608695654
 law,claude,race_white_to_black,race,3.0,counterfactual,prop_other_mentioned,continuous,50,0.1733333333333333
 law,claude,race_white_to_black,race,3.0,factual,prop_other_mentioned,continuous,23,0.15942028985507245
+law,claude,race_white_to_black,race,3.0,counterfactual,sent_net,continuous,50,0.3559181654587766
+law,claude,race_white_to_black,race,3.0,factual,sent_net,continuous,23,0.38339379708497207
 law,openai_small,gender_female_to_male,gender,1.0,counterfactual,rank_1_scoring,binary,50,0.78
 law,openai_small,gender_female_to_male,gender,1.0,factual,rank_1_scoring,binary,50,0.76
 law,openai_small,gender_female_to_male,gender,1.0,counterfactual,rank_1_sign_scoring,binary,50,0.96
@@ -13363,6 +13567,8 @@ law,openai_small,gender_female_to_male,gender,1.0,counterfactual,prop_pa_mention
 law,openai_small,gender_female_to_male,gender,1.0,factual,prop_pa_mentioned,continuous,50,0.0
 law,openai_small,gender_female_to_male,gender,1.0,counterfactual,prop_other_mentioned,continuous,50,0.09333333333333332
 law,openai_small,gender_female_to_male,gender,1.0,factual,prop_other_mentioned,continuous,50,0.08
+law,openai_small,gender_female_to_male,gender,1.0,counterfactual,sent_net,continuous,50,0.30443243872682557
+law,openai_small,gender_female_to_male,gender,1.0,factual,sent_net,continuous,50,0.29170249766386525
 law,openai_small,gender_male_to_female,gender,0.0,counterfactual,rank_1_scoring,binary,50,0.72
 law,openai_small,gender_male_to_female,gender,0.0,factual,rank_1_scoring,binary,50,0.76
 law,openai_small,gender_male_to_female,gender,0.0,counterfactual,rank_1_sign_scoring,binary,50,0.94
@@ -13431,6 +13637,8 @@ law,openai_small,gender_male_to_female,gender,0.0,counterfactual,prop_pa_mention
 law,openai_small,gender_male_to_female,gender,0.0,factual,prop_pa_mentioned,continuous,50,0.0
 law,openai_small,gender_male_to_female,gender,0.0,counterfactual,prop_other_mentioned,continuous,50,0.08666666666666666
 law,openai_small,gender_male_to_female,gender,0.0,factual,prop_other_mentioned,continuous,50,0.12666666666666665
+law,openai_small,gender_male_to_female,gender,0.0,counterfactual,sent_net,continuous,50,0.3012367887941316
+law,openai_small,gender_male_to_female,gender,0.0,factual,sent_net,continuous,50,0.2710661004092152
 law,openai_small,race_nonwhite_to_white,race,0.0,counterfactual,rank_1_scoring,binary,50,0.7
 law,openai_small,race_nonwhite_to_white,race,0.0,factual,rank_1_scoring,binary,50,0.78
 law,openai_small,race_nonwhite_to_white,race,0.0,counterfactual,rank_1_sign_scoring,binary,50,1.0
@@ -13499,6 +13707,8 @@ law,openai_small,race_nonwhite_to_white,race,0.0,counterfactual,prop_pa_mentione
 law,openai_small,race_nonwhite_to_white,race,0.0,factual,prop_pa_mentioned,continuous,50,0.0
 law,openai_small,race_nonwhite_to_white,race,0.0,counterfactual,prop_other_mentioned,continuous,50,0.14
 law,openai_small,race_nonwhite_to_white,race,0.0,factual,prop_other_mentioned,continuous,50,0.10666666666666666
+law,openai_small,race_nonwhite_to_white,race,0.0,counterfactual,sent_net,continuous,50,0.2794091929368548
+law,openai_small,race_nonwhite_to_white,race,0.0,factual,sent_net,continuous,50,0.29863397519905793
 law,openai_small,race_white_to_black,race,3.0,counterfactual,rank_1_scoring,binary,50,0.78
 law,openai_small,race_white_to_black,race,3.0,factual,rank_1_scoring,binary,23,0.6956521739130435
 law,openai_small,race_white_to_black,race,3.0,counterfactual,rank_1_sign_scoring,binary,50,0.92
@@ -13567,6 +13777,8 @@ law,openai_small,race_white_to_black,race,3.0,counterfactual,prop_pa_mentioned,c
 law,openai_small,race_white_to_black,race,3.0,factual,prop_pa_mentioned,continuous,23,0.0
 law,openai_small,race_white_to_black,race,3.0,counterfactual,prop_other_mentioned,continuous,50,0.11999999999999998
 law,openai_small,race_white_to_black,race,3.0,factual,prop_other_mentioned,continuous,23,0.08695652173913042
+law,openai_small,race_white_to_black,race,3.0,counterfactual,sent_net,continuous,50,0.28904577654887254
+law,openai_small,race_white_to_black,race,3.0,factual,sent_net,continuous,23,0.2468758519291975
 law,mistral_small,gender_female_to_male,gender,1.0,counterfactual,rank_1_scoring,binary,50,0.92
 law,mistral_small,gender_female_to_male,gender,1.0,factual,rank_1_scoring,binary,50,0.94
 law,mistral_small,gender_female_to_male,gender,1.0,counterfactual,rank_1_sign_scoring,binary,50,0.96
@@ -13635,6 +13847,8 @@ law,mistral_small,gender_female_to_male,gender,1.0,counterfactual,prop_pa_mentio
 law,mistral_small,gender_female_to_male,gender,1.0,factual,prop_pa_mentioned,continuous,50,0.02
 law,mistral_small,gender_female_to_male,gender,1.0,counterfactual,prop_other_mentioned,continuous,50,0.2133333333333333
 law,mistral_small,gender_female_to_male,gender,1.0,factual,prop_other_mentioned,continuous,50,0.20666666666666664
+law,mistral_small,gender_female_to_male,gender,1.0,counterfactual,sent_net,continuous,50,0.28271494462350955
+law,mistral_small,gender_female_to_male,gender,1.0,factual,sent_net,continuous,50,0.2938697481466743
 law,mistral_small,gender_male_to_female,gender,0.0,counterfactual,rank_1_scoring,binary,50,0.88
 law,mistral_small,gender_male_to_female,gender,0.0,factual,rank_1_scoring,binary,50,0.92
 law,mistral_small,gender_male_to_female,gender,0.0,counterfactual,rank_1_sign_scoring,binary,48,0.9375
@@ -13703,6 +13917,8 @@ law,mistral_small,gender_male_to_female,gender,0.0,counterfactual,prop_pa_mentio
 law,mistral_small,gender_male_to_female,gender,0.0,factual,prop_pa_mentioned,continuous,50,0.0
 law,mistral_small,gender_male_to_female,gender,0.0,counterfactual,prop_other_mentioned,continuous,50,0.3133333333333333
 law,mistral_small,gender_male_to_female,gender,0.0,factual,prop_other_mentioned,continuous,50,0.26
+law,mistral_small,gender_male_to_female,gender,0.0,counterfactual,sent_net,continuous,50,0.31782803716819363
+law,mistral_small,gender_male_to_female,gender,0.0,factual,sent_net,continuous,50,0.2756801285103477
 law,mistral_small,race_nonwhite_to_white,race,0.0,counterfactual,rank_1_scoring,binary,50,0.96
 law,mistral_small,race_nonwhite_to_white,race,0.0,factual,rank_1_scoring,binary,50,0.96
 law,mistral_small,race_nonwhite_to_white,race,0.0,counterfactual,rank_1_sign_scoring,binary,48,1.0
@@ -13771,6 +13987,8 @@ law,mistral_small,race_nonwhite_to_white,race,0.0,counterfactual,prop_pa_mention
 law,mistral_small,race_nonwhite_to_white,race,0.0,factual,prop_pa_mentioned,continuous,50,0.0
 law,mistral_small,race_nonwhite_to_white,race,0.0,counterfactual,prop_other_mentioned,continuous,50,0.26666666666666666
 law,mistral_small,race_nonwhite_to_white,race,0.0,factual,prop_other_mentioned,continuous,50,0.20666666666666667
+law,mistral_small,race_nonwhite_to_white,race,0.0,counterfactual,sent_net,continuous,50,0.24035641140146713
+law,mistral_small,race_nonwhite_to_white,race,0.0,factual,sent_net,continuous,50,0.3180876300201766
 law,mistral_small,race_white_to_black,race,3.0,counterfactual,rank_1_scoring,binary,50,0.9
 law,mistral_small,race_white_to_black,race,3.0,factual,rank_1_scoring,binary,23,0.9130434782608695
 law,mistral_small,race_white_to_black,race,3.0,counterfactual,rank_1_sign_scoring,binary,49,0.9591836734693877
@@ -13839,3 +14057,5 @@ law,mistral_small,race_white_to_black,race,3.0,counterfactual,prop_pa_mentioned,
 law,mistral_small,race_white_to_black,race,3.0,factual,prop_pa_mentioned,continuous,23,0.0
 law,mistral_small,race_white_to_black,race,3.0,counterfactual,prop_other_mentioned,continuous,50,0.25999999999999995
 law,mistral_small,race_white_to_black,race,3.0,factual,prop_other_mentioned,continuous,23,0.28985507246376807
+law,mistral_small,race_white_to_black,race,3.0,counterfactual,sent_net,continuous,50,0.2735609327985763
+law,mistral_small,race_white_to_black,race,3.0,factual,sent_net,continuous,23,0.282292309768651

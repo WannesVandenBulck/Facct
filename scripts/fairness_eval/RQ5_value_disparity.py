@@ -20,8 +20,8 @@ MATCHING (coarsened exact matching on the displayed PA profile)
 Each narrative gets a stratum key built from ALL its displayed PAs:
   * the SWAPPED attribute: exact displayed value (e.g. "male" vs "male"),
     except continuous age (credit, student), which uses the RQ1 median
-    split (counterfactual ages are fixed values -- 26/40 credit, 16/18
-    student -- that almost no real applicant has exactly);
+    split (counterfactual ages are fixed values -- 38/25 credit, 17/15
+    student -- so exact matching would keep too few real applicants);
   * every OTHER PA: the RQ1 2-group split (see RQ1_total_disparity.py),
     so strata stay large enough to test.
 Counterfactual and factual narratives are only compared WITHIN the same
@@ -139,6 +139,10 @@ def discover_metrics(df, pa_names):
     metrics["value_accuracy"] = "continuous"
     metrics["prop_pa_mentioned"] = "continuous"
     metrics["prop_other_mentioned"] = "continuous"
+
+    # lexicon-based sentiment (computed in generate_per_narrative_metrics.py)
+    if "sent_net" in df.columns:
+        metrics["sent_net"] = "continuous"
     return metrics
 
 

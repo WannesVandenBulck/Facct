@@ -34,8 +34,8 @@ the research team):
 
 Medians (credit age, student age) are computed on unique instances within
 that dataset. The student `health` split point (<=fair vs >=good) was
-chosen as the most balanced 2-way split of the 5 ordinal levels (32 vs 40
-of 72 instances), confirmed with the research team.
+chosen as the most balanced 2-way split of the 5 ordinal levels (43 vs 57
+of the 100 sampled instances), confirmed with the research team.
 
 METRICS
 -------
@@ -233,6 +233,10 @@ def discover_metrics(df, pa_names):
     metrics["value_accuracy"] = "continuous"
     metrics["prop_pa_mentioned"] = "continuous"
     metrics["prop_other_mentioned"] = "continuous"
+
+    # lexicon-based sentiment (computed in generate_per_narrative_metrics.py)
+    if "sent_net" in df.columns:
+        metrics["sent_net"] = "continuous"
 
     return metrics
 
