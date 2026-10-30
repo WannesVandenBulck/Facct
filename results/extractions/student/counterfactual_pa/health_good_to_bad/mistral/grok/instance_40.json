@@ -1,0 +1,165 @@
+{
+  "predicted_probability": 0.22,
+  "most_important_features": [
+    {
+      "rank": 1,
+      "name": "Fedu",
+      "sign": 1,
+      "value": "NaN"
+    },
+    {
+      "rank": 2,
+      "name": "failures",
+      "sign": -1,
+      "value": 0
+    },
+    {
+      "rank": 3,
+      "name": "higher",
+      "sign": -1,
+      "value": 0
+    }
+  ],
+  "features": [
+    {
+      "name": "failures",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "higher",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "famsize",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Pstatus",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Fedu",
+      "mentioned": 1,
+      "value": "NaN"
+    },
+    {
+      "name": "Medu",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Mjob",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Fjob",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "reason",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "guardian",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "traveltime",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "studytime",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "schoolsup",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "famsup",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "paid",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "activities",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "nursery",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "internet",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "romantic",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "famrel",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "freetime",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "goout",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Dalc",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Walc",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "absences",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "sex",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "age",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "health",
+      "mentioned": 0,
+      "value": "NaN"
+    }
+  ]
+}

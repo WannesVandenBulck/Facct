@@ -1,0 +1,172 @@
+```json
+{
+  "predicted_probability": 0.75,
+  "most_important_features": [
+    {
+      "rank": 1,
+      "name": "Years_Experience",
+      "sign": 1,
+      "value": 2
+    },
+    {
+      "rank": 2,
+      "name": "Years_experience_lastorganization",
+      "sign": 1,
+      "value": 0
+    },
+    {
+      "rank": 3,
+      "name": "Job_Opportunities",
+      "sign": -1,
+      "value": 0
+    }
+  ],
+  "features": [
+    {
+      "name": "Years_Experience",
+      "mentioned": 1,
+      "value": 2
+    },
+    {
+      "name": "Job_Opportunities",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "Years_experience_lastorganization",
+      "mentioned": 1,
+      "value": 0
+    },
+    {
+      "name": "Academic_degree",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Sector",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "MonthlySalary",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "MedicalInsurance",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Bonus",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "OverTime",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Payment_Overtime",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Rewards_Wages_Satisfaction",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Get_Deserved_Promotion",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Training_programs_During_last_three_years",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Useful_Training_Programs",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Business_Travel",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Job_Support",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Recognition",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Emotional_Commitment",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Job_Engagement",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Distance_to_work",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Work_Live_Balance",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Physical_Stress",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Psychological_Exhaustion",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Job_Stability",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Environment_Satisfaction",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Job_Satisfaction",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Gender",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Age",
+      "mentioned": 0,
+      "value": "NaN"
+    },
+    {
+      "name": "Health_Issues",
+      "mentioned": 0,
+      "value": "NaN"
+    }
+  ]
+}
+```

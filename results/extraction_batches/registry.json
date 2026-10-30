@@ -1714,9 +1714,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:00:06",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "law/openai/exclude_pa": {
   "batch_id": "batch_8ecf348d-5d29-4e30-9c24-88039964c938",
@@ -1825,9 +1826,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:00:09",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "law/openai/counterfactual_pa": {
   "batch_id": "batch_3abdb0fd-9600-4f1c-96cb-27ddf4e17229",
@@ -2036,9 +2038,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:00:17",
-  "state": "running",
-  "collected": false,
-  "detail": "0/200 succeeded, 0 errors, 200 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "200/200 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "law/mistral/include_pa": {
   "batch_id": "batch_9464f318-a8fd-426d-8d2e-6f1e674e6065",
@@ -2147,9 +2150,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:00:22",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "law/mistral/exclude_pa": {
   "batch_id": "batch_76b4c664-752f-4e7f-a74a-5c8f932184d7",
@@ -2258,9 +2262,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:00:26",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "law/mistral/counterfactual_pa": {
   "batch_id": "batch_913d1431-6411-46f2-9580-d8073f2b726d",
@@ -2469,9 +2474,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:00:36",
-  "state": "running",
-  "collected": false,
-  "detail": "0/200 succeeded, 0 errors, 200 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "200/200 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "law/claude/include_pa": {
   "batch_id": "batch_85cf5b85-39f9-46eb-b71d-b5b72edf55da",
@@ -2580,9 +2586,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:00:40",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "law/claude/exclude_pa": {
   "batch_id": "batch_7b2c344e-7eff-49cb-825b-1ff80d518a98",
@@ -2691,9 +2698,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:00:44",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "law/claude/counterfactual_pa": {
   "batch_id": "batch_50dded36-003a-4af9-813f-6fd71cc841cb",
@@ -2902,9 +2910,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:00:53",
-  "state": "running",
-  "collected": false,
-  "detail": "0/200 succeeded, 0 errors, 200 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "200/200 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "saudi/openai/include_pa": {
   "batch_id": "batch_277a750a-3908-42fa-b84f-703080b9bccf",
@@ -3013,9 +3022,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:00:57",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "saudi/openai/exclude_pa": {
   "batch_id": "batch_2f9ff151-c81b-4944-9e5c-313fce7f368d",
@@ -3124,9 +3134,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:01:01",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "saudi/openai/counterfactual_pa": {
   "batch_id": "batch_0b08197f-07c2-4695-a1df-d11d11e361d7",
@@ -3435,9 +3446,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:01:18",
-  "state": "running",
-  "collected": false,
-  "detail": "0/300 succeeded, 0 errors, 300 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "300/300 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "saudi/mistral/include_pa": {
   "batch_id": "batch_e1212bba-fe00-48b7-8680-4b41024d31d8",
@@ -3546,9 +3558,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:01:23",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "saudi/mistral/exclude_pa": {
   "batch_id": "batch_cbae4b55-a34b-4d0b-9a58-5c07363de460",
@@ -3657,9 +3670,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:01:28",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "saudi/mistral/counterfactual_pa": {
   "batch_id": "batch_70096c78-625d-4f42-8f1f-64c1d39175e4",
@@ -3968,9 +3982,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:01:42",
-  "state": "running",
-  "collected": false,
-  "detail": "0/300 succeeded, 0 errors, 300 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "300/300 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "saudi/claude/include_pa": {
   "batch_id": "batch_d8d50ba6-2d8f-4c27-bc54-3a5eb92510d0",
@@ -4079,9 +4094,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:01:46",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "saudi/claude/exclude_pa": {
   "batch_id": "batch_c5217483-306b-4931-9d38-4f17b2b7afa5",
@@ -4190,9 +4206,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:01:51",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "saudi/claude/counterfactual_pa": {
   "batch_id": "batch_72aee23d-788d-4af3-b0b0-36abfc167a4b",
@@ -4501,9 +4518,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:02:05",
-  "state": "running",
-  "collected": false,
-  "detail": "0/300 succeeded, 0 errors, 300 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "300/300 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "student/openai/include_pa": {
   "batch_id": "batch_14440dbe-e761-4ee4-96d6-2851bf9ca8e5",
@@ -4612,9 +4630,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:02:09",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "student/openai/exclude_pa": {
   "batch_id": "batch_08a4c631-7746-4165-bb96-f8f5e45c648c",
@@ -4723,9 +4742,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:02:15",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "student/openai/counterfactual_pa": {
   "batch_id": "batch_f1778362-a786-4003-926e-7aec55b0c403",
@@ -5034,9 +5054,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:02:30",
-  "state": "running",
-  "collected": false,
-  "detail": "0/300 succeeded, 0 errors, 300 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "300/300 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "student/mistral/include_pa": {
   "batch_id": "batch_e8688ec0-24ef-4654-8e1d-03271d265018",
@@ -5145,9 +5166,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:02:35",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "student/mistral/exclude_pa": {
   "batch_id": "batch_ac26029b-0a48-404d-9afc-d91ae5bbda9b",
@@ -5256,9 +5278,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:02:40",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "student/mistral/counterfactual_pa": {
   "batch_id": "batch_9c516f5b-8bed-478a-89ab-6f8d09f05f54",
@@ -5567,9 +5590,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:02:55",
-  "state": "running",
-  "collected": false,
-  "detail": "0/300 succeeded, 0 errors, 300 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "300/300 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "student/claude/include_pa": {
   "batch_id": "batch_03c80a23-203e-4b31-bf5e-a8825d5bd9c7",
@@ -5678,9 +5702,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:02:59",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "student/claude/exclude_pa": {
   "batch_id": "batch_a9f10fdb-f917-4f86-8c41-f4a3d47d1a87",
@@ -5789,9 +5814,10 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:03:04",
-  "state": "running",
-  "collected": false,
-  "detail": "0/100 succeeded, 0 errors, 100 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "100/100 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  },
  "student/claude/counterfactual_pa": {
   "batch_id": "batch_5a5a35e8-f9a9-4653-96b4-7f80ca1ad685",
@@ -6100,8 +6126,9 @@
   ],
   "attempt": 0,
   "submitted_at": "2026-10-29T22:03:17",
-  "state": "running",
-  "collected": false,
-  "detail": "0/300 succeeded, 0 errors, 300 pending"
+  "state": "done",
+  "collected": true,
+  "detail": "300/300 succeeded, 0 errors, 0 pending",
+  "failed_ids": []
  }
 }
