@@ -38,7 +38,7 @@ from scripts.extractions.extraction_io import (EXTRACTOR_PROVIDER, EXTRACTOR_MOD
 from scripts.extractions.generate_extractor_prompt import generate_extractor_prompt
 
 DATASETS = ["credit", "law", "saudi", "student"]
-NARRATIVE_PROVIDERS = ["openai", "mistral", "claude", "deepseek"]
+NARRATIVE_PROVIDERS = ["openai", "mistral", "claude", "deepseek", "openai_small", "mistral_small"]
 CONDITIONS = ["include_pa", "exclude_pa", "counterfactual_pa"]
 CFG = dict(provider=EXTRACTOR_PROVIDER, model=EXTRACTOR_MODEL, temperature=EXTRACTOR_TEMPERATURE, max_tokens=EXTRACTOR_MAX_TOKENS)
 

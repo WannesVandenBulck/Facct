@@ -172,7 +172,7 @@ ROOT = Path(__file__).parent.parent.parent
 FAIRNESS_EVAL_DIR = ROOT / "results" / "fairness_eval"
 
 DATASETS = ["credit", "saudi", "student", "law"]
-PROVIDERS = ["openai", "mistral", "claude", "deepseek"]  # providers without narratives (yet) are skipped
+PROVIDERS = ["openai", "mistral", "claude", "deepseek", "openai_small", "mistral_small"]  # providers without narratives (yet) are skipped
 CONDITIONS = ["pa_included", "pa_excluded"]
 CF_CONDITION_RAW = "counterfactual_pa"   # condition value in the metrics CSV
 CF_CONDITION = "pa_counterfactual"       # label used in the output files

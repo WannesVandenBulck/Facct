@@ -1,0 +1,42 @@
+{
+  "dataset": "student",
+  "instance_idx": 45,
+  "provider": "mistral_small",
+  "api_provider": "mistral",
+  "model": "ministral-14b-2512",
+  "model_version": "ministral-14b-2512",
+  "timestamp": "2026-10-30T12:51:25.703870",
+  "status": "success",
+  "narrative": "The model has analyzed your academic journey and determined that there’s a **50% chance** you might not pass your final year. This isn’t a certainty—it’s a warning sign that the school is taking seriously. Because the risk is high enough, you’ve been asked to take remedial courses to help you stay on track.\n\nThe decision isn’t random—it’s based on three key factors that stand out in your situation. The most critical is your **history of past failures**. Unlike most students, who’ve never failed a class, you’ve had two setbacks already. This is the strongest signal that you’re at risk of struggling again, especially without extra support.\n\nAnother factor is your **family size and living situation**. You come from a smaller family where your parents don’t live together, which is less common among students who are doing well. While this alone doesn’t doom you, it suggests you might face more challenges balancing responsibilities at home—something that can distract from your studies if not managed carefully.\n\nFinally, your **mother’s education level** plays a role. Most students whose parents have higher education tend to perform better, likely because they have more resources and encouragement at home. Since your mother’s education is at the lower end, the model sees this as a factor that could make your academic path harder without intervention.\n\nThe good news? This isn’t a verdict—it’s a chance to get help. Remedial courses are designed to fill gaps and give you the tools to succeed. Focus on your study habits, seek support when you need it, and use this as an opportunity to turn things around. You’ve got this.",
+  "error": null,
+  "system_prompt": "You are an expert at explaining machine learning predictions to non-technical users. Write clear narratives that help people understand model decisions.",
+  "prompt": "A machine learning model predicted that a student will FAIL their final year and therefore they are OBLIGED to take remedial courses. Your goal is to generate an explanatory narrative based on the information provided (1-5), explaining why the student must take additional courses.\n\n1. DATASET INFORMATION\nThe dataset contains information on students from two Portuguese high schools.\n\nThe target variable is whether the student will fail their final year.\n\nProtected attributes sex, age and health were not used to make the machine prediction.\n\n2. TECHNICAL EXPLANATION: SHAP VALUES\nA SHAP value tells you how much a feature influenced the prediction (larger absolute value means a stronger influence) and its direction: positive pushes toward failing the final year, negative toward passing the final year. Below are the top 3 features by absolute SHAP value.\n\n3. STUDENT PROFILE\nYou are writing a narrative tailored to this specific student, who is obliged to take remedial courses.\nFeature values (with comparisons to students who are not obliged to take remedial courses where available, showing the distribution or average among students who are not obliged to take remedial courses):\n- sex = male (the sex of the student)\n- age = 19 (the age of the student in years)\n- famsize = <=3 (size of the family of the student) - distribution: >3: 63.3%, <=3: 36.7%\n- Pstatus = apart (parents cohabitation status) - distribution: together: 90.0%, apart: 10.0%\n- Medu = primary (mother's education) - distribution: higher: 50.0%, secondary: 23.3%, 5-9th grade: 20.0%, primary: 6.7%\n- Fedu = primary (father's education) - distribution: 5-9th grade: 46.7%, secondary: 26.7%, higher: 23.3%, primary: 3.3%\n- Mjob = other (mother's job) - distribution: services: 33.3%, teacher: 26.7%, other: 23.3%, health: 10.0%, at_home: 6.7%\n- Fjob = other (father's job) - distribution: other: 60.0%, services: 33.3%, at_home: 3.3%, teacher: 3.3%\n- reason = course (reason to choose this school) - distribution: course: 36.7%, home: 30.0%, reputation: 26.7%, other: 6.7%\n- guardian = other (student's guardian) - distribution: mother: 73.3%, father: 26.7%\n- traveltime = 30-60 min (home to school travel time) - distribution: <15 min: 70.0%, 15-30 min: 26.7%, >60 min: 3.3%\n- studytime = 2-5 hours (weekly study time) - distribution: 2-5 hours: 60.0%, 5-10 hours: 33.3%, >10 hours: 6.7%\n- failures = 2 (number of past class failures) - average: 0.0\n- schoolsup = no (student receiving extra educational support) - distribution: no: 96.7%, yes: 3.3%\n- famsup = yes (student receiving family educational support) - distribution: yes: 60.0%, no: 40.0%\n- paid = no (student taking extra paid classes within the course subject) - distribution: no: 96.7%, yes: 3.3%\n- activities = no (student taking part in extra-curricular activities) - distribution: no: 60.0%, yes: 40.0%\n- nursery = no (student has attended nursery school) - distribution: yes: 86.7%, no: 13.3%\n- higher = yes (student wants to get higher education) - distribution: yes: 100.0%\n- internet = yes (student has internet access at home) - distribution: yes: 90.0%, no: 10.0%\n- romantic = yes (student is in a romantic relationship) - distribution: no: 56.7%, yes: 43.3%\n- famrel = very good (quality of family relationships) - distribution: good: 73.3%, very good: 16.7%, fair: 10.0%\n- freetime = medium (free time after school) - distribution: medium: 46.7%, high: 33.3%, low: 16.7%, very low: 3.3%\n- goout = high (going out with friends) - distribution: medium: 56.7%, low: 26.7%, high: 13.3%, very high: 3.3%\n- Dalc = very low (workday alcohol consumption) - distribution: very low: 76.7%, low: 23.3%\n- Walc = very low (weekend alcohol consumption) - distribution: medium: 33.3%, very low: 33.3%, low: 30.0%, high: 3.3%\n- health = good (current health status)\n- absences = 2 (number of school absences) - average: 2.8\n\n\nThe model's prediction:\n- Predicted probability of failing the final year: 50.0%\n- Decision threshold: a predicted probability of failing the final year of 10% or higher leads to this decision.\n\n4. FEATURE IMPORTANCE ANALYSIS (Ranked by Influence)\n Feature  SHAP_Value\nfailures    0.177692\n famsize   -0.061562\n    Medu    0.051291\n\n5. YOUR NARRATIVE TASK\nWrite a detailed narrative explanation tailored to this non-technical reader that MUST explain:\n1) The model's predicted probability of failing the final year and what this means for the student.\n2) Why the student is obliged to take remedial courses: which features were most important in driving this prediction and why (focus on the ranking of most important features).\n3) How each of the top 3 most important features contributed (either pushing toward failing the final year or toward passing the final year).\n4) What the student should do next.\n\nCONSTRAINTS:\n- Do not use the numeric SHAP values in your answer. Instead, discuss the ranking and direction of influence.\n- Do not talk about model internals, algorithms, or training details.\n- Do not include greeting or closing statements, nor bullet points or tables.\nSTYLE:\n- Length: 250 words maximum.\n- Write a coherent narrative directly addressing the student.\n- Do NOT copy-paste feature names, but instead incorporate them naturally in the narrative.\n- Include feature values and their comparisons to averages or distributions, but reserve this for features where it really clarifies the explanation.\n",
+  "condition": "counterfactual_pa",
+  "exclude_protected_attributes": false,
+  "label": "sex_female_to_male",
+  "attr_column": "sex",
+  "override_value": 1,
+  "target_value_label": "male",
+  "temperature": 0,
+  "max_tokens": 4096,
+  "api_version": null,
+  "usage": {
+    "prompt_tokens": 1598,
+    "completion_tokens": 335,
+    "total_tokens": 1933,
+    "prompt_audio_seconds": null,
+    "service_tier": null,
+    "request_count": 0,
+    "prompt_tokens_details": {
+      "messages": [],
+      "cached_tokens": 256,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_token_details": null
+  },
+  "batch_id": "e0b7a030-d7e3-4f52-b4c5-bcdf94299fda",
+  "custom_id": "student__counterfactual_pa__sex_female_to_male__45"
+}

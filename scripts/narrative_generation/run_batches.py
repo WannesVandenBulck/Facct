@@ -40,6 +40,8 @@ from llm_tools.batch.providers import get_adapter
 # One entry per model. provider: openai | claude | gemini | mistral | grok | deepseek
 # Use pinned model versions (dated snapshots) where the provider offers them.
 # mode: "batch" (default) or "sync" (parallel normal calls; deepseek has no batch API).
+# name: optional folder / provider name, needed to run a second model of the same API (e.g. a small model)
+#       next to the main one, because the downstream scripts expect one model per provider folder.
 # api_version (claude only): Claude API version 2026-10-21, the SDK default, rejects temperature,
 # so the Claude batches are pinned to 2023-06-01 to keep temperature=0 like the other providers.
 MODELS = [
@@ -47,6 +49,9 @@ MODELS = [
     dict(provider="mistral", model="mistral-large-2512", temperature=0, max_tokens=4096),
     dict(provider="deepseek", model="deepseek-v4-pro", temperature=0, max_tokens=4096, mode="sync"),
     dict(provider="claude", model="claude-sonnet-4-6", temperature=0, max_tokens=4096, api_version="2023-06-01"),
+    # smaller models, for comparison with the old run (gpt-4o-mini) and the large models above
+    dict(name="openai_small", provider="openai", model="gpt-4o-mini-2024-07-18", temperature=0, max_tokens=4096),
+    dict(name="mistral_small", provider="mistral", model="ministral-14b-2512", temperature=0, max_tokens=4096),
 ]
 
 # ===== END CONFIGURATION =====
@@ -79,8 +84,13 @@ def load_requests(dataset, condition):
     return [json.loads(l) for l in f.read_text(encoding="utf-8").splitlines() if l.strip()]
 
 
+def name_of(cfg):
+    """Folder / provider name used downstream: "name" if given (several models of one API), else the API provider."""
+    return cfg.get("name", cfg["provider"])
+
+
 def group_key(cfg, dataset, condition, attempt=0):
-    return f"{cfg['provider']}/{cfg['model']}/{dataset}/{condition}" + (f"/retry{attempt}" if attempt else "")
+    return f"{name_of(cfg)}/{cfg['model']}/{dataset}/{condition}" + (f"/retry{attempt}" if attempt else "")
 
 
 def model_dir_name(model):
@@ -101,7 +111,7 @@ def selected(args):
 
 def find_cfg(provider, model):
     for m in MODELS:
-        if m["provider"] == provider and m["model"] == model:
+        if name_of(m) == provider and m["model"] == model:
             m.setdefault("temperature", 0)
             m.setdefault("max_tokens", 4096)
             return m
@@ -128,7 +138,7 @@ def submit_group(registry, cfg, dataset, condition, reqs, attempt=0):
     key = group_key(cfg, dataset, condition, attempt)
     name = key.replace("/", "__").replace(".", "-")
     batch_id = get_adapter(cfg).submit(reqs, cfg, name)
-    registry[key] = {"provider": cfg["provider"], "model": cfg["model"], "dataset": dataset, "condition": condition,
+    registry[key] = {"provider": name_of(cfg), "model": cfg["model"], "dataset": dataset, "condition": condition,
                      "attempt": attempt, "batch_id": batch_id, "custom_ids": [r["custom_id"] for r in reqs],
                      "submitted_at": datetime.now().isoformat(timespec="seconds"), "state": "submitted",
                      "collected": False}
@@ -184,12 +194,13 @@ def cmd_status(args):
 
 def write_narrative(narratives_dir, req, cfg, entry, res):
     cond_dir = f"counterfactual_pa/{req['label']}" if req["condition"] == "counterfactual_pa" else req["condition"]
-    out_dir = narratives_dir / req["dataset"] / cond_dir / cfg["provider"] / model_dir_name(cfg["model"])
+    out_dir = narratives_dir / req["dataset"] / cond_dir / name_of(cfg) / model_dir_name(cfg["model"])
     out_dir.mkdir(parents=True, exist_ok=True)
     record = {
         "dataset": req["dataset"],
         "instance_idx": req["instance_idx"],
-        "provider": cfg["provider"],
+        "provider": name_of(cfg),
+        "api_provider": cfg["provider"],
         "model": cfg["model"],
         "model_version": res.get("model_version"),
         "timestamp": datetime.now().isoformat(),

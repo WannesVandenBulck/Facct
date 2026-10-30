@@ -95,7 +95,7 @@ ROOT = Path(__file__).parent.parent.parent
 FAIRNESS_EVAL_DIR = ROOT / "results" / "fairness_eval"
 
 DATASETS = ["credit", "saudi", "student", "law"]
-PROVIDERS = ["openai", "mistral", "claude", "deepseek"]  # providers without narratives (yet) are skipped
+PROVIDERS = ["openai", "mistral", "claude", "deepseek", "openai_small", "mistral_small"]  # providers without narratives (yet) are skipped
 MIN_GROUP_N = 5
 ALPHA = 0.05
 

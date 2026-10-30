@@ -1,0 +1,40 @@
+{
+  "dataset": "law",
+  "instance_idx": 408,
+  "provider": "openai_small",
+  "api_provider": "openai",
+  "model": "gpt-4o-mini-2024-07-18",
+  "model_version": "gpt-4o-mini-2024-07-18",
+  "timestamp": "2026-10-30T12:51:02.994282",
+  "status": "success",
+  "narrative": "The machine learning model predicted with absolute certainty that you would fail the bar exam on your first attempt, which directly influenced the decision to reject your application for university admission. This prediction is based on several key factors that reflect your academic performance and preparedness for the challenges of law school.\n\nThe most significant factor was your LSAT score, which was notably lower than the average of admitted students. This score is a critical indicator of your potential success on the bar exam. Additionally, your performance in your third year of studies placed you in a lower decile compared to the average for admitted students, suggesting that your academic trajectory may not align with the expectations for success in law school. Lastly, your undergraduate GPA was also below the average for those who were admitted, further contributing to the model's assessment of your readiness for the rigors of legal education.\n\nEach of these elements pushed the prediction toward a higher likelihood of failure on the bar exam. Given this outcome, it would be beneficial for you to consider ways to strengthen your academic profile. This could involve retaking the LSAT to improve your score, enhancing your GPA through additional coursework, or gaining relevant experience in the legal field to bolster your application in the future. Taking these steps could significantly improve your chances of success in law school and on the bar exam.",
+  "error": null,
+  "system_prompt": "You are an expert at explaining machine learning predictions to non-technical users. Write clear narratives that help people understand model decisions.",
+  "prompt": "A machine learning model predicted that a student will FAIL the bar exam and therefore their application for university admission was REJECTED. Your goal is to generate an explanatory narrative based on the information provided (1-5), explaining why the law school application was denied for this student.\n\n1. DATASET INFORMATION\nThe dataset contains information on students who took the bar exam.\n\nThe target variable is whether the student will fail the bar exam on the first try.\n\nProtected attributes gender and race were not used to make the machine prediction.\n\n2. TECHNICAL EXPLANATION: SHAP VALUES\nA SHAP value tells you how much a feature influenced the prediction (larger absolute value means a stronger influence) and its direction: positive pushes toward bar exam failure, negative toward bar exam success. Below are the top 3 features by absolute SHAP value.\n\n3. STUDENT PROFILE\nYou are writing a narrative tailored to this specific student, who was rejected for university admission.\nFeature values (with comparisons to admitted students where available, showing the distribution or average among admitted students):\n- decile1 = 4 (the decile to which the student belongs in the school given their grades in Year 1) - average: 6.2\n- decile3 = 3 (the decile to which the student belongs in the school given their grades in Year 3) - average: 6.0\n- fam_inc = upper-middle (the family income bracket of the student) - distribution: upper-middle: 46.2%, middle: 34.6%, high: 8.9%, lower-middle: 8.4%, low: 2.0%\n- lsat = 33.0 (the LSAT score of the student) - average: 37.6\n- ugpa = 2.9 (the undergraduate GPA of the student) - average: 3.2\n- gender = male (the gender of the student)\n- race = asian (the racial background of the student)\n- fulltime = full-time (whether the student will enroll in law school full-time or part-time) - distribution: full-time: 93.1%, part-time: 6.9%\n\n\nThe model's prediction:\n- Predicted probability of bar exam failure: 100.0%\n- Decision threshold: a predicted probability of bar exam failure of 50% or higher leads to this decision.\n\n4. FEATURE IMPORTANCE ANALYSIS (Ranked by Influence)\nFeature  SHAP_Value\n   lsat    0.128040\ndecile3    0.112799\n   ugpa    0.102023\n\n5. YOUR NARRATIVE TASK\nWrite a detailed narrative explanation tailored to this non-technical reader that MUST explain:\n1) The model's predicted probability of bar exam failure and what this means for the student.\n2) Why the application for university admission was rejected: which features were most important in driving this prediction and why (focus on the ranking of most important features).\n3) How each of the top 3 most important features contributed (either pushing toward bar exam failure or toward bar exam success).\n4) What the student should do next.\n\nCONSTRAINTS:\n- Do not use the numeric SHAP values in your answer. Instead, discuss the ranking and direction of influence.\n- Do not talk about model internals, algorithms, or training details.\n- Do not include greeting or closing statements, nor bullet points or tables.\nSTYLE:\n- Length: 250 words maximum.\n- Write a coherent narrative directly addressing the student.\n- Do NOT copy-paste feature names, but instead incorporate them naturally in the narrative.\n- Include feature values and their comparisons to averages or distributions, but reserve this for features where it really clarifies the explanation.\n",
+  "condition": "include_pa",
+  "exclude_protected_attributes": false,
+  "label": null,
+  "attr_column": null,
+  "override_value": null,
+  "target_value_label": null,
+  "temperature": 0,
+  "max_tokens": 4096,
+  "api_version": null,
+  "usage": {
+    "prompt_tokens": 808,
+    "completion_tokens": 259,
+    "total_tokens": 1067,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "batch_id": "batch_6ae47de65d548190b45e7960a2d9b07c",
+  "custom_id": "law__include_pa__408"
+}
