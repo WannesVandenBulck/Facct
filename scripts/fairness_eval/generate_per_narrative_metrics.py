@@ -10,7 +10,7 @@ re-confirming):
    "_extracted" field, regardless of which provider generated the narrative
    or the extraction condition. This was confirmed because the grok
    extractor is the only one with complete coverage across all
-   dataset x provider x condition combinations; deepseek/openai extractor
+   dataset x provider x condition combinations; openai extractor
    folders exist but are incomplete or absent for some datasets.
 2. `other_feature_x_value_scoring` (1/0/NaN) is included for consistency
    with the rank_N and PA_N groups, even though the original template only
@@ -90,7 +90,7 @@ NARRATIVES_DIR = ROOT / "results" / "narratives"
 OUTPUT_DIR = ROOT / "results" / "fairness_eval"
 
 DATASETS = ["credit", "saudi", "student", "law"]
-NARRATIVE_PROVIDERS = ["openai", "mistral", "claude", "deepseek", "openai_small", "mistral_small"]  # providers without narratives (yet) are skipped
+NARRATIVE_PROVIDERS = ["openai", "mistral", "claude", "openai_small", "mistral_small"]  # providers without narratives (yet) are skipped
 EXTRACTOR = "grok"  # fixed extractor for all "_extracted" fields (see decision 1)
 
 # condition directory name on disk -> value written to the "condition" column

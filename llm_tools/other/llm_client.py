@@ -20,12 +20,6 @@ grok_client = OpenAI(
 )
 
 gemini_client = None  # Gemini uses REST API, not a specific client
-deepseek_client = OpenAI(
-    api_key=KEYS.get("deepseek_key"),
-    base_url="https://api.deepseek.com/v1",
-    timeout=60.0
-)
-
 mistral_client = OpenAI(
     api_key=KEYS.get("mistral_key"),
     base_url="https://api.mistral.ai/v1",
@@ -39,7 +33,7 @@ def generate_text(messages, provider="openai", model=None, temperature=0, max_to
     
     Args:
         messages: List of {"role": ..., "content": ...}
-        provider: "openai", "claude", "gemini", "grok", "deepseek", "mistral"
+        provider: "openai", "claude", "gemini", "grok", "mistral"
         model: Model name (provider-specific)
         temperature: Sampling temperature (0-1)
         max_tokens: Maximum tokens to generate
@@ -148,16 +142,6 @@ def _call_llm(messages, provider="openai", model=None, temperature=0, max_tokens
             )
             return response.choices[0].message.content
         
-        elif provider == "deepseek":
-            model = model or "deepseek-flash-v4"  # Default to Deepseek Flash v4
-            response = deepseek_client.chat.completions.create(
-                model=model,
-                messages=messages,
-                temperature=temperature,
-                max_tokens=max_tokens
-            )
-            return response.choices[0].message.content
-        
         elif provider == "mistral":
             model = model or "mistral-large-latest"
             response = mistral_client.chat.completions.create(
@@ -169,7 +153,7 @@ def _call_llm(messages, provider="openai", model=None, temperature=0, max_tokens
             return response.choices[0].message.content
         
         else:
-            raise ValueError(f"Unknown provider: {provider}. Supported: openai, claude, gemini, grok, deepseek, mistral")
+            raise ValueError(f"Unknown provider: {provider}. Supported: openai, claude, gemini, grok, mistral")
     
     except (TimeoutError, ConnectionError, requests.exceptions.Timeout, requests.exceptions.ConnectionError):
         # Re-raise timeout/connection errors for retry logic

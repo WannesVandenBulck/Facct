@@ -266,7 +266,7 @@ class XAIBatch:
 # ----------------------------------------------------------------------------- synchronous fallback
 
 class SyncFallback:
-    """For providers without a batch API (e.g. DeepSeek): normal parallel calls, same result format.
+    """For providers without a batch API: normal parallel calls, same result format.
     Runs everything inside submit() and stores the results locally; batch_id is that file's path."""
 
     def __init__(self, workers=8):
@@ -304,7 +304,6 @@ ADAPTERS = {
     "gemini": GeminiBatch,
     "mistral": MistralBatch,
     "grok": XAIBatch,
-    "deepseek": SyncFallback,
 }
 
 

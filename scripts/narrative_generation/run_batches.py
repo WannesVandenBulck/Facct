@@ -37,9 +37,9 @@ from llm_tools.batch.providers import get_adapter
 
 # ===== CONFIGURATION =====
 
-# One entry per model. provider: openai | claude | gemini | mistral | grok | deepseek
+# One entry per model. provider: openai | claude | gemini | mistral | grok
 # Use pinned model versions (dated snapshots) where the provider offers them.
-# mode: "batch" (default) or "sync" (parallel normal calls; deepseek has no batch API).
+# mode: "batch" (default) or "sync" (parallel normal calls for providers without batch APIs).
 # name: optional folder / provider name, needed to run a second model of the same API (e.g. a small model)
 #       next to the main one, because the downstream scripts expect one model per provider folder.
 # api_version (claude only): Claude API version 2026-10-21, the SDK default, rejects temperature,
@@ -47,7 +47,6 @@ from llm_tools.batch.providers import get_adapter
 MODELS = [
     dict(provider="openai", model="gpt-4.1-2025-04-14", temperature=0, max_tokens=4096),
     dict(provider="mistral", model="mistral-large-2512", temperature=0, max_tokens=4096),
-    dict(provider="deepseek", model="deepseek-v4-pro", temperature=0, max_tokens=4096, mode="sync"),
     dict(provider="claude", model="claude-sonnet-4-6", temperature=0, max_tokens=4096, api_version="2023-06-01"),
     # smaller models, for comparison with the old run (gpt-4o-mini) and the large models above
     dict(name="openai_small", provider="openai", model="gpt-4o-mini-2024-07-18", temperature=0, max_tokens=4096),

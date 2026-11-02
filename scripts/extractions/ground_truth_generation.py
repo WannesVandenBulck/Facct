@@ -74,7 +74,7 @@ DATASETS = {
     }
 }
 
-PROVIDERS = ['openai', 'claude', 'gemini', 'grok', 'deepseek', 'mistral']
+PROVIDERS = ['openai', 'claude', 'gemini', 'grok', 'mistral']
 PROMPT_TYPE = 'shap'  # Only SHAP narratives
 
 

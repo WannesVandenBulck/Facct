@@ -6,7 +6,7 @@ Supplementary analysis, not one of the paper's core disparity RQs (total /
 indirect / disclosure / value / direct) -- kept separate and unnumbered so
 it isn't confused with RQ4 (direct disparity) or RQ5 (value disparity).
 
-Do the LLM providers used to generate narratives (openai / mistral / claude / deepseek)
+Do the LLM providers used to generate narratives (openai / mistral / claude)
 differ from each other in feature-coverage / faithfulness metrics? Tested
 both OVERALL (pooled across all instances of a dataset/condition) and
 WITHIN each social group of every protected attribute (e.g. "is openai
@@ -172,7 +172,7 @@ ROOT = Path(__file__).parent.parent.parent
 FAIRNESS_EVAL_DIR = ROOT / "results" / "fairness_eval"
 
 DATASETS = ["credit", "saudi", "student", "law"]
-PROVIDERS = ["openai", "mistral", "claude", "deepseek", "openai_small", "mistral_small"]  # providers without narratives (yet) are skipped
+PROVIDERS = ["openai", "mistral", "claude", "openai_small", "mistral_small"]  # providers without narratives (yet) are skipped
 CONDITIONS = ["pa_included", "pa_excluded"]
 CF_CONDITION_RAW = "counterfactual_pa"   # condition value in the metrics CSV
 CF_CONDITION = "pa_counterfactual"       # label used in the output files
